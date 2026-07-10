@@ -4,7 +4,7 @@
 - Versão: 1.0
 - Owner: Correnth / RedScale
 - Repositório canônico da documentação: `https://github.com/correnthgroup/docs.git`
-- Repositório de implementação: `https://github.com/correnthgroup/CML.git`
+- Repositório de implementação: `https://github.com/correnthgroup/studio_context-memory.git`
 - Supabase dedicado: `https://rampeobyjmbrgdfvyqms.supabase.co`
 - Supabase project ref: `rampeobyjmbrgdfvyqms`
 - Consumidores iniciais: RedScale, RedRise e agentes internos da Correnth

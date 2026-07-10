@@ -28,7 +28,7 @@ Uma camada inferior não pode alterar silenciosamente uma decisão de camada sup
 | Repositório | Autoridade |
 |---|---|
 | `correnthgroup/docs` | Estratégia, PRDs e ADRs transversais |
-| `correnthgroup/CML` | Schema, contracts, runtime, migrations, testes e runbooks da CML |
+| `correnthgroup/studio_context-memory` | Schema, contracts, runtime, migrations, testes e runbooks da CML |
 | `correnthgroup/redrise-v2` | Arquitetura e comportamento próprios do RedRise v2 |
 | RedScale | Arquitetura e comportamento próprios do control plane |
 

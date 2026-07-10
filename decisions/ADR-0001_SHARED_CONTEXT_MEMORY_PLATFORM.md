@@ -14,7 +14,7 @@ RedScale e RedRise v2 possuem implementações parciais e divergentes da Context
 A Correnth terá uma única Context Memory Platform compartilhada:
 
 - `correnthgroup/docs` governa PRDs e decisões transversais;
-- `correnthgroup/CML` governa a implementação da plataforma;
+- `correnthgroup/studio_context-memory` governa a implementação da plataforma;
 - o Supabase `rampeobyjmbrgdfvyqms` é dedicado à CML;
 - RedScale opera a plataforma por API/SDK e fornece o console administrativo;
 - RedRise e futuros produtos usam adapters finos e identidades próprias;
