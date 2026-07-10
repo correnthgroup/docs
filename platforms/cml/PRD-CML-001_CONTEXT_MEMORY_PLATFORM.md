@@ -3,7 +3,8 @@
 - Status: Planejado
 - Versão: 1.0
 - Owner: Correnth / RedScale
-- Repositório canônico: `https://github.com/correnthgroup/CML.git`
+- Repositório canônico da documentação: `https://github.com/correnthgroup/docs.git`
+- Repositório de implementação: `https://github.com/correnthgroup/CML.git`
 - Supabase dedicado: `https://rampeobyjmbrgdfvyqms.supabase.co`
 - Supabase project ref: `rampeobyjmbrgdfvyqms`
 - Consumidores iniciais: RedScale, RedRise e agentes internos da Correnth
@@ -55,7 +56,7 @@ Continuar essas implementações em paralelo aumentaria context drift, custo ope
 
 ### 3.1 Decisões aprovadas
 
-1. O repositório `CML` será a única autoridade de schema, migrations, ingestão, retrieval, Context Packs, API e MCP.
+1. O repositório `docs` será a autoridade da PRD e das decisões transversais; o repositório `CML` será a autoridade de schema, migrations, ingestão, retrieval, Context Packs, API e MCP.
 2. A CML usará o Supabase dedicado `rampeobyjmbrgdfvyqms`.
 3. A CML não dependerá do banco, App Shell ou modelo de workspace do RedRise.
 4. RedScale será o control plane e fornecerá a UI administrativa.
