@@ -1,12 +1,14 @@
 # PRD-RS-002 - Work Order Data Model
 
-- Status: Approved
+- Status: Superseded by `PRD-002 Workforce Spec v2/PDF` and `ADR-0003`
 - Versao: 1.0
 - Data: 2026-07-10
 - Owner: RedScale
 - Primeiro customer/configuracao: Correnth
 - Relacionados: `ADR-0002`, `ADR-0001`, `PRD-CML-001`, `CML-L10`
 - Pre-condicao: CML-L10 aprovado em `platforms/cml/READINESS-CML-L10.md`
+
+> Documento historico preservado sem efeito normativo. A especificacao de produto vigente e `PRD-002 Workforce Spec v2/PDF`, e a arquitetura RedScale vigente e definida por `ADR-0003`.
 
 ---
 

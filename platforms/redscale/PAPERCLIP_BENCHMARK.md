@@ -1,9 +1,11 @@
 # Paperclip Benchmark for RedScale
 
-- Status: Approved reference
+- Status: Superseded by `PRD-002 Workforce Spec v2/PDF` and `ADR-0003`
 - Data da consulta: 2026-07-10
 - Owner: RedScale
 - Relacionados: `ADR-0002`, `PRD-RS-002`
+
+> Documento historico preservado sem efeito normativo. A especificacao de produto vigente e `PRD-002 Workforce Spec v2/PDF`, e a arquitetura RedScale vigente e definida por `ADR-0003`.
 
 ## Proposito e disclaimer
 
