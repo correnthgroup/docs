@@ -3,7 +3,7 @@
 - Ultima atualizacao: 2026-07-10
 - Estado global: Concluido
 - Gate atual: CML-L10 aprovado
-- PRD-RS-002: Liberado para execucao
+- Consumidores: integração CML liberada somente por API/SDK versionada e capability mínima
 
 ## Progresso
 
@@ -18,8 +18,8 @@
 | G - Context Packs | Concluida | Selecao deterministica, budget, citacoes e snapshots imutaveis publicados |
 | H - API, MCP e SDK | Concluida | OpenAPI v1, runtime autenticado, SDK TypeScript e MCP com capabilities |
 | I - Operacao | Concluida | Metricas, readiness, correlation IDs, budgets, alertas e runbooks |
-| J - Operacao pelo RedScale | Concluida | Console RS-CONTEXT via SDK com overview, documentos, search, packs, decisions, graph, jobs, logs e consumers |
-| K - Consumers e migracao | Concluida | Consumers RedScale/RedRise, fontes canonicas, reindexacao e inventario do legado RedRise v2 |
+| J - Console administrativo da CML | Concluida | Console via SDK com overview, documentos, search, packs, decisions, graph, jobs, logs e consumers |
+| K - Consumers e migracao | Concluida | Consumer de referência e RedRise, fontes canônicas, reindexação e inventário do legado RedRise v2 |
 | L - Readiness | Concluida | `platforms/cml/READINESS-CML-L10.md` |
 
 ## Gates L01-L10
@@ -33,7 +33,7 @@
 | CML-L05 | Concluida | Context Packs deterministas, budgetados e publicados |
 | CML-L06 | Concluida | 126 testes, build, OpenAPI e MCP self-test verdes |
 | CML-L07 | Concluida | Readiness remoto, observabilidade e runbooks validados |
-| CML-L08 | Concluida | Console RedScale e consumer administrativo validados |
+| CML-L08 | Concluida | Console administrativo e consumer de referência validados |
 | CML-L09 | Concluida | RedRise hybrid retrieval e Context Pack cross-product publicados via API |
 | CML-L10 | Concluida | Readiness tecnica aprovada; riscos residuais nao bloqueantes documentados |
 

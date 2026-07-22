@@ -1,14 +1,14 @@
 # PRD-CML-001 - Correnth Context Memory Platform
 
-- Status: Planejado
+- Status: Concluido - CML-L10 aprovado em 2026-07-10
 - Versão: 1.0
-- Owner: Correnth / RedScale
+- Owner: Correnth
 - Repositório canônico da documentação: `https://github.com/correnthgroup/docs.git`
 - Repositório de implementação: `https://github.com/correnthgroup/studio_context-memory.git`
 - Supabase dedicado: `https://rampeobyjmbrgdfvyqms.supabase.co`
 - Supabase project ref: `rampeobyjmbrgdfvyqms`
-- Consumidores iniciais: RedScale, RedRise e agentes internos da Correnth
-- Bloqueia: PRD-RS-002 - Work Order Data Model
+- Consumidores iniciais: RedRise e agentes internos autorizados da Correnth
+- Próximos consumidores: produtos e negócios autorizados, por API/SDK versionada
 
 ---
 
@@ -16,7 +16,7 @@
 
 A Correnth Context Memory Platform, também chamada de CML (Context Memory Layer), será a infraestrutura compartilhada de contexto e memória do ecossistema Correnth.
 
-Sua função é transformar documentos, decisões, PRDs, arquitetura, histórico de execução e outras fontes autorizadas em contexto pesquisável, citado, compacto e auditável para produtos, agentes e Work Orders.
+Sua função é transformar documentos, decisões, PRDs, arquitetura, histórico de execução e outras fontes autorizadas em contexto pesquisável, citado, compacto e auditável para produtos e agentes.
 
 ```text
 Fontes autorizadas
@@ -24,12 +24,12 @@ Fontes autorizadas
 → chunks, embeddings, summaries e entidades
 → busca híbrida e reranking
 → Context Pack citado
-→ RedScale, produtos e agentes
+→ produtos e agentes autorizados
 ```
 
-A CML não será implementada separadamente em cada produto. Existirá uma única implementação canônica, independente do RedRise e administrada pelo RedScale. Cada produto possuirá apenas identidade, permissões, fontes e adaptadores de consumo.
+A CML não deve ser implementada separadamente em cada produto. Existe uma única implementação canônica, independente de qualquer produto consumidor. Cada produto possui apenas identidade, permissões, fontes e adaptadores de consumo.
 
-O Work Order Data Model só poderá ser iniciado depois que os gates definidos neste documento forem atendidos.
+A CML está concluída e aprovada. Todo novo consumidor deve integrar por API/SDK versionada, mantendo o boundary de acesso.
 
 ---
 
@@ -39,7 +39,7 @@ O conhecimento do ecossistema está distribuído entre documentos Markdown, deci
 
 As implementações atuais demonstraram a viabilidade da proposta, mas também criaram riscos:
 
-- uma foundation incompleta dentro do RedScale;
+- foundations locais incompletas em consumidores;
 - uma implementação mais avançada, porém acoplada ao RedRise v2;
 - migrations e contratos divergentes;
 - identidade de organização, workspace e produto inconsistente;
@@ -59,15 +59,25 @@ Continuar essas implementações em paralelo aumentaria context drift, custo ope
 1. O repositório `docs` será a autoridade da PRD e das decisões transversais; o repositório `CML` será a autoridade de schema, migrations, ingestão, retrieval, Context Packs, API e MCP.
 2. A CML usará o Supabase dedicado `rampeobyjmbrgdfvyqms`.
 3. A CML não dependerá do banco, App Shell ou modelo de workspace do RedRise.
-4. RedScale será o control plane e fornecerá a UI administrativa.
-5. RedRise e futuros produtos serão consumidores por contratos versionados.
+4. A CML fornecerá console administrativo próprio.
+5. Produtos, negócios e agentes autorizados serão consumidores por contratos versionados.
 6. `product_key` hardcoded será substituído por um registry de produtos.
 7. Nenhum cliente ou agente receberá service role.
 8. Toda resposta de retrieval ou Context Pack deverá ser rastreável até as fontes.
 9. Mudanças destrutivas, cross-tenant ou de segurança falharão de forma fechada.
 10. A implementação existente no RedRise v2 será tratada como protótipo de referência, não como fonte canônica.
 
-### 3.2 Forma inicial de implantação
+### 3.2 Política obrigatória do corpus global
+
+A ingestão global é allowlist-first e aceita somente direção e posicionamento do grupo, decisões transversais vigentes, contratos entre produtos e padrões compartilhados técnicos, operacionais, jurídicos ou de segurança.
+
+São negados por padrão: código, PRDs e documentação específica de produto; memória curta; artefatos Graphify; segredos e dados pessoais; informações específicas de cliente.
+
+Dados de cliente somente podem ser ingeridos com autorização formal que registre finalidade, campos autorizados, visibilidade, consumidores, retenção, expiração e revogação.
+
+Produtos recebem identidade própria e revogável, inicialmente somente com context.read. A configuração consumer usa CML_API_BASE_URL e CML_CONSUMER_ACCESS_TOKEN exclusivamente no servidor. Service role e fallback local silencioso são proibidos.
+
+### 3.3 Forma inicial de implantação
 
 ```text
 Supabase CML dedicado
@@ -85,11 +95,10 @@ Serviço CML
 ├── API
 └── MCP Gateway
 
-RedScale
-└── Console administrativo da CML
+Console administrativo da CML
 ```
 
-### 3.3 Estrutura inicial do repositório
+### 3.4 Estrutura inicial do repositório
 
 ```text
 context-memory/
@@ -118,14 +127,16 @@ A estrutura poderá evoluir quando houver necessidade concreta. O projeto não d
 
 - registrar organizações, produtos, ambientes e consumidores;
 - indexar fontes Markdown autorizadas;
+- indexar `CURRENT_DIRECTION.md` como contexto operacional vigente do ecossistema;
 - versionar documentos sem misturar versões obsoletas;
 - realizar busca híbrida vetorial e textual;
 - aplicar filtros de autorização antes de retornar conteúdo;
 - gerar Context Packs compactos e citados;
+- manter Graphify e documentação específica nos repositórios dos produtos, fora do corpus global;
 - oferecer API e MCP com contratos versionados;
 - registrar consultas, resultados, custos, falhas e qualidade;
-- permitir operação e inspeção pelo RedScale;
-- fornecer contexto confiável para futuros Work Orders.
+- permitir operação e inspeção pelo console administrativo da CML;
+- fornecer contexto confiável para produtos e agentes consumidores.
 
 ### 4.2 Objetivos de qualidade
 
@@ -141,7 +152,7 @@ A estrutura poderá evoluir quando houver necessidade concreta. O projeto não d
 ### 4.3 Fora de escopo da v1
 
 - edição autônoma de repositórios;
-- execução completa de Work Orders;
+- execução completa por consumidores autorizados;
 - memória de usuário final como feature comercial;
 - ingestão indiscriminada de binários;
 - migração para Qdrant ou Weaviate sem evidência de necessidade;
@@ -163,7 +174,7 @@ Organization
 ```
 
 - `organization`: limite principal de isolamento de dados;
-- `product`: unidade do ecossistema, como RedScale ou RedRise;
+- `product`: unidade do ecossistema, como RedRise ou RedRose;
 - `environment`: development, preview, staging ou production;
 - `consumer`: aplicação, agente, operador ou integração que consulta a CML.
 
@@ -301,7 +312,7 @@ Cada micro-task deve resultar em um commit pequeno e revisável sempre que poss�
 | CML-B03 | Definir contrato de documento e versão | B01 | Fonte, documento e versão possuem ciclos separados | Nova versão não substitui a atual antes de validação | Reconciliador detecta múltiplas versões correntes |
 | CML-B04 | Definir contrato de chunk e citação | B03 | Chunk preserva source URI, heading e linhas quando disponíveis | Chunk sem referência não pode ser promovido | Job reextrai referências ausentes |
 | CML-B05 | Definir contrato de query e resultado | B01-B02 | Query carrega identidade, filtros, budget e versão de estratégia | Filtro inválido não amplia escopo | Contract tests geram combinações de filtros |
-| CML-B06 | Definir contrato imutável de Context Pack | B05 | Pack registra query, chunks, strategy, modelo, budget e citações | Pack publicado não é alterado | Regeração cria nova revisão comparável |
+| CML-B06 | Definir contrato imutável de Context Pack | B05 | Pack registra query, chunks, strategy, modelo, budget, citações e referências opcionais a artefatos Graphify | Pack publicado não é alterado | Regeração cria nova revisão comparável |
 | CML-B07 | Versionar contratos públicos | B01-B06 | API e MCP expõem versão explícita | Versão desconhecida retorna erro compatível | Teste de compatibilidade roda contra fixtures anteriores |
 
 ### Fase C - Banco e migrations
@@ -376,7 +387,7 @@ Cada micro-task deve resultar em um commit pequeno e revisável sempre que poss�
 | CML-G05 | Implementar compressão semântica opcional | G04 | Síntese não remove requisitos e mantém citações | Falha retorna pack extrativo sinalizado | Reprocessar packs não críticos quando provider recuperar |
 | CML-G06 | Detectar conflitos e perguntas abertas | G02-G05 | Decisões divergentes são expostas, não resolvidas por alucinação | Conflito bloqueia afirmação como verdade vigente | Criar item de revisão humana/decision registry |
 | CML-G07 | Persistir snapshot imutável | C06, G01-G06 | Pack publicado preserva fontes, estratégia e modelo | Regeneração cria nova revisão | Diff entre revisões detecta context drift |
-| CML-G08 | Testar packs contra corpus de avaliação | F01, G07 | Casos críticos contêm decisões e constraints esperadas | Falha bloqueia integração com Work Orders | Resultado ruim alimenta ajuste de retrieval e regressão |
+| CML-G08 | Testar packs contra corpus de avaliação | F01, G07 | Casos críticos contêm decisões e constraints esperadas | Falha bloqueia integração de consumidores | Resultado ruim alimenta ajuste de retrieval e regressão |
 
 ### Fase H - API e MCP
 
@@ -390,7 +401,7 @@ Cada micro-task deve resultar em um commit pequeno e revisável sempre que poss�
 | CML-H06 | Implementar idempotency keys | H03-H05 | Retry do cliente não duplica pack, decisão ou job | Request conflitante é rejeitado | Reconciliador identifica duplicações legadas |
 | CML-H07 | Criar MCP Gateway sobre core/API | H03-H05 | Tools oficiais reutilizam contratos, sem lógica duplicada | MCP indisponível não afeta API | Self-test executa protocolo e uma consulta sintética autorizada |
 | CML-H08 | Implementar tool capabilities | H07, D01 | Cada tool exige capability específica | Tool desconhecida ou não permitida é negada | Auditor lista chamadas negadas e grants excessivos |
-| CML-H09 | Publicar SDK/adapter TypeScript mínimo | H01-H05 | RedScale consome contratos sem acessar tabelas diretamente | Mudança incompatível exige nova versão | Compatibility suite roda contra SDK anterior |
+| CML-H09 | Publicar SDK/adapter TypeScript mínimo | H01-H05 | Consumidores usam contratos sem acessar tabelas diretamente | Mudança incompatível exige nova versão | Compatibility suite roda contra SDK anterior |
 
 ### Fase I - Observabilidade e operação
 
@@ -403,11 +414,11 @@ Cada micro-task deve resultar em um commit pequeno e revisável sempre que poss�
 | CML-I05 | Criar runbooks | I01-I04 | Há procedimentos para DB, provider, RLS, vazamento e rollback | Operador interrompe writes quando integridade for incerta | Game day valida e melhora runbooks |
 | CML-I06 | Configurar dependabot/updates controlados | A05 | Atualizações passam testes e são agrupadas por risco | Major update não é automático | CVE crítico abre fluxo acelerado com regressão completa |
 
-### Fase J - Console no RedScale
+### Fase J - Console administrativo da CML
 
 | ID | Micro-task | Dependência | Critério de aceite | Fallback defensivo | Fallback ofensivo |
 |---|---|---|---|---|---|
-| CML-J01 | Definir contrato de integração RedScale | H09 | RedScale usa SDK/API, nunca tabelas CML diretamente | Sem credenciais válidas, tela fica indisponível e explícita | Health panel aponta configuração incorreta |
+| CML-J01 | Definir contrato do console administrativo | H09 | Console usa SDK/API, nunca tabelas CML diretamente | Sem credenciais válidas, tela fica indisponível e explícita | Health panel aponta configuração incorreta |
 | CML-J02 | Implementar Health Overview | J01, I01-I02 | Status real de serviços, jobs e retrieval é exibido | Dados stale recebem timestamp/aviso | Ações de diagnóstico executam checks seguros |
 | CML-J03 | Implementar Documents e Versions | J01, H04 | Lista todas as versões autorizadas e estado correto | Ação destrutiva exige confirmação | Reconcile/reindex disponível conforme capability |
 | CML-J04 | Implementar Ingestion Jobs | J01, H05 | Job, tentativas, erro e recovery são visíveis | Erro sanitizado e conteúdo preservado | Reabrir ou quarentenar job com auditoria |
@@ -421,21 +432,21 @@ Cada micro-task deve resultar em um commit pequeno e revisável sempre que poss�
 
 | ID | Micro-task | Dependência | Critério de aceite | Fallback defensivo | Fallback ofensivo |
 |---|---|---|---|---|---|
-| CML-K01 | Criar consumer RedScale | H09, J01 | RedScale autentica e consulta com escopo mínimo | Credencial separada e revogável | Smoke contínuo valida acesso autorizado |
+| CML-K01 | Criar consumer de referência | H09, J01 | Consumer autentica e consulta com escopo mínimo | Credencial separada e revogável | Smoke contínuo valida acesso autorizado |
 | CML-K02 | Criar consumer RedRise | H09 | RedRise consulta sem dependência de schema | Sem fallback para banco local duplicado | Comparar respostas do adapter com API canônica |
-| CML-K03 | Registrar fontes Correnth | E01, K01 | Docs transversais usam visibilidade aprovada | Documento sem classificação vai para quarantine | Revisão identifica fontes não cobertas |
-| CML-K04 | Registrar fontes RedScale | E01, K01 | Docs RedScale são isolados e compartilhados explicitamente | Default `product_private` | Testes confirmam negação ao RedRise onde aplicável |
+| CML-K03 | Registrar fontes Correnth | E01, K01 | Docs transversais usam visibilidade aprovada; `CURRENT_DIRECTION.md` entra como `operating_context` `organization_shared` | Documento sem classificação vai para quarantine | Revisão identifica fontes não cobertas |
+| CML-K04 | Registrar fontes do consumer de referência | E01, K01 | Documentos do consumer são isolados e compartilhados explicitamente | Default `product_private` | Testes confirmam negação a outros consumidores onde aplicável |
 | CML-K05 | Registrar fontes RedRise | E01, K02 | Docs RedRise são isolados e citáveis | Default `product_private` | Corpus de avaliação valida cobertura |
 | CML-K06 | Inventariar CML do RedRise v2 | A01, H09 | Código, dados e contratos são classificados como reutilizar, migrar ou descartar | Nenhum dado é importado cegamente | Ferramenta compara schema e conteúdo com canônico |
 | CML-K07 | Exportar dados válidos do protótipo | K06, C11 | Export sanitizado contém fontes e metadados necessários | Export não inclui credenciais nem relações inconsistentes | Validador gera relatório de rejeições |
 | CML-K08 | Reindexar no schema canônico | K03-K07 | Dados são recriados pelas fontes e pipeline oficial | Versões antigas permanecem fora do retrieval | Reconciliação compara documentos, chunks e queries amostrais |
 | CML-K09 | Executar shadow comparison | K08, F09 | Queries críticas comparam protótipo e CML canônica | Divergência crítica impede cutover | Ajustar retrieval e adicionar regressões |
-| CML-K10 | Cortar RedScale para CML canônica | K01, J02-J09 | Console opera apenas pela CML oficial | Feature flag permite retorno temporário somente à UI anterior, sem writes duplos | Rollback automático se smoke crítico falhar |
+| CML-K10 | Cortar consumer de referência para CML canônica | K01, J02-J09 | Console opera apenas pela CML oficial | Feature flag permite retorno temporário somente à UI anterior, sem writes duplos | Rollback automático se smoke crítico falhar |
 | CML-K11 | Cortar RedRise para adapter oficial | K02, K09 | RedRise não executa migrations, MCP ou ingestão próprios | Falha mantém feature indisponível, não duplica dados | Rollback de client version, preservando CML oficial |
 | CML-K12 | Desativar CML duplicada do RedRise v2 | K11 | Rotas, scripts e UI duplicados são removidos ou claramente arquivados | Backup/export aprovado antes da remoção | Scanner de repo impede reintrodução de imports/rotas antigas |
-| CML-K13 | Desativar foundation duplicada do RedScale | K10 | Migrations e serviços locais deixam de ser autoridade | Manter histórico documental, não runtime concorrente | CI impede acesso direto a tabelas CML |
+| CML-K13 | Desativar foundation duplicada do consumer | K10 | Migrations e serviços locais deixam de ser autoridade | Manter histórico documental, não runtime concorrente | CI impede acesso direto a tabelas CML |
 
-### Fase L - Gate para Work Orders
+### Fase L - Gate de readiness
 
 | ID | Micro-task | Dependência | Critério de aceite | Fallback defensivo | Fallback ofensivo |
 |---|---|---|---|---|---|
@@ -446,9 +457,9 @@ Cada micro-task deve resultar em um commit pequeno e revisável sempre que poss�
 | CML-L05 | Executar suíte de Context Packs | G01-G08 | Packs respeitam budget, constraints e citações | Pack extrativo permanece disponível | Casos ruins retornam a retrieval/compressão |
 | CML-L06 | Executar testes API/MCP | H01-H09 | Auth, capabilities, idempotência e tools passam | Consumidor não recebe acesso parcial inseguro | Contract suite identifica componente divergente |
 | CML-L07 | Validar observabilidade e runbooks | I01-I06 | Alertas e recovery são demonstrados | Produção não abre sem readiness | Game day corrige runbooks e automações |
-| CML-L08 | Validar RedScale como operador | J01-J09, K10 | Operador pesquisa, gera pack, audita e recupera job | Console não executa writes sem capability | Fluxo E2E aponta quebra até serviço de origem |
+| CML-L08 | Validar console administrativo como operador | J01-J09, K10 | Operador pesquisa, gera pack, audita e recupera job | Console não executa writes sem capability | Fluxo E2E aponta quebra até serviço de origem |
 | CML-L09 | Validar RedRise como consumidor | K11 | RedRise consulta somente seu escopo e conteúdo compartilhado | Integração falha fechada | Synthetic query contínua detecta regressão |
-| CML-L10 | Aprovar relatório de readiness | L01-L09 | Owner aprova evidências, riscos residuais e rollback | PRD-RS-002 permanece bloqueado | Findings abrem micro-tasks adicionais antes da aprovação |
+| CML-L10 | Aprovar relatório de readiness | L01-L09 | Owner aprova evidências, riscos residuais e rollback | Consumidores permanecem bloqueados | Findings abrem micro-tasks adicionais antes da aprovação |
 
 ---
 
@@ -464,10 +475,10 @@ A Governança
 → G Context Packs
 → H API/MCP
 → I Operação
-→ J RedScale
+→ J Console administrativo
 → K Adapters e migração
 → L Readiness gate
-→ PRD-RS-002 Work Order Data Model
+→ Consumidores por API/SDK versionada
 ```
 
 Segurança, testes e documentação são atividades contínuas. A ordem acima representa dependência funcional, não permissão para adiar controles críticos até o final.
@@ -503,7 +514,7 @@ Segurança, testes e documentação são atividades contínuas. A ordem acima re
 - indexar documento;
 - consultar contexto;
 - gerar Context Pack;
-- inspecionar fontes e auditoria no RedScale;
+- inspecionar fontes e auditoria no console administrativo da CML;
 - negar consulta cross-tenant;
 - revogar consumer;
 - recuperar job com falha;
@@ -557,9 +568,9 @@ Uma micro-task está concluída quando:
 
 ---
 
-## 13. Gate obrigatório antes do PRD-RS-002
+## 13. Gate de readiness aprovado
 
-O Work Order Data Model não pode começar até que:
+A CML foi aprovada em CML-L10 depois de validar:
 
 - a CML seja instalável do zero pelas migrations versionadas;
 - nenhuma parte canônica dependa do RedRise;
@@ -570,16 +581,16 @@ O Work Order Data Model não pode começar até que:
 - busca híbrida e modo degradado sejam explícitos;
 - Context Packs sejam compactos, imutáveis e citados;
 - API e MCP compartilhem os mesmos contratos e autorização;
-- RedScale opere a CML pela API/SDK;
+- o console administrativo e os consumidores operem a CML pela API/SDK;
 - RedRise consuma a CML por adapter fino;
 - implementações duplicadas estejam desativadas;
 - observabilidade, alertas, backup e rollback tenham sido exercitados;
 - o relatório CML-L10 esteja aprovado.
 
-Após o gate, o PRD-RS-002 poderá referenciar entidades estáveis:
+Após o gate, consumidores autorizados podem referenciar entidades estáveis:
 
 ```text
-work_order
+consumer_request
 ├── organization_id
 ├── product_id
 ├── environment_id
@@ -603,7 +614,7 @@ work_order
 | Migrations não reproduzíveis | Ambientes divergentes | Reset contínuo, smoke e runbook de restore |
 | Context Pack alucinado | Implementação incorreta | Citações, pack extrativo e testes contra corpus |
 | Duplicação por produto | Divergência operacional | SDK/adapters finos e desativação K12-K13 |
-| Excesso de arquitetura inicial | Atraso do RedScale | Estrutura simples, escopo v1 e gates mensuráveis |
+| Excesso de arquitetura inicial | Atraso de consumidores | Estrutura simples, escopo v1 e gates mensuráveis |
 
 ---
 
@@ -641,7 +652,7 @@ Os thresholds de release devem ser definidos após o primeiro baseline real, evi
 
 ## 17. Resultado esperado
 
-Ao concluir este PRD, a Correnth terá uma única plataforma de contexto e memória capaz de servir RedScale, RedRise e futuros produtos sem replicação de infraestrutura.
+Ao concluir este PRD, a Correnth terá uma única plataforma de contexto e memória capaz de servir RedRise, RedRose, Findfee, ADGency, Gauss e futuros consumidores sem replicação de infraestrutura.
 
 ```text
 Uma CML
@@ -650,7 +661,7 @@ Uma CML
 → consumidores com menor privilégio
 → contexto citado e auditável
 → recuperação segura de falhas
-→ fundação estável para Work Orders
+→ fundação estável para consumidores autorizados
 ```
 
-Somente então o RedScale deverá iniciar o Work Order Data Model.
+Todo consumidor deve integrar a CML por API/SDK versionada e sem acesso direto a tabelas ou credenciais internas da CML.
