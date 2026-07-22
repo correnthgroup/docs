@@ -1,13 +1,18 @@
-# Graph Report - 00_docs  (2026-07-21)
+# Graph Report - 00_docs  (2026-07-22)
 
 ## Corpus Check
-- 110 files · ~101,638 words
+- 111 files · ~102,121 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1368 nodes · 1070 edges · 318 communities (116 shown, 202 thin omitted)
+- 1342 nodes · 1075 edges · 287 communities (117 shown, 170 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `63b6e2d1`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - Application Architecture
@@ -16,7 +21,6 @@
 - AI Engineer — roadmap de referência
 - DevOps / SRE Roadmap — referência enriquecida
 - BI Analyst — roadmap de referência
-- Software Architect Roadmap - Checklist (2026)
 - Componentes
 - PRD-CML-001 - Correnth Context Memory Platform
 - UX Design Roadmap - Checklist (2026)
@@ -145,40 +149,15 @@
 - Shared Context Memory
 - Supabase Platform
 - AGENTS.md — Regras de trabalho para D:\00docs
-- graphify reference: add a URL and watch a folder
-- graphify reference: extra exports and benchmark
-- graphify reference: extraction subagent prompt (compact)
-- graphify reference: GitHub clone and cross-repo merge
-- graphify reference: commit hook and native CLAUDE.md integration
-- graphify reference: query, path, explain
-- graphify reference: transcribe video and audio
-- graphify reference: incremental update and cluster-only
-- /graphify
-- Correnth Current Direction
-- Correnth Ecosystem Portfolio and Operating Model v1
-- Correnth — Padrão de UI e Stack Técnica v1
-- Shared Context Memory Platform
 - Graphify — Recomendação de Stack Local para D:\00docs
-- CML Consumer Quickstart
-- PRD-CML-001 Execution Tracker
-- CML Glossary
-- PRD-CML-001 - Correnth Context Memory Platform
-- CML-L10 Readiness Report
-- CML Source of Truth Policy
-- shadcn/ui - Guia Completo de Componentes
 - AI and Data Scientist Roadmap — roadmap de referência
 - Android Developer — roadmap de referência
-- Backend Developer Roadmap - Checklist (2026)
 - Blockchain Developer — roadmap de referência
 - Cyber Security Expert — roadmap de referência
 - Data Analyst Roadmap — roadmap de referência
 - Data Engineer Roadmap — roadmap de referência
-- UX Design Roadmap - Checklist (2026)
 - Developer Relations — roadmap de referência
 - devsecops — roadmap de referência
-- Engineering Manager Roadmap — referência enriquecida
-- Forward Deployed Engineer Roadmap — referência enriquecida
-- Frontend Developer Roadmap - Checklist (2026)
 - Full Stack Developer — roadmap de referência
 - Game Developer — roadmap de referência
 - iOS Developer — roadmap de referência
@@ -186,11 +165,8 @@
 - MLOps Roadmap — roadmap de referência
 - network engineer — roadmap de referência
 - PostgreSQL DBA — roadmap de referência
-- Product Manager Roadmap — referência enriquecida
-- QA Engineer Roadmap — referência enriquecida
 - Server Side Game Developer — roadmap de referência
 - Technical Writer — roadmap de referência
-- AI Agents Roadmap — referência enriquecida
 - ai product builder — roadmap de referência
 - AI Red Teaming — roadmap de referência
 - Angular Developer — roadmap de referência
@@ -205,7 +181,6 @@
 - C++ Developer Roadmap — roadmap de referência
 - css — roadmap de referência
 - Data Structures & Algorithms — roadmap de referência
-- Design System Roadmap - Checklist (2026)
 - django — roadmap de referência
 - Docker Roadmap — roadmap de referência
 - elasticsearch — roadmap de referência
@@ -241,7 +216,6 @@
 - Spring Boot Developer — roadmap de referência
 - SQL Roadmap — roadmap de referência
 - swift ui — roadmap de referência
-- System Design Roadmap - Checklist (2026)
 - Terraform Roadmap — roadmap de referência
 - TypeScript — roadmap de referência
 - vibe coding — roadmap de referência
@@ -347,7 +321,11 @@
 ## Import Cycles
 - None detected.
 
-## Communities (318 total, 202 thin omitted)
+## Communities (287 total, 170 thin omitted)
+
+### Community 4 - "DevOps / SRE Roadmap — referência enriquecida"
+Cohesion: 0.40
+Nodes (4): Decisão, Identificadores portáteis, Organização e idioma oficial dos agentes Gauss v1, Organização vigente
 
 ### Community 7 - "Componentes"
 Cohesion: 0.03
@@ -418,8 +396,8 @@ Cohesion: 0.15
 Nodes (12): Alternativas rejeitadas, Consequências, Contexto, Decisão, Hierarquia de autoridade, Manter a CML dentro de um produto consumidor, Negativas, Política do corpus global (+4 more)
 
 ### Community 24 - "Correnth Ecosystem Portfolio and Operating Model v1"
-Cohesion: 0.20
-Nodes (9): 1. Estrutura do grupo, 2. Portfólio, 3. Fronteiras obrigatórias, 4. Estratégia de adoção, 5. Operação com agentes, 6. Contexto e memória compartilhados, 7. Princípios de construção, 8. Decisões pendentes (+1 more)
+Cohesion: 0.18
+Nodes (10): 1. Estrutura do grupo, 2. Portfólio, 3. Fronteiras obrigatórias, 4. Estratégia de adoção, 5. Operação com agentes, 6. Contexto e memória compartilhados, 7. Princípios de construção, 8. Decisões pendentes (+2 more)
 
 ### Community 25 - "graphify reference: extra exports and benchmark"
 Cohesion: 0.22
@@ -814,24 +792,24 @@ Cohesion: 0.67
 Nodes (3): 8.1 Client-Side, 8.2 File-Based (SSR/SSG), 8. Roteamento
 
 ## Knowledge Gaps
-- **1162 isolated node(s):** `Usage`, `What graphify is for`, `Step 0 - GitHub repos and multi-path merge (only if a URL or several paths)`, `Step 1 - Ensure graphify is installed`, `Step 2 - Detect files` (+1157 more)
+- **1133 isolated node(s):** `Usage`, `What graphify is for`, `Step 0 - GitHub repos and multi-path merge (only if a URL or several paths)`, `Step 1 - Ensure graphify is installed`, `Step 2 - Detect files` (+1128 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **202 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **170 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Componentes` connect `Componentes` to `shadcn/ui - Guia Completo de Componentes`?**
-  _High betweenness centrality (0.007) - this node is a cross-community bridge._
+  _High betweenness centrality (0.008) - this node is a cross-community bridge._
 - **Why does `shadcn/ui - Guia Completo de Componentes` connect `shadcn/ui - Guia Completo de Componentes` to `UX Design Roadmap - Checklist (2026)`, `Componentes`?**
-  _High betweenness centrality (0.006) - this node is a cross-community bridge._
-- **Why does `Frontend Developer Roadmap - Checklist (2026)` connect `Frontend Developer Roadmap - Checklist (2026)` to `1. Fundamentos`, `10. Testes`, `17B. Ferramentas Python (via uv)`, `4. Metodologias CSS / UI Libraries`, `5. Gerenciamento de Estado`, `13. Deploy & Hospedagem`, `14. Performance & Otimização`, `2. Controle de Versão`, `3. Framework Frontend (Escolher 1)`, `6. Formulários & Validação`, `8. Roteamento`?**
-  _High betweenness centrality (0.003) - this node is a cross-community bridge._
+  _High betweenness centrality (0.008) - this node is a cross-community bridge._
 - **What connects `Usage`, `What graphify is for`, `Step 0 - GitHub repos and multi-path merge (only if a URL or several paths)` to the rest of the system?**
-  _1162 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1133 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Componentes` be split into smaller, more focused modules?**
   _Cohesion score 0.03333333333333333 - nodes in this community are weakly interconnected._
 - **Should `PRD-CML-001 - Correnth Context Memory Platform` be split into smaller, more focused modules?**
   _Cohesion score 0.041666666666666664 - nodes in this community are weakly interconnected._
 - **Should `UX Design Roadmap - Checklist (2026)` be split into smaller, more focused modules?**
   _Cohesion score 0.058823529411764705 - nodes in this community are weakly interconnected._
+- **Should `Backend Developer Roadmap - Checklist (2026)` be split into smaller, more focused modules?**
+  _Cohesion score 0.06451612903225806 - nodes in this community are weakly interconnected._
