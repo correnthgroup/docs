@@ -1,6 +1,7 @@
 # Correnth Ecosystem Portfolio and Operating Model v1
 
-- Status: Vigente
+- Status: Parcialmente superseded em 2026-07-24
+- Superseded scope: todas as seções que tratam Gauss como unidade ativa; ver `REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md`
 - Data: 2026-07-14
 - Owner: Grupo Correnth
 - Escopo: portfólio, fronteiras de produto e modelo operacional

@@ -1,5 +1,7 @@
 # Organização e idioma oficial dos agentes Gauss v1
 
+> Status: Superseded em 2026-07-24 por `REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md`. Preservado somente como histórico.
+
 - Status: Vigente
 - Data: 2026-07-22
 - Owner: Grupo Correnth / Board humano
