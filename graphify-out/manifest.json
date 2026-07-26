@@ -2,17 +2,12 @@
   ".codex/hooks.json": {
     "mtime": 1784009074.5041466,
     "ast_hash": "c5517fc2cb67647ee993c427b36d3005",
-    "semantic_hash": ""
+    "semantic_hash": "c5517fc2cb67647ee993c427b36d3005"
   },
   "roadmaps_reference/tools/Enrich-RoadmapReferences.ps1": {
     "mtime": 1784087735.083651,
     "ast_hash": "6c5ab6920ceef28e1e5ebdc15b22c0e6",
-    "semantic_hash": ""
-  },
-  "tools/build_deterministic_semantic_graph.py": {
-    "mtime": 1784729917.7437587,
-    "ast_hash": "f85baff448d3b9a0c376ecfdca41c92f",
-    "semantic_hash": ""
+    "semantic_hash": "6c5ab6920ceef28e1e5ebdc15b22c0e6"
   },
   ".codex/skills/graphify/SKILL.md": {
     "mtime": 1784009074.4939528,
@@ -97,41 +92,6 @@
   "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md": {
     "mtime": 1784940573.9177244,
     "ast_hash": "180cd2d463f11183527acf12f0a97f13",
-    "semantic_hash": ""
-  },
-  "decisions/SHARED_CONTEXT_MEMORY_PLATFORM.md": {
-    "mtime": 1784729917.739686,
-    "ast_hash": "592e47bf749caa1d1a8f3c7711ab8856",
-    "semantic_hash": ""
-  },
-  "platforms/cml/CONSUMER_QUICKSTART.md": {
-    "mtime": 1784940359.8021655,
-    "ast_hash": "ac1ed86bfae41be264d8b0a705afc2c5",
-    "semantic_hash": ""
-  },
-  "platforms/cml/EXECUTION_TRACKER.md": {
-    "mtime": 1784010713.986034,
-    "ast_hash": "a9b5628fd1e24424b3415eb0f797eec6",
-    "semantic_hash": ""
-  },
-  "platforms/cml/GLOSSARY.md": {
-    "mtime": 1784010652.313799,
-    "ast_hash": "d4023f92d47f07ccd522b6aeb6aa57f3",
-    "semantic_hash": ""
-  },
-  "platforms/cml/PRD-CML-001_CONTEXT_MEMORY_PLATFORM.md": {
-    "mtime": 1784729917.7406895,
-    "ast_hash": "ce6976f39020fe842a0ab669d2de505c",
-    "semantic_hash": ""
-  },
-  "platforms/cml/READINESS-CML-L10.md": {
-    "mtime": 1784940573.9177244,
-    "ast_hash": "af143ea740b6838d937a0c996b4402f5",
-    "semantic_hash": ""
-  },
-  "platforms/cml/SOURCE_OF_TRUTH.md": {
-    "mtime": 1785026753.3314462,
-    "ast_hash": "f1424a95e898c452aa821bebe7062eb8",
     "semantic_hash": ""
   },
   "roadmaps_reference/Role-based Roadmaps/ROADMAP_AI_DATA_SCIENTIST.md": {
@@ -568,5 +528,15 @@
     "mtime": 1785026712.7091124,
     "ast_hash": "aec271941395117d937f0ff1df5eeab6",
     "semantic_hash": ""
+  },
+  "tools/Install-CorrenthSemanticPushGuard.ps1": {
+    "mtime": 1785048485.675504,
+    "ast_hash": "1ded4aaae58fe0a7edee9a949a7d7569",
+    "semantic_hash": "1ded4aaae58fe0a7edee9a949a7d7569"
+  },
+  "tools/Invoke-CorrenthSemanticPush.ps1": {
+    "mtime": 1785048673.410022,
+    "ast_hash": "771182edac57d122cde246f173c2a714",
+    "semantic_hash": "771182edac57d122cde246f173c2a714"
   }
 }
