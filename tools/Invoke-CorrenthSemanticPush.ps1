@@ -38,8 +38,16 @@ try {
     throw "MiniMax key is unavailable in the Personal Vault."
   }
   $miniMaxKey = [System.IO.File]::ReadAllText($vaultKeyPath).Trim()
+  if ($miniMaxKey -match '^[^:\r\n]+:\s*(\S+)$') {
+    # The Vault may label the one-line value (for example, "MiniMax API key:").
+    # Pass only the credential to the child process and never write it to output.
+    $miniMaxKey = $Matches[1]
+  }
   if ([string]::IsNullOrWhiteSpace($miniMaxKey)) {
     throw "MiniMax key file is empty."
+  }
+  if ($miniMaxKey -match '\s') {
+    throw "MiniMax key file must contain one credential value."
   }
 
   $sourceRevision = (git rev-parse HEAD).Trim()
