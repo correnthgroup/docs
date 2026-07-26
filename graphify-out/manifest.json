@@ -10,9 +10,9 @@
     "semantic_hash": "6c5ab6920ceef28e1e5ebdc15b22c0e6"
   },
   "tools/Install-CorrenthSemanticPushGuard.ps1": {
-    "mtime": 1785095902.589605,
-    "ast_hash": "1ded4aaae58fe0a7edee9a949a7d7569",
-    "semantic_hash": "1ded4aaae58fe0a7edee9a949a7d7569"
+    "mtime": 1785102609.5768025,
+    "ast_hash": "92a1a01405d4f1320957bd65ca5ad5b5",
+    "semantic_hash": "92a1a01405d4f1320957bd65ca5ad5b5"
   },
   "tools/Invoke-CorrenthSemanticPush.ps1": {
     "mtime": 1785095902.6033504,
@@ -110,12 +110,12 @@
     "semantic_hash": "4c7447efcfc567cbe9cf806d5f6834b2"
   },
   "platforms/GRAPHIFY_SEMANTIC_MEMORY.md": {
-    "mtime": 1785095902.5171826,
-    "ast_hash": "443a79d52f69301deec3127bdd3f538e",
-    "semantic_hash": "443a79d52f69301deec3127bdd3f538e"
+    "mtime": 1785102609.578017,
+    "ast_hash": "5cc8a0a826c0a0b86cc210f6c94a08e3",
+    "semantic_hash": "5cc8a0a826c0a0b86cc210f6c94a08e3"
   },
   "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md": {
-    "mtime": 1785097420.2012277,
+    "mtime": 1785098664.5487874,
     "ast_hash": "478634420ac2aa02f2b8d5aad69a7235",
     "semantic_hash": "478634420ac2aa02f2b8d5aad69a7235"
   },

@@ -42,8 +42,8 @@
     "1": [
       "developer_roadmap_repo",
       "roadmaps_reference_skill_based_roadmaps_roadmap_terraform",
-      "roadmaps_reference_skill_based_roadmaps_roadmap_typescript",
       "roadmaps_reference_skill_based_roadmaps_roadmap_vibe_coding",
+      "roadmaps_reference_skill_based_roadmaps_roadmap_vue",
       "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress",
       "terraform_cicd",
       "terraform_fundamentals",
@@ -52,15 +52,14 @@
       "terraform_security",
       "terraform_state",
       "terraform_testing",
-      "typescript_classes",
-      "typescript_functions",
-      "typescript_generics",
-      "typescript_interfaces",
-      "typescript_modules",
-      "typescript_types",
       "vibe_coding_ai_tools",
       "vibe_coding_practices",
       "vibe_coding_workflow",
+      "vue_api",
+      "vue_components",
+      "vue_routing",
+      "vue_state",
+      "vue_testing",
       "wordpress_hooks",
       "wordpress_performance",
       "wordpress_plugins",
@@ -125,7 +124,6 @@
       "graphify_stack_recommendation_md",
       "graphify_transcribe",
       "graphify_update",
-      "platforms_graphify_semantic_memory",
       "redrise_pr_rollout_audit",
       "skill_reference_extraction_spec",
       "skill_reference_query"
@@ -161,6 +159,19 @@
       "roadmaps_reference_skill_based_roadmaps_roadmap_angular"
     ],
     "7": [
+      "d_00_docs_tools_invoke_correnth_semantic_push",
+      "d_00_docs_tools_invoke_correnth_semantic_push_mini_max_backend",
+      "d_00_docs_tools_invoke_correnth_semantic_push_personal_vault",
+      "platforms_graphify_semantic_memory_canonical_memory",
+      "platforms_graphify_semantic_memory_git_lfs",
+      "platforms_graphify_semantic_memory_github_mcp",
+      "platforms_graphify_semantic_memory_graph_json",
+      "platforms_graphify_semantic_memory_graphify",
+      "platforms_graphify_semantic_memory_local_wrapper_gate",
+      "platforms_graphify_semantic_memory_policy",
+      "platforms_graphify_semantic_memory_pre_push_guard"
+    ],
+    "8": [
       "correnth_ui",
       "decision_correnth_ui_tech_stack",
       "nextjs",
@@ -172,7 +183,16 @@
       "supabase",
       "tailwind_css"
     ],
-    "8": [
+    "9": [
+      "roadmaps_reference_skill_based_roadmaps_roadmap_typescript",
+      "typescript_classes",
+      "typescript_functions",
+      "typescript_generics",
+      "typescript_interfaces",
+      "typescript_modules",
+      "typescript_types"
+    ],
+    "10": [
       "roadmaps_reference_tools_enrich_roadmapreferences",
       "roadmaps_reference_tools_enrich_roadmapreferences_add_uniqueitem",
       "roadmaps_reference_tools_enrich_roadmapreferences_convertto_plaintext",
@@ -181,15 +201,7 @@
       "roadmaps_reference_tools_enrich_roadmapreferences_get_roadmaptopics",
       "roadmaps_reference_tools_enrich_roadmapreferences_get_topicfocus"
     ],
-    "9": [
-      "roadmaps_reference_skill_based_roadmaps_roadmap_vue",
-      "vue_api",
-      "vue_components",
-      "vue_routing",
-      "vue_state",
-      "vue_testing"
-    ],
-    "10": [
+    "11": [
       "tools_invoke_correnthsemanticpush",
       "tools_invoke_correnthsemanticpush_get_artifacthash",
       "tools_invoke_correnthsemanticpush_get_graphsnapshot",
@@ -197,60 +209,60 @@
       "tools_invoke_correnthsemanticpush_test_canonicalartifacts",
       "tools_invoke_correnthsemanticpush_write_provenance"
     ],
-    "11": [
+    "12": [
       "roadmaps_reference_role_based_roadmaps_roadmap_bi_analyst",
       "roadmaps_reference_role_based_roadmaps_roadmap_data_analyst",
       "roadmaps_reference_role_based_roadmaps_roadmap_data_engineer",
       "roadmaps_reference_role_based_roadmaps_roadmap_machine_learning",
       "roadmaps_reference_role_based_roadmaps_roadmap_mlops"
     ],
-    "12": [
+    "13": [
       "roadmaps_reference_role_based_roadmaps_roadmap_blockchain",
       "roadmaps_reference_role_based_roadmaps_roadmap_cyber_security"
     ],
-    "13": [
+    "14": [
       "roadmaps_reference_role_based_roadmaps_roadmap_game_developer",
       "roadmaps_reference_role_based_roadmaps_roadmap_server_side_game_developer"
     ],
-    "14": [
+    "15": [
       "dotnet_platform"
     ],
-    "15": [
+    "16": [
       "repositories_md"
     ],
-    "16": [
+    "17": [
       "roadmaps_reference_role_based_roadmaps_roadmap_design_ux"
     ],
-    "17": [
+    "18": [
       "roadmaps_reference_role_based_roadmaps_roadmap_devrel"
     ],
-    "18": [
+    "19": [
       "roadmaps_reference_role_based_roadmaps_roadmap_network_engineer"
     ],
-    "19": [
+    "20": [
       "roadmaps_reference_role_based_roadmaps_roadmap_postgresql_dba"
     ],
-    "20": [
+    "21": [
       "roadmaps_reference_role_based_roadmaps_roadmap_technical_writer"
     ],
-    "21": [
+    "22": [
       "tools_install_correnthsemanticpushguard"
     ]
   },
   "cohesion": {
     "0": 0.10510510510510511,
-    "1": 0.07692307692307693,
+    "1": 0.08,
     "2": 0.10333333333333333,
     "3": 0.1437908496732026,
-    "4": 0.14285714285714285,
+    "4": 0.15384615384615385,
     "5": 0.20512820512820512,
     "6": 0.16666666666666666,
-    "7": 0.2222222222222222,
-    "8": 0.42857142857142855,
-    "9": 0.3333333333333333,
-    "10": 0.5333333333333333,
-    "11": 0.6,
-    "12": 1.0,
+    "7": 0.21818181818181817,
+    "8": 0.2222222222222222,
+    "9": 0.2857142857142857,
+    "10": 0.42857142857142855,
+    "11": 0.5333333333333333,
+    "12": 0.6,
     "13": 1.0,
     "14": 1.0,
     "15": 1.0,
@@ -259,7 +271,8 @@
     "18": 1.0,
     "19": 1.0,
     "20": 1.0,
-    "21": 1.0
+    "21": 1.0,
+    "22": 1.0
   },
   "gods": [
     {
@@ -280,7 +293,7 @@
     {
       "id": "graphify",
       "label": "Graphify",
-      "degree": 15
+      "degree": 13
     },
     {
       "id": "correnth_group",
@@ -293,23 +306,23 @@
       "degree": 11
     },
     {
-      "id": "redrise",
-      "label": "RedRise",
-      "degree": 8
-    },
-    {
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_terraform",
       "label": "Terraform Roadmap",
       "degree": 8
     },
     {
-      "id": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript",
-      "label": "TypeScript Roadmap",
+      "id": "redrise",
+      "label": "RedRise",
       "degree": 7
     },
     {
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_api_design",
       "label": "API Design Roadmap",
+      "degree": 7
+    },
+    {
+      "id": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript",
+      "label": "TypeScript Roadmap",
       "degree": 7
     }
   ],
@@ -373,8 +386,8 @@
   "questions": [
     {
       "type": "bridge_node",
-      "question": "Why does `Developer Roadmap Repository` connect `Full Stack Developer Roadmaps` to `Frontend UI Stack`?",
-      "why": "High betweenness centrality (0.116) - this node is a cross-community bridge."
+      "question": "Why does `Developer Roadmap Repository` connect `Developer Roadmap Repository` to `Correnth UI and Tech Stack Standard`?",
+      "why": "High betweenness centrality (0.103) - this node is a cross-community bridge."
     },
     {
       "type": "verify_inferred",
@@ -383,27 +396,27 @@
     },
     {
       "type": "isolated_nodes",
-      "question": "What connects `Graphify Skill for Codex`, `Graphify Extraction Spec Reference`, `Graphify Query Reference` to the rest of the system?",
-      "why": "93 weakly-connected nodes found - possible documentation gaps or missing edges."
+      "question": "What connects `Graphify Skill for Codex`, `Graphify Add Watch Reference`, `Graphify Exports Reference` to the rest of the system?",
+      "why": "95 weakly-connected nodes found - possible documentation gaps or missing edges."
     },
     {
       "type": "low_cohesion",
-      "question": "Should `Developer Roadmap Overview` be split into smaller, more focused modules?",
+      "question": "Should `developer-roadmap GitHub Repository` be split into smaller, more focused modules?",
       "why": "Cohesion score 0.10510510510510511 - nodes in this community are weakly interconnected."
     },
     {
       "type": "low_cohesion",
-      "question": "Should `Terraform & IaC Roadmap` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.07692307692307693 - nodes in this community are weakly interconnected."
+      "question": "Should `Terraform Roadmap` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.08 - nodes in this community are weakly interconnected."
     },
     {
       "type": "low_cohesion",
-      "question": "Should `Full Stack Developer Roadmaps` be split into smaller, more focused modules?",
+      "question": "Should `Developer Roadmap Repository` be split into smaller, more focused modules?",
       "why": "Cohesion score 0.10333333333333333 - nodes in this community are weakly interconnected."
     },
     {
       "type": "low_cohesion",
-      "question": "Should `Correnth Group Ecosystem` be split into smaller, more focused modules?",
+      "question": "Should `Correnth Group` be split into smaller, more focused modules?",
       "why": "Cohesion score 0.1437908496732026 - nodes in this community are weakly interconnected."
     }
   ]
