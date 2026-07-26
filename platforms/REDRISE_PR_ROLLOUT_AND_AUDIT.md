@@ -82,15 +82,10 @@ remota enquanto não forem publicados pelo wrapper Graphify e aprovados no CI.
 
 1. Publicar a CI nativa do fork na PR #10 e verificar que `review`, quality,
    security, build e testes executam sem Commitperclip.
-2. Remover o resíduo `C:\Program Files\Correnth\CML MCP` apenas do PATH de
-   máquina em sessão Windows elevada; reiniciar Codex e terminais e validar:
-
-   ```powershell
-   (Get-Command cml -ErrorAction SilentlyContinue) -eq $null
-   $env:Path -notlike '*CML MCP*'
-   -not (Test-Path 'C:\Program Files\Correnth\CML MCP')
-   ```
-
+2. Remover do PATH de máquina o resíduo do provider legado de memória em
+   sessão Windows elevada, reiniciar Codex e terminais e executar as três
+   validações do runbook histórico
+   [`archived/MEMORY_PROVIDER_REMOVAL.md`](../archived/MEMORY_PROVIDER_REMOVAL.md).
    Os três resultados esperados são `True`.
 3. Antes de qualquer push, inclusive GitHub MCP/CLI, executar:
 
@@ -203,12 +198,13 @@ Registrar evidência reproduzível de liveness/readiness, banco vazio/upgrade,
 signup sem login automático, sessão, duas empresas, XLSX de ponta a ponta,
 Codex/Claude/Gemini no container, Stripe test mode, restart e backup/restore.
 
-### Segurança, Cofre e retirada CML
+### Segurança, Cofre e retirada do provider legado
 
 - Escanear arquivos rastreados e histórico Git por segredos.
 - Confirmar que conteúdo do Cofre não aparece em Git, Graphify, logs ou Actions.
 - Permitir somente referências documentais ao caminho do Cofre.
-- Exigir zero referências CML ativas fora de `archived` e `_legacy`.
+- Exigir zero referências ativas ao provider legado fora de `archived` e
+  `_legacy`.
 - Confirmar ausência de provider, comando, diretório, arquivo no Cofre e PATH.
 - Validar Stripe sobre corpo bruto e autorização por empresa.
 
