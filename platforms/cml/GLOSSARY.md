@@ -5,7 +5,7 @@ Vocabulário canônico para documentos, contratos, banco e APIs da Context Memor
 | Termo | Definição | Não confundir com |
 |---|---|---|
 | Organization | Limite principal de propriedade e isolamento de dados | Workspace ou slug de rota |
-| Product | Unidade do ecossistema registrada, como RedScale ou RedRise | Repositório ou environment |
+| Product | Unidade do ecossistema registrada, como RedRise ou RedRose | Repositório ou environment |
 | Environment | Contexto de execução: development, preview, staging ou production | Organization |
 | Consumer | Aplicação, agente, operador ou integração autenticada | Usuário final genérico |
 | Capability | Permissão explícita concedida a um consumer | Role textual sem enforcement |
@@ -16,6 +16,7 @@ Vocabulário canônico para documentos, contratos, banco e APIs da Context Memor
 | Decision | Decisão registrada com estado, rationale e evidências | Inferência de modelo |
 | Context Query | Pedido auditável de recuperação de contexto | Busca irrestrita no banco |
 | Context Pack | Snapshot compacto, citado e imutável preparado para um objetivo | Prompt livre ou conjunto bruto de chunks |
+| Graph Artifact | Arquivo semântico gerado pelo Graphify, como `graph.json`, relatório ou subgrafo | Fonte canônica sem classificação |
 | Retrieval | Processo autorizado de localizar e ordenar contexto | Acesso direto a tabelas |
 | Adapter | Integração fina de um consumidor com contratos CML | Cópia local da CML |
 | Workspace | Conceito de produto permitido somente quando modelado pelo próprio consumidor | Organization canônica da CML |

@@ -1,0 +1,11 @@
+Prompt p/ Intake na 'Ghauss':
+Na companhia "Ghauss", prepare a PR "<nome, número ou URL>" para o app "<app>"
+no diretório "<repositório>" e path "<escopo>". Resolva e siga a fonte operacional
+desse path para criar ou atualizar a Work Order e as tasks necessárias, selecionar
+agents e skills existentes e alinhar a execução ao projeto/goal aplicável.
+
+Proponha routines apenas se a recorrência estiver declarada na fonte; não ative
+schedules e não execute ações R3 sem HITL.
+
+Iniciar Paperclip
+powershell -ExecutionPolicy Bypass -File D:\02_labs\start-paperclip.ps1

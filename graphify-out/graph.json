@@ -942,7 +942,7 @@
       "label": "Autoridade",
       "file_type": "document",
       "source_file": "CURRENT_DIRECTION.md",
-      "source_location": "L15",
+      "source_location": "L16",
       "_origin": "ast",
       "id": "current_direction_autoridade",
       "community": 112,
@@ -1115,10 +1115,21 @@
       "norm_label": "5. operacao com agentes"
     },
     {
-      "label": "6. Contexto e mem\u00f3ria compartilhados",
+      "label": "Organiza\u00e7\u00e3o vigente da Gauss",
       "file_type": "document",
       "source_file": "decisions/CORRENTH_ECOSYSTEM_PORTFOLIO_AND_OPERATING_MODEL_v1.md",
       "source_location": "L80",
+      "_origin": "ast",
+      "id": "decisions_correnth_ecosystem_portfolio_and_operating_model_v1_organiza\u00e7\u00e3o_vigente_da_gauss",
+      "community": 24,
+      "community_name": "Correnth Ecosystem Portfolio and Operating Model v1",
+      "norm_label": "organizacao vigente da gauss"
+    },
+    {
+      "label": "6. Contexto e mem\u00f3ria compartilhados",
+      "file_type": "document",
+      "source_file": "decisions/CORRENTH_ECOSYSTEM_PORTFOLIO_AND_OPERATING_MODEL_v1.md",
+      "source_location": "L93",
       "_origin": "ast",
       "id": "decisions_correnth_ecosystem_portfolio_and_operating_model_v1_6_contexto_e_mem\u00f3ria_compartilhados",
       "community": 24,
@@ -1129,7 +1140,7 @@
       "label": "7. Princ\u00edpios de constru\u00e7\u00e3o",
       "file_type": "document",
       "source_file": "decisions/CORRENTH_ECOSYSTEM_PORTFOLIO_AND_OPERATING_MODEL_v1.md",
-      "source_location": "L96",
+      "source_location": "L109",
       "_origin": "ast",
       "id": "decisions_correnth_ecosystem_portfolio_and_operating_model_v1_7_princ\u00edpios_de_constru\u00e7\u00e3o",
       "community": 24,
@@ -1140,7 +1151,7 @@
       "label": "8. Decis\u00f5es pendentes",
       "file_type": "document",
       "source_file": "decisions/CORRENTH_ECOSYSTEM_PORTFOLIO_AND_OPERATING_MODEL_v1.md",
-      "source_location": "L105",
+      "source_location": "L118",
       "_origin": "ast",
       "id": "decisions_correnth_ecosystem_portfolio_and_operating_model_v1_8_decis\u00f5es_pendentes",
       "community": 24,
@@ -1454,6 +1465,61 @@
       "community": 12,
       "community_name": "Correnth \u2014 Padr\u00e3o de UI e Stack T\u00e9cnica v1",
       "norm_label": "10. revisao"
+    },
+    {
+      "label": "GAUSS_AGENT_ORGANIZATION_AND_LANGUAGE_v1.md",
+      "file_type": "document",
+      "source_file": "decisions/GAUSS_AGENT_ORGANIZATION_AND_LANGUAGE_v1.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "decisions_gauss_agent_organization_and_language_v1",
+      "community": 4,
+      "community_name": "DevOps / SRE Roadmap \u2014 refer\u00eancia enriquecida",
+      "norm_label": "gauss_agent_organization_and_language_v1.md"
+    },
+    {
+      "label": "Organiza\u00e7\u00e3o e idioma oficial dos agentes Gauss v1",
+      "file_type": "document",
+      "source_file": "decisions/GAUSS_AGENT_ORGANIZATION_AND_LANGUAGE_v1.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "decisions_gauss_agent_organization_and_language_v1_organiza\u00e7\u00e3o_e_idioma_oficial_dos_agentes_gauss_v1",
+      "community": 4,
+      "community_name": "DevOps / SRE Roadmap \u2014 refer\u00eancia enriquecida",
+      "norm_label": "organizacao e idioma oficial dos agentes gauss v1"
+    },
+    {
+      "label": "Decis\u00e3o",
+      "file_type": "document",
+      "source_file": "decisions/GAUSS_AGENT_ORGANIZATION_AND_LANGUAGE_v1.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "decisions_gauss_agent_organization_and_language_v1_decis\u00e3o",
+      "community": 4,
+      "community_name": "DevOps / SRE Roadmap \u2014 refer\u00eancia enriquecida",
+      "norm_label": "decisao"
+    },
+    {
+      "label": "Organiza\u00e7\u00e3o vigente",
+      "file_type": "document",
+      "source_file": "decisions/GAUSS_AGENT_ORGANIZATION_AND_LANGUAGE_v1.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "decisions_gauss_agent_organization_and_language_v1_organiza\u00e7\u00e3o_vigente",
+      "community": 4,
+      "community_name": "DevOps / SRE Roadmap \u2014 refer\u00eancia enriquecida",
+      "norm_label": "organizacao vigente"
+    },
+    {
+      "label": "Identificadores port\u00e1teis",
+      "file_type": "document",
+      "source_file": "decisions/GAUSS_AGENT_ORGANIZATION_AND_LANGUAGE_v1.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "decisions_gauss_agent_organization_and_language_v1_identificadores_port\u00e1teis",
+      "community": 4,
+      "community_name": "DevOps / SRE Roadmap \u2014 refer\u00eancia enriquecida",
+      "norm_label": "identificadores portateis"
     },
     {
       "label": "SHARED_CONTEXT_MEMORY_PLATFORM.md",
@@ -12874,19 +12940,6 @@
       "norm_label": "dicas de producao (2026)"
     },
     {
-      "label": "graphify reference: add a URL and watch a folder",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": ".codex/skills/graphify/references/add-watch.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 259,
-      "community": 135,
-      "community_name": "graphify reference: add a URL and watch a folder",
-      "id": "doc:codex/skills/graphify/references/add-watch-md",
-      "norm_label": "graphify reference: add a url and watch a folder"
-    },
-    {
       "label": "Graphify",
       "file_type": "concept",
       "node_kind": "concept",
@@ -12895,8 +12948,8 @@
       "_origin": "deterministic-semantic",
       "community": 129,
       "community_name": "Graphify",
-      "id": "concept:graphify",
-      "norm_label": "graphify"
+      "norm_label": "graphify",
+      "id": "concept:graphify"
     },
     {
       "label": "AI Agents",
@@ -12907,21 +12960,8 @@
       "_origin": "deterministic-semantic",
       "community": 2,
       "community_name": "AI Agents",
-      "id": "concept:ai-agents",
-      "norm_label": "ai agents"
-    },
-    {
-      "label": "graphify reference: extra exports and benchmark",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": ".codex/skills/graphify/references/exports.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 340,
-      "community": 136,
-      "community_name": "graphify reference: extra exports and benchmark",
-      "id": "doc:codex/skills/graphify/references/exports-md",
-      "norm_label": "graphify reference: extra exports and benchmark"
+      "norm_label": "ai agents",
+      "id": "concept:ai-agents"
     },
     {
       "label": "Step 8 - Token reduction benchmark (only if totalwords 5000)",
@@ -12933,34 +12973,8 @@
       "_origin": "extracted-structure",
       "community": 239,
       "community_name": "Step 8 - Token reduction benchmark (only if totalwords 5000)",
-      "id": "section:codex/skills/graphify/references/exports-md:step-8-token-reduction-benchmark-only-if-totalwords-5000",
-      "norm_label": "step 8 - token reduction benchmark (only if totalwords 5000)"
-    },
-    {
-      "label": "graphify reference: extraction subagent prompt (compact)",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": ".codex/skills/graphify/references/extraction-spec.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 493,
-      "community": 137,
-      "community_name": "graphify reference: extraction subagent prompt (compact)",
-      "id": "doc:codex/skills/graphify/references/extraction-spec-md",
-      "norm_label": "graphify reference: extraction subagent prompt (compact)"
-    },
-    {
-      "label": "graphify reference: GitHub clone and cross-repo merge",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": ".codex/skills/graphify/references/github-and-merge.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 211,
-      "community": 138,
-      "community_name": "graphify reference: GitHub clone and cross-repo merge",
-      "id": "doc:codex/skills/graphify/references/github-and-merge-md",
-      "norm_label": "graphify reference: github clone and cross-repo merge"
+      "norm_label": "step 8 - token reduction benchmark (only if totalwords 5000)",
+      "id": "section:codex/skills/graphify/references/exports-md:step-8-token-reduction-benchmark-only-if-totalwords-5000"
     },
     {
       "label": "Use LOCALPATH as the target for all subsequent steps",
@@ -12972,8 +12986,8 @@
       "_origin": "extracted-structure",
       "community": 245,
       "community_name": "Use LOCALPATH as the target for all subsequent steps",
-      "id": "section:codex/skills/graphify/references/github-and-merge-md:use-localpath-as-the-target-for-all-subsequent-steps",
-      "norm_label": "use localpath as the target for all subsequent steps"
+      "norm_label": "use localpath as the target for all subsequent steps",
+      "id": "section:codex/skills/graphify/references/github-and-merge-md:use-localpath-as-the-target-for-all-subsequent-steps"
     },
     {
       "label": "Clone each repo, run the full pipeline on each, then merge",
@@ -12985,8 +12999,8 @@
       "_origin": "extracted-structure",
       "community": 241,
       "community_name": "Clone each repo, run the full pipeline on each, then merge",
-      "id": "section:codex/skills/graphify/references/github-and-merge-md:clone-each-repo-run-the-full-pipeline-on-each-then-merge",
-      "norm_label": "clone each repo, run the full pipeline on each, then merge"
+      "norm_label": "clone each repo, run the full pipeline on each, then merge",
+      "id": "section:codex/skills/graphify/references/github-and-merge-md:clone-each-repo-run-the-full-pipeline-on-each-then-merge"
     },
     {
       "label": "Run /graphify on each local path to produce their graph.json files",
@@ -12998,8 +13012,8 @@
       "_origin": "extracted-structure",
       "community": 242,
       "community_name": "Run /graphify on each local path to produce their graph.json files",
-      "id": "section:codex/skills/graphify/references/github-and-merge-md:run-/graphify-on-each-local-path-to-produce-their-graph-json-files",
-      "norm_label": "run /graphify on each local path to produce their graph.json files"
+      "norm_label": "run /graphify on each local path to produce their graph.json files",
+      "id": "section:codex/skills/graphify/references/github-and-merge-md:run-/graphify-on-each-local-path-to-produce-their-graph-json-files"
     },
     {
       "label": "Then merge:",
@@ -13011,8 +13025,8 @@
       "_origin": "extracted-structure",
       "community": 243,
       "community_name": "Then merge:",
-      "id": "section:codex/skills/graphify/references/github-and-merge-md:then-merge",
-      "norm_label": "then merge:"
+      "norm_label": "then merge:",
+      "id": "section:codex/skills/graphify/references/github-and-merge-md:then-merge"
     },
     {
       "label": "Add --backend gemini|kimi|openai|deepseek|claude-cli depending on which API key you have set",
@@ -13024,8 +13038,8 @@
       "_origin": "extracted-structure",
       "community": 240,
       "community_name": "Add --backend gemini|kimi|openai|deepseek|claude-cli depending on which API key you have set",
-      "id": "section:codex/skills/graphify/references/github-and-merge-md:add-backend-gemini-kimi-openai-deepseek-claude-cli-depending-on-which-api-key-you-have-set",
-      "norm_label": "add --backend gemini|kimi|openai|deepseek|claude-cli depending on which api key you have set"
+      "norm_label": "add --backend gemini|kimi|openai|deepseek|claude-cli depending on which api key you have set",
+      "id": "section:codex/skills/graphify/references/github-and-merge-md:add-backend-gemini-kimi-openai-deepseek-claude-cli-depending-on-which-api-key-you-have-set"
     },
     {
       "label": "Then merge at the project root:",
@@ -13037,8 +13051,8 @@
       "_origin": "extracted-structure",
       "community": 244,
       "community_name": "Then merge at the project root:",
-      "id": "section:codex/skills/graphify/references/github-and-merge-md:then-merge-at-the-project-root",
-      "norm_label": "then merge at the project root:"
+      "norm_label": "then merge at the project root:",
+      "id": "section:codex/skills/graphify/references/github-and-merge-md:then-merge-at-the-project-root"
     },
     {
       "label": "Supabase Platform",
@@ -13049,34 +13063,8 @@
       "_origin": "deterministic-semantic",
       "community": 133,
       "community_name": "Supabase Platform",
-      "id": "concept:supabase-platform",
-      "norm_label": "supabase platform"
-    },
-    {
-      "label": "graphify reference: commit hook and native CLAUDE.md integration",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": ".codex/skills/graphify/references/hooks.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 138,
-      "community": 139,
-      "community_name": "graphify reference: commit hook and native CLAUDE.md integration",
-      "id": "doc:codex/skills/graphify/references/hooks-md",
-      "norm_label": "graphify reference: commit hook and native claude.md integration"
-    },
-    {
-      "label": "graphify reference: query, path, explain",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": ".codex/skills/graphify/references/query.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 1348,
-      "community": 140,
-      "community_name": "graphify reference: query, path, explain",
-      "id": "doc:codex/skills/graphify/references/query-md",
-      "norm_label": "graphify reference: query, path, explain"
+      "norm_label": "supabase platform",
+      "id": "concept:supabase-platform"
     },
     {
       "label": "or: graphify query \"QUESTION\" --dfs --budget 3000",
@@ -13088,8 +13076,8 @@
       "_origin": "extracted-structure",
       "community": 248,
       "community_name": "or: graphify query \"QUESTION\" --dfs --budget 3000",
-      "id": "section:codex/skills/graphify/references/query-md:or-graphify-query-question-dfs-budget-3000",
-      "norm_label": "or: graphify query \"question\" --dfs --budget 3000"
+      "norm_label": "or: graphify query \"question\" --dfs --budget 3000",
+      "id": "section:codex/skills/graphify/references/query-md:or-graphify-query-question-dfs-budget-3000"
     },
     {
       "label": "Find best-matching start nodes",
@@ -13101,8 +13089,8 @@
       "_origin": "extracted-structure",
       "community": 247,
       "community_name": "Find best-matching start nodes",
-      "id": "section:codex/skills/graphify/references/query-md:find-best-matching-start-nodes",
-      "norm_label": "find best-matching start nodes"
+      "norm_label": "find best-matching start nodes",
+      "id": "section:codex/skills/graphify/references/query-md:find-best-matching-start-nodes"
     },
     {
       "label": "Token-budget aware output: rank by relevance, cut at budget (~4 chars/token)",
@@ -13114,8 +13102,8 @@
       "_origin": "extracted-structure",
       "community": 250,
       "community_name": "Token-budget aware output: rank by relevance, cut at budget (~4 chars/token)",
-      "id": "section:codex/skills/graphify/references/query-md:token-budget-aware-output-rank-by-relevance-cut-at-budget-4-chars/token",
-      "norm_label": "token-budget aware output: rank by relevance, cut at budget (~4 chars/token)"
+      "norm_label": "token-budget aware output: rank by relevance, cut at budget (~4 chars/token)",
+      "id": "section:codex/skills/graphify/references/query-md:token-budget-aware-output-rank-by-relevance-cut-at-budget-4-chars/token"
     },
     {
       "label": "Score each node by term overlap for ranked output",
@@ -13127,8 +13115,8 @@
       "_origin": "extracted-structure",
       "community": 249,
       "community_name": "Score each node by term overlap for ranked output",
-      "id": "section:codex/skills/graphify/references/query-md:score-each-node-by-term-overlap-for-ranked-output",
-      "norm_label": "score each node by term overlap for ranked output"
+      "norm_label": "score each node by term overlap for ranked output",
+      "id": "section:codex/skills/graphify/references/query-md:score-each-node-by-term-overlap-for-ranked-output"
     },
     {
       "label": "Find best matching node",
@@ -13140,21 +13128,8 @@
       "_origin": "extracted-structure",
       "community": 246,
       "community_name": "Find best matching node",
-      "id": "section:codex/skills/graphify/references/query-md:find-best-matching-node",
-      "norm_label": "find best matching node"
-    },
-    {
-      "label": "graphify reference: transcribe video and audio",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": ".codex/skills/graphify/references/transcribe.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 333,
-      "community": 141,
-      "community_name": "graphify reference: transcribe video and audio",
-      "id": "doc:codex/skills/graphify/references/transcribe-md",
-      "norm_label": "graphify reference: transcribe video and audio"
+      "norm_label": "find best matching node",
+      "id": "section:codex/skills/graphify/references/query-md:find-best-matching-node"
     },
     {
       "label": "Write the JSON from Python (NOT a shell '' redirect): transcribeall/Whisper",
@@ -13166,8 +13141,8 @@
       "_origin": "extracted-structure",
       "community": 252,
       "community_name": "Write the JSON from Python (NOT a shell '' redirect): transcribeall/Whisper",
-      "id": "section:codex/skills/graphify/references/transcribe-md:write-the-json-from-python-not-a-shell-redirect-transcribeall/whisper",
-      "norm_label": "write the json from python (not a shell '' redirect): transcribeall/whisper"
+      "norm_label": "write the json from python (not a shell '' redirect): transcribeall/whisper",
+      "id": "section:codex/skills/graphify/references/transcribe-md:write-the-json-from-python-not-a-shell-redirect-transcribeall/whisper"
     },
     {
       "label": "print progress to stdout, which would otherwise corrupt the JSON file (1392).",
@@ -13179,21 +13154,8 @@
       "_origin": "extracted-structure",
       "community": 251,
       "community_name": "print progress to stdout, which would otherwise corrupt the JSON file (1392).",
-      "id": "section:codex/skills/graphify/references/transcribe-md:print-progress-to-stdout-which-would-otherwise-corrupt-the-json-file-1392",
-      "norm_label": "print progress to stdout, which would otherwise corrupt the json file (1392)."
-    },
-    {
-      "label": "graphify reference: incremental update and cluster-only",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": ".codex/skills/graphify/references/update.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 941,
-      "community": 142,
-      "community_name": "graphify reference: incremental update and cluster-only",
-      "id": "doc:codex/skills/graphify/references/update-md",
-      "norm_label": "graphify reference: incremental update and cluster-only"
+      "norm_label": "print progress to stdout, which would otherwise corrupt the json file (1392).",
+      "id": "section:codex/skills/graphify/references/transcribe-md:print-progress-to-stdout-which-would-otherwise-corrupt-the-json-file-1392"
     },
     {
       "label": "Load new extraction and incremental state",
@@ -13205,8 +13167,8 @@
       "_origin": "extracted-structure",
       "community": 259,
       "community_name": "Load new extraction and incremental state",
-      "id": "section:codex/skills/graphify/references/update-md:load-new-extraction-and-incremental-state",
-      "norm_label": "load new extraction and incremental state"
+      "norm_label": "load new extraction and incremental state",
+      "id": "section:codex/skills/graphify/references/update-md:load-new-extraction-and-incremental-state"
     },
     {
       "label": "prunesources is ONLY for genuinely DELETED files. Changed/re-extracted files are",
@@ -13218,8 +13180,8 @@
       "_origin": "extracted-structure",
       "community": 266,
       "community_name": "prunesources is ONLY for genuinely DELETED files. Changed/re-extracted files are",
-      "id": "section:codex/skills/graphify/references/update-md:prunesources-is-only-for-genuinely-deleted-files-changed/re-extracted-files-are",
-      "norm_label": "prunesources is only for genuinely deleted files. changed/re-extracted files are"
+      "norm_label": "prunesources is only for genuinely deleted files. changed/re-extracted files are",
+      "id": "section:codex/skills/graphify/references/update-md:prunesources-is-only-for-genuinely-deleted-files-changed/re-extracted-files-are"
     },
     {
       "label": "handled by buildmerge's replace-on-re-extract (1344): every sourcefile in",
@@ -13231,8 +13193,8 @@
       "_origin": "extracted-structure",
       "community": 258,
       "community_name": "handled by buildmerge's replace-on-re-extract (1344): every sourcefile in",
-      "id": "section:codex/skills/graphify/references/update-md:handled-by-buildmerge-s-replace-on-re-extract-1344-every-sourcefile-in",
-      "norm_label": "handled by buildmerge's replace-on-re-extract (1344): every sourcefile in"
+      "norm_label": "handled by buildmerge's replace-on-re-extract (1344): every sourcefile in",
+      "id": "section:codex/skills/graphify/references/update-md:handled-by-buildmerge-s-replace-on-re-extract-1344-every-sourcefile-in"
     },
     {
       "label": "newchunks is dropped from the base before merge, so old/stale nodes don't survive.",
@@ -13244,8 +13206,8 @@
       "_origin": "extracted-structure",
       "community": 261,
       "community_name": "newchunks is dropped from the base before merge, so old/stale nodes don't survive.",
-      "id": "section:codex/skills/graphify/references/update-md:newchunks-is-dropped-from-the-base-before-merge-so-old/stale-nodes-don-t-survive",
-      "norm_label": "newchunks is dropped from the base before merge, so old/stale nodes don't survive."
+      "norm_label": "newchunks is dropped from the base before merge, so old/stale nodes don't survive.",
+      "id": "section:codex/skills/graphify/references/update-md:newchunks-is-dropped-from-the-base-before-merge-so-old/stale-nodes-don-t-survive"
     },
     {
       "label": "Do NOT add changed here: with root= passed, pruneset relativizes to the same base",
@@ -13257,8 +13219,8 @@
       "_origin": "extracted-structure",
       "community": 256,
       "community_name": "Do NOT add changed here: with root= passed, pruneset relativizes to the same base",
-      "id": "section:codex/skills/graphify/references/update-md:do-not-add-changed-here-with-root-passed-pruneset-relativizes-to-the-same-base",
-      "norm_label": "do not add changed here: with root= passed, pruneset relativizes to the same base"
+      "norm_label": "do not add changed here: with root= passed, pruneset relativizes to the same base",
+      "id": "section:codex/skills/graphify/references/update-md:do-not-add-changed-here-with-root-passed-pruneset-relativizes-to-the-same-base"
     },
     {
       "label": "as the freshly merged nodes and would DELETE the re-extracted content (1178 is moot",
@@ -13270,8 +13232,8 @@
       "_origin": "extracted-structure",
       "community": 253,
       "community_name": "as the freshly merged nodes and would DELETE the re-extracted content (1178 is moot",
-      "id": "section:codex/skills/graphify/references/update-md:as-the-freshly-merged-nodes-and-would-delete-the-re-extracted-content-1178-is-moot",
-      "norm_label": "as the freshly merged nodes and would delete the re-extracted content (1178 is moot"
+      "norm_label": "as the freshly merged nodes and would delete the re-extracted content (1178 is moot",
+      "id": "section:codex/skills/graphify/references/update-md:as-the-freshly-merged-nodes-and-would-delete-the-re-extracted-content-1178-is-moot"
     },
     {
       "label": "now that replace \u2014 not the dedup pass \u2014 reconciles changed files).",
@@ -13283,8 +13245,8 @@
       "_origin": "extracted-structure",
       "community": 263,
       "community_name": "now that replace \u2014 not the dedup pass \u2014 reconciles changed files).",
-      "id": "section:codex/skills/graphify/references/update-md:now-that-replace-not-the-dedup-pass-reconciles-changed-files",
-      "norm_label": "now that replace \u2014 not the dedup pass \u2014 reconciles changed files)."
+      "norm_label": "now that replace \u2014 not the dedup pass \u2014 reconciles changed files).",
+      "id": "section:codex/skills/graphify/references/update-md:now-that-replace-not-the-dedup-pass-reconciles-changed-files"
     },
     {
       "label": "Use buildmerge() \u2014 reads graph.json directly without NetworkX round-trip",
@@ -13296,8 +13258,8 @@
       "_origin": "extracted-structure",
       "community": 273,
       "community_name": "Use buildmerge() \u2014 reads graph.json directly without NetworkX round-trip",
-      "id": "section:codex/skills/graphify/references/update-md:use-buildmerge-reads-graph-json-directly-without-networkx-round-trip",
-      "norm_label": "use buildmerge() \u2014 reads graph.json directly without networkx round-trip"
+      "norm_label": "use buildmerge() \u2014 reads graph.json directly without networkx round-trip",
+      "id": "section:codex/skills/graphify/references/update-md:use-buildmerge-reads-graph-json-directly-without-networkx-round-trip"
     },
     {
       "label": "so edge direction (calls, implements, imports) is always preserved (801).",
@@ -13309,8 +13271,8 @@
       "_origin": "extracted-structure",
       "community": 271,
       "community_name": "so edge direction (calls, implements, imports) is always preserved (801).",
-      "id": "section:codex/skills/graphify/references/update-md:so-edge-direction-calls-implements-imports-is-always-preserved-801",
-      "norm_label": "so edge direction (calls, implements, imports) is always preserved (801)."
+      "norm_label": "so edge direction (calls, implements, imports) is always preserved (801).",
+      "id": "section:codex/skills/graphify/references/update-md:so-edge-direction-calls-implements-imports-is-always-preserved-801"
     },
     {
       "label": "Pass root= so prunesources (absolute paths from detectincremental) are",
@@ -13322,8 +13284,8 @@
       "_origin": "extracted-structure",
       "community": 264,
       "community_name": "Pass root= so prunesources (absolute paths from detectincremental) are",
-      "id": "section:codex/skills/graphify/references/update-md:pass-root-so-prunesources-absolute-paths-from-detectincremental-are",
-      "norm_label": "pass root= so prunesources (absolute paths from detectincremental) are"
+      "norm_label": "pass root= so prunesources (absolute paths from detectincremental) are",
+      "id": "section:codex/skills/graphify/references/update-md:pass-root-so-prunesources-absolute-paths-from-detectincremental-are"
     },
     {
       "label": "relativized to match the graph's relative sourcefile values; without it",
@@ -13335,8 +13297,8 @@
       "_origin": "extracted-structure",
       "community": 268,
       "community_name": "relativized to match the graph's relative sourcefile values; without it",
-      "id": "section:codex/skills/graphify/references/update-md:relativized-to-match-the-graph-s-relative-sourcefile-values-without-it",
-      "norm_label": "relativized to match the graph's relative sourcefile values; without it"
+      "norm_label": "relativized to match the graph's relative sourcefile values; without it",
+      "id": "section:codex/skills/graphify/references/update-md:relativized-to-match-the-graph-s-relative-sourcefile-values-without-it"
     },
     {
       "label": "nothing is pruned and stale nodes accumulate on every update (1361).",
@@ -13348,8 +13310,8 @@
       "_origin": "extracted-structure",
       "community": 262,
       "community_name": "nothing is pruned and stale nodes accumulate on every update (1361).",
-      "id": "section:codex/skills/graphify/references/update-md:nothing-is-pruned-and-stale-nodes-accumulate-on-every-update-1361",
-      "norm_label": "nothing is pruned and stale nodes accumulate on every update (1361)."
+      "norm_label": "nothing is pruned and stale nodes accumulate on every update (1361).",
+      "id": "section:codex/skills/graphify/references/update-md:nothing-is-pruned-and-stale-nodes-accumulate-on-every-update-1361"
     },
     {
       "label": "directed=ISDIRECTED: replace ISDIRECTED with True if --directed was given, else",
@@ -13361,8 +13323,8 @@
       "_origin": "extracted-structure",
       "community": 255,
       "community_name": "directed=ISDIRECTED: replace ISDIRECTED with True if --directed was given, else",
-      "id": "section:codex/skills/graphify/references/update-md:directed-isdirected-replace-isdirected-with-true-if-directed-was-given-else",
-      "norm_label": "directed=isdirected: replace isdirected with true if --directed was given, else"
+      "norm_label": "directed=isdirected: replace isdirected with true if --directed was given, else",
+      "id": "section:codex/skills/graphify/references/update-md:directed-isdirected-replace-isdirected-with-true-if-directed-was-given-else"
     },
     {
       "label": "False. Without it a --directed --update silently rebuilds undirected and collapses",
@@ -13374,8 +13336,8 @@
       "_origin": "extracted-structure",
       "community": 257,
       "community_name": "False. Without it a --directed --update silently rebuilds undirected and collapses",
-      "id": "section:codex/skills/graphify/references/update-md:false-without-it-a-directed-update-silently-rebuilds-undirected-and-collapses",
-      "norm_label": "false. without it a --directed --update silently rebuilds undirected and collapses"
+      "norm_label": "false. without it a --directed --update silently rebuilds undirected and collapses",
+      "id": "section:codex/skills/graphify/references/update-md:false-without-it-a-directed-update-silently-rebuilds-undirected-and-collapses"
     },
     {
       "label": "reciprocal AB edges (1392).",
@@ -13387,8 +13349,8 @@
       "_origin": "extracted-structure",
       "community": 267,
       "community_name": "reciprocal AB edges (1392).",
-      "id": "section:codex/skills/graphify/references/update-md:reciprocal-ab-edges-1392",
-      "norm_label": "reciprocal ab edges (1392)."
+      "norm_label": "reciprocal ab edges (1392).",
+      "id": "section:codex/skills/graphify/references/update-md:reciprocal-ab-edges-1392"
     },
     {
       "label": "Write merged result back to .graphifyextract.json so Step 4 sees the full graph",
@@ -13400,8 +13362,8 @@
       "_origin": "extracted-structure",
       "community": 274,
       "community_name": "Write merged result back to .graphifyextract.json so Step 4 sees the full graph",
-      "id": "section:codex/skills/graphify/references/update-md:write-merged-result-back-to-graphifyextract-json-so-step-4-sees-the-full-graph",
-      "norm_label": "write merged result back to .graphifyextract.json so step 4 sees the full graph"
+      "norm_label": "write merged result back to .graphifyextract.json so step 4 sees the full graph",
+      "id": "section:codex/skills/graphify/references/update-md:write-merged-result-back-to-graphifyextract-json-so-step-4-sees-the-full-graph"
     },
     {
       "label": "Save manifest so next --update diffs against today's state, not the",
@@ -13413,8 +13375,8 @@
       "_origin": "extracted-structure",
       "community": 270,
       "community_name": "Save manifest so next --update diffs against today's state, not the",
-      "id": "section:codex/skills/graphify/references/update-md:save-manifest-so-next-update-diffs-against-today-s-state-not-the",
-      "norm_label": "save manifest so next --update diffs against today's state, not the"
+      "norm_label": "save manifest so next --update diffs against today's state, not the",
+      "id": "section:codex/skills/graphify/references/update-md:save-manifest-so-next-update-diffs-against-today-s-state-not-the"
     },
     {
       "label": "prior run's baseline (prevents ghost-node reports on subsequent updates).",
@@ -13426,8 +13388,8 @@
       "_origin": "extracted-structure",
       "community": 265,
       "community_name": "prior run's baseline (prevents ghost-node reports on subsequent updates).",
-      "id": "section:codex/skills/graphify/references/update-md:prior-run-s-baseline-prevents-ghost-node-reports-on-subsequent-updates",
-      "norm_label": "prior run's baseline (prevents ghost-node reports on subsequent updates)."
+      "norm_label": "prior run's baseline (prevents ghost-node reports on subsequent updates).",
+      "id": "section:codex/skills/graphify/references/update-md:prior-run-s-baseline-prevents-ghost-node-reports-on-subsequent-updates"
     },
     {
       "label": "root= matches the buildmerge call above so the manifest keys stay relative to",
@@ -13439,8 +13401,8 @@
       "_origin": "extracted-structure",
       "community": 269,
       "community_name": "root= matches the buildmerge call above so the manifest keys stay relative to",
-      "id": "section:codex/skills/graphify/references/update-md:root-matches-the-buildmerge-call-above-so-the-manifest-keys-stay-relative-to",
-      "norm_label": "root= matches the buildmerge call above so the manifest keys stay relative to"
+      "norm_label": "root= matches the buildmerge call above so the manifest keys stay relative to",
+      "id": "section:codex/skills/graphify/references/update-md:root-matches-the-buildmerge-call-above-so-the-manifest-keys-stay-relative-to"
     },
     {
       "label": "the scan root \u2014 portable across clones/machines, so --update keeps matching",
@@ -13452,8 +13414,8 @@
       "_origin": "extracted-structure",
       "community": 272,
       "community_name": "the scan root \u2014 portable across clones/machines, so --update keeps matching",
-      "id": "section:codex/skills/graphify/references/update-md:the-scan-root-portable-across-clones/machines-so-update-keeps-matching",
-      "norm_label": "the scan root \u2014 portable across clones/machines, so --update keeps matching"
+      "norm_label": "the scan root \u2014 portable across clones/machines, so --update keeps matching",
+      "id": "section:codex/skills/graphify/references/update-md:the-scan-root-portable-across-clones/machines-so-update-keeps-matching"
     },
     {
       "label": "cached files instead of missing every one after a move (1417).",
@@ -13465,8 +13427,8 @@
       "_origin": "extracted-structure",
       "community": 254,
       "community_name": "cached files instead of missing every one after a move (1417).",
-      "id": "section:codex/skills/graphify/references/update-md:cached-files-instead-of-missing-every-one-after-a-move-1417",
-      "norm_label": "cached files instead of missing every one after a move (1417)."
+      "norm_label": "cached files instead of missing every one after a move (1417).",
+      "id": "section:codex/skills/graphify/references/update-md:cached-files-instead-of-missing-every-one-after-a-move-1417"
     },
     {
       "label": "Load old graph (before update) from backup written before merge",
@@ -13478,21 +13440,8 @@
       "_origin": "extracted-structure",
       "community": 260,
       "community_name": "Load old graph (before update) from backup written before merge",
-      "id": "section:codex/skills/graphify/references/update-md:load-old-graph-before-update-from-backup-written-before-merge",
-      "norm_label": "load old graph (before update) from backup written before merge"
-    },
-    {
-      "label": "/graphify",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": ".codex/skills/graphify/SKILL.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 3888,
-      "community": 143,
-      "community_name": "/graphify",
-      "id": "doc:codex/skills/graphify/skill-md",
-      "norm_label": "/graphify"
+      "norm_label": "load old graph (before update) from backup written before merge",
+      "id": "section:codex/skills/graphify/references/update-md:load-old-graph-before-update-from-backup-written-before-merge"
     },
     {
       "label": "Detect the correct Python interpreter (handles uv tool, pipx, venv, system installs)",
@@ -13504,8 +13453,8 @@
       "_origin": "extracted-structure",
       "community": 281,
       "community_name": "Detect the correct Python interpreter (handles uv tool, pipx, venv, system installs)",
-      "id": "section:codex/skills/graphify/skill-md:detect-the-correct-python-interpreter-handles-uv-tool-pipx-venv-system-installs",
-      "norm_label": "detect the correct python interpreter (handles uv tool, pipx, venv, system installs)"
+      "norm_label": "detect the correct python interpreter (handles uv tool, pipx, venv, system installs)",
+      "id": "section:codex/skills/graphify/skill-md:detect-the-correct-python-interpreter-handles-uv-tool-pipx-venv-system-installs"
     },
     {
       "label": "1. uv tool installs \u2014 most reliable on modern Mac/Linux",
@@ -13517,8 +13466,8 @@
       "_origin": "extracted-structure",
       "community": 275,
       "community_name": "1. uv tool installs \u2014 most reliable on modern Mac/Linux",
-      "id": "section:codex/skills/graphify/skill-md:1-uv-tool-installs-most-reliable-on-modern-mac/linux",
-      "norm_label": "1. uv tool installs \u2014 most reliable on modern mac/linux"
+      "norm_label": "1. uv tool installs \u2014 most reliable on modern mac/linux",
+      "id": "section:codex/skills/graphify/skill-md:1-uv-tool-installs-most-reliable-on-modern-mac/linux"
     },
     {
       "label": "2. Read shebang from graphify binary (pipx and direct pip installs)",
@@ -13530,8 +13479,8 @@
       "_origin": "extracted-structure",
       "community": 276,
       "community_name": "2. Read shebang from graphify binary (pipx and direct pip installs)",
-      "id": "section:codex/skills/graphify/skill-md:2-read-shebang-from-graphify-binary-pipx-and-direct-pip-installs",
-      "norm_label": "2. read shebang from graphify binary (pipx and direct pip installs)"
+      "norm_label": "2. read shebang from graphify binary (pipx and direct pip installs)",
+      "id": "section:codex/skills/graphify/skill-md:2-read-shebang-from-graphify-binary-pipx-and-direct-pip-installs"
     },
     {
       "label": "3. Fall back to python3",
@@ -13543,8 +13492,8 @@
       "_origin": "extracted-structure",
       "community": 277,
       "community_name": "3. Fall back to python3",
-      "id": "section:codex/skills/graphify/skill-md:3-fall-back-to-python3",
-      "norm_label": "3. fall back to python3"
+      "norm_label": "3. fall back to python3",
+      "id": "section:codex/skills/graphify/skill-md:3-fall-back-to-python3"
     },
     {
       "label": "Write interpreter path for all subsequent steps (persists across invocations)",
@@ -13556,8 +13505,8 @@
       "_origin": "extracted-structure",
       "community": 307,
       "community_name": "Write interpreter path for all subsequent steps (persists across invocations)",
-      "id": "section:codex/skills/graphify/skill-md:write-interpreter-path-for-all-subsequent-steps-persists-across-invocations",
-      "norm_label": "write interpreter path for all subsequent steps (persists across invocations)"
+      "norm_label": "write interpreter path for all subsequent steps (persists across invocations)",
+      "id": "section:codex/skills/graphify/skill-md:write-interpreter-path-for-all-subsequent-steps-persists-across-invocations"
     },
     {
       "label": "Save scan root so graphify update (no args) knows where to look next time",
@@ -13569,8 +13518,8 @@
       "_origin": "extracted-structure",
       "community": 302,
       "community_name": "Save scan root so graphify update (no args) knows where to look next time",
-      "id": "section:codex/skills/graphify/skill-md:save-scan-root-so-graphify-update-no-args-knows-where-to-look-next-time",
-      "norm_label": "save scan root so graphify update (no args) knows where to look next time"
+      "norm_label": "save scan root so graphify update (no args) knows where to look next time",
+      "id": "section:codex/skills/graphify/skill-md:save-scan-root-so-graphify-update-no-args-knows-where-to-look-next-time"
     },
     {
       "label": "Only content files go to semantic extraction. Code is already covered structurally",
@@ -13582,8 +13531,8 @@
       "_origin": "extracted-structure",
       "community": 292,
       "community_name": "Only content files go to semantic extraction. Code is already covered structurally",
-      "id": "section:codex/skills/graphify/skill-md:only-content-files-go-to-semantic-extraction-code-is-already-covered-structurally",
-      "norm_label": "only content files go to semantic extraction. code is already covered structurally"
+      "norm_label": "only content files go to semantic extraction. code is already covered structurally",
+      "id": "section:codex/skills/graphify/skill-md:only-content-files-go-to-semantic-extraction-code-is-already-covered-structurally"
     },
     {
       "label": "by the AST pass (Part A); flattening every category here makes subagents re-read",
@@ -13595,8 +13544,8 @@
       "_origin": "extracted-structure",
       "community": 280,
       "community_name": "by the AST pass (Part A); flattening every category here makes subagents re-read",
-      "id": "section:codex/skills/graphify/skill-md:by-the-ast-pass-part-a-flattening-every-category-here-makes-subagents-re-read",
-      "norm_label": "by the ast pass (part a); flattening every category here makes subagents re-read"
+      "norm_label": "by the ast pass (part a); flattening every category here makes subagents re-read",
+      "id": "section:codex/skills/graphify/skill-md:by-the-ast-pass-part-a-flattening-every-category-here-makes-subagents-re-read"
     },
     {
       "label": "every source file (1392). Video is transcribed to a document in Step 2.5 first.",
@@ -13608,8 +13557,8 @@
       "_origin": "extracted-structure",
       "community": 282,
       "community_name": "every source file (1392). Video is transcribed to a document in Step 2.5 first.",
-      "id": "section:codex/skills/graphify/skill-md:every-source-file-1392-video-is-transcribed-to-a-document-in-step-2-5-first",
-      "norm_label": "every source file (1392). video is transcribed to a document in step 2.5 first."
+      "norm_label": "every source file (1392). video is transcribed to a document in step 2.5 first.",
+      "id": "section:codex/skills/graphify/skill-md:every-source-file-1392-video-is-transcribed-to-a-document-in-step-2-5-first"
     },
     {
       "label": "Always (re)write the cache file: write hits, else DELETE any leftover from a prior",
@@ -13621,8 +13570,8 @@
       "_origin": "extracted-structure",
       "community": 278,
       "community_name": "Always (re)write the cache file: write hits, else DELETE any leftover from a prior",
-      "id": "section:codex/skills/graphify/skill-md:always-re-write-the-cache-file-write-hits-else-delete-any-leftover-from-a-prior",
-      "norm_label": "always (re)write the cache file: write hits, else delete any leftover from a prior"
+      "norm_label": "always (re)write the cache file: write hits, else delete any leftover from a prior",
+      "id": "section:codex/skills/graphify/skill-md:always-re-write-the-cache-file-write-hits-else-delete-any-leftover-from-a-prior"
     },
     {
       "label": "run so Part C never merges a stale .graphifycached.json (1392).",
@@ -13634,8 +13583,8 @@
       "_origin": "extracted-structure",
       "community": 300,
       "community_name": "run so Part C never merges a stale .graphifycached.json (1392).",
-      "id": "section:codex/skills/graphify/skill-md:run-so-part-c-never-merges-a-stale-graphifycached-json-1392",
-      "norm_label": "run so part c never merges a stale .graphifycached.json (1392)."
+      "norm_label": "run so part c never merges a stale .graphifycached.json (1392).",
+      "id": "section:codex/skills/graphify/skill-md:run-so-part-c-never-merges-a-stale-graphifycached-json-1392"
     },
     {
       "label": "Merge: AST nodes first, semantic nodes deduplicated by id",
@@ -13647,8 +13596,8 @@
       "_origin": "extracted-structure",
       "community": 290,
       "community_name": "Merge: AST nodes first, semantic nodes deduplicated by id",
-      "id": "section:codex/skills/graphify/skill-md:merge-ast-nodes-first-semantic-nodes-deduplicated-by-id",
-      "norm_label": "merge: ast nodes first, semantic nodes deduplicated by id"
+      "norm_label": "merge: ast nodes first, semantic nodes deduplicated by id",
+      "id": "section:codex/skills/graphify/skill-md:merge-ast-nodes-first-semantic-nodes-deduplicated-by-id"
     },
     {
       "label": "root= mirrors the --update runbook (1361): relativize sourcefile to the same",
@@ -13660,8 +13609,8 @@
       "_origin": "extracted-structure",
       "community": 298,
       "community_name": "root= mirrors the --update runbook (1361): relativize sourcefile to the same",
-      "id": "section:codex/skills/graphify/skill-md:root-mirrors-the-update-runbook-1361-relativize-sourcefile-to-the-same",
-      "norm_label": "root= mirrors the --update runbook (1361): relativize sourcefile to the same"
+      "norm_label": "root= mirrors the --update runbook (1361): relativize sourcefile to the same",
+      "id": "section:codex/skills/graphify/skill-md:root-mirrors-the-update-runbook-1361-relativize-sourcefile-to-the-same"
     },
     {
       "label": "base so the full build and incremental --update never drift apart on re-extract.",
@@ -13673,8 +13622,8 @@
       "_origin": "extracted-structure",
       "community": 279,
       "community_name": "base so the full build and incremental --update never drift apart on re-extract.",
-      "id": "section:codex/skills/graphify/skill-md:base-so-the-full-build-and-incremental-update-never-drift-apart-on-re-extract",
-      "norm_label": "base so the full build and incremental --update never drift apart on re-extract."
+      "norm_label": "base so the full build and incremental --update never drift apart on re-extract.",
+      "id": "section:codex/skills/graphify/skill-md:base-so-the-full-build-and-incremental-update-never-drift-apart-on-re-extract"
     },
     {
       "label": "Guard BEFORE any write: an empty extraction must not clobber a good graph.json /",
@@ -13686,8 +13635,8 @@
       "_origin": "extracted-structure",
       "community": 286,
       "community_name": "Guard BEFORE any write: an empty extraction must not clobber a good graph.json /",
-      "id": "section:codex/skills/graphify/skill-md:guard-before-any-write-an-empty-extraction-must-not-clobber-a-good-graph-json",
-      "norm_label": "guard before any write: an empty extraction must not clobber a good graph.json /"
+      "norm_label": "guard before any write: an empty extraction must not clobber a good graph.json /",
+      "id": "section:codex/skills/graphify/skill-md:guard-before-any-write-an-empty-extraction-must-not-clobber-a-good-graph-json"
     },
     {
       "label": "GRAPHREPORT.md / analysis sidecar. Check immediately after build (1392).",
@@ -13699,8 +13648,8 @@
       "_origin": "extracted-structure",
       "community": 284,
       "community_name": "GRAPHREPORT.md / analysis sidecar. Check immediately after build (1392).",
-      "id": "section:codex/skills/graphify/skill-md:graphreport-md-/-analysis-sidecar-check-immediately-after-build-1392",
-      "norm_label": "graphreport.md / analysis sidecar. check immediately after build (1392)."
+      "norm_label": "graphreport.md / analysis sidecar. check immediately after build (1392).",
+      "id": "section:codex/skills/graphify/skill-md:graphreport-md-/-analysis-sidecar-check-immediately-after-build-1392"
     },
     {
       "label": "Placeholder questions - regenerated with real labels in Step 5",
@@ -13712,8 +13661,8 @@
       "_origin": "extracted-structure",
       "community": 295,
       "community_name": "Placeholder questions - regenerated with real labels in Step 5",
-      "id": "section:codex/skills/graphify/skill-md:placeholder-questions-regenerated-with-real-labels-in-step-5",
-      "norm_label": "placeholder questions - regenerated with real labels in step 5"
+      "norm_label": "placeholder questions - regenerated with real labels in step 5",
+      "id": "section:codex/skills/graphify/skill-md:placeholder-questions-regenerated-with-real-labels-in-step-5"
     },
     {
       "label": "Export FIRST and honor the 479 shrink-guard: tojson returns False (writing",
@@ -13725,8 +13674,8 @@
       "_origin": "extracted-structure",
       "community": 283,
       "community_name": "Export FIRST and honor the 479 shrink-guard: tojson returns False (writing",
-      "id": "section:codex/skills/graphify/skill-md:export-first-and-honor-the-479-shrink-guard-tojson-returns-false-writing",
-      "norm_label": "export first and honor the 479 shrink-guard: tojson returns false (writing"
+      "norm_label": "export first and honor the 479 shrink-guard: tojson returns false (writing",
+      "id": "section:codex/skills/graphify/skill-md:export-first-and-honor-the-479-shrink-guard-tojson-returns-false-writing"
     },
     {
       "label": "nothing) when the new graph is smaller than the existing graph.json. Only write",
@@ -13738,8 +13687,8 @@
       "_origin": "extracted-structure",
       "community": 291,
       "community_name": "nothing) when the new graph is smaller than the existing graph.json. Only write",
-      "id": "section:codex/skills/graphify/skill-md:nothing-when-the-new-graph-is-smaller-than-the-existing-graph-json-only-write",
-      "norm_label": "nothing) when the new graph is smaller than the existing graph.json. only write"
+      "norm_label": "nothing) when the new graph is smaller than the existing graph.json. only write",
+      "id": "section:codex/skills/graphify/skill-md:nothing-when-the-new-graph-is-smaller-than-the-existing-graph-json-only-write"
     },
     {
       "label": "GRAPHREPORT.md + the analysis sidecar when the graph was actually written, so",
@@ -13751,8 +13700,8 @@
       "_origin": "extracted-structure",
       "community": 285,
       "community_name": "GRAPHREPORT.md + the analysis sidecar when the graph was actually written, so",
-      "id": "section:codex/skills/graphify/skill-md:graphreport-md-the-analysis-sidecar-when-the-graph-was-actually-written-so",
-      "norm_label": "graphreport.md + the analysis sidecar when the graph was actually written, so"
+      "norm_label": "graphreport.md + the analysis sidecar when the graph was actually written, so",
+      "id": "section:codex/skills/graphify/skill-md:graphreport-md-the-analysis-sidecar-when-the-graph-was-actually-written-so"
     },
     {
       "label": "they never describe a graph that graph.json doesn't contain (1392).",
@@ -13764,8 +13713,8 @@
       "_origin": "extracted-structure",
       "community": 305,
       "community_name": "they never describe a graph that graph.json doesn't contain (1392).",
-      "id": "section:codex/skills/graphify/skill-md:they-never-describe-a-graph-that-graph-json-doesn-t-contain-1392",
-      "norm_label": "they never describe a graph that graph.json doesn't contain (1392)."
+      "norm_label": "they never describe a graph that graph.json doesn't contain (1392).",
+      "id": "section:codex/skills/graphify/skill-md:they-never-describe-a-graph-that-graph-json-doesn-t-contain-1392"
     },
     {
       "label": "root= as in Step 4 / the --update runbook (1361) \u2014 same base for node-key parity.",
@@ -13777,8 +13726,8 @@
       "_origin": "extracted-structure",
       "community": 297,
       "community_name": "root= as in Step 4 / the --update runbook (1361) \u2014 same base for node-key parity.",
-      "id": "section:codex/skills/graphify/skill-md:root-as-in-step-4-/-the-update-runbook-1361-same-base-for-node-key-parity",
-      "norm_label": "root= as in step 4 / the --update runbook (1361) \u2014 same base for node-key parity."
+      "norm_label": "root= as in step 4 / the --update runbook (1361) \u2014 same base for node-key parity.",
+      "id": "section:codex/skills/graphify/skill-md:root-as-in-step-4-/-the-update-runbook-1361-same-base-for-node-key-parity"
     },
     {
       "label": "LABELS - replace these with the names you chose above",
@@ -13790,8 +13739,8 @@
       "_origin": "extracted-structure",
       "community": 288,
       "community_name": "LABELS - replace these with the names you chose above",
-      "id": "section:codex/skills/graphify/skill-md:labels-replace-these-with-the-names-you-chose-above",
-      "norm_label": "labels - replace these with the names you chose above"
+      "norm_label": "labels - replace these with the names you chose above",
+      "id": "section:codex/skills/graphify/skill-md:labels-replace-these-with-the-names-you-chose-above"
     },
     {
       "label": "Regenerate questions with real community labels (labels affect question phrasing)",
@@ -13803,8 +13752,8 @@
       "_origin": "extracted-structure",
       "community": 296,
       "community_name": "Regenerate questions with real community labels (labels affect question phrasing)",
-      "id": "section:codex/skills/graphify/skill-md:regenerate-questions-with-real-community-labels-labels-affect-question-phrasing",
-      "norm_label": "regenerate questions with real community labels (labels affect question phrasing)"
+      "norm_label": "regenerate questions with real community labels (labels affect question phrasing)",
+      "id": "section:codex/skills/graphify/skill-md:regenerate-questions-with-real-community-labels-labels-affect-question-phrasing"
     },
     {
       "label": "or with custom dir: graphify export obsidian --dir ~/vaults/my-project",
@@ -13816,8 +13765,8 @@
       "_origin": "extracted-structure",
       "community": 294,
       "community_name": "or with custom dir: graphify export obsidian --dir ~/vaults/my-project",
-      "id": "section:codex/skills/graphify/skill-md:or-with-custom-dir-graphify-export-obsidian-dir-/vaults/my-project",
-      "norm_label": "or with custom dir: graphify export obsidian --dir ~/vaults/my-project"
+      "norm_label": "or with custom dir: graphify export obsidian --dir ~/vaults/my-project",
+      "id": "section:codex/skills/graphify/skill-md:or-with-custom-dir-graphify-export-obsidian-dir-/vaults/my-project"
     },
     {
       "label": "or: graphify export html --no-viz",
@@ -13829,8 +13778,8 @@
       "_origin": "extracted-structure",
       "community": 293,
       "community_name": "or: graphify export html --no-viz",
-      "id": "section:codex/skills/graphify/skill-md:or-graphify-export-html-no-viz",
-      "norm_label": "or: graphify export html --no-viz"
+      "norm_label": "or: graphify export html --no-viz",
+      "id": "section:codex/skills/graphify/skill-md:or-graphify-export-html-no-viz"
     },
     {
       "label": "Save manifest for --update",
@@ -13842,8 +13791,8 @@
       "_origin": "extracted-structure",
       "community": 301,
       "community_name": "Save manifest for --update",
-      "id": "section:codex/skills/graphify/skill-md:save-manifest-for-update",
-      "norm_label": "save manifest for --update"
+      "norm_label": "save manifest for --update",
+      "id": "section:codex/skills/graphify/skill-md:save-manifest-for-update"
     },
     {
       "label": "In --update mode, 'allfiles' carries the full corpus; 'files' is the changed",
@@ -13855,8 +13804,8 @@
       "_origin": "extracted-structure",
       "community": 287,
       "community_name": "In --update mode, 'allfiles' carries the full corpus; 'files' is the changed",
-      "id": "section:codex/skills/graphify/skill-md:in-update-mode-allfiles-carries-the-full-corpus-files-is-the-changed",
-      "norm_label": "in --update mode, 'allfiles' carries the full corpus; 'files' is the changed"
+      "norm_label": "in --update mode, 'allfiles' carries the full corpus; 'files' is the changed",
+      "id": "section:codex/skills/graphify/skill-md:in-update-mode-allfiles-carries-the-full-corpus-files-is-the-changed"
     },
     {
       "label": "subset. Full-rebuild mode populates only 'files', so the fallback handles that.",
@@ -13868,8 +13817,8 @@
       "_origin": "extracted-structure",
       "community": 304,
       "community_name": "subset. Full-rebuild mode populates only 'files', so the fallback handles that.",
-      "id": "section:codex/skills/graphify/skill-md:subset-full-rebuild-mode-populates-only-files-so-the-fallback-handles-that",
-      "norm_label": "subset. full-rebuild mode populates only 'files', so the fallback handles that."
+      "norm_label": "subset. full-rebuild mode populates only 'files', so the fallback handles that.",
+      "id": "section:codex/skills/graphify/skill-md:subset-full-rebuild-mode-populates-only-files-so-the-fallback-handles-that"
     },
     {
       "label": "root= relativizes the manifest keys to the scan root (same base as the build),",
@@ -13881,8 +13830,8 @@
       "_origin": "extracted-structure",
       "community": 299,
       "community_name": "root= relativizes the manifest keys to the scan root (same base as the build),",
-      "id": "section:codex/skills/graphify/skill-md:root-relativizes-the-manifest-keys-to-the-scan-root-same-base-as-the-build",
-      "norm_label": "root= relativizes the manifest keys to the scan root (same base as the build),"
+      "norm_label": "root= relativizes the manifest keys to the scan root (same base as the build),",
+      "id": "section:codex/skills/graphify/skill-md:root-relativizes-the-manifest-keys-to-the-scan-root-same-base-as-the-build"
     },
     {
       "label": "so the on-disk manifest is portable across clones/machines and a later --update",
@@ -13894,8 +13843,8 @@
       "_origin": "extracted-structure",
       "community": 303,
       "community_name": "so the on-disk manifest is portable across clones/machines and a later --update",
-      "id": "section:codex/skills/graphify/skill-md:so-the-on-disk-manifest-is-portable-across-clones/machines-and-a-later-update",
-      "norm_label": "so the on-disk manifest is portable across clones/machines and a later --update"
+      "norm_label": "so the on-disk manifest is portable across clones/machines and a later --update",
+      "id": "section:codex/skills/graphify/skill-md:so-the-on-disk-manifest-is-portable-across-clones/machines-and-a-later-update"
     },
     {
       "label": "matches cached files instead of missing every one (1417).",
@@ -13907,8 +13856,8 @@
       "_origin": "extracted-structure",
       "community": 289,
       "community_name": "matches cached files instead of missing every one (1417).",
-      "id": "section:codex/skills/graphify/skill-md:matches-cached-files-instead-of-missing-every-one-1417",
-      "norm_label": "matches cached files instead of missing every one (1417)."
+      "norm_label": "matches cached files instead of missing every one (1417).",
+      "id": "section:codex/skills/graphify/skill-md:matches-cached-files-instead-of-missing-every-one-1417"
     },
     {
       "label": "Update cumulative cost tracker",
@@ -13920,8 +13869,8 @@
       "_origin": "extracted-structure",
       "community": 306,
       "community_name": "Update cumulative cost tracker",
-      "id": "section:codex/skills/graphify/skill-md:update-cumulative-cost-tracker",
-      "norm_label": "update cumulative cost tracker"
+      "norm_label": "update cumulative cost tracker",
+      "id": "section:codex/skills/graphify/skill-md:update-cumulative-cost-tracker"
     },
     {
       "label": "AGENTS.md \u2014 Regras de trabalho para D:\\00docs",
@@ -13933,8 +13882,8 @@
       "word_count": 545,
       "community": 134,
       "community_name": "AGENTS.md \u2014 Regras de trabalho para D:\\00docs",
-      "id": "doc:agents-md",
-      "norm_label": "agents.md \u2014 regras de trabalho para d:\\00docs"
+      "norm_label": "agents.md \u2014 regras de trabalho para d:\\00docs",
+      "id": "doc:agents-md"
     },
     {
       "label": "Gate de integridade e fallback local",
@@ -13946,8 +13895,8 @@
       "_origin": "extracted-structure",
       "community": 238,
       "community_name": "Gate de integridade e fallback local",
-      "id": "section:agents-md:gate-de-integridade-e-fallback-local",
-      "norm_label": "gate de integridade e fallback local"
+      "norm_label": "gate de integridade e fallback local",
+      "id": "section:agents-md:gate-de-integridade-e-fallback-local"
     },
     {
       "label": "Credencial Graphify para D:\\",
@@ -13959,21 +13908,8 @@
       "_origin": "extracted-structure",
       "community": 237,
       "community_name": "Credencial Graphify para D:\\",
-      "id": "section:agents-md:credencial-graphify-para-d",
-      "norm_label": "credencial graphify para d:\\"
-    },
-    {
-      "label": "Correnth Current Direction",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": "CURRENT_DIRECTION.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 90,
-      "community": 144,
-      "community_name": "Correnth Current Direction",
-      "id": "doc:current_direction-md",
-      "norm_label": "correnth current direction"
+      "norm_label": "credencial graphify para d:\\",
+      "id": "section:agents-md:credencial-graphify-para-d"
     },
     {
       "label": "Paperclip Operations",
@@ -13984,8 +13920,8 @@
       "_origin": "deterministic-semantic",
       "community": 130,
       "community_name": "Paperclip Operations",
-      "id": "concept:paperclip-operations",
-      "norm_label": "paperclip operations"
+      "norm_label": "paperclip operations",
+      "id": "concept:paperclip-operations"
     },
     {
       "label": "Correnth Ecosystem",
@@ -13996,8 +13932,8 @@
       "_origin": "deterministic-semantic",
       "community": 127,
       "community_name": "Correnth Ecosystem",
-      "id": "concept:correnth-ecosystem",
-      "norm_label": "correnth ecosystem"
+      "norm_label": "correnth ecosystem",
+      "id": "concept:correnth-ecosystem"
     },
     {
       "label": "Product Governance",
@@ -14008,21 +13944,8 @@
       "_origin": "deterministic-semantic",
       "community": 131,
       "community_name": "Product Governance",
-      "id": "concept:product-governance",
-      "norm_label": "product governance"
-    },
-    {
-      "label": "Correnth Ecosystem Portfolio and Operating Model v1",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": "decisions/CORRENTH_ECOSYSTEM_PORTFOLIO_AND_OPERATING_MODEL_v1.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 462,
-      "community": 145,
-      "community_name": "Correnth Ecosystem Portfolio and Operating Model v1",
-      "id": "doc:decisions/correnth_ecosystem_portfolio_and_operating_model_v1-md",
-      "norm_label": "correnth ecosystem portfolio and operating model v1"
+      "norm_label": "product governance",
+      "id": "concept:product-governance"
     },
     {
       "label": "Correnth UI",
@@ -14033,8 +13956,8 @@
       "_origin": "deterministic-semantic",
       "community": 128,
       "community_name": "Correnth UI",
-      "id": "concept:correnth-ui",
-      "norm_label": "correnth ui"
+      "norm_label": "correnth ui",
+      "id": "concept:correnth-ui"
     },
     {
       "label": "Shared Context Memory",
@@ -14045,21 +13968,8 @@
       "_origin": "deterministic-semantic",
       "community": 132,
       "community_name": "Shared Context Memory",
-      "id": "concept:shared-context-memory",
-      "norm_label": "shared context memory"
-    },
-    {
-      "label": "Correnth \u2014 Padr\u00e3o de UI e Stack T\u00e9cnica v1",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": "decisions/CORRENTH_UI_AND_TECH_STACK_STANDARD_v1.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 2307,
-      "community": 146,
-      "community_name": "Correnth \u2014 Padr\u00e3o de UI e Stack T\u00e9cnica v1",
-      "id": "doc:decisions/correnth_ui_and_tech_stack_standard_v1-md",
-      "norm_label": "correnth \u2014 padrao de ui e stack tecnica v1"
+      "norm_label": "shared context memory",
+      "id": "concept:shared-context-memory"
     },
     {
       "label": "Quality Engineering",
@@ -14070,8 +13980,8 @@
       "_origin": "deterministic-semantic",
       "community": 1,
       "community_name": "Quality Engineering",
-      "id": "concept:quality-engineering",
-      "norm_label": "quality engineering"
+      "norm_label": "quality engineering",
+      "id": "concept:quality-engineering"
     },
     {
       "label": "Application Architecture",
@@ -14082,21 +13992,8 @@
       "_origin": "deterministic-semantic",
       "community": 0,
       "community_name": "Application Architecture",
-      "id": "concept:application-architecture",
-      "norm_label": "application architecture"
-    },
-    {
-      "label": "Shared Context Memory Platform",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": "decisions/SHARED_CONTEXT_MEMORY_PLATFORM.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 350,
-      "community": 147,
-      "community_name": "Shared Context Memory Platform",
-      "id": "doc:decisions/shared_context_memory_platform-md",
-      "norm_label": "shared context memory platform"
+      "norm_label": "application architecture",
+      "id": "concept:application-architecture"
     },
     {
       "label": "Graphify \u2014 Recomenda\u00e7\u00e3o de Stack Local para D:\\00docs",
@@ -14108,8 +14005,8 @@
       "word_count": 251,
       "community": 148,
       "community_name": "Graphify \u2014 Recomenda\u00e7\u00e3o de Stack Local para D:\\00docs",
-      "id": "doc:graphify_stack_recommendation-md",
-      "norm_label": "graphify \u2014 recomendacao de stack local para d:\\00docs"
+      "norm_label": "graphify \u2014 recomendacao de stack local para d:\\00docs",
+      "id": "doc:graphify_stack_recommendation-md"
     },
     {
       "label": "Gera\u00e7\u00e3o inicial",
@@ -14121,8 +14018,8 @@
       "_origin": "extracted-structure",
       "community": 310,
       "community_name": "Gera\u00e7\u00e3o inicial",
-      "id": "section:graphify_stack_recommendation-md:gera\u00e7\u00e3o-inicial",
-      "norm_label": "geracao inicial"
+      "norm_label": "geracao inicial",
+      "id": "section:graphify_stack_recommendation-md:gera\u00e7\u00e3o-inicial"
     },
     {
       "label": "Atualiza\u00e7\u00e3o incremental ap\u00f3s mudan\u00e7as relevantes",
@@ -14134,8 +14031,8 @@
       "_origin": "extracted-structure",
       "community": 308,
       "community_name": "Atualiza\u00e7\u00e3o incremental ap\u00f3s mudan\u00e7as relevantes",
-      "id": "section:graphify_stack_recommendation-md:atualiza\u00e7\u00e3o-incremental-ap\u00f3s-mudan\u00e7as-relevantes",
-      "norm_label": "atualizacao incremental apos mudancas relevantes"
+      "norm_label": "atualizacao incremental apos mudancas relevantes",
+      "id": "section:graphify_stack_recommendation-md:atualiza\u00e7\u00e3o-incremental-ap\u00f3s-mudan\u00e7as-relevantes"
     },
     {
       "label": "Consulta focada",
@@ -14147,8 +14044,8 @@
       "_origin": "extracted-structure",
       "community": 309,
       "community_name": "Consulta focada",
-      "id": "section:graphify_stack_recommendation-md:consulta-focada",
-      "norm_label": "consulta focada"
+      "norm_label": "consulta focada",
+      "id": "section:graphify_stack_recommendation-md:consulta-focada"
     },
     {
       "label": "Pr\u00e9-requisito para documentos",
@@ -14160,99 +14057,8 @@
       "_origin": "extracted-structure",
       "community": 311,
       "community_name": "Pr\u00e9-requisito para documentos",
-      "id": "section:graphify_stack_recommendation-md:pr\u00e9-requisito-para-documentos",
-      "norm_label": "pre-requisito para documentos"
-    },
-    {
-      "label": "CML Consumer Quickstart",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": "platforms/cml/CONSUMER_QUICKSTART.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 200,
-      "community": 149,
-      "community_name": "CML Consumer Quickstart",
-      "id": "doc:platforms/cml/consumer_quickstart-md",
-      "norm_label": "cml consumer quickstart"
-    },
-    {
-      "label": "PRD-CML-001 Execution Tracker",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": "platforms/cml/EXECUTION_TRACKER.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 258,
-      "community": 150,
-      "community_name": "PRD-CML-001 Execution Tracker",
-      "id": "doc:platforms/cml/execution_tracker-md",
-      "norm_label": "prd-cml-001 execution tracker"
-    },
-    {
-      "label": "CML Glossary",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": "platforms/cml/GLOSSARY.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 207,
-      "community": 151,
-      "community_name": "CML Glossary",
-      "id": "doc:platforms/cml/glossary-md",
-      "norm_label": "cml glossary"
-    },
-    {
-      "label": "PRD-CML-001 - Correnth Context Memory Platform",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": "platforms/cml/PRD-CML-001_CONTEXT_MEMORY_PLATFORM.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 4221,
-      "community": 152,
-      "community_name": "PRD-CML-001 - Correnth Context Memory Platform",
-      "id": "doc:platforms/cml/prd-cml-001_context_memory_platform-md",
-      "norm_label": "prd-cml-001 - correnth context memory platform"
-    },
-    {
-      "label": "CML-L10 Readiness Report",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": "platforms/cml/READINESS-CML-L10.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 273,
-      "community": 153,
-      "community_name": "CML-L10 Readiness Report",
-      "id": "doc:platforms/cml/readiness-cml-l10-md",
-      "norm_label": "cml-l10 readiness report"
-    },
-    {
-      "label": "CML Source of Truth Policy",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": "platforms/cml/SOURCE_OF_TRUTH.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 226,
-      "community": 154,
-      "community_name": "CML Source of Truth Policy",
-      "id": "doc:platforms/cml/source_of_truth-md",
-      "norm_label": "cml source of truth policy"
-    },
-    {
-      "label": "shadcn/ui - Guia Completo de Componentes",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": "roadmaps_reference/outros/SHADCN_GUIDE.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 2440,
-      "community": 155,
-      "community_name": "shadcn/ui - Guia Completo de Componentes",
-      "id": "doc:roadmaps_reference/outros/shadcn_guide-md",
-      "norm_label": "shadcn/ui - guia completo de componentes"
+      "norm_label": "pre-requisito para documentos",
+      "id": "section:graphify_stack_recommendation-md:pr\u00e9-requisito-para-documentos"
     },
     {
       "label": "Inicializar no projeto",
@@ -14264,8 +14070,8 @@
       "_origin": "extracted-structure",
       "community": 316,
       "community_name": "Inicializar no projeto",
-      "id": "section:roadmaps_reference/outros/shadcn_guide-md:inicializar-no-projeto",
-      "norm_label": "inicializar no projeto"
+      "norm_label": "inicializar no projeto",
+      "id": "section:roadmaps_reference/outros/shadcn_guide-md:inicializar-no-projeto"
     },
     {
       "label": "Adicionar componentes",
@@ -14277,8 +14083,8 @@
       "_origin": "extracted-structure",
       "community": 312,
       "community_name": "Adicionar componentes",
-      "id": "section:roadmaps_reference/outros/shadcn_guide-md:adicionar-componentes",
-      "norm_label": "adicionar componentes"
+      "norm_label": "adicionar componentes",
+      "id": "section:roadmaps_reference/outros/shadcn_guide-md:adicionar-componentes"
     },
     {
       "label": "Adicionar todos",
@@ -14290,8 +14096,8 @@
       "_origin": "extracted-structure",
       "community": 313,
       "community_name": "Adicionar todos",
-      "id": "section:roadmaps_reference/outros/shadcn_guide-md:adicionar-todos",
-      "norm_label": "adicionar todos"
+      "norm_label": "adicionar todos",
+      "id": "section:roadmaps_reference/outros/shadcn_guide-md:adicionar-todos"
     },
     {
       "label": "Buscar componente",
@@ -14303,8 +14109,8 @@
       "_origin": "extracted-structure",
       "community": 314,
       "community_name": "Buscar componente",
-      "id": "section:roadmaps_reference/outros/shadcn_guide-md:buscar-componente",
-      "norm_label": "buscar componente"
+      "norm_label": "buscar componente",
+      "id": "section:roadmaps_reference/outros/shadcn_guide-md:buscar-componente"
     },
     {
       "label": "Documenta\u00e7\u00e3o de componente",
@@ -14316,8 +14122,8 @@
       "_origin": "extracted-structure",
       "community": 315,
       "community_name": "Documenta\u00e7\u00e3o de componente",
-      "id": "section:roadmaps_reference/outros/shadcn_guide-md:documenta\u00e7\u00e3o-de-componente",
-      "norm_label": "documentacao de componente"
+      "norm_label": "documentacao de componente",
+      "id": "section:roadmaps_reference/outros/shadcn_guide-md:documenta\u00e7\u00e3o-de-componente"
     },
     {
       "label": "AI and Data Scientist Roadmap \u2014 roadmap de refer\u00eancia",
@@ -14329,8 +14135,8 @@
       "word_count": 419,
       "community": 156,
       "community_name": "AI and Data Scientist Roadmap \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_ai_data_scientist-md",
-      "norm_label": "ai and data scientist roadmap \u2014 roadmap de referencia"
+      "norm_label": "ai and data scientist roadmap \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_ai_data_scientist-md"
     },
     {
       "label": "AI Engineer \u2014 roadmap de refer\u00eancia",
@@ -14342,8 +14148,8 @@
       "word_count": 571,
       "community": 3,
       "community_name": "AI Engineer \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_ai_engineer-md",
-      "norm_label": "ai engineer \u2014 roadmap de referencia"
+      "norm_label": "ai engineer \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_ai_engineer-md"
     },
     {
       "label": "Android Developer \u2014 roadmap de refer\u00eancia",
@@ -14355,21 +14161,8 @@
       "word_count": 439,
       "community": 157,
       "community_name": "Android Developer \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_android-md",
-      "norm_label": "android developer \u2014 roadmap de referencia"
-    },
-    {
-      "label": "Backend Developer Roadmap - Checklist (2026)",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_BACKEND.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 529,
-      "community": 158,
-      "community_name": "Backend Developer Roadmap - Checklist (2026)",
-      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_backend-md",
-      "norm_label": "backend developer roadmap - checklist (2026)"
+      "norm_label": "android developer \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_android-md"
     },
     {
       "label": "BI Analyst \u2014 roadmap de refer\u00eancia",
@@ -14381,8 +14174,8 @@
       "word_count": 557,
       "community": 5,
       "community_name": "BI Analyst \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_bi_analyst-md",
-      "norm_label": "bi analyst \u2014 roadmap de referencia"
+      "norm_label": "bi analyst \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_bi_analyst-md"
     },
     {
       "label": "Blockchain Developer \u2014 roadmap de refer\u00eancia",
@@ -14394,8 +14187,8 @@
       "word_count": 468,
       "community": 159,
       "community_name": "Blockchain Developer \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_blockchain-md",
-      "norm_label": "blockchain developer \u2014 roadmap de referencia"
+      "norm_label": "blockchain developer \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_blockchain-md"
     },
     {
       "label": "Cyber Security Expert \u2014 roadmap de refer\u00eancia",
@@ -14407,8 +14200,8 @@
       "word_count": 601,
       "community": 160,
       "community_name": "Cyber Security Expert \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_cyber_security-md",
-      "norm_label": "cyber security expert \u2014 roadmap de referencia"
+      "norm_label": "cyber security expert \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_cyber_security-md"
     },
     {
       "label": "Data Analyst Roadmap \u2014 roadmap de refer\u00eancia",
@@ -14420,8 +14213,8 @@
       "word_count": 479,
       "community": 161,
       "community_name": "Data Analyst Roadmap \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_data_analyst-md",
-      "norm_label": "data analyst roadmap \u2014 roadmap de referencia"
+      "norm_label": "data analyst roadmap \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_data_analyst-md"
     },
     {
       "label": "Data Engineer Roadmap \u2014 roadmap de refer\u00eancia",
@@ -14433,34 +14226,8 @@
       "word_count": 536,
       "community": 162,
       "community_name": "Data Engineer Roadmap \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_data_engineer-md",
-      "norm_label": "data engineer roadmap \u2014 roadmap de referencia"
-    },
-    {
-      "label": "UX Design Roadmap - Checklist (2026)",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_DESIGN_UX.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 383,
-      "community": 163,
-      "community_name": "UX Design Roadmap - Checklist (2026)",
-      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_design_ux-md",
-      "norm_label": "ux design roadmap - checklist (2026)"
-    },
-    {
-      "label": "DevOps / SRE Roadmap \u2014 refer\u00eancia enriquecida",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_DEVOPS.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 590,
-      "community": 4,
-      "community_name": "DevOps / SRE Roadmap \u2014 refer\u00eancia enriquecida",
-      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_devops-md",
-      "norm_label": "devops / sre roadmap \u2014 referencia enriquecida"
+      "norm_label": "data engineer roadmap \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_data_engineer-md"
     },
     {
       "label": "Developer Relations \u2014 roadmap de refer\u00eancia",
@@ -14472,8 +14239,8 @@
       "word_count": 567,
       "community": 164,
       "community_name": "Developer Relations \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_devrel-md",
-      "norm_label": "developer relations \u2014 roadmap de referencia"
+      "norm_label": "developer relations \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_devrel-md"
     },
     {
       "label": "devsecops \u2014 roadmap de refer\u00eancia",
@@ -14485,47 +14252,8 @@
       "word_count": 560,
       "community": 165,
       "community_name": "devsecops \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_devsecops-md",
-      "norm_label": "devsecops \u2014 roadmap de referencia"
-    },
-    {
-      "label": "Engineering Manager Roadmap \u2014 refer\u00eancia enriquecida",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_ENGINEERING_MANAGER.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 450,
-      "community": 166,
-      "community_name": "Engineering Manager Roadmap \u2014 refer\u00eancia enriquecida",
-      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_engineering_manager-md",
-      "norm_label": "engineering manager roadmap \u2014 referencia enriquecida"
-    },
-    {
-      "label": "Forward Deployed Engineer Roadmap \u2014 refer\u00eancia enriquecida",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_FORWARD_DEPLOYED_ENGINEER.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 600,
-      "community": 167,
-      "community_name": "Forward Deployed Engineer Roadmap \u2014 refer\u00eancia enriquecida",
-      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_forward_deployed_engineer-md",
-      "norm_label": "forward deployed engineer roadmap \u2014 referencia enriquecida"
-    },
-    {
-      "label": "Frontend Developer Roadmap - Checklist (2026)",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_FRONTEND.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 745,
-      "community": 168,
-      "community_name": "Frontend Developer Roadmap - Checklist (2026)",
-      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_frontend-md",
-      "norm_label": "frontend developer roadmap - checklist (2026)"
+      "norm_label": "devsecops \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_devsecops-md"
     },
     {
       "label": "Full Stack Developer \u2014 roadmap de refer\u00eancia",
@@ -14537,8 +14265,8 @@
       "word_count": 492,
       "community": 169,
       "community_name": "Full Stack Developer \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_full_stack-md",
-      "norm_label": "full stack developer \u2014 roadmap de referencia"
+      "norm_label": "full stack developer \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_full_stack-md"
     },
     {
       "label": "Game Developer \u2014 roadmap de refer\u00eancia",
@@ -14550,8 +14278,8 @@
       "word_count": 423,
       "community": 170,
       "community_name": "Game Developer \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_game_developer-md",
-      "norm_label": "game developer \u2014 roadmap de referencia"
+      "norm_label": "game developer \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_game_developer-md"
     },
     {
       "label": "iOS Developer \u2014 roadmap de refer\u00eancia",
@@ -14563,8 +14291,8 @@
       "word_count": 559,
       "community": 171,
       "community_name": "iOS Developer \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_ios-md",
-      "norm_label": "ios developer \u2014 roadmap de referencia"
+      "norm_label": "ios developer \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_ios-md"
     },
     {
       "label": "Machine Learning \u2014 roadmap de refer\u00eancia",
@@ -14576,8 +14304,8 @@
       "word_count": 571,
       "community": 172,
       "community_name": "Machine Learning \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_machine_learning-md",
-      "norm_label": "machine learning \u2014 roadmap de referencia"
+      "norm_label": "machine learning \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_machine_learning-md"
     },
     {
       "label": "MLOps Roadmap \u2014 roadmap de refer\u00eancia",
@@ -14589,8 +14317,8 @@
       "word_count": 552,
       "community": 173,
       "community_name": "MLOps Roadmap \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_mlops-md",
-      "norm_label": "mlops roadmap \u2014 roadmap de referencia"
+      "norm_label": "mlops roadmap \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_mlops-md"
     },
     {
       "label": "network engineer \u2014 roadmap de refer\u00eancia",
@@ -14602,8 +14330,8 @@
       "word_count": 547,
       "community": 174,
       "community_name": "network engineer \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_network_engineer-md",
-      "norm_label": "network engineer \u2014 roadmap de referencia"
+      "norm_label": "network engineer \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_network_engineer-md"
     },
     {
       "label": "PostgreSQL DBA \u2014 roadmap de refer\u00eancia",
@@ -14615,34 +14343,8 @@
       "word_count": 556,
       "community": 175,
       "community_name": "PostgreSQL DBA \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_postgresql_dba-md",
-      "norm_label": "postgresql dba \u2014 roadmap de referencia"
-    },
-    {
-      "label": "Product Manager Roadmap \u2014 refer\u00eancia enriquecida",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_PRODUCT_MANAGER.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 491,
-      "community": 176,
-      "community_name": "Product Manager Roadmap \u2014 refer\u00eancia enriquecida",
-      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_product_manager-md",
-      "norm_label": "product manager roadmap \u2014 referencia enriquecida"
-    },
-    {
-      "label": "QA Engineer Roadmap \u2014 refer\u00eancia enriquecida",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_QA.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 580,
-      "community": 177,
-      "community_name": "QA Engineer Roadmap \u2014 refer\u00eancia enriquecida",
-      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_qa-md",
-      "norm_label": "qa engineer roadmap \u2014 referencia enriquecida"
+      "norm_label": "postgresql dba \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_postgresql_dba-md"
     },
     {
       "label": "Server Side Game Developer \u2014 roadmap de refer\u00eancia",
@@ -14654,21 +14356,8 @@
       "word_count": 520,
       "community": 178,
       "community_name": "Server Side Game Developer \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_server_side_game_developer-md",
-      "norm_label": "server side game developer \u2014 roadmap de referencia"
-    },
-    {
-      "label": "Software Architect Roadmap - Checklist (2026)",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_SOFTWARE_ARCHITECT.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 333,
-      "community": 6,
-      "community_name": "Software Architect Roadmap - Checklist (2026)",
-      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_software_architect-md",
-      "norm_label": "software architect roadmap - checklist (2026)"
+      "norm_label": "server side game developer \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_server_side_game_developer-md"
     },
     {
       "label": "Technical Writer \u2014 roadmap de refer\u00eancia",
@@ -14680,21 +14369,8 @@
       "word_count": 442,
       "community": 179,
       "community_name": "Technical Writer \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_technical_writer-md",
-      "norm_label": "technical writer \u2014 roadmap de referencia"
-    },
-    {
-      "label": "AI Agents Roadmap \u2014 refer\u00eancia enriquecida",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": "roadmaps_reference/Skill-based Roadmaps/ROADMAP_AI_AGENTS.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 704,
-      "community": 180,
-      "community_name": "AI Agents Roadmap \u2014 refer\u00eancia enriquecida",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_ai_agents-md",
-      "norm_label": "ai agents roadmap \u2014 referencia enriquecida"
+      "norm_label": "technical writer \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/role-based-roadmaps/roadmap_technical_writer-md"
     },
     {
       "label": "ai product builder \u2014 roadmap de refer\u00eancia",
@@ -14706,8 +14382,8 @@
       "word_count": 546,
       "community": 181,
       "community_name": "ai product builder \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_ai_product_builder-md",
-      "norm_label": "ai product builder \u2014 roadmap de referencia"
+      "norm_label": "ai product builder \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_ai_product_builder-md"
     },
     {
       "label": "AI Red Teaming \u2014 roadmap de refer\u00eancia",
@@ -14719,8 +14395,8 @@
       "word_count": 324,
       "community": 182,
       "community_name": "AI Red Teaming \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_ai_red_teaming-md",
-      "norm_label": "ai red teaming \u2014 roadmap de referencia"
+      "norm_label": "ai red teaming \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_ai_red_teaming-md"
     },
     {
       "label": "Angular Developer \u2014 roadmap de refer\u00eancia",
@@ -14732,8 +14408,8 @@
       "word_count": 495,
       "community": 183,
       "community_name": "Angular Developer \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_angular-md",
-      "norm_label": "angular developer \u2014 roadmap de referencia"
+      "norm_label": "angular developer \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_angular-md"
     },
     {
       "label": "API Design \u2014 roadmap de refer\u00eancia",
@@ -14745,8 +14421,8 @@
       "word_count": 403,
       "community": 184,
       "community_name": "API Design \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_api_design-md",
-      "norm_label": "api design \u2014 roadmap de referencia"
+      "norm_label": "api design \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_api_design-md"
     },
     {
       "label": "ASP.NET Core Developer \u2014 roadmap de refer\u00eancia",
@@ -14758,8 +14434,8 @@
       "word_count": 565,
       "community": 185,
       "community_name": "ASP.NET Core Developer \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_aspnet_core-md",
-      "norm_label": "asp.net core developer \u2014 roadmap de referencia"
+      "norm_label": "asp.net core developer \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_aspnet_core-md"
     },
     {
       "label": "AWS Roadmap \u2014 roadmap de refer\u00eancia",
@@ -14771,8 +14447,8 @@
       "word_count": 464,
       "community": 186,
       "community_name": "AWS Roadmap \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_aws-md",
-      "norm_label": "aws roadmap \u2014 roadmap de referencia"
+      "norm_label": "aws roadmap \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_aws-md"
     },
     {
       "label": "c \u2014 roadmap de refer\u00eancia",
@@ -14784,8 +14460,8 @@
       "word_count": 529,
       "community": 187,
       "community_name": "c \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_c-md",
-      "norm_label": "c \u2014 roadmap de referencia"
+      "norm_label": "c \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_c-md"
     },
     {
       "label": "claude code \u2014 roadmap de refer\u00eancia",
@@ -14797,8 +14473,8 @@
       "word_count": 560,
       "community": 188,
       "community_name": "claude code \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_claude_code-md",
-      "norm_label": "claude code \u2014 roadmap de referencia"
+      "norm_label": "claude code \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_claude_code-md"
     },
     {
       "label": "Cloudflare \u2014 roadmap de refer\u00eancia",
@@ -14810,8 +14486,8 @@
       "word_count": 471,
       "community": 189,
       "community_name": "Cloudflare \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_cloudflare-md",
-      "norm_label": "cloudflare \u2014 roadmap de referencia"
+      "norm_label": "cloudflare \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_cloudflare-md"
     },
     {
       "label": "Code Review Pyramid \u2014 roadmap de refer\u00eancia",
@@ -14823,8 +14499,8 @@
       "word_count": 236,
       "community": 190,
       "community_name": "Code Review Pyramid \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_code_review-md",
-      "norm_label": "code review pyramid \u2014 roadmap de referencia"
+      "norm_label": "code review pyramid \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_code_review-md"
     },
     {
       "label": "Computer Science \u2014 roadmap de refer\u00eancia",
@@ -14836,8 +14512,8 @@
       "word_count": 560,
       "community": 191,
       "community_name": "Computer Science \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_computer_science-md",
-      "norm_label": "computer science \u2014 roadmap de referencia"
+      "norm_label": "computer science \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_computer_science-md"
     },
     {
       "label": "C++ Developer Roadmap \u2014 roadmap de refer\u00eancia",
@@ -14849,8 +14525,8 @@
       "word_count": 532,
       "community": 192,
       "community_name": "C++ Developer Roadmap \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_cpp-md",
-      "norm_label": "c++ developer roadmap \u2014 roadmap de referencia"
+      "norm_label": "c++ developer roadmap \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_cpp-md"
     },
     {
       "label": "css \u2014 roadmap de refer\u00eancia",
@@ -14862,8 +14538,8 @@
       "word_count": 525,
       "community": 193,
       "community_name": "css \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_css-md",
-      "norm_label": "css \u2014 roadmap de referencia"
+      "norm_label": "css \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_css-md"
     },
     {
       "label": "Data Structures & Algorithms \u2014 roadmap de refer\u00eancia",
@@ -14875,21 +14551,8 @@
       "word_count": 416,
       "community": 194,
       "community_name": "Data Structures & Algorithms \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_datastructures_and_algorithms-md",
-      "norm_label": "data structures & algorithms \u2014 roadmap de referencia"
-    },
-    {
-      "label": "Design System Roadmap - Checklist (2026)",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": "roadmaps_reference/Skill-based Roadmaps/ROADMAP_DESIGN_SYSTEM.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 408,
-      "community": 195,
-      "community_name": "Design System Roadmap - Checklist (2026)",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_design_system-md",
-      "norm_label": "design system roadmap - checklist (2026)"
+      "norm_label": "data structures & algorithms \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_datastructures_and_algorithms-md"
     },
     {
       "label": "3.3 Regras vindas do SHADCNGUIDE",
@@ -14901,8 +14564,8 @@
       "_origin": "extracted-structure",
       "community": 317,
       "community_name": "3.3 Regras vindas do SHADCNGUIDE",
-      "id": "section:roadmaps_reference/skill-based-roadmaps/roadmap_design_system-md:3-3-regras-vindas-do-shadcnguide",
-      "norm_label": "3.3 regras vindas do shadcnguide"
+      "norm_label": "3.3 regras vindas do shadcnguide",
+      "id": "section:roadmaps_reference/skill-based-roadmaps/roadmap_design_system-md:3-3-regras-vindas-do-shadcnguide"
     },
     {
       "label": "django \u2014 roadmap de refer\u00eancia",
@@ -14914,8 +14577,8 @@
       "word_count": 561,
       "community": 196,
       "community_name": "django \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_django-md",
-      "norm_label": "django \u2014 roadmap de referencia"
+      "norm_label": "django \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_django-md"
     },
     {
       "label": "Docker Roadmap \u2014 roadmap de refer\u00eancia",
@@ -14927,8 +14590,8 @@
       "word_count": 558,
       "community": 197,
       "community_name": "Docker Roadmap \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_docker-md",
-      "norm_label": "docker roadmap \u2014 roadmap de referencia"
+      "norm_label": "docker roadmap \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_docker-md"
     },
     {
       "label": "elasticsearch \u2014 roadmap de refer\u00eancia",
@@ -14940,8 +14603,8 @@
       "word_count": 565,
       "community": 198,
       "community_name": "elasticsearch \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_elasticsearch-md",
-      "norm_label": "elasticsearch \u2014 roadmap de referencia"
+      "norm_label": "elasticsearch \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_elasticsearch-md"
     },
     {
       "label": "Flutter Developer \u2014 roadmap de refer\u00eancia",
@@ -14953,8 +14616,8 @@
       "word_count": 468,
       "community": 199,
       "community_name": "Flutter Developer \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_flutter-md",
-      "norm_label": "flutter developer \u2014 roadmap de referencia"
+      "norm_label": "flutter developer \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_flutter-md"
     },
     {
       "label": "Learn Git and GitHub \u2014 roadmap de refer\u00eancia",
@@ -14966,8 +14629,8 @@
       "word_count": 581,
       "community": 200,
       "community_name": "Learn Git and GitHub \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_git_github-md",
-      "norm_label": "learn git and github \u2014 roadmap de referencia"
+      "norm_label": "learn git and github \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_git_github-md"
     },
     {
       "label": "Go Developer \u2014 roadmap de refer\u00eancia",
@@ -14979,8 +14642,8 @@
       "word_count": 547,
       "community": 201,
       "community_name": "Go Developer \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_golang-md",
-      "norm_label": "go developer \u2014 roadmap de referencia"
+      "norm_label": "go developer \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_golang-md"
     },
     {
       "label": "GraphQL \u2014 roadmap de refer\u00eancia",
@@ -14992,8 +14655,8 @@
       "word_count": 411,
       "community": 202,
       "community_name": "GraphQL \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_graphql-md",
-      "norm_label": "graphql \u2014 roadmap de referencia"
+      "norm_label": "graphql \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_graphql-md"
     },
     {
       "label": "html \u2014 roadmap de refer\u00eancia",
@@ -15005,8 +14668,8 @@
       "word_count": 520,
       "community": 203,
       "community_name": "html \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_html-md",
-      "norm_label": "html \u2014 roadmap de referencia"
+      "norm_label": "html \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_html-md"
     },
     {
       "label": "Java Developer \u2014 roadmap de refer\u00eancia",
@@ -15018,8 +14681,8 @@
       "word_count": 536,
       "community": 204,
       "community_name": "Java Developer \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_java-md",
-      "norm_label": "java developer \u2014 roadmap de referencia"
+      "norm_label": "java developer \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_java-md"
     },
     {
       "label": "JavaScript Roadmap \u2014 roadmap de refer\u00eancia",
@@ -15031,8 +14694,8 @@
       "word_count": 460,
       "community": 205,
       "community_name": "JavaScript Roadmap \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_javascript-md",
-      "norm_label": "javascript roadmap \u2014 roadmap de referencia"
+      "norm_label": "javascript roadmap \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_javascript-md"
     },
     {
       "label": "kotlin \u2014 roadmap de refer\u00eancia",
@@ -15044,8 +14707,8 @@
       "word_count": 558,
       "community": 206,
       "community_name": "kotlin \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_kotlin-md",
-      "norm_label": "kotlin \u2014 roadmap de referencia"
+      "norm_label": "kotlin \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_kotlin-md"
     },
     {
       "label": "Kubernetes Roadmap \u2014 roadmap de refer\u00eancia",
@@ -15057,8 +14720,8 @@
       "word_count": 401,
       "community": 207,
       "community_name": "Kubernetes Roadmap \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_kubernetes-md",
-      "norm_label": "kubernetes roadmap \u2014 roadmap de referencia"
+      "norm_label": "kubernetes roadmap \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_kubernetes-md"
     },
     {
       "label": "laravel \u2014 roadmap de refer\u00eancia",
@@ -15070,8 +14733,8 @@
       "word_count": 570,
       "community": 208,
       "community_name": "laravel \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_laravel-md",
-      "norm_label": "laravel \u2014 roadmap de referencia"
+      "norm_label": "laravel \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_laravel-md"
     },
     {
       "label": "leetcode \u2014 roadmap de refer\u00eancia",
@@ -15083,8 +14746,8 @@
       "word_count": 562,
       "community": 209,
       "community_name": "leetcode \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_leetcode-md",
-      "norm_label": "leetcode \u2014 roadmap de referencia"
+      "norm_label": "leetcode \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_leetcode-md"
     },
     {
       "label": "Linux Roadmap \u2014 roadmap de refer\u00eancia",
@@ -15096,8 +14759,8 @@
       "word_count": 416,
       "community": 210,
       "community_name": "Linux Roadmap \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_linux-md",
-      "norm_label": "linux roadmap \u2014 roadmap de referencia"
+      "norm_label": "linux roadmap \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_linux-md"
     },
     {
       "label": "MongoDB \u2014 roadmap de refer\u00eancia",
@@ -15109,8 +14772,8 @@
       "word_count": 455,
       "community": 211,
       "community_name": "MongoDB \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_mongodb-md",
-      "norm_label": "mongodb \u2014 roadmap de referencia"
+      "norm_label": "mongodb \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_mongodb-md"
     },
     {
       "label": "Next.js \u2014 roadmap de refer\u00eancia",
@@ -15122,8 +14785,8 @@
       "word_count": 563,
       "community": 212,
       "community_name": "Next.js \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_nextjs-md",
-      "norm_label": "next.js \u2014 roadmap de referencia"
+      "norm_label": "next.js \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_nextjs-md"
     },
     {
       "label": "Node.js Developer \u2014 roadmap de refer\u00eancia",
@@ -15135,8 +14798,8 @@
       "word_count": 562,
       "community": 213,
       "community_name": "Node.js Developer \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_nodejs-md",
-      "norm_label": "node.js developer \u2014 roadmap de referencia"
+      "norm_label": "node.js developer \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_nodejs-md"
     },
     {
       "label": "openclaw \u2014 roadmap de refer\u00eancia",
@@ -15148,8 +14811,8 @@
       "word_count": 584,
       "community": 214,
       "community_name": "openclaw \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_openclaw-md",
-      "norm_label": "openclaw \u2014 roadmap de referencia"
+      "norm_label": "openclaw \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_openclaw-md"
     },
     {
       "label": "PHP Roadmap \u2014 roadmap de refer\u00eancia",
@@ -15161,8 +14824,8 @@
       "word_count": 550,
       "community": 215,
       "community_name": "PHP Roadmap \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_php-md",
-      "norm_label": "php roadmap \u2014 roadmap de referencia"
+      "norm_label": "php roadmap \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_php-md"
     },
     {
       "label": "Prompt Engineering Roadmap \u2014 roadmap de refer\u00eancia",
@@ -15174,8 +14837,8 @@
       "word_count": 566,
       "community": 216,
       "community_name": "Prompt Engineering Roadmap \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_prompt_engineering-md",
-      "norm_label": "prompt engineering roadmap \u2014 roadmap de referencia"
+      "norm_label": "prompt engineering roadmap \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_prompt_engineering-md"
     },
     {
       "label": "Python Developer \u2014 roadmap de refer\u00eancia",
@@ -15187,8 +14850,8 @@
       "word_count": 505,
       "community": 217,
       "community_name": "Python Developer \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_python-md",
-      "norm_label": "python developer \u2014 roadmap de referencia"
+      "norm_label": "python developer \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_python-md"
     },
     {
       "label": "python data analysis \u2014 roadmap de refer\u00eancia",
@@ -15200,8 +14863,8 @@
       "word_count": 547,
       "community": 218,
       "community_name": "python data analysis \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_python_data_analysis-md",
-      "norm_label": "python data analysis \u2014 roadmap de referencia"
+      "norm_label": "python data analysis \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_python_data_analysis-md"
     },
     {
       "label": "React Developer \u2014 roadmap de refer\u00eancia",
@@ -15213,8 +14876,8 @@
       "word_count": 487,
       "community": 219,
       "community_name": "React Developer \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_react-md",
-      "norm_label": "react developer \u2014 roadmap de referencia"
+      "norm_label": "react developer \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_react-md"
     },
     {
       "label": "React Native Developer \u2014 roadmap de refer\u00eancia",
@@ -15226,8 +14889,8 @@
       "word_count": 468,
       "community": 220,
       "community_name": "React Native Developer \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_react_native-md",
-      "norm_label": "react native developer \u2014 roadmap de referencia"
+      "norm_label": "react native developer \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_react_native-md"
     },
     {
       "label": "Redis Roadmap \u2014 roadmap de refer\u00eancia",
@@ -15239,8 +14902,8 @@
       "word_count": 556,
       "community": 221,
       "community_name": "Redis Roadmap \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_redis-md",
-      "norm_label": "redis roadmap \u2014 roadmap de referencia"
+      "norm_label": "redis roadmap \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_redis-md"
     },
     {
       "label": "ruby \u2014 roadmap de refer\u00eancia",
@@ -15252,8 +14915,8 @@
       "word_count": 552,
       "community": 222,
       "community_name": "ruby \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_ruby-md",
-      "norm_label": "ruby \u2014 roadmap de referencia"
+      "norm_label": "ruby \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_ruby-md"
     },
     {
       "label": "ruby on rails \u2014 roadmap de refer\u00eancia",
@@ -15265,8 +14928,8 @@
       "word_count": 562,
       "community": 223,
       "community_name": "ruby on rails \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_ruby_on_rails-md",
-      "norm_label": "ruby on rails \u2014 roadmap de referencia"
+      "norm_label": "ruby on rails \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_ruby_on_rails-md"
     },
     {
       "label": "Rust Developer \u2014 roadmap de refer\u00eancia",
@@ -15278,8 +14941,8 @@
       "word_count": 566,
       "community": 224,
       "community_name": "Rust Developer \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_rust-md",
-      "norm_label": "rust developer \u2014 roadmap de referencia"
+      "norm_label": "rust developer \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_rust-md"
     },
     {
       "label": "scala \u2014 roadmap de refer\u00eancia",
@@ -15291,8 +14954,8 @@
       "word_count": 552,
       "community": 225,
       "community_name": "scala \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_scala-md",
-      "norm_label": "scala \u2014 roadmap de referencia"
+      "norm_label": "scala \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_scala-md"
     },
     {
       "label": "shell bash \u2014 roadmap de refer\u00eancia",
@@ -15304,8 +14967,8 @@
       "word_count": 569,
       "community": 226,
       "community_name": "shell bash \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_shell_bash-md",
-      "norm_label": "shell bash \u2014 roadmap de referencia"
+      "norm_label": "shell bash \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_shell_bash-md"
     },
     {
       "label": "Software Design and Architecture \u2014 roadmap de refer\u00eancia",
@@ -15317,8 +14980,8 @@
       "word_count": 387,
       "community": 227,
       "community_name": "Software Design and Architecture \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_software_design_architecture-md",
-      "norm_label": "software design and architecture \u2014 roadmap de referencia"
+      "norm_label": "software design and architecture \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_software_design_architecture-md"
     },
     {
       "label": "Spring Boot Developer \u2014 roadmap de refer\u00eancia",
@@ -15330,8 +14993,8 @@
       "word_count": 375,
       "community": 228,
       "community_name": "Spring Boot Developer \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_spring_boot-md",
-      "norm_label": "spring boot developer \u2014 roadmap de referencia"
+      "norm_label": "spring boot developer \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_spring_boot-md"
     },
     {
       "label": "SQL Roadmap \u2014 roadmap de refer\u00eancia",
@@ -15343,8 +15006,8 @@
       "word_count": 449,
       "community": 229,
       "community_name": "SQL Roadmap \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_sql-md",
-      "norm_label": "sql roadmap \u2014 roadmap de referencia"
+      "norm_label": "sql roadmap \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_sql-md"
     },
     {
       "label": "swift ui \u2014 roadmap de refer\u00eancia",
@@ -15356,21 +15019,8 @@
       "word_count": 551,
       "community": 230,
       "community_name": "swift ui \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_swift_ui-md",
-      "norm_label": "swift ui \u2014 roadmap de referencia"
-    },
-    {
-      "label": "System Design Roadmap - Checklist (2026)",
-      "file_type": "document",
-      "node_kind": "document",
-      "source_file": "roadmaps_reference/Skill-based Roadmaps/ROADMAP_SYSTEM_DESIGN.md",
-      "source_location": "L1",
-      "_origin": "deterministic-semantic",
-      "word_count": 389,
-      "community": 231,
-      "community_name": "System Design Roadmap - Checklist (2026)",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_system_design-md",
-      "norm_label": "system design roadmap - checklist (2026)"
+      "norm_label": "swift ui \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_swift_ui-md"
     },
     {
       "label": "Terraform Roadmap \u2014 roadmap de refer\u00eancia",
@@ -15382,8 +15032,8 @@
       "word_count": 493,
       "community": 232,
       "community_name": "Terraform Roadmap \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_terraform-md",
-      "norm_label": "terraform roadmap \u2014 roadmap de referencia"
+      "norm_label": "terraform roadmap \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_terraform-md"
     },
     {
       "label": "TypeScript \u2014 roadmap de refer\u00eancia",
@@ -15395,8 +15045,8 @@
       "word_count": 449,
       "community": 233,
       "community_name": "TypeScript \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_typescript-md",
-      "norm_label": "typescript \u2014 roadmap de referencia"
+      "norm_label": "typescript \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_typescript-md"
     },
     {
       "label": "vibe coding \u2014 roadmap de refer\u00eancia",
@@ -15408,8 +15058,8 @@
       "word_count": 610,
       "community": 234,
       "community_name": "vibe coding \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_vibe_coding-md",
-      "norm_label": "vibe coding \u2014 roadmap de referencia"
+      "norm_label": "vibe coding \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_vibe_coding-md"
     },
     {
       "label": "Vue Developer \u2014 roadmap de refer\u00eancia",
@@ -15421,8 +15071,8 @@
       "word_count": 491,
       "community": 235,
       "community_name": "Vue Developer \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_vue-md",
-      "norm_label": "vue developer \u2014 roadmap de referencia"
+      "norm_label": "vue developer \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_vue-md"
     },
     {
       "label": "wordpress \u2014 roadmap de refer\u00eancia",
@@ -15434,8 +15084,8 @@
       "word_count": 570,
       "community": 236,
       "community_name": "wordpress \u2014 roadmap de refer\u00eancia",
-      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_wordpress-md",
-      "norm_label": "wordpress \u2014 roadmap de referencia"
+      "norm_label": "wordpress \u2014 roadmap de referencia",
+      "id": "doc:roadmaps_reference/skill-based-roadmaps/roadmap_wordpress-md"
     }
   ],
   "links": [
@@ -16227,7 +15877,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CURRENT_DIRECTION.md",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0,
       "source": "current_direction_correnth_current_direction",
       "target": "current_direction_autoridade",
@@ -16377,7 +16027,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "decisions/CORRENTH_ECOSYSTEM_PORTFOLIO_AND_OPERATING_MODEL_v1.md",
-      "source_location": "L80",
+      "source_location": "L93",
       "weight": 1.0,
       "source": "decisions_correnth_ecosystem_portfolio_and_operating_model_v1_correnth_ecosystem_portfolio_and_operating_model_v1",
       "target": "decisions_correnth_ecosystem_portfolio_and_operating_model_v1_6_contexto_e_mem\u00f3ria_compartilhados",
@@ -16387,7 +16037,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "decisions/CORRENTH_ECOSYSTEM_PORTFOLIO_AND_OPERATING_MODEL_v1.md",
-      "source_location": "L96",
+      "source_location": "L109",
       "weight": 1.0,
       "source": "decisions_correnth_ecosystem_portfolio_and_operating_model_v1_correnth_ecosystem_portfolio_and_operating_model_v1",
       "target": "decisions_correnth_ecosystem_portfolio_and_operating_model_v1_7_princ\u00edpios_de_constru\u00e7\u00e3o",
@@ -16397,10 +16047,20 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "decisions/CORRENTH_ECOSYSTEM_PORTFOLIO_AND_OPERATING_MODEL_v1.md",
-      "source_location": "L105",
+      "source_location": "L118",
       "weight": 1.0,
       "source": "decisions_correnth_ecosystem_portfolio_and_operating_model_v1_correnth_ecosystem_portfolio_and_operating_model_v1",
       "target": "decisions_correnth_ecosystem_portfolio_and_operating_model_v1_8_decis\u00f5es_pendentes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "decisions/CORRENTH_ECOSYSTEM_PORTFOLIO_AND_OPERATING_MODEL_v1.md",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "decisions_correnth_ecosystem_portfolio_and_operating_model_v1_5_opera\u00e7\u00e3o_com_agentes",
+      "target": "decisions_correnth_ecosystem_portfolio_and_operating_model_v1_organiza\u00e7\u00e3o_vigente_da_gauss",
       "confidence_score": 1.0
     },
     {
@@ -16671,6 +16331,46 @@
       "weight": 1.0,
       "source": "decisions_correnth_ui_and_tech_stack_standard_v1_7_qualidade_e_testes",
       "target": "decisions_correnth_ui_and_tech_stack_standard_v1_regra_correnth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "decisions/GAUSS_AGENT_ORGANIZATION_AND_LANGUAGE_v1.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "decisions_gauss_agent_organization_and_language_v1",
+      "target": "decisions_gauss_agent_organization_and_language_v1_organiza\u00e7\u00e3o_e_idioma_oficial_dos_agentes_gauss_v1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "decisions/GAUSS_AGENT_ORGANIZATION_AND_LANGUAGE_v1.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "decisions_gauss_agent_organization_and_language_v1_organiza\u00e7\u00e3o_e_idioma_oficial_dos_agentes_gauss_v1",
+      "target": "decisions_gauss_agent_organization_and_language_v1_decis\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "decisions/GAUSS_AGENT_ORGANIZATION_AND_LANGUAGE_v1.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "decisions_gauss_agent_organization_and_language_v1_organiza\u00e7\u00e3o_e_idioma_oficial_dos_agentes_gauss_v1",
+      "target": "decisions_gauss_agent_organization_and_language_v1_identificadores_port\u00e1teis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "decisions/GAUSS_AGENT_ORGANIZATION_AND_LANGUAGE_v1.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "decisions_gauss_agent_organization_and_language_v1_organiza\u00e7\u00e3o_e_idioma_oficial_dos_agentes_gauss_v1",
+      "target": "decisions_gauss_agent_organization_and_language_v1_organiza\u00e7\u00e3o_vigente",
       "confidence_score": 1.0
     },
     {
@@ -26144,5 +25844,6 @@
       "confidence_score": 1.0
     }
   ],
-  "hyperedges": []
+  "hyperedges": [],
+  "built_at_commit": "63b6e2d1b95e9c54acad40e4912e4997477c4433"
 }

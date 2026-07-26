@@ -3,11 +3,11 @@
 - Data: 2026-07-10
 - PRD: PRD-CML-001
 - Decisao: Aprovado
-- Proximo gate liberado: PRD-RS-002 - Work Order Data Model
+- Próximos consumidores: produtos, negócios e agentes autorizados por API/SDK versionada
 
 ## Resultado
 
-A Context Memory Platform esta operacional como plataforma compartilhada e independente. RedScale e RedRise possuem consumers revogaveis e usam API/SDK, sem service role ou acesso direto as tabelas. O Supabase dedicado possui migrations em paridade e aplica isolamento por organization, product, environment, visibility e capability.
+A Context Memory Platform está operacional como plataforma compartilhada e independente. RedRise e os demais consumidores autorizados usam API/SDK, sem service role ou acesso direto às tabelas. O Supabase dedicado possui migrations em paridade e aplica isolamento por organization, product, environment, visibility e capability.
 
 O gate RedRise que bloqueava a conclusao foi resolvido pela migration `202607090017_cross_product_results.sql`. Query e pack mantem seu proprio product/environment scope, enquanto cada resultado registra separadamente o scope real do chunk compartilhado. Isso preserva FKs auditaveis sem ampliar autorizacao.
 
@@ -21,14 +21,14 @@ O gate RedRise que bloqueava a conclusao foi resolvido pela migration `202607090
 - RedRise hybrid retrieval retornou HTTP 200, `mode=hybrid`, `status=complete` e oito resultados citados.
 - RedRise publicou Context Pack cross-product via API com HTTP 201 e estado `published`.
 - O pack RedRise preservou scope do consumer RedRise e citou chunk `organization_shared` do produto Context Memory.
-- RedScale foi validado como operador por SDK no console RS-CONTEXT.
+- O console administrativo da CML foi validado como operador por SDK.
 - RLS, capabilities, revogacao, secret quarantine, immutable reindex e adversarial isolation possuem testes permanentes.
 
 ## Riscos residuais
 
 - O `supabase db lint --linked` encontrou uma falha transitoria de conexao do CLI; migrations, readiness e operacoes autenticadas remotas passaram depois. Nao indica falha de schema.
-- A remocao fisica da implementacao legada no worktree sujo `D:\studio\redrise v2` foi evitada para nao destruir alteracoes do usuario. O inventario a declara nao canonica e nenhum consumer depende dela.
-- O workspace RedScale local ainda deve receber governanca Git propria quando seu repositorio oficial for definido. A integracao e os gates de runtime estao validados.
+- A remocao fisica da implementacao legada no worktree sujo `D:\01_studio\redrise v2` foi evitada para nao destruir alteracoes do usuario. O inventario a declara nao canonica e nenhum consumer depende dela.
+- O console administrativo deve manter governança Git própria quando seu repositório oficial for definido. A integração e os gates de runtime estão validados.
 
 ## Rollback
 
@@ -39,4 +39,4 @@ O gate RedRise que bloqueava a conclusao foi resolvido pela migration `202607090
 
 ## Aprovacao
 
-As evidencias satisfazem CML-L01 a CML-L09. Os riscos residuais sao operacionais e nao bloqueiam o inicio do Work Order Data Model. CML-L10 esta aprovado e PRD-RS-002 pode avancar.
+As evidências satisfazem CML-L01 a CML-L09. Os riscos residuais são operacionais e não bloqueiam consumidores autorizados. CML-L10 está aprovado; todo novo consumidor deve integrar a CML por API/SDK versionada e com capability mínima.

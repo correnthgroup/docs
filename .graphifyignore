@@ -1,0 +1,7 @@
+# Graphify output is an index, never source material for its own extraction.
+graphify-out
+graphify-out/**
+graphiy-out
+graphiy-out/**
+.graphify-quarantine
+.graphify-quarantine/**
