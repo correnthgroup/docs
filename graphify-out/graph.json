@@ -267,17 +267,31 @@
         "source_file": "roadmaps_reference/Skill-based Roadmaps/ROADMAP_VIBE_CODING.md"
       },
       {
-        "id": "semantic_refresh_pipeline",
+        "id": "semantic_refresh_flow",
         "label": "Semantic Refresh Pipeline",
         "nodes": [
-          "d_00_docs_tools_invoke_correnth_semantic_push_personal_vault",
-          "d_00_docs_tools_invoke_correnth_semantic_push_mini_max_backend",
-          "platforms_graphify_semantic_memory_graphify",
-          "platforms_graphify_semantic_memory_graph_json"
+          "invoke_correnth_semantic_push_ps1",
+          "minimax",
+          "graphify",
+          "graphify_out_graph_json"
         ],
         "relation": "participate_in",
         "confidence": "EXTRACTED",
-        "confidence_score": 0.95,
+        "confidence_score": 0.9,
+        "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md"
+      },
+      {
+        "id": "git_push_guardian",
+        "label": "Git Push Guardian Chain",
+        "nodes": [
+          "pre_push_hook",
+          "invoke_correnth_semantic_push_ps1",
+          "git_lfs",
+          "github_mcp"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.8,
         "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md"
       }
     ]
@@ -289,10 +303,10 @@
       "source_file": "roadmaps_reference/tools/Enrich-RoadmapReferences.ps1",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 10,
+      "community": 9,
       "norm_label": "enrich-roadmapreferences.ps1",
       "id": "roadmaps_reference_tools_enrich_roadmapreferences",
-      "community_name": "Enrich-RoadmapReferences.ps1"
+      "community_name": "Community 9"
     },
     {
       "label": "Get-FrontMatterValue()",
@@ -300,10 +314,10 @@
       "source_file": "roadmaps_reference/tools/Enrich-RoadmapReferences.ps1",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 10,
+      "community": 9,
       "norm_label": "get-frontmattervalue()",
       "id": "roadmaps_reference_tools_enrich_roadmapreferences_get_frontmattervalue",
-      "community_name": "Enrich-RoadmapReferences.ps1"
+      "community_name": "Community 9"
     },
     {
       "label": "ConvertTo-PlainText()",
@@ -311,10 +325,10 @@
       "source_file": "roadmaps_reference/tools/Enrich-RoadmapReferences.ps1",
       "source_location": "L20",
       "_origin": "ast",
-      "community": 10,
+      "community": 9,
       "norm_label": "convertto-plaintext()",
       "id": "roadmaps_reference_tools_enrich_roadmapreferences_convertto_plaintext",
-      "community_name": "Enrich-RoadmapReferences.ps1"
+      "community_name": "Community 9"
     },
     {
       "label": "Add-UniqueItem()",
@@ -322,10 +336,10 @@
       "source_file": "roadmaps_reference/tools/Enrich-RoadmapReferences.ps1",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 10,
+      "community": 9,
       "norm_label": "add-uniqueitem()",
       "id": "roadmaps_reference_tools_enrich_roadmapreferences_add_uniqueitem",
-      "community_name": "Enrich-RoadmapReferences.ps1"
+      "community_name": "Community 9"
     },
     {
       "label": "Get-TopicFocus()",
@@ -333,10 +347,10 @@
       "source_file": "roadmaps_reference/tools/Enrich-RoadmapReferences.ps1",
       "source_location": "L45",
       "_origin": "ast",
-      "community": 10,
+      "community": 9,
       "norm_label": "get-topicfocus()",
       "id": "roadmaps_reference_tools_enrich_roadmapreferences_get_topicfocus",
-      "community_name": "Enrich-RoadmapReferences.ps1"
+      "community_name": "Community 9"
     },
     {
       "label": "Get-OfficialResources()",
@@ -344,10 +358,10 @@
       "source_file": "roadmaps_reference/tools/Enrich-RoadmapReferences.ps1",
       "source_location": "L88",
       "_origin": "ast",
-      "community": 10,
+      "community": 9,
       "norm_label": "get-officialresources()",
       "id": "roadmaps_reference_tools_enrich_roadmapreferences_get_officialresources",
-      "community_name": "Enrich-RoadmapReferences.ps1"
+      "community_name": "Community 9"
     },
     {
       "label": "Get-RoadmapTopics()",
@@ -355,10 +369,10 @@
       "source_file": "roadmaps_reference/tools/Enrich-RoadmapReferences.ps1",
       "source_location": "L111",
       "_origin": "ast",
-      "community": 10,
+      "community": 9,
       "norm_label": "get-roadmaptopics()",
       "id": "roadmaps_reference_tools_enrich_roadmapreferences_get_roadmaptopics",
-      "community_name": "Enrich-RoadmapReferences.ps1"
+      "community_name": "Community 9"
     },
     {
       "label": "Install-CorrenthSemanticPushGuard.ps1",
@@ -369,7 +383,7 @@
       "community": 22,
       "norm_label": "install-correnthsemanticpushguard.ps1",
       "id": "tools_install_correnthsemanticpushguard",
-      "community_name": "Install-CorrenthSemanticPushGuard.ps1"
+      "community_name": "Community 22"
     },
     {
       "label": "Invoke-CorrenthSemanticPush.ps1",
@@ -377,10 +391,10 @@
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "norm_label": "invoke-correnthsemanticpush.ps1",
       "id": "tools_invoke_correnthsemanticpush",
-      "community_name": "Invoke-CorrenthSemanticPush.ps1"
+      "community_name": "Community 10"
     },
     {
       "label": "Invoke-GraphifyPython()",
@@ -388,10 +402,10 @@
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "norm_label": "invoke-graphifypython()",
       "id": "tools_invoke_correnthsemanticpush_invoke_graphifypython",
-      "community_name": "Invoke-CorrenthSemanticPush.ps1"
+      "community_name": "Community 10"
     },
     {
       "label": "Get-ArtifactHash()",
@@ -399,10 +413,10 @@
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
       "source_location": "L31",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "norm_label": "get-artifacthash()",
       "id": "tools_invoke_correnthsemanticpush_get_artifacthash",
-      "community_name": "Invoke-CorrenthSemanticPush.ps1"
+      "community_name": "Community 10"
     },
     {
       "label": "Get-GraphSnapshot()",
@@ -410,10 +424,10 @@
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
       "source_location": "L37",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "norm_label": "get-graphsnapshot()",
       "id": "tools_invoke_correnthsemanticpush_get_graphsnapshot",
-      "community_name": "Invoke-CorrenthSemanticPush.ps1"
+      "community_name": "Community 10"
     },
     {
       "label": "Write-Provenance()",
@@ -421,21 +435,32 @@
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
       "source_location": "L78",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "norm_label": "write-provenance()",
       "id": "tools_invoke_correnthsemanticpush_write_provenance",
-      "community_name": "Invoke-CorrenthSemanticPush.ps1"
+      "community_name": "Community 10"
+    },
+    {
+      "label": "Write-DeterministicCommunityLabels()",
+      "file_type": "code",
+      "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
+      "source_location": "L106",
+      "_origin": "ast",
+      "community": 10,
+      "norm_label": "write-deterministiccommunitylabels()",
+      "id": "tools_invoke_correnthsemanticpush_write_deterministiccommunitylabels",
+      "community_name": "Community 10"
     },
     {
       "label": "Test-CanonicalArtifacts()",
       "file_type": "code",
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
-      "source_location": "L106",
+      "source_location": "L120",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "norm_label": "test-canonicalartifacts()",
       "id": "tools_invoke_correnthsemanticpush_test_canonicalartifacts",
-      "community_name": "Invoke-CorrenthSemanticPush.ps1"
+      "community_name": "Community 10"
     },
     {
       "label": "Graphify Skill for Codex",
@@ -446,10 +471,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "graphify skill for codex",
       "id": "codex_skills_graphify_skill",
-      "community_name": "Graphify"
+      "community_name": "Community 3"
     },
     {
       "label": "Graphify Add Watch Reference",
@@ -460,10 +485,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "graphify add watch reference",
       "id": "graphify_add_watch",
-      "community_name": "Graphify"
+      "community_name": "Community 3"
     },
     {
       "label": "Graphify Exports Reference",
@@ -474,10 +499,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "graphify exports reference",
       "id": "graphify_exports",
-      "community_name": "Graphify"
+      "community_name": "Community 3"
     },
     {
       "label": "Graphify Extraction Spec Reference",
@@ -488,10 +513,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "graphify extraction spec reference",
       "id": "skill_reference_extraction_spec",
-      "community_name": "Graphify"
+      "community_name": "Community 3"
     },
     {
       "label": "Graphify GitHub Clone and Merge Reference",
@@ -502,10 +527,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "graphify github clone and merge reference",
       "id": "graphify_github_merge",
-      "community_name": "Graphify"
+      "community_name": "Community 3"
     },
     {
       "label": "Graphify Hooks Reference",
@@ -516,10 +541,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "graphify hooks reference",
       "id": "graphify_hooks",
-      "community_name": "Graphify"
+      "community_name": "Community 3"
     },
     {
       "label": "Graphify Query Reference",
@@ -530,10 +555,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "graphify query reference",
       "id": "skill_reference_query",
-      "community_name": "Graphify"
+      "community_name": "Community 3"
     },
     {
       "label": "Graphify Transcribe Reference",
@@ -544,10 +569,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "graphify transcribe reference",
       "id": "graphify_transcribe",
-      "community_name": "Graphify"
+      "community_name": "Community 3"
     },
     {
       "label": "Graphify Update Reference",
@@ -558,10 +583,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "graphify update reference",
       "id": "graphify_update",
-      "community_name": "Graphify"
+      "community_name": "Community 3"
     },
     {
       "label": "AGENTS.md Documentation",
@@ -572,10 +597,10 @@
       "captured_at": null,
       "author": "Grupo Correnth",
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "agents.md documentation",
       "id": "agents_md",
-      "community_name": "Graphify"
+      "community_name": "Community 3"
     },
     {
       "label": "Graphify",
@@ -586,10 +611,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "graphify",
       "id": "graphify",
-      "community_name": "Graphify"
+      "community_name": "Community 3"
     },
     {
       "label": "Correnth Current Direction",
@@ -600,10 +625,10 @@
       "captured_at": "2026-07-24",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "correnth current direction",
       "id": "current_direction_md",
-      "community_name": "Correnth Group"
+      "community_name": "Community 4"
     },
     {
       "label": "Graphify Stack Recommendation",
@@ -614,10 +639,10 @@
       "captured_at": "2026-07-14",
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "graphify stack recommendation",
       "id": "graphify_stack_recommendation_md",
-      "community_name": "Graphify"
+      "community_name": "Community 3"
     },
     {
       "label": "Prompt Engineer Template",
@@ -628,10 +653,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "prompt engineer template",
       "id": "prompt_engineer",
-      "community_name": "Correnth Group"
+      "community_name": "Community 4"
     },
     {
       "label": "Correnth Repository Map",
@@ -645,7 +670,7 @@
       "community": 16,
       "norm_label": "correnth repository map",
       "id": "repositories_md",
-      "community_name": "Correnth Repository Map"
+      "community_name": "Community 16"
     },
     {
       "label": "correnthgroup/docs Repository",
@@ -656,10 +681,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "correnthgroup/docs repository",
       "id": "repositories_correnthgroup_docs",
-      "community_name": "Correnth Group"
+      "community_name": "Community 4"
     },
     {
       "label": "correnthgroup/redrise-platform Repository",
@@ -670,10 +695,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 7,
       "norm_label": "correnthgroup/redrise-platform repository",
       "id": "repositories_correnthgroup_redrise_platform",
-      "community_name": "Correnth UI and Tech Stack Standard"
+      "community_name": "Community 7"
     },
     {
       "label": "correnthgroup/redrise-operation Repository",
@@ -684,10 +709,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "correnthgroup/redrise-operation repository",
       "id": "repositories_correnthgroup_redrise_operation",
-      "community_name": "Correnth Group"
+      "community_name": "Community 4"
     },
     {
       "label": "correnthgroup/studio_findfee Repository",
@@ -698,10 +723,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "correnthgroup/studio_findfee repository",
       "id": "repositories_correnthgroup_studio_findfee",
-      "community_name": "Correnth Group"
+      "community_name": "Community 4"
     },
     {
       "label": "Correnth Group",
@@ -712,10 +737,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "correnth group",
       "id": "correnth_group",
-      "community_name": "Correnth Group"
+      "community_name": "Community 4"
     },
     {
       "label": "RedRose",
@@ -726,10 +751,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "redrose",
       "id": "redrose",
-      "community_name": "Correnth Group"
+      "community_name": "Community 4"
     },
     {
       "label": "Findfee",
@@ -740,10 +765,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "findfee",
       "id": "findfee",
-      "community_name": "Correnth Group"
+      "community_name": "Community 4"
     },
     {
       "label": "ADGency",
@@ -754,10 +779,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "adgency",
       "id": "adgency",
-      "community_name": "Correnth Group"
+      "community_name": "Community 4"
     },
     {
       "label": "Correnth Ecosystem Portfolio and Operating Model",
@@ -768,10 +793,10 @@
       "captured_at": "2026-07-14",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "correnth ecosystem portfolio and operating model",
       "id": "decision_correnth_ecosystem_portfolio",
-      "community_name": "Correnth Group"
+      "community_name": "Community 4"
     },
     {
       "label": "Paperclip",
@@ -782,10 +807,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "paperclip",
       "id": "paperclip",
-      "community_name": "Correnth Group"
+      "community_name": "Community 4"
     },
     {
       "label": "COcorrenth/ui",
@@ -796,10 +821,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 7,
       "norm_label": "cocorrenth/ui",
       "id": "correnth_ui",
-      "community_name": "Correnth UI and Tech Stack Standard"
+      "community_name": "Community 7"
     },
     {
       "label": "Supabase",
@@ -810,10 +835,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 7,
       "norm_label": "supabase",
       "id": "supabase",
-      "community_name": "Correnth UI and Tech Stack Standard"
+      "community_name": "Community 7"
     },
     {
       "label": "PostgreSQL",
@@ -824,10 +849,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 7,
       "norm_label": "postgresql",
       "id": "postgresql",
-      "community_name": "Correnth UI and Tech Stack Standard"
+      "community_name": "Community 7"
     },
     {
       "label": "Next.js",
@@ -838,10 +863,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 7,
       "norm_label": "next.js",
       "id": "nextjs",
-      "community_name": "Correnth UI and Tech Stack Standard"
+      "community_name": "Community 7"
     },
     {
       "label": "shadcn/ui",
@@ -852,10 +877,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 7,
       "norm_label": "shadcn/ui",
       "id": "shadcn_ui",
-      "community_name": "Correnth UI and Tech Stack Standard"
+      "community_name": "Community 7"
     },
     {
       "label": "Tailwind CSS",
@@ -866,10 +891,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 7,
       "norm_label": "tailwind css",
       "id": "tailwind_css",
-      "community_name": "Correnth UI and Tech Stack Standard"
+      "community_name": "Community 7"
     },
     {
       "label": "Correnth UI and Tech Stack Standard",
@@ -880,10 +905,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 7,
       "norm_label": "correnth ui and tech stack standard",
       "id": "decision_correnth_ui_tech_stack",
-      "community_name": "Correnth UI and Tech Stack Standard"
+      "community_name": "Community 7"
     },
     {
       "label": "Gauss Organization",
@@ -894,10 +919,10 @@
       "captured_at": "2026-07-22",
       "author": "Grupo Correnth / Board humano",
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "gauss organization",
       "id": "gauss_organization",
-      "community_name": "Correnth Group"
+      "community_name": "Community 4"
     },
     {
       "label": "RedRise",
@@ -908,10 +933,10 @@
       "captured_at": "2026-07-24",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "redrise",
       "id": "redrise",
-      "community_name": "Correnth Group"
+      "community_name": "Community 4"
     },
     {
       "label": "Gauss",
@@ -922,10 +947,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "gauss",
       "id": "gauss",
-      "community_name": "Correnth Group"
+      "community_name": "Community 4"
     },
     {
       "label": "RedRise Canonical Product Decision",
@@ -936,10 +961,10 @@
       "captured_at": "2026-07-24",
       "author": "Grupo Correnth",
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "redrise canonical product decision",
       "id": "decision_redrise_canonical_product",
-      "community_name": "Correnth Group"
+      "community_name": "Community 4"
     },
     {
       "label": "RedRise PR Rollout and Audit",
@@ -950,10 +975,10 @@
       "captured_at": "2026-07-26",
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "redrise pr rollout and audit",
       "id": "redrise_pr_rollout_audit",
-      "community_name": "Graphify"
+      "community_name": "Community 3"
     },
     {
       "label": "AI and Data Scientist Roadmap",
@@ -964,10 +989,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "ai and data scientist roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_ai_data_scientist",
-      "community_name": "Correnth Group"
+      "community_name": "Community 4"
     },
     {
       "label": "AI Engineer Roadmap",
@@ -978,10 +1003,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "ai engineer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_ai_engineer",
-      "community_name": "Correnth Group"
+      "community_name": "Community 4"
     },
     {
       "label": "Android Developer Roadmap",
@@ -995,7 +1020,7 @@
       "community": 2,
       "norm_label": "android developer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_android",
-      "community_name": "Developer Roadmap Repository"
+      "community_name": "Community 2"
     },
     {
       "label": "Developer Roadmap Repository",
@@ -1009,7 +1034,7 @@
       "community": 2,
       "norm_label": "developer roadmap repository",
       "id": "developer_roadmap_repository",
-      "community_name": "Developer Roadmap Repository"
+      "community_name": "Community 2"
     },
     {
       "label": "Backend Developer Roadmap",
@@ -1020,10 +1045,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "backend developer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_backend",
-      "community_name": "Correnth Group"
+      "community_name": "Community 4"
     },
     {
       "label": "BI Analyst Roadmap",
@@ -1034,10 +1059,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 11,
       "norm_label": "bi analyst roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_bi_analyst",
-      "community_name": "Data Engineer Roadmap"
+      "community_name": "Community 11"
     },
     {
       "label": "Blockchain Developer Roadmap",
@@ -1051,7 +1076,7 @@
       "community": 13,
       "norm_label": "blockchain developer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_blockchain",
-      "community_name": "Blockchain Developer Roadmap"
+      "community_name": "Community 13"
     },
     {
       "label": "Cyber Security Expert Roadmap",
@@ -1065,7 +1090,7 @@
       "community": 13,
       "norm_label": "cyber security expert roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_cyber_security",
-      "community_name": "Blockchain Developer Roadmap"
+      "community_name": "Community 13"
     },
     {
       "label": "Data Analyst Roadmap",
@@ -1076,10 +1101,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 11,
       "norm_label": "data analyst roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_data_analyst",
-      "community_name": "Data Engineer Roadmap"
+      "community_name": "Community 11"
     },
     {
       "label": "Data Engineer Roadmap",
@@ -1090,10 +1115,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 11,
       "norm_label": "data engineer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_data_engineer",
-      "community_name": "Data Engineer Roadmap"
+      "community_name": "Community 11"
     },
     {
       "label": "UX Design Roadmap",
@@ -1107,7 +1132,7 @@
       "community": 17,
       "norm_label": "ux design roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_design_ux",
-      "community_name": "UX Design Roadmap"
+      "community_name": "Community 17"
     },
     {
       "label": "DevOps SRE Roadmap",
@@ -1121,7 +1146,7 @@
       "community": 6,
       "norm_label": "devops sre roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_devops",
-      "community_name": "Frontend Developer Roadmap"
+      "community_name": "Community 6"
     },
     {
       "label": "Developer Relations Roadmap",
@@ -1135,7 +1160,7 @@
       "community": 18,
       "norm_label": "developer relations roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_devrel",
-      "community_name": "Developer Relations Roadmap"
+      "community_name": "Community 18"
     },
     {
       "label": "DevSecOps Roadmap",
@@ -1149,7 +1174,7 @@
       "community": 6,
       "norm_label": "devsecops roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_devsecops",
-      "community_name": "Frontend Developer Roadmap"
+      "community_name": "Community 6"
     },
     {
       "label": "Engineering Manager Roadmap",
@@ -1163,7 +1188,7 @@
       "community": 6,
       "norm_label": "engineering manager roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_engineering_manager",
-      "community_name": "Frontend Developer Roadmap"
+      "community_name": "Community 6"
     },
     {
       "label": "Forward Deployed Engineer Roadmap",
@@ -1177,7 +1202,7 @@
       "community": 6,
       "norm_label": "forward deployed engineer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_forward_deployed_engineer",
-      "community_name": "Frontend Developer Roadmap"
+      "community_name": "Community 6"
     },
     {
       "label": "Frontend Developer Roadmap",
@@ -1191,7 +1216,7 @@
       "community": 6,
       "norm_label": "frontend developer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_frontend",
-      "community_name": "Frontend Developer Roadmap"
+      "community_name": "Community 6"
     },
     {
       "label": "Full Stack Developer Roadmap",
@@ -1205,7 +1230,7 @@
       "community": 6,
       "norm_label": "full stack developer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_full_stack",
-      "community_name": "Frontend Developer Roadmap"
+      "community_name": "Community 6"
     },
     {
       "label": "Game Developer Roadmap",
@@ -1219,7 +1244,7 @@
       "community": 14,
       "norm_label": "game developer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_game_developer",
-      "community_name": "Game Developer Roadmap"
+      "community_name": "Community 14"
     },
     {
       "label": "iOS Developer Roadmap",
@@ -1233,7 +1258,7 @@
       "community": 2,
       "norm_label": "ios developer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_ios",
-      "community_name": "Developer Roadmap Repository"
+      "community_name": "Community 2"
     },
     {
       "label": "Machine Learning Roadmap",
@@ -1244,10 +1269,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 11,
       "norm_label": "machine learning roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_machine_learning",
-      "community_name": "Data Engineer Roadmap"
+      "community_name": "Community 11"
     },
     {
       "label": "MLOps Roadmap",
@@ -1258,10 +1283,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 11,
       "norm_label": "mlops roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_mlops",
-      "community_name": "Data Engineer Roadmap"
+      "community_name": "Community 11"
     },
     {
       "label": "Network Engineer Roadmap",
@@ -1275,7 +1300,7 @@
       "community": 19,
       "norm_label": "network engineer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_network_engineer",
-      "community_name": "Network Engineer Roadmap"
+      "community_name": "Community 19"
     },
     {
       "label": "PostgreSQL DBA Roadmap",
@@ -1289,7 +1314,7 @@
       "community": 20,
       "norm_label": "postgresql dba roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_postgresql_dba",
-      "community_name": "PostgreSQL DBA Roadmap"
+      "community_name": "Community 20"
     },
     {
       "label": "Product Manager Roadmap",
@@ -1303,7 +1328,7 @@
       "community": 6,
       "norm_label": "product manager roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_product_manager",
-      "community_name": "Frontend Developer Roadmap"
+      "community_name": "Community 6"
     },
     {
       "label": "QA Engineer Roadmap",
@@ -1317,7 +1342,7 @@
       "community": 6,
       "norm_label": "qa engineer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_qa",
-      "community_name": "Frontend Developer Roadmap"
+      "community_name": "Community 6"
     },
     {
       "label": "Server Side Game Developer Roadmap",
@@ -1331,7 +1356,7 @@
       "community": 14,
       "norm_label": "server side game developer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_server_side_game_developer",
-      "community_name": "Game Developer Roadmap"
+      "community_name": "Community 14"
     },
     {
       "label": "Software Architect Roadmap",
@@ -1345,7 +1370,7 @@
       "community": 6,
       "norm_label": "software architect roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_software_architect",
-      "community_name": "Frontend Developer Roadmap"
+      "community_name": "Community 6"
     },
     {
       "label": "Technical Writer Roadmap",
@@ -1359,7 +1384,7 @@
       "community": 21,
       "norm_label": "technical writer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_technical_writer",
-      "community_name": "Technical Writer Roadmap"
+      "community_name": "Community 21"
     },
     {
       "label": "AI Agents Roadmap",
@@ -1373,7 +1398,7 @@
       "community": 6,
       "norm_label": "ai agents roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_ai_agents",
-      "community_name": "Frontend Developer Roadmap"
+      "community_name": "Community 6"
     },
     {
       "label": "AI Product Builder Roadmap",
@@ -1387,7 +1412,7 @@
       "community": 6,
       "norm_label": "ai product builder roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_ai_product_builder",
-      "community_name": "Frontend Developer Roadmap"
+      "community_name": "Community 6"
     },
     {
       "label": "AI Red Teaming Roadmap",
@@ -1401,7 +1426,7 @@
       "community": 6,
       "norm_label": "ai red teaming roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_ai_red_teaming",
-      "community_name": "Frontend Developer Roadmap"
+      "community_name": "Community 6"
     },
     {
       "label": "Angular Developer Roadmap",
@@ -1415,7 +1440,7 @@
       "community": 6,
       "norm_label": "angular developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_angular",
-      "community_name": "Frontend Developer Roadmap"
+      "community_name": "Community 6"
     },
     {
       "label": "API Design Roadmap",
@@ -1429,7 +1454,7 @@
       "community": 0,
       "norm_label": "api design roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_api_design",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "roadmap.sh Platform",
@@ -1443,7 +1468,7 @@
       "community": 0,
       "norm_label": "roadmap.sh platform",
       "id": "roadmap_sh_platform",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "developer-roadmap GitHub Repository",
@@ -1457,7 +1482,7 @@
       "community": 0,
       "norm_label": "developer-roadmap github repository",
       "id": "developer_roadmap_github_repository",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "GraphQL Specification",
@@ -1471,7 +1496,7 @@
       "community": 0,
       "norm_label": "graphql specification",
       "id": "graphql_specification",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "gRPC Framework",
@@ -1485,7 +1510,7 @@
       "community": 0,
       "norm_label": "grpc framework",
       "id": "grpc_framework",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "JSON:API Specification",
@@ -1499,7 +1524,7 @@
       "community": 0,
       "norm_label": "json:api specification",
       "id": "json_api_specification",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "California Consumer Privacy Act (CCPA)",
@@ -1513,7 +1538,7 @@
       "community": 0,
       "norm_label": "california consumer privacy act (ccpa)",
       "id": "ccpa_privacy_law",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "GDPR",
@@ -1527,7 +1552,7 @@
       "community": 0,
       "norm_label": "gdpr",
       "id": "gdpr_regulation",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "ASP.NET Core Developer Roadmap",
@@ -1541,7 +1566,7 @@
       "community": 0,
       "norm_label": "asp.net core developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_aspnet_core",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": ".NET Platform",
@@ -1555,7 +1580,7 @@
       "community": 15,
       "norm_label": ".net platform",
       "id": "dotnet_platform",
-      "community_name": ".NET Platform"
+      "community_name": "Community 15"
     },
     {
       "label": "AWS Roadmap",
@@ -1569,7 +1594,7 @@
       "community": 0,
       "norm_label": "aws roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_aws",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "AWS Platform",
@@ -1583,7 +1608,7 @@
       "community": 0,
       "norm_label": "aws platform",
       "id": "aws_platform",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "C Programming Roadmap",
@@ -1597,7 +1622,7 @@
       "community": 0,
       "norm_label": "c programming roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_c",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "Claude Code Roadmap",
@@ -1611,7 +1636,7 @@
       "community": 0,
       "norm_label": "claude code roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_claude_code",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "Cloudflare Roadmap",
@@ -1625,7 +1650,7 @@
       "community": 0,
       "norm_label": "cloudflare roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_cloudflare",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "Code Review Pyramid Roadmap",
@@ -1639,7 +1664,7 @@
       "community": 0,
       "norm_label": "code review pyramid roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_code_review",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "Google Engineering Practices",
@@ -1653,7 +1678,7 @@
       "community": 0,
       "norm_label": "google engineering practices",
       "id": "google_engineering_practices",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "Computer Science Roadmap",
@@ -1667,7 +1692,7 @@
       "community": 0,
       "norm_label": "computer science roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_computer_science",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "C++ Developer Roadmap",
@@ -1681,7 +1706,7 @@
       "community": 0,
       "norm_label": "c++ developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_cpp",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "CSS Roadmap",
@@ -1695,7 +1720,7 @@
       "community": 0,
       "norm_label": "css roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_css",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "Data Structures & Algorithms Roadmap",
@@ -1709,7 +1734,7 @@
       "community": 0,
       "norm_label": "data structures & algorithms roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_datastructures_and_algorithms",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "Design System Roadmap",
@@ -1720,10 +1745,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 7,
       "norm_label": "design system roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_design_system",
-      "community_name": "Correnth UI and Tech Stack Standard"
+      "community_name": "Community 7"
     },
     {
       "label": "Django Roadmap",
@@ -1737,7 +1762,7 @@
       "community": 2,
       "norm_label": "django roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_django",
-      "community_name": "Developer Roadmap Repository"
+      "community_name": "Community 2"
     },
     {
       "label": "Docker Roadmap",
@@ -1751,7 +1776,7 @@
       "community": 2,
       "norm_label": "docker roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_docker",
-      "community_name": "Developer Roadmap Repository"
+      "community_name": "Community 2"
     },
     {
       "label": "Elasticsearch Roadmap",
@@ -1765,7 +1790,7 @@
       "community": 2,
       "norm_label": "elasticsearch roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_elasticsearch",
-      "community_name": "Developer Roadmap Repository"
+      "community_name": "Community 2"
     },
     {
       "label": "Flutter Developer Roadmap",
@@ -1779,7 +1804,7 @@
       "community": 2,
       "norm_label": "flutter developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_flutter",
-      "community_name": "Developer Roadmap Repository"
+      "community_name": "Community 2"
     },
     {
       "label": "Git and GitHub Roadmap",
@@ -1793,7 +1818,7 @@
       "community": 2,
       "norm_label": "git and github roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_git_github",
-      "community_name": "Developer Roadmap Repository"
+      "community_name": "Community 2"
     },
     {
       "label": "Go Developer Roadmap",
@@ -1807,7 +1832,7 @@
       "community": 2,
       "norm_label": "go developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_golang",
-      "community_name": "Developer Roadmap Repository"
+      "community_name": "Community 2"
     },
     {
       "label": "GraphQL Roadmap",
@@ -1821,7 +1846,7 @@
       "community": 2,
       "norm_label": "graphql roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_graphql",
-      "community_name": "Developer Roadmap Repository"
+      "community_name": "Community 2"
     },
     {
       "label": "HTML Roadmap",
@@ -1835,7 +1860,7 @@
       "community": 2,
       "norm_label": "html roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_html",
-      "community_name": "Developer Roadmap Repository"
+      "community_name": "Community 2"
     },
     {
       "label": "Java Developer Roadmap",
@@ -1849,7 +1874,7 @@
       "community": 2,
       "norm_label": "java developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_java",
-      "community_name": "Developer Roadmap Repository"
+      "community_name": "Community 2"
     },
     {
       "label": "JavaScript Roadmap",
@@ -1863,7 +1888,7 @@
       "community": 2,
       "norm_label": "javascript roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_javascript",
-      "community_name": "Developer Roadmap Repository"
+      "community_name": "Community 2"
     },
     {
       "label": "Kotlin Roadmap",
@@ -1877,7 +1902,7 @@
       "community": 0,
       "norm_label": "kotlin roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_kotlin",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "Android Platform",
@@ -1891,7 +1916,7 @@
       "community": 0,
       "norm_label": "android platform",
       "id": "android_platform",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "Kubernetes Roadmap",
@@ -1905,7 +1930,7 @@
       "community": 2,
       "norm_label": "kubernetes roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_kubernetes",
-      "community_name": "Developer Roadmap Repository"
+      "community_name": "Community 2"
     },
     {
       "label": "Laravel Roadmap",
@@ -1919,7 +1944,7 @@
       "community": 2,
       "norm_label": "laravel roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_laravel",
-      "community_name": "Developer Roadmap Repository"
+      "community_name": "Community 2"
     },
     {
       "label": "LeetCode Roadmap",
@@ -1933,7 +1958,7 @@
       "community": 0,
       "norm_label": "leetcode roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_leetcode",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "Linux Roadmap",
@@ -1947,7 +1972,7 @@
       "community": 0,
       "norm_label": "linux roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_linux",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "Docker Platform",
@@ -1961,7 +1986,7 @@
       "community": 0,
       "norm_label": "docker platform",
       "id": "docker_platform",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "Kubernetes",
@@ -1975,7 +2000,7 @@
       "community": 0,
       "norm_label": "kubernetes",
       "id": "kubernetes_platform",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "MongoDB Roadmap",
@@ -1989,7 +2014,7 @@
       "community": 2,
       "norm_label": "mongodb roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_mongodb",
-      "community_name": "Developer Roadmap Repository"
+      "community_name": "Community 2"
     },
     {
       "label": "Next.js Roadmap",
@@ -2003,7 +2028,7 @@
       "community": 2,
       "norm_label": "next.js roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_nextjs",
-      "community_name": "Developer Roadmap Repository"
+      "community_name": "Community 2"
     },
     {
       "label": "Node.js Developer Roadmap",
@@ -2017,7 +2042,7 @@
       "community": 2,
       "norm_label": "node.js developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_nodejs",
-      "community_name": "Developer Roadmap Repository"
+      "community_name": "Community 2"
     },
     {
       "label": "OpenClaw Roadmap",
@@ -2031,7 +2056,7 @@
       "community": 0,
       "norm_label": "openclaw roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_openclaw",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "PHP Roadmap",
@@ -2045,7 +2070,7 @@
       "community": 0,
       "norm_label": "php roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_php",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "Prompt Engineering Roadmap",
@@ -2059,7 +2084,7 @@
       "community": 0,
       "norm_label": "prompt engineering roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_prompt_engineering",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "Python Developer Roadmap",
@@ -2073,7 +2098,7 @@
       "community": 2,
       "norm_label": "python developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_python",
-      "community_name": "Developer Roadmap Repository"
+      "community_name": "Community 2"
     },
     {
       "label": "Python Data Analysis Roadmap",
@@ -2087,7 +2112,7 @@
       "community": 0,
       "norm_label": "python data analysis roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_python_data_analysis",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "React Developer Roadmap",
@@ -2101,7 +2126,7 @@
       "community": 2,
       "norm_label": "react developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_react",
-      "community_name": "Developer Roadmap Repository"
+      "community_name": "Community 2"
     },
     {
       "label": "React Native Developer Roadmap",
@@ -2115,7 +2140,7 @@
       "community": 0,
       "norm_label": "react native developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_react_native",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "Redis Roadmap",
@@ -2129,7 +2154,7 @@
       "community": 2,
       "norm_label": "redis roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_redis",
-      "community_name": "Developer Roadmap Repository"
+      "community_name": "Community 2"
     },
     {
       "label": "Ruby Roadmap",
@@ -2143,7 +2168,7 @@
       "community": 0,
       "norm_label": "ruby roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_ruby",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "Ruby on Rails Roadmap",
@@ -2157,7 +2182,7 @@
       "community": 0,
       "norm_label": "ruby on rails roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_ruby_on_rails",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "Rust Developer Roadmap",
@@ -2171,7 +2196,7 @@
       "community": 2,
       "norm_label": "rust developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_rust",
-      "community_name": "Developer Roadmap Repository"
+      "community_name": "Community 2"
     },
     {
       "label": "Scala Roadmap",
@@ -2185,7 +2210,7 @@
       "community": 0,
       "norm_label": "scala roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_scala",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "Shell Bash Roadmap",
@@ -2199,7 +2224,7 @@
       "community": 0,
       "norm_label": "shell bash roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_shell_bash",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "Software Design and Architecture Roadmap",
@@ -2213,7 +2238,7 @@
       "community": 2,
       "norm_label": "software design and architecture roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_software_design_architecture",
-      "community_name": "Developer Roadmap Repository"
+      "community_name": "Community 2"
     },
     {
       "label": "Spring Boot Developer Roadmap",
@@ -2227,7 +2252,7 @@
       "community": 2,
       "norm_label": "spring boot developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_spring_boot",
-      "community_name": "Developer Roadmap Repository"
+      "community_name": "Community 2"
     },
     {
       "label": "SQL Roadmap",
@@ -2241,7 +2266,7 @@
       "community": 2,
       "norm_label": "sql roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_sql",
-      "community_name": "Developer Roadmap Repository"
+      "community_name": "Community 2"
     },
     {
       "label": "Swift UI Roadmap",
@@ -2255,7 +2280,7 @@
       "community": 0,
       "norm_label": "swift ui roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_swift_ui",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "Apple Platform",
@@ -2269,7 +2294,7 @@
       "community": 0,
       "norm_label": "apple platform",
       "id": "apple_platform",
-      "community_name": "developer-roadmap GitHub Repository"
+      "community_name": "Community 0"
     },
     {
       "label": "System Design Roadmap",
@@ -2283,7 +2308,7 @@
       "community": 5,
       "norm_label": "system design roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_system_design",
-      "community_name": "System Design Roadmap"
+      "community_name": "Community 5"
     },
     {
       "label": "System Design Fundamentals",
@@ -2297,7 +2322,7 @@
       "community": 5,
       "norm_label": "system design fundamentals",
       "id": "system_design_fundamentals",
-      "community_name": "System Design Roadmap"
+      "community_name": "Community 5"
     },
     {
       "label": "Networking and Web",
@@ -2311,7 +2336,7 @@
       "community": 5,
       "norm_label": "networking and web",
       "id": "system_design_networking",
-      "community_name": "System Design Roadmap"
+      "community_name": "Community 5"
     },
     {
       "label": "Data Modeling and Databases",
@@ -2325,7 +2350,7 @@
       "community": 5,
       "norm_label": "data modeling and databases",
       "id": "system_design_data",
-      "community_name": "System Design Roadmap"
+      "community_name": "Community 5"
     },
     {
       "label": "Caching",
@@ -2339,7 +2364,7 @@
       "community": 5,
       "norm_label": "caching",
       "id": "system_design_cache",
-      "community_name": "System Design Roadmap"
+      "community_name": "Community 5"
     },
     {
       "label": "Service Communication",
@@ -2353,7 +2378,7 @@
       "community": 5,
       "norm_label": "service communication",
       "id": "system_design_communication",
-      "community_name": "System Design Roadmap"
+      "community_name": "Community 5"
     },
     {
       "label": "Architecture Patterns",
@@ -2367,7 +2392,7 @@
       "community": 5,
       "norm_label": "architecture patterns",
       "id": "system_design_architectures",
-      "community_name": "System Design Roadmap"
+      "community_name": "Community 5"
     },
     {
       "label": "Reliability",
@@ -2381,7 +2406,7 @@
       "community": 5,
       "norm_label": "reliability",
       "id": "system_design_reliability",
-      "community_name": "System Design Roadmap"
+      "community_name": "Community 5"
     },
     {
       "label": "Security",
@@ -2395,7 +2420,7 @@
       "community": 5,
       "norm_label": "security",
       "id": "system_design_security",
-      "community_name": "System Design Roadmap"
+      "community_name": "Community 5"
     },
     {
       "label": "Observability",
@@ -2409,7 +2434,7 @@
       "community": 5,
       "norm_label": "observability",
       "id": "system_design_observability",
-      "community_name": "System Design Roadmap"
+      "community_name": "Community 5"
     },
     {
       "label": "System Design Patterns",
@@ -2423,7 +2448,7 @@
       "community": 5,
       "norm_label": "system design patterns",
       "id": "system_design_patterns",
-      "community_name": "System Design Roadmap"
+      "community_name": "Community 5"
     },
     {
       "label": "Developer Roadmap Repository",
@@ -2437,7 +2462,7 @@
       "community": 1,
       "norm_label": "developer roadmap repository",
       "id": "developer_roadmap_repo",
-      "community_name": "Terraform Roadmap"
+      "community_name": "Community 1"
     },
     {
       "label": "Google SRE Book",
@@ -2451,7 +2476,7 @@
       "community": 5,
       "norm_label": "google sre book",
       "id": "google_sre_book",
-      "community_name": "System Design Roadmap"
+      "community_name": "Community 5"
     },
     {
       "label": "OpenTelemetry Documentation",
@@ -2465,7 +2490,7 @@
       "community": 5,
       "norm_label": "opentelemetry documentation",
       "id": "opentelemetry_docs",
-      "community_name": "System Design Roadmap"
+      "community_name": "Community 5"
     },
     {
       "label": "Terraform Roadmap",
@@ -2479,7 +2504,7 @@
       "community": 1,
       "norm_label": "terraform roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_terraform",
-      "community_name": "Terraform Roadmap"
+      "community_name": "Community 1"
     },
     {
       "label": "Terraform Fundamentals",
@@ -2493,7 +2518,7 @@
       "community": 1,
       "norm_label": "terraform fundamentals",
       "id": "terraform_fundamentals",
-      "community_name": "Terraform Roadmap"
+      "community_name": "Community 1"
     },
     {
       "label": "Terraform State Management",
@@ -2507,7 +2532,7 @@
       "community": 1,
       "norm_label": "terraform state management",
       "id": "terraform_state",
-      "community_name": "Terraform Roadmap"
+      "community_name": "Community 1"
     },
     {
       "label": "Terraform Modules",
@@ -2521,7 +2546,7 @@
       "community": 1,
       "norm_label": "terraform modules",
       "id": "terraform_modules",
-      "community_name": "Terraform Roadmap"
+      "community_name": "Community 1"
     },
     {
       "label": "Terraform Provisioners",
@@ -2535,7 +2560,7 @@
       "community": 1,
       "norm_label": "terraform provisioners",
       "id": "terraform_provisioners",
-      "community_name": "Terraform Roadmap"
+      "community_name": "Community 1"
     },
     {
       "label": "Terraform Testing",
@@ -2549,7 +2574,7 @@
       "community": 1,
       "norm_label": "terraform testing",
       "id": "terraform_testing",
-      "community_name": "Terraform Roadmap"
+      "community_name": "Community 1"
     },
     {
       "label": "Terraform Security",
@@ -2563,7 +2588,7 @@
       "community": 1,
       "norm_label": "terraform security",
       "id": "terraform_security",
-      "community_name": "Terraform Roadmap"
+      "community_name": "Community 1"
     },
     {
       "label": "Terraform CI/CD Integration",
@@ -2577,7 +2602,7 @@
       "community": 1,
       "norm_label": "terraform ci/cd integration",
       "id": "terraform_cicd",
-      "community_name": "Terraform Roadmap"
+      "community_name": "Community 1"
     },
     {
       "label": "TypeScript Roadmap",
@@ -2588,10 +2613,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 8,
       "norm_label": "typescript roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript",
-      "community_name": "TypeScript Roadmap"
+      "community_name": "Community 8"
     },
     {
       "label": "TypeScript Types",
@@ -2602,10 +2627,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 8,
       "norm_label": "typescript types",
       "id": "typescript_types",
-      "community_name": "TypeScript Roadmap"
+      "community_name": "Community 8"
     },
     {
       "label": "TypeScript Interfaces",
@@ -2616,10 +2641,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 8,
       "norm_label": "typescript interfaces",
       "id": "typescript_interfaces",
-      "community_name": "TypeScript Roadmap"
+      "community_name": "Community 8"
     },
     {
       "label": "TypeScript Functions",
@@ -2630,10 +2655,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 8,
       "norm_label": "typescript functions",
       "id": "typescript_functions",
-      "community_name": "TypeScript Roadmap"
+      "community_name": "Community 8"
     },
     {
       "label": "TypeScript Classes",
@@ -2644,10 +2669,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 8,
       "norm_label": "typescript classes",
       "id": "typescript_classes",
-      "community_name": "TypeScript Roadmap"
+      "community_name": "Community 8"
     },
     {
       "label": "TypeScript Generics",
@@ -2658,10 +2683,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 8,
       "norm_label": "typescript generics",
       "id": "typescript_generics",
-      "community_name": "TypeScript Roadmap"
+      "community_name": "Community 8"
     },
     {
       "label": "TypeScript Modules",
@@ -2672,10 +2697,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 8,
       "norm_label": "typescript modules",
       "id": "typescript_modules",
-      "community_name": "TypeScript Roadmap"
+      "community_name": "Community 8"
     },
     {
       "label": "Vibe Coding Roadmap",
@@ -2689,7 +2714,7 @@
       "community": 1,
       "norm_label": "vibe coding roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vibe_coding",
-      "community_name": "Terraform Roadmap"
+      "community_name": "Community 1"
     },
     {
       "label": "AI Coding Tools",
@@ -2703,7 +2728,7 @@
       "community": 1,
       "norm_label": "ai coding tools",
       "id": "vibe_coding_ai_tools",
-      "community_name": "Terraform Roadmap"
+      "community_name": "Community 1"
     },
     {
       "label": "Vibe Coding Practices",
@@ -2717,7 +2742,7 @@
       "community": 1,
       "norm_label": "vibe coding practices",
       "id": "vibe_coding_practices",
-      "community_name": "Terraform Roadmap"
+      "community_name": "Community 1"
     },
     {
       "label": "AI-Assisted Workflow",
@@ -2731,7 +2756,7 @@
       "community": 1,
       "norm_label": "ai-assisted workflow",
       "id": "vibe_coding_workflow",
-      "community_name": "Terraform Roadmap"
+      "community_name": "Community 1"
     },
     {
       "label": "Vue Developer Roadmap",
@@ -2745,7 +2770,7 @@
       "community": 1,
       "norm_label": "vue developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vue",
-      "community_name": "Terraform Roadmap"
+      "community_name": "Community 1"
     },
     {
       "label": "Vue Components",
@@ -2759,7 +2784,7 @@
       "community": 1,
       "norm_label": "vue components",
       "id": "vue_components",
-      "community_name": "Terraform Roadmap"
+      "community_name": "Community 1"
     },
     {
       "label": "Vue API Styles",
@@ -2773,7 +2798,7 @@
       "community": 1,
       "norm_label": "vue api styles",
       "id": "vue_api",
-      "community_name": "Terraform Roadmap"
+      "community_name": "Community 1"
     },
     {
       "label": "Vue Routing",
@@ -2787,7 +2812,7 @@
       "community": 1,
       "norm_label": "vue routing",
       "id": "vue_routing",
-      "community_name": "Terraform Roadmap"
+      "community_name": "Community 1"
     },
     {
       "label": "Vue State Management",
@@ -2801,7 +2826,7 @@
       "community": 1,
       "norm_label": "vue state management",
       "id": "vue_state",
-      "community_name": "Terraform Roadmap"
+      "community_name": "Community 1"
     },
     {
       "label": "Vue Testing",
@@ -2815,7 +2840,7 @@
       "community": 1,
       "norm_label": "vue testing",
       "id": "vue_testing",
-      "community_name": "Terraform Roadmap"
+      "community_name": "Community 1"
     },
     {
       "label": "WordPress Roadmap",
@@ -2829,7 +2854,7 @@
       "community": 1,
       "norm_label": "wordpress roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress",
-      "community_name": "Terraform Roadmap"
+      "community_name": "Community 1"
     },
     {
       "label": "WordPress Themes",
@@ -2843,7 +2868,7 @@
       "community": 1,
       "norm_label": "wordpress themes",
       "id": "wordpress_theme",
-      "community_name": "Terraform Roadmap"
+      "community_name": "Community 1"
     },
     {
       "label": "WordPress Plugins",
@@ -2857,7 +2882,7 @@
       "community": 1,
       "norm_label": "wordpress plugins",
       "id": "wordpress_plugins",
-      "community_name": "Terraform Roadmap"
+      "community_name": "Community 1"
     },
     {
       "label": "WordPress Hooks",
@@ -2871,7 +2896,7 @@
       "community": 1,
       "norm_label": "wordpress hooks",
       "id": "wordpress_hooks",
-      "community_name": "Terraform Roadmap"
+      "community_name": "Community 1"
     },
     {
       "label": "WordPress Security",
@@ -2885,7 +2910,7 @@
       "community": 1,
       "norm_label": "wordpress security",
       "id": "wordpress_security",
-      "community_name": "Terraform Roadmap"
+      "community_name": "Community 1"
     },
     {
       "label": "WordPress Performance",
@@ -2899,7 +2924,7 @@
       "community": 1,
       "norm_label": "wordpress performance",
       "id": "wordpress_performance",
-      "community_name": "Terraform Roadmap"
+      "community_name": "Community 1"
     },
     {
       "label": "shadcn/ui Complete Guide",
@@ -2910,164 +2935,110 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 7,
       "norm_label": "shadcn/ui complete guide",
       "id": "roadmaps_reference_outros_shadcn_guide",
-      "community_name": "Correnth UI and Tech Stack Standard"
+      "community_name": "Community 7"
     },
     {
       "label": "Graphify Semantic Memory Policy",
       "file_type": "document",
       "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
       "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": "Grupo Correnth",
-      "contributor": null,
-      "community": 7,
+      "community": 12,
       "norm_label": "graphify semantic memory policy",
-      "id": "platforms_graphify_semantic_memory_policy",
-      "community_name": "Invoke-CorrenthSemanticPush Script"
+      "id": "platforms_graphify_semantic_memory",
+      "community_name": "Community 12"
+    },
+    {
+      "label": "Grupo Correnth",
+      "file_type": "concept",
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "community": 12,
+      "norm_label": "grupo correnth",
+      "id": "correnth",
+      "community_name": "Community 12"
+    },
+    {
+      "label": "Project Graph Output",
+      "file_type": "concept",
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "community": 3,
+      "norm_label": "project graph output",
+      "id": "graphify_out_graph_json",
+      "community_name": "Community 3"
     },
     {
       "label": "Canonical Memory",
       "file_type": "concept",
       "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
       "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 7,
+      "community": 3,
       "norm_label": "canonical memory",
-      "id": "platforms_graphify_semantic_memory_canonical_memory",
-      "community_name": "Invoke-CorrenthSemanticPush Script"
-    },
-    {
-      "label": "Graphify Semantic Index",
-      "file_type": "concept",
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 7,
-      "norm_label": "graphify semantic index",
-      "id": "platforms_graphify_semantic_memory_graphify",
-      "community_name": "Invoke-CorrenthSemanticPush Script"
-    },
-    {
-      "label": "Project Graph JSON Output",
-      "file_type": "concept",
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 7,
-      "norm_label": "project graph json output",
-      "id": "platforms_graphify_semantic_memory_graph_json",
-      "community_name": "Invoke-CorrenthSemanticPush Script"
+      "id": "canonical_memory",
+      "community_name": "Community 3"
     },
     {
       "label": "Invoke-CorrenthSemanticPush Script",
       "file_type": "code",
       "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 7,
+      "source_location": "D:/00_docs/tools/Invoke-CorrenthSemanticPush.ps1",
+      "community": 3,
       "norm_label": "invoke-correnthsemanticpush script",
-      "id": "d_00_docs_tools_invoke_correnth_semantic_push",
-      "community_name": "Invoke-CorrenthSemanticPush Script"
+      "id": "invoke_correnth_semantic_push_ps1",
+      "community_name": "Community 3"
     },
     {
-      "label": "MiniMax OpenAI-Compatible Backend",
-      "file_type": "concept",
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 7,
-      "norm_label": "minimax openai-compatible backend",
-      "id": "d_00_docs_tools_invoke_correnth_semantic_push_mini_max_backend",
-      "community_name": "Invoke-CorrenthSemanticPush Script"
-    },
-    {
-      "label": "Personal Vault Key Storage",
-      "file_type": "concept",
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 7,
-      "norm_label": "personal vault key storage",
-      "id": "d_00_docs_tools_invoke_correnth_semantic_push_personal_vault",
-      "community_name": "Invoke-CorrenthSemanticPush Script"
-    },
-    {
-      "label": "Pre-Push Git Guard",
+      "label": "Pre-push Guard Hook",
       "file_type": "code",
       "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
       "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 7,
-      "norm_label": "pre-push git guard",
-      "id": "platforms_graphify_semantic_memory_pre_push_guard",
-      "community_name": "Invoke-CorrenthSemanticPush Script"
+      "community": 3,
+      "norm_label": "pre-push guard hook",
+      "id": "pre_push_hook",
+      "community_name": "Community 3"
     },
     {
-      "label": "Git LFS Tracking",
+      "label": "Git LFS",
       "file_type": "concept",
       "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
       "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 7,
-      "norm_label": "git lfs tracking",
-      "id": "platforms_graphify_semantic_memory_git_lfs",
-      "community_name": "Invoke-CorrenthSemanticPush Script"
+      "community": 3,
+      "norm_label": "git lfs",
+      "id": "git_lfs",
+      "community_name": "Community 3"
     },
     {
-      "label": "GitHub MCP Integration",
+      "label": "GitHub MCP",
       "file_type": "concept",
       "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
       "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 7,
-      "norm_label": "github mcp integration",
-      "id": "platforms_graphify_semantic_memory_github_mcp",
-      "community_name": "Invoke-CorrenthSemanticPush Script"
+      "community": 3,
+      "norm_label": "github mcp",
+      "id": "github_mcp",
+      "community_name": "Community 3"
     },
     {
-      "label": "Local Wrapper Gate",
+      "label": "MiniMax Backend",
       "file_type": "concept",
       "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
       "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 7,
-      "norm_label": "local wrapper gate",
-      "id": "platforms_graphify_semantic_memory_local_wrapper_gate",
-      "community_name": "Invoke-CorrenthSemanticPush Script"
+      "community": 3,
+      "norm_label": "minimax backend",
+      "id": "minimax",
+      "community_name": "Community 3"
+    },
+    {
+      "label": "Community N Naming Convention",
+      "file_type": "concept",
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "community": 3,
+      "norm_label": "community n naming convention",
+      "id": "community_n",
+      "community_name": "Community 3"
     }
   ],
   "links": [
@@ -3207,12 +3178,23 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
-      "source_location": "L106",
+      "source_location": "L120",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
       "source": "tools_invoke_correnthsemanticpush",
       "target": "tools_invoke_correnthsemanticpush_test_canonicalartifacts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
+      "source_location": "L106",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "tools_invoke_correnthsemanticpush",
+      "target": "tools_invoke_correnthsemanticpush_write_deterministiccommunitylabels"
     },
     {
       "relation": "contains",
@@ -3229,7 +3211,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
-      "source_location": "L133",
+      "source_location": "L147",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
@@ -3251,7 +3233,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
-      "source_location": "L117",
+      "source_location": "L131",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
@@ -3359,6 +3341,26 @@
       "target": "graphify"
     },
     {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "graphify",
+      "target": "canonical_memory"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "graphify",
+      "target": "community_n"
+    },
+    {
       "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -3369,6 +3371,26 @@
       "target": "correnth_group"
     },
     {
+      "relation": "produces",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "graphify",
+      "target": "graphify_out_graph_json"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "graphify",
+      "target": "minimax"
+    },
+    {
       "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -3376,6 +3398,16 @@
       "source_location": null,
       "weight": 1.0,
       "source": "graphify_stack_recommendation_md",
+      "target": "graphify"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": "D:/00_docs/tools/Invoke-CorrenthSemanticPush.ps1",
+      "weight": 1.0,
+      "source": "invoke_correnth_semantic_push_ps1",
       "target": "graphify"
     },
     {
@@ -5455,108 +5487,8 @@
       "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "platforms_graphify_semantic_memory_policy",
-      "target": "platforms_graphify_semantic_memory_canonical_memory"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_graphify_semantic_memory_policy",
-      "target": "platforms_graphify_semantic_memory_graphify"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_graphify_semantic_memory_canonical_memory",
-      "target": "platforms_graphify_semantic_memory_graphify"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "d_00_docs_tools_invoke_correnth_semantic_push",
-      "target": "platforms_graphify_semantic_memory_graphify"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
-      "source_location": null,
-      "weight": 0.9,
-      "source": "platforms_graphify_semantic_memory_graphify",
-      "target": "platforms_graphify_semantic_memory_graph_json"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_graphify_semantic_memory_git_lfs",
-      "target": "platforms_graphify_semantic_memory_graph_json"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "d_00_docs_tools_invoke_correnth_semantic_push",
-      "target": "d_00_docs_tools_invoke_correnth_semantic_push_mini_max_backend"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "d_00_docs_tools_invoke_correnth_semantic_push",
-      "target": "d_00_docs_tools_invoke_correnth_semantic_push_personal_vault"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_graphify_semantic_memory_pre_push_guard",
-      "target": "d_00_docs_tools_invoke_correnth_semantic_push"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_graphify_semantic_memory_pre_push_guard",
-      "target": "platforms_graphify_semantic_memory_git_lfs"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_graphify_semantic_memory_pre_push_guard",
-      "target": "platforms_graphify_semantic_memory_local_wrapper_gate"
+      "source": "correnth",
+      "target": "platforms_graphify_semantic_memory"
     },
     {
       "relation": "conceptually_related_to",
@@ -5564,9 +5496,39 @@
       "confidence_score": 0.75,
       "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
       "source_location": null,
+      "weight": 0.6,
+      "source": "github_mcp",
+      "target": "invoke_correnth_semantic_push_ps1"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "invoke_correnth_semantic_push_ps1",
+      "target": "minimax"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
       "weight": 0.8,
-      "source": "platforms_graphify_semantic_memory_local_wrapper_gate",
-      "target": "platforms_graphify_semantic_memory_github_mcp"
+      "source": "pre_push_hook",
+      "target": "invoke_correnth_semantic_push_ps1"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "pre_push_hook",
+      "target": "git_lfs"
     }
   ],
   "hyperedges": [
@@ -5834,19 +5796,33 @@
       "source_file": "roadmaps_reference/Skill-based Roadmaps/ROADMAP_VIBE_CODING.md"
     },
     {
-      "id": "semantic_refresh_pipeline",
+      "id": "semantic_refresh_flow",
       "label": "Semantic Refresh Pipeline",
       "nodes": [
-        "d_00_docs_tools_invoke_correnth_semantic_push_personal_vault",
-        "d_00_docs_tools_invoke_correnth_semantic_push_mini_max_backend",
-        "platforms_graphify_semantic_memory_graphify",
-        "platforms_graphify_semantic_memory_graph_json"
+        "invoke_correnth_semantic_push_ps1",
+        "minimax",
+        "graphify",
+        "graphify_out_graph_json"
       ],
       "relation": "participate_in",
       "confidence": "EXTRACTED",
-      "confidence_score": 0.95,
+      "confidence_score": 0.9,
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md"
+    },
+    {
+      "id": "git_push_guardian",
+      "label": "Git Push Guardian Chain",
+      "nodes": [
+        "pre_push_hook",
+        "invoke_correnth_semantic_push_ps1",
+        "git_lfs",
+        "github_mcp"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
       "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md"
     }
   ],
-  "built_at_commit": "568a46e97951108c89602c8077dc84396b206691"
+  "built_at_commit": "d10adb0d9a0f02160b68ca16b7093acb243b57db"
 }

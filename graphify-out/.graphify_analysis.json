@@ -94,6 +94,29 @@
       "roadmaps_reference_skill_based_roadmaps_roadmap_sql"
     ],
     "3": [
+      "agents_md",
+      "canonical_memory",
+      "codex_skills_graphify_skill",
+      "community_n",
+      "git_lfs",
+      "github_mcp",
+      "graphify",
+      "graphify_add_watch",
+      "graphify_exports",
+      "graphify_github_merge",
+      "graphify_hooks",
+      "graphify_out_graph_json",
+      "graphify_stack_recommendation_md",
+      "graphify_transcribe",
+      "graphify_update",
+      "invoke_correnth_semantic_push_ps1",
+      "minimax",
+      "pre_push_hook",
+      "redrise_pr_rollout_audit",
+      "skill_reference_extraction_spec",
+      "skill_reference_query"
+    ],
+    "4": [
       "adgency",
       "correnth_group",
       "current_direction_md",
@@ -112,21 +135,6 @@
       "roadmaps_reference_role_based_roadmaps_roadmap_ai_data_scientist",
       "roadmaps_reference_role_based_roadmaps_roadmap_ai_engineer",
       "roadmaps_reference_role_based_roadmaps_roadmap_backend"
-    ],
-    "4": [
-      "agents_md",
-      "codex_skills_graphify_skill",
-      "graphify",
-      "graphify_add_watch",
-      "graphify_exports",
-      "graphify_github_merge",
-      "graphify_hooks",
-      "graphify_stack_recommendation_md",
-      "graphify_transcribe",
-      "graphify_update",
-      "redrise_pr_rollout_audit",
-      "skill_reference_extraction_spec",
-      "skill_reference_query"
     ],
     "5": [
       "google_sre_book",
@@ -159,19 +167,6 @@
       "roadmaps_reference_skill_based_roadmaps_roadmap_angular"
     ],
     "7": [
-      "d_00_docs_tools_invoke_correnth_semantic_push",
-      "d_00_docs_tools_invoke_correnth_semantic_push_mini_max_backend",
-      "d_00_docs_tools_invoke_correnth_semantic_push_personal_vault",
-      "platforms_graphify_semantic_memory_canonical_memory",
-      "platforms_graphify_semantic_memory_git_lfs",
-      "platforms_graphify_semantic_memory_github_mcp",
-      "platforms_graphify_semantic_memory_graph_json",
-      "platforms_graphify_semantic_memory_graphify",
-      "platforms_graphify_semantic_memory_local_wrapper_gate",
-      "platforms_graphify_semantic_memory_policy",
-      "platforms_graphify_semantic_memory_pre_push_guard"
-    ],
-    "8": [
       "correnth_ui",
       "decision_correnth_ui_tech_stack",
       "nextjs",
@@ -183,7 +178,7 @@
       "supabase",
       "tailwind_css"
     ],
-    "9": [
+    "8": [
       "roadmaps_reference_skill_based_roadmaps_roadmap_typescript",
       "typescript_classes",
       "typescript_functions",
@@ -192,7 +187,7 @@
       "typescript_modules",
       "typescript_types"
     ],
-    "10": [
+    "9": [
       "roadmaps_reference_tools_enrich_roadmapreferences",
       "roadmaps_reference_tools_enrich_roadmapreferences_add_uniqueitem",
       "roadmaps_reference_tools_enrich_roadmapreferences_convertto_plaintext",
@@ -201,20 +196,25 @@
       "roadmaps_reference_tools_enrich_roadmapreferences_get_roadmaptopics",
       "roadmaps_reference_tools_enrich_roadmapreferences_get_topicfocus"
     ],
-    "11": [
+    "10": [
       "tools_invoke_correnthsemanticpush",
       "tools_invoke_correnthsemanticpush_get_artifacthash",
       "tools_invoke_correnthsemanticpush_get_graphsnapshot",
       "tools_invoke_correnthsemanticpush_invoke_graphifypython",
       "tools_invoke_correnthsemanticpush_test_canonicalartifacts",
+      "tools_invoke_correnthsemanticpush_write_deterministiccommunitylabels",
       "tools_invoke_correnthsemanticpush_write_provenance"
     ],
-    "12": [
+    "11": [
       "roadmaps_reference_role_based_roadmaps_roadmap_bi_analyst",
       "roadmaps_reference_role_based_roadmaps_roadmap_data_analyst",
       "roadmaps_reference_role_based_roadmaps_roadmap_data_engineer",
       "roadmaps_reference_role_based_roadmaps_roadmap_machine_learning",
       "roadmaps_reference_role_based_roadmaps_roadmap_mlops"
+    ],
+    "12": [
+      "correnth",
+      "platforms_graphify_semantic_memory"
     ],
     "13": [
       "roadmaps_reference_role_based_roadmaps_roadmap_blockchain",
@@ -253,16 +253,16 @@
     "0": 0.10510510510510511,
     "1": 0.08,
     "2": 0.10333333333333333,
-    "3": 0.1437908496732026,
-    "4": 0.15384615384615385,
+    "3": 0.1,
+    "4": 0.1437908496732026,
     "5": 0.20512820512820512,
     "6": 0.16666666666666666,
-    "7": 0.21818181818181817,
-    "8": 0.2222222222222222,
-    "9": 0.2857142857142857,
+    "7": 0.2222222222222222,
+    "8": 0.2857142857142857,
+    "9": 0.42857142857142855,
     "10": 0.42857142857142855,
-    "11": 0.5333333333333333,
-    "12": 0.6,
+    "11": 0.6,
+    "12": 1.0,
     "13": 1.0,
     "14": 1.0,
     "15": 1.0,
@@ -293,7 +293,7 @@
     {
       "id": "graphify",
       "label": "Graphify",
-      "degree": 13
+      "degree": 18
     },
     {
       "id": "correnth_group",
@@ -386,8 +386,13 @@
   "questions": [
     {
       "type": "bridge_node",
-      "question": "Why does `Developer Roadmap Repository` connect `Developer Roadmap Repository` to `Correnth UI and Tech Stack Standard`?",
-      "why": "High betweenness centrality (0.103) - this node is a cross-community bridge."
+      "question": "Why does `Developer Roadmap Repository` connect `Community 2` to `Community 7`?",
+      "why": "High betweenness centrality (0.118) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `Correnth Group` connect `Community 4` to `Community 3`?",
+      "why": "High betweenness centrality (0.096) - this node is a cross-community bridge."
     },
     {
       "type": "verify_inferred",
@@ -397,27 +402,22 @@
     {
       "type": "isolated_nodes",
       "question": "What connects `Graphify Skill for Codex`, `Graphify Add Watch Reference`, `Graphify Exports Reference` to the rest of the system?",
-      "why": "95 weakly-connected nodes found - possible documentation gaps or missing edges."
+      "why": "99 weakly-connected nodes found - possible documentation gaps or missing edges."
     },
     {
       "type": "low_cohesion",
-      "question": "Should `developer-roadmap GitHub Repository` be split into smaller, more focused modules?",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
       "why": "Cohesion score 0.10510510510510511 - nodes in this community are weakly interconnected."
     },
     {
       "type": "low_cohesion",
-      "question": "Should `Terraform Roadmap` be split into smaller, more focused modules?",
+      "question": "Should `Community 1` be split into smaller, more focused modules?",
       "why": "Cohesion score 0.08 - nodes in this community are weakly interconnected."
     },
     {
       "type": "low_cohesion",
-      "question": "Should `Developer Roadmap Repository` be split into smaller, more focused modules?",
+      "question": "Should `Community 2` be split into smaller, more focused modules?",
       "why": "Cohesion score 0.10333333333333333 - nodes in this community are weakly interconnected."
-    },
-    {
-      "type": "low_cohesion",
-      "question": "Should `Correnth Group` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.1437908496732026 - nodes in this community are weakly interconnected."
     }
   ]
 }
