@@ -95,6 +95,14 @@ try {
   if ($nodes.Count -eq 0 -or $links.Count -eq 0) {
     throw "Semantic graph must contain nodes and links."
   }
+  $removedSelfLoops = @($links | Where-Object { $_.source -eq $_.target })
+  if ($removedSelfLoops.Count -gt 0) {
+    # A self-loop has no traversal value and violates graph integrity. Preserve
+    # the count in provenance, but publish only the valid canonical graph.
+    $graph.links = @($links | Where-Object { $_.source -ne $_.target })
+    $graph | ConvertTo-Json -Depth 100 | Set-Content -LiteralPath $graphPath -Encoding utf8
+    $links = @($graph.links)
+  }
   $nodeIds = @{}
   foreach ($node in $nodes) {
     $nodeIds[$node.id] = $true
@@ -125,6 +133,7 @@ try {
     model = "MiniMax-M2.7-highspeed"
     mode = "deep"
     semanticEdgeCount = $semanticLinks.Count
+    removedSelfLoopCount = $removedSelfLoops.Count
     generatedAt = [DateTime]::UtcNow.ToString("o")
   } | ConvertTo-Json | Set-Content -LiteralPath $provenancePath -Encoding utf8
 
