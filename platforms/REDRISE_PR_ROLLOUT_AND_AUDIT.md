@@ -23,7 +23,7 @@ Em `redrise-platform`, #10 tem build, testes e e2e verdes; o check `review` cont
 ## Gates zero
 
 1. Renovar a chave privada PEM do GitHub App Commitperclip (App ID `3718661`) e atualizar exclusivamente o secret de Actions `COMMITPERCLIP_KEY`; reexecutar o job `review` e revogar a chave substituída após sucesso.
-2. Remover a entrada obsoleta `C:\Program Files\Correnth\CML MCP` apenas do PATH de máquina em sessão Windows elevada. Não reinstalar CML, provider, launcher ou arquivo de Cofre.
+2. Remover a entrada obsoleta do MCP legado apenas do PATH de máquina em sessão Windows elevada. Não reinstalar provider, launcher ou arquivo desse sistema legado.
 3. A PR #5 deve validar a promoção transacional do Graphify. Só os artefatos canônicos `graph.json`, relatório, manifesto, proveniência, análise e labels podem ser versionados; cache, snapshots, quarentena e HTML são derivados locais.
 4. Antes de qualquer push, inclusive operação GitHub MCP/CLI, executar `D:\00_docs\tools\Invoke-CorrenthSemanticPush.ps1 -ProjectRoot <raiz permitida>`. O wrapper usa `uv` e `graphifyy`; não usar nem contornar `graphify.exe` bloqueado.
 
@@ -46,4 +46,4 @@ Staging é obrigatório antes de declarar os lotes funcionais: liveness/readines
 
 ## Fechamento
 
-"Implementado" exige contrato, código, migration (quando aplicável), testes, CI verde, staging, rollback e evidência reproduzível. O encerramento exige `master`/`main` sincronizados, nenhuma PR draft/empilhada remanescente, scans sem CML ativa fora de `archived`/`_legacy`, e grafos locais/global com proveniência MiniMax, relações AST e semânticas, sem self-loops ou fontes excluídas.
+"Implementado" exige contrato, código, migration (quando aplicável), testes, CI verde, staging, rollback e evidência reproduzível. O encerramento exige `master`/`main` sincronizados, nenhuma PR draft/empilhada remanescente, scans sem componentes legados ativos fora de `archived`/`_legacy`, e grafos locais/global com proveniência MiniMax, relações AST e semânticas, sem self-loops ou fontes excluídas.
