@@ -71,7 +71,7 @@ try {
   try {
     $env:OPENAI_BASE_URL = "https://api.minimax.io/v1"
     $env:OPENAI_API_KEY = $miniMaxKey
-    Invoke-GraphifyPython extract $resolvedRoot --backend=openai --model=MiniMax-M2.7-highspeed --mode=deep --out $resolvedRoot --max-concurrency=2
+    Invoke-GraphifyPython extract $resolvedRoot --backend=openai --model=MiniMax-M2.7-highspeed --mode=deep --out $resolvedRoot --max-concurrency=2 --api-timeout=120
   } finally {
     if ($null -eq $previousBaseUrl) {
       Remove-Item Env:OPENAI_BASE_URL -ErrorAction SilentlyContinue
