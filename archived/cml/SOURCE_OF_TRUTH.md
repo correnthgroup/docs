@@ -29,8 +29,11 @@ Uma camada inferior não pode alterar silenciosamente uma decisão de camada sup
 | `correnthgroup/docs` | Estratégia, PRDs e direção operacional transversal |
 | `correnthgroup/studio_context-memory` | Schema, contracts, runtime, migrations, testes e runbooks da CML |
 | `correnthgroup/redrise-platform` | Arquitetura, runtime, migrations e comportamento do produto RedRise |
-| `correnthgroup/labs_redrise` | Pacote operacional dos agentes internos RedRise autorizado por contratos CML |
+| `correnthgroup/labs_redrise` (futuro `redrise-operations`) | Pacote operacional dos agentes internos RedRise autorizado por contratos CML |
+| `correnthgroup/studio_findfee` | Código e documentação específica do produto Findfee; não é autoridade para CML ou RedRise |
 | `correnthgroup/redrise` e `correnthgroup/redrise-v2` | Histórico e doadores arquivados, sem autoridade operacional |
+
+O mapa operacional completo, incluindo status, fronteiras e a política de rename, está em [`D:\00_docs\REPOSITORIES.md`](../../REPOSITORIES.md). O rename de `labs_redrise` não foi executado; até sua execução, o identificador antigo continua sendo o remoto efetivo.
 
 ## Política contra duplicação
 

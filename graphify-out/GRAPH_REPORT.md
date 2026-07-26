@@ -1,16 +1,16 @@
-# Graph Report - 00_docs  (2026-07-24)
+# Graph Report - 00_docs  (2026-07-25)
 
 ## Corpus Check
-- 112 files · ~102,540 words
+- 113 files · ~103,023 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1257 nodes · 1155 edges · 122 communities (118 shown, 4 thin omitted)
+- 1263 nodes · 1161 edges · 124 communities (120 shown, 4 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `07cbf282`
+- Built from commit: `9873ab2c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -137,6 +137,8 @@
 - 6. Formulários & Validação
 - 8. Roteamento
 - extraction-spec.md
+- Instalação & Setup
+- Integração com Formulários
 
 ## God Nodes (most connected - your core abstractions)
 1. `Componentes` - 60 edges
@@ -156,7 +158,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (122 total, 4 thin omitted)
+## Communities (124 total, 4 thin omitted)
 
 ### Community 0 - "Componentes"
 Cohesion: 0.03
@@ -175,8 +177,8 @@ Cohesion: 0.06
 Nodes (30): 10. Testes, 11. Seguranca, 12. Deploy & Infraestrutura, 13. Performance & Escala, 14. Entregaveis de Portfolio, 1.1 Internet & Protocolos, 1.2 Linha de Comando, 1.3 Git & GitHub (+22 more)
 
 ### Community 4 - "shadcn/ui - Guia Completo de Componentes"
-Cohesion: 0.07
-Nodes (28): asChild Pattern, Cheat Sheet Rápido de Componentes, Choosing Overlay Components, class-variance-authority (CVA), CLI Essencial, components.json, Compound Components Pattern, Context Pattern (evitar prop drilling) (+20 more)
+Cohesion: 0.11
+Nodes (19): asChild Pattern, Cheat Sheet Rápido de Componentes, Choosing Overlay Components, class-variance-authority (CVA), CLI Essencial, Compound Components Pattern, Context Pattern (evitar prop drilling), CSS Variables (+11 more)
 
 ### Community 5 - "Correnth — Padrão de UI e Stack Técnica v1"
 Cohesion: 0.07
@@ -547,8 +549,8 @@ Cohesion: 0.29
 Nodes (6): Aprovacao, CML-L10 Readiness Report, Evidencias, Resultado, Riscos residuais, Rollback
 
 ### Community 97 - "CML Source of Truth Policy"
-Cohesion: 0.29
-Nodes (6): Autoridades por repositório, CML Source of Truth Policy, Conflitos, Hierarquia, Indexação, Política contra duplicação
+Cohesion: 0.15
+Nodes (11): Autoridades por repositório, CML Source of Truth Policy, Conflitos, Hierarquia, Indexação, Política contra duplicação, Active repositories, Boundary rules (+3 more)
 
 ### Community 98 - "Enrich-RoadmapReferences.ps1"
 Cohesion: 0.43
@@ -630,8 +632,16 @@ Nodes (3): 6.1 Form Libraries, 6.2 Validação, 6. Formulários & Validação
 Cohesion: 0.67
 Nodes (3): 8.1 Client-Side, 8.2 File-Based (SSR/SSG), 8. Roteamento
 
+### Community 122 - "Instalação & Setup"
+Cohesion: 0.40
+Nodes (4): components.json, Inicialização, Instalação & Setup, Pré-requisitos
+
+### Community 123 - "Integração com Formulários"
+Cohesion: 0.40
+Nodes (5): Exemplo Completo, Instalação, Integração com Formulários, Padrão: Dialog + Form, Stack Recomendada
+
 ## Knowledge Gaps
-- **973 isolated node(s):** `Usage`, `What graphify is for`, `Step 0 - GitHub repos and multi-path merge (only if a URL or several paths)`, `Step 1 - Ensure graphify is installed`, `Step 2 - Detect files` (+968 more)
+- **977 isolated node(s):** `Usage`, `What graphify is for`, `Step 0 - GitHub repos and multi-path merge (only if a URL or several paths)`, `Step 1 - Ensure graphify is installed`, `Step 2 - Detect files` (+972 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **4 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -640,15 +650,15 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Componentes` connect `Componentes` to `shadcn/ui - Guia Completo de Componentes`?**
   _High betweenness centrality (0.009) - this node is a cross-community bridge._
-- **Why does `shadcn/ui - Guia Completo de Componentes` connect `shadcn/ui - Guia Completo de Componentes` to `Componentes`, `UX Design Roadmap - Checklist (2026)`?**
-  _High betweenness centrality (0.007) - this node is a cross-community bridge._
+- **Why does `shadcn/ui - Guia Completo de Componentes` connect `shadcn/ui - Guia Completo de Componentes` to `Componentes`, `UX Design Roadmap - Checklist (2026)`, `Integração com Formulários`, `Instalação & Setup`?**
+  _High betweenness centrality (0.008) - this node is a cross-community bridge._
+- **Why does `Frontend Developer Roadmap - Checklist (2026)` connect `Frontend Developer Roadmap - Checklist (2026)` to `1. Fundamentos`, `10. Testes`, `17B. Ferramentas Python (via uv)`, `4. Metodologias CSS / UI Libraries`, `5. Gerenciamento de Estado`, `13. Deploy & Hospedagem`, `14. Performance & Otimização`, `2. Controle de Versão`, `3. Framework Frontend (Escolher 1)`, `6. Formulários & Validação`, `8. Roteamento`?**
+  _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **What connects `Usage`, `What graphify is for`, `Step 0 - GitHub repos and multi-path merge (only if a URL or several paths)` to the rest of the system?**
-  _973 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _977 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Componentes` be split into smaller, more focused modules?**
   _Cohesion score 0.03333333333333333 - nodes in this community are weakly interconnected._
 - **Should `PRD-CML-001 - Correnth Context Memory Platform` be split into smaller, more focused modules?**
   _Cohesion score 0.041666666666666664 - nodes in this community are weakly interconnected._
 - **Should `UX Design Roadmap - Checklist (2026)` be split into smaller, more focused modules?**
   _Cohesion score 0.058823529411764705 - nodes in this community are weakly interconnected._
-- **Should `Backend Developer Roadmap - Checklist (2026)` be split into smaller, more focused modules?**
-  _Cohesion score 0.06451612903225806 - nodes in this community are weakly interconnected._

@@ -130,8 +130,8 @@
     "semantic_hash": ""
   },
   "platforms/cml/SOURCE_OF_TRUTH.md": {
-    "mtime": 1784940359.8021655,
-    "ast_hash": "d32da4c1c3869738e3be5938ddb6802b",
+    "mtime": 1785026753.3314462,
+    "ast_hash": "f1424a95e898c452aa821bebe7062eb8",
     "semantic_hash": ""
   },
   "roadmaps_reference/Role-based Roadmaps/ROADMAP_AI_DATA_SCIENTIST.md": {
@@ -562,6 +562,11 @@
   "roadmaps_reference/outros/SHADCN_GUIDE.md": {
     "mtime": 1783016597.7308524,
     "ast_hash": "9cc2e72569d5a9238a1d3527d4d1d151",
+    "semantic_hash": ""
+  },
+  "REPOSITORIES.md": {
+    "mtime": 1785026712.7091124,
+    "ast_hash": "aec271941395117d937f0ff1df5eeab6",
     "semantic_hash": ""
   }
 }
