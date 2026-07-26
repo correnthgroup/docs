@@ -1,59 +1,6 @@
 {
   "communities": {
     "0": [
-      "api_design",
-      "cicd",
-      "cloud_computing",
-      "containers",
-      "dora_metrics",
-      "infrastructure_as_code",
-      "llms",
-      "observability",
-      "openapi_specification",
-      "opentelemetry",
-      "roadmap_sh",
-      "roadmaps_reference_role_based_roadmaps_devops",
-      "roadmaps_reference_role_based_roadmaps_devrel",
-      "roadmaps_reference_role_based_roadmaps_devsecops",
-      "roadmaps_reference_role_based_roadmaps_engineering_manager",
-      "roadmaps_reference_role_based_roadmaps_forward_deployed_engineer",
-      "roadmaps_reference_role_based_roadmaps_frontend",
-      "roadmaps_reference_role_based_roadmaps_full_stack",
-      "roadmaps_reference_role_based_roadmaps_game_developer",
-      "roadmaps_reference_role_based_roadmaps_ios",
-      "roadmaps_reference_role_based_roadmaps_machine_learning",
-      "roadmaps_reference_role_based_roadmaps_mlops",
-      "roadmaps_reference_role_based_roadmaps_network_engineer",
-      "roadmaps_reference_role_based_roadmaps_postgresql_dba",
-      "roadmaps_reference_role_based_roadmaps_product_manager",
-      "roadmaps_reference_role_based_roadmaps_qa",
-      "roadmaps_reference_role_based_roadmaps_roadmap_ai_data_scientist_md",
-      "roadmaps_reference_role_based_roadmaps_roadmap_ai_engineer_md",
-      "roadmaps_reference_role_based_roadmaps_roadmap_android_md",
-      "roadmaps_reference_role_based_roadmaps_roadmap_backend_md",
-      "roadmaps_reference_role_based_roadmaps_roadmap_bi_analyst_md",
-      "roadmaps_reference_role_based_roadmaps_roadmap_blockchain_md",
-      "roadmaps_reference_role_based_roadmaps_roadmap_cyber_security_md",
-      "roadmaps_reference_role_based_roadmaps_roadmap_data_analyst_md",
-      "roadmaps_reference_role_based_roadmaps_roadmap_data_engineer_md",
-      "roadmaps_reference_role_based_roadmaps_roadmap_design_ux_md",
-      "roadmaps_reference_role_based_roadmaps_server_side_game_developer",
-      "roadmaps_reference_role_based_roadmaps_software_architect",
-      "roadmaps_reference_role_based_roadmaps_technical_writer",
-      "roadmaps_reference_skill_based_roadmaps_ai_product_builder",
-      "roadmaps_reference_skill_based_roadmaps_ai_red_teaming",
-      "roadmaps_reference_skill_based_roadmaps_angular",
-      "roadmaps_reference_skill_based_roadmaps_api_design",
-      "roadmaps_reference_skill_based_roadmaps_aspnet_core",
-      "roadmaps_reference_skill_based_roadmaps_aws",
-      "roadmaps_reference_skill_based_roadmaps_cloudflare",
-      "roadmaps_reference_skill_based_roadmaps_computer_science",
-      "roadmaps_reference_skill_based_roadmaps_design_system",
-      "roadmaps_reference_skill_based_roadmaps_django",
-      "security",
-      "testing"
-    ],
-    "1": [
       "developer_roadmap_github",
       "roadmaps_reference_skill_based_roadmaps_roadmap_docker",
       "roadmaps_reference_skill_based_roadmaps_roadmap_elasticsearch",
@@ -92,7 +39,7 @@
       "roadmaps_reference_skill_based_roadmaps_roadmap_system_design",
       "roadmaps_reference_skill_based_roadmaps_roadmap_terraform"
     ],
-    "2": [
+    "1": [
       "roadmap_vibe_ai_git_github_cli",
       "roadmap_vibe_ai_tell_not_do",
       "roadmap_vibe_ai_think",
@@ -125,7 +72,7 @@
       "roadmap_vibe_version_control",
       "roadmaps_reference_skill_based_roadmaps_roadmap_vibe_coding"
     ],
-    "3": [
+    "2": [
       "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress",
       "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_accessibility",
       "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_actions",
@@ -157,7 +104,7 @@
       "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_css",
       "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_seo"
     ],
-    "4": [
+    "3": [
       "roadmap_apollo_docs",
       "roadmap_axios_docs",
       "roadmap_developer_roadmap_repo",
@@ -187,6 +134,35 @@
       "roadmaps_reference_skill_based_roadmaps_roadmap_vue_styling",
       "roadmaps_reference_skill_based_roadmaps_roadmap_vue_templates",
       "roadmaps_reference_skill_based_roadmaps_roadmap_vue_testing"
+    ],
+    "4": [
+      "api_design",
+      "cicd",
+      "cloud_computing",
+      "containers",
+      "dora_metrics",
+      "infrastructure_as_code",
+      "observability",
+      "roadmaps_reference_role_based_roadmaps_devops",
+      "roadmaps_reference_role_based_roadmaps_devsecops",
+      "roadmaps_reference_role_based_roadmaps_engineering_manager",
+      "roadmaps_reference_role_based_roadmaps_frontend",
+      "roadmaps_reference_role_based_roadmaps_full_stack",
+      "roadmaps_reference_role_based_roadmaps_mlops",
+      "roadmaps_reference_role_based_roadmaps_network_engineer",
+      "roadmaps_reference_role_based_roadmaps_postgresql_dba",
+      "roadmaps_reference_role_based_roadmaps_product_manager",
+      "roadmaps_reference_role_based_roadmaps_server_side_game_developer",
+      "roadmaps_reference_skill_based_roadmaps_ai_red_teaming",
+      "roadmaps_reference_skill_based_roadmaps_angular",
+      "roadmaps_reference_skill_based_roadmaps_aspnet_core",
+      "roadmaps_reference_skill_based_roadmaps_aws",
+      "roadmaps_reference_skill_based_roadmaps_cloudflare",
+      "roadmaps_reference_skill_based_roadmaps_computer_science",
+      "roadmaps_reference_skill_based_roadmaps_design_system",
+      "roadmaps_reference_skill_based_roadmaps_django",
+      "security",
+      "testing"
     ],
     "5": [
       "adr_correnth_ecosystem",
@@ -237,20 +213,16 @@
       "roadmaps_reference_skill_based_roadmaps_roadmap_typescript_utility_types"
     ],
     "7": [
-      "claude_desktop",
-      "codex_skills_graphify_references_add_watch_md",
-      "codex_skills_graphify_references_exports_md",
-      "codex_skills_graphify_references_extraction_spec_md",
-      "codex_skills_graphify_references_github_and_merge_md",
-      "codex_skills_graphify_references_hooks_md",
-      "codex_skills_graphify_references_query_md",
-      "codex_skills_graphify_references_transcribe_md",
-      "codex_skills_graphify_references_update_md",
-      "falkordb",
-      "graphify_tool",
-      "mcp",
-      "neo4j",
-      "whisper"
+      "llms",
+      "openapi_specification",
+      "opentelemetry",
+      "roadmaps_reference_role_based_roadmaps_forward_deployed_engineer",
+      "roadmaps_reference_role_based_roadmaps_game_developer",
+      "roadmaps_reference_role_based_roadmaps_machine_learning",
+      "roadmaps_reference_role_based_roadmaps_qa",
+      "roadmaps_reference_role_based_roadmaps_software_architect",
+      "roadmaps_reference_skill_based_roadmaps_ai_product_builder",
+      "roadmaps_reference_skill_based_roadmaps_api_design"
     ],
     "8": [
       "roadmaps_reference_tools_enrich_roadmapreferences",
@@ -262,87 +234,155 @@
       "roadmaps_reference_tools_enrich_roadmapreferences_get_topicfocus"
     ],
     "9": [
+      "claude_desktop",
+      "codex_skills_graphify_references_exports_md",
+      "falkordb",
+      "mcp",
+      "neo4j"
+    ],
+    "10": [
+      "codex_skills_graphify_references_transcribe_md",
+      "whisper"
+    ],
+    "11": [
       "tools_invoke_correnthsemanticpush",
       "tools_invoke_correnthsemanticpush_invoke_graphifypython"
     ],
-    "10": [
+    "12": [
       "Prompt_Engineer"
     ],
-    "11": [
-      "concept_ai_llm"
-    ],
-    "12": [
-      "concept_backend_development"
-    ],
     "13": [
-      "concept_data_engineering"
+      "codex_skills_graphify_references_add_watch_md"
     ],
     "14": [
-      "concept_database"
+      "codex_skills_graphify_references_extraction_spec_md"
     ],
     "15": [
-      "concept_frontend_development"
+      "codex_skills_graphify_references_github_and_merge_md"
     ],
     "16": [
-      "concept_infrastructure_as_code"
+      "codex_skills_graphify_references_hooks_md"
     ],
     "17": [
-      "concept_mobile_development"
+      "codex_skills_graphify_references_query_md"
     ],
     "18": [
-      "concept_programming_language"
+      "codex_skills_graphify_references_update_md"
     ],
     "19": [
-      "developer_roadmap_github_repo"
+      "concept_ai_llm"
     ],
     "20": [
-      "roadmap_sh_platform"
+      "concept_backend_development"
     ],
     "21": [
-      "roadmaps_reference_skill_based_roadmaps_ai_agents"
+      "concept_data_engineering"
     ],
     "22": [
-      "roadmaps_reference_skill_based_roadmaps_c"
+      "concept_database"
     ],
     "23": [
-      "roadmaps_reference_skill_based_roadmaps_claude_code"
+      "concept_frontend_development"
     ],
     "24": [
-      "roadmaps_reference_skill_based_roadmaps_code_review"
+      "concept_infrastructure_as_code"
     ],
     "25": [
-      "roadmaps_reference_skill_based_roadmaps_cpp"
+      "concept_mobile_development"
     ],
     "26": [
-      "roadmaps_reference_skill_based_roadmaps_css"
+      "concept_programming_language"
     ],
     "27": [
-      "roadmaps_reference_skill_based_roadmaps_datastructures_and_algorithms"
+      "developer_roadmap_github_repo"
     ],
     "28": [
-      "role_based_category"
+      "roadmap_sh_platform"
     ],
     "29": [
-      "skill_based_category"
+      "roadmaps_reference_role_based_roadmaps_devrel"
     ],
     "30": [
-      "studio_findfee"
+      "roadmaps_reference_role_based_roadmaps_ios"
     ],
     "31": [
+      "roadmaps_reference_role_based_roadmaps_roadmap_ai_data_scientist_md"
+    ],
+    "32": [
+      "roadmaps_reference_role_based_roadmaps_roadmap_ai_engineer_md"
+    ],
+    "33": [
+      "roadmaps_reference_role_based_roadmaps_roadmap_android_md"
+    ],
+    "34": [
+      "roadmaps_reference_role_based_roadmaps_roadmap_backend_md"
+    ],
+    "35": [
+      "roadmaps_reference_role_based_roadmaps_roadmap_bi_analyst_md"
+    ],
+    "36": [
+      "roadmaps_reference_role_based_roadmaps_roadmap_blockchain_md"
+    ],
+    "37": [
+      "roadmaps_reference_role_based_roadmaps_roadmap_cyber_security_md"
+    ],
+    "38": [
+      "roadmaps_reference_role_based_roadmaps_roadmap_data_analyst_md"
+    ],
+    "39": [
+      "roadmaps_reference_role_based_roadmaps_roadmap_data_engineer_md"
+    ],
+    "40": [
+      "roadmaps_reference_role_based_roadmaps_roadmap_design_ux_md"
+    ],
+    "41": [
+      "roadmaps_reference_role_based_roadmaps_technical_writer"
+    ],
+    "42": [
+      "roadmaps_reference_skill_based_roadmaps_ai_agents"
+    ],
+    "43": [
+      "roadmaps_reference_skill_based_roadmaps_c"
+    ],
+    "44": [
+      "roadmaps_reference_skill_based_roadmaps_claude_code"
+    ],
+    "45": [
+      "roadmaps_reference_skill_based_roadmaps_code_review"
+    ],
+    "46": [
+      "roadmaps_reference_skill_based_roadmaps_cpp"
+    ],
+    "47": [
+      "roadmaps_reference_skill_based_roadmaps_css"
+    ],
+    "48": [
+      "roadmaps_reference_skill_based_roadmaps_datastructures_and_algorithms"
+    ],
+    "49": [
+      "role_based_category"
+    ],
+    "50": [
+      "skill_based_category"
+    ],
+    "51": [
+      "studio_findfee"
+    ],
+    "52": [
       "tools_install_correnthsemanticpushguard"
     ]
   },
   "cohesion": {
-    "0": 0.06509803921568627,
-    "1": 0.1111111111111111,
-    "2": 0.07741935483870968,
-    "3": 0.08045977011494253,
-    "4": 0.08866995073891626,
+    "0": 0.1111111111111111,
+    "1": 0.07741935483870968,
+    "2": 0.08045977011494253,
+    "3": 0.08866995073891626,
+    "4": 0.11965811965811966,
     "5": 0.12121212121212122,
     "6": 0.1038961038961039,
-    "7": 0.14285714285714285,
+    "7": 0.2222222222222222,
     "8": 0.42857142857142855,
-    "9": 1.0,
+    "9": 0.4,
     "10": 1.0,
     "11": 1.0,
     "12": 1.0,
@@ -364,18 +404,39 @@
     "28": 1.0,
     "29": 1.0,
     "30": 1.0,
-    "31": 1.0
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 1.0,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0,
+    "45": 1.0,
+    "46": 1.0,
+    "47": 1.0,
+    "48": 1.0,
+    "49": 1.0,
+    "50": 1.0,
+    "51": 1.0,
+    "52": 1.0
   },
   "gods": [
     {
       "id": "developer_roadmap_github",
       "label": "developer-roadmap Repository",
-      "degree": 47
+      "degree": 37
     },
     {
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vibe_coding",
       "label": "Vibe Coding Roadmap",
-      "degree": 32
+      "degree": 31
     },
     {
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress",
@@ -390,12 +451,12 @@
     {
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript",
       "label": "TypeScript Roadmap",
-      "degree": 23
+      "degree": 22
     },
     {
       "id": "roadmaps_reference_role_based_roadmaps_devops",
       "label": "DevOps / SRE Roadmap",
-      "degree": 11
+      "degree": 10
     },
     {
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_system_design",
@@ -476,7 +537,7 @@
     }
   ],
   "tokens": {
-    "input": 26321,
-    "output": 5178
+    "input": 0,
+    "output": 0
   }
 }

@@ -4,6 +4,20 @@
   "graph": {
     "hyperedges": [
       {
+        "id": "graphify_export_targets",
+        "label": "Graphify Export Targets",
+        "nodes": [
+          "neo4j",
+          "falkordb",
+          "mcp",
+          "claude_desktop"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": ".codex/skills/graphify/references/exports.md"
+      },
+      {
         "id": "correnth_operational_core",
         "label": "Correnth Operational Core",
         "nodes": [
@@ -229,58 +243,6 @@
         "source_file": "roadmaps_reference/Skill-based Roadmaps/ROADMAP_WORDPRESS.md"
       },
       {
-        "id": "graphify_reference_documentation",
-        "label": "Graphify Reference Documentation Suite",
-        "nodes": [
-          "codex_skills_graphify_references_add_watch_md",
-          "codex_skills_graphify_references_exports_md",
-          "codex_skills_graphify_references_extraction_spec_md",
-          "codex_skills_graphify_references_github_and_merge_md",
-          "codex_skills_graphify_references_hooks_md",
-          "codex_skills_graphify_references_query_md",
-          "codex_skills_graphify_references_transcribe_md",
-          "codex_skills_graphify_references_update_md"
-        ],
-        "relation": "implement",
-        "confidence": "EXTRACTED",
-        "confidence_score": 1.0,
-        "source_file": ".codex/skills/graphify/references"
-      },
-      {
-        "id": "roadmap_role_based_collection",
-        "label": "Roadmap.sh Role-Based Roadmaps Collection",
-        "nodes": [
-          "roadmaps_reference_role_based_roadmaps_roadmap_ai_data_scientist_md",
-          "roadmaps_reference_role_based_roadmaps_roadmap_ai_engineer_md",
-          "roadmaps_reference_role_based_roadmaps_roadmap_android_md",
-          "roadmaps_reference_role_based_roadmaps_roadmap_backend_md",
-          "roadmaps_reference_role_based_roadmaps_roadmap_bi_analyst_md",
-          "roadmaps_reference_role_based_roadmaps_roadmap_blockchain_md",
-          "roadmaps_reference_role_based_roadmaps_roadmap_cyber_security_md",
-          "roadmaps_reference_role_based_roadmaps_roadmap_data_analyst_md",
-          "roadmaps_reference_role_based_roadmaps_roadmap_data_engineer_md",
-          "roadmaps_reference_role_based_roadmaps_roadmap_design_ux_md"
-        ],
-        "relation": "participate_in",
-        "confidence": "EXTRACTED",
-        "confidence_score": 1.0,
-        "source_file": "roadmaps_reference/Role-based Roadmaps"
-      },
-      {
-        "id": "graphify_export_targets",
-        "label": "Graphify Export Targets",
-        "nodes": [
-          "neo4j",
-          "falkordb",
-          "mcp",
-          "claude_desktop"
-        ],
-        "relation": "participate_in",
-        "confidence": "EXTRACTED",
-        "confidence_score": 1.0,
-        "source_file": ".codex/skills/graphify/references/exports.md"
-      },
-      {
         "id": "testing_across_roadmaps",
         "label": "Testing Concepts Across Roadmaps",
         "nodes": [
@@ -373,22 +335,9 @@
       "source_file": "tools/Install-CorrenthSemanticPushGuard.ps1",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 31,
+      "community": 52,
       "norm_label": "install-correnthsemanticpushguard.ps1",
       "id": "tools_install_correnthsemanticpushguard"
-    },
-    {
-      "label": "Roadmap.sh",
-      "file_type": "concept",
-      "source_file": "roadmaps_reference/Role-based Roadmaps",
-      "source_location": null,
-      "source_url": "https://roadmap.sh",
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "roadmap_sh",
-      "community": 0,
-      "norm_label": "roadmap.sh"
     },
     {
       "label": "roadmap.sh Platform",
@@ -399,7 +348,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 28,
       "norm_label": "roadmap.sh platform",
       "id": "roadmap_sh_platform"
     },
@@ -412,7 +361,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 23,
       "norm_label": "frontend development",
       "id": "concept_frontend_development"
     },
@@ -425,7 +374,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 20,
       "norm_label": "backend development",
       "id": "concept_backend_development"
     },
@@ -437,7 +386,7 @@
       "source_url": null,
       "captured_at": null,
       "contributor": null,
-      "community": 17,
+      "community": 25,
       "norm_label": "mobile development",
       "id": "concept_mobile_development"
     },
@@ -449,7 +398,7 @@
       "source_url": null,
       "captured_at": null,
       "contributor": null,
-      "community": 13,
+      "community": 21,
       "norm_label": "data engineering",
       "id": "concept_data_engineering"
     },
@@ -461,7 +410,7 @@
       "source_url": null,
       "captured_at": null,
       "contributor": null,
-      "community": 16,
+      "community": 24,
       "norm_label": "infrastructure as code",
       "id": "concept_infrastructure_as_code"
     },
@@ -473,7 +422,7 @@
       "source_url": null,
       "captured_at": null,
       "contributor": null,
-      "community": 18,
+      "community": 26,
       "norm_label": "programming language",
       "id": "concept_programming_language"
     },
@@ -485,7 +434,7 @@
       "source_url": null,
       "captured_at": null,
       "contributor": null,
-      "community": 14,
+      "community": 22,
       "norm_label": "database",
       "id": "concept_database"
     },
@@ -497,29 +446,9 @@
       "source_url": null,
       "captured_at": null,
       "contributor": null,
-      "community": 11,
+      "community": 19,
       "norm_label": "ai / llm engineering",
       "id": "concept_ai_llm"
-    },
-    {
-      "label": "Invoke-CorrenthSemanticPush.ps1",
-      "file_type": "code",
-      "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 9,
-      "norm_label": "invoke-correnthsemanticpush.ps1",
-      "id": "tools_invoke_correnthsemanticpush"
-    },
-    {
-      "label": "Invoke-GraphifyPython()",
-      "file_type": "code",
-      "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
-      "source_location": "L11",
-      "_origin": "ast",
-      "community": 9,
-      "norm_label": "invoke-graphifypython()",
-      "id": "tools_invoke_correnthsemanticpush_invoke_graphifypython"
     },
     {
       "label": "developer-roadmap GitHub Repository",
@@ -530,7 +459,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 27,
       "norm_label": "developer-roadmap github repository",
       "id": "developer_roadmap_github_repo"
     },
@@ -543,7 +472,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 4,
       "norm_label": "dora metrics",
       "id": "dora_metrics"
     },
@@ -556,7 +485,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 7,
       "norm_label": "opentelemetry",
       "id": "opentelemetry"
     },
@@ -569,7 +498,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 7,
       "norm_label": "openapi specification",
       "id": "openapi_specification"
     },
@@ -582,7 +511,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 4,
       "norm_label": "ci/cd",
       "id": "cicd"
     },
@@ -595,7 +524,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 4,
       "norm_label": "containers",
       "id": "containers"
     },
@@ -608,7 +537,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 4,
       "norm_label": "infrastructure as code",
       "id": "infrastructure_as_code"
     },
@@ -621,7 +550,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 4,
       "norm_label": "observability",
       "id": "observability"
     },
@@ -634,7 +563,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 4,
       "norm_label": "security",
       "id": "security"
     },
@@ -647,7 +576,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 4,
       "norm_label": "testing",
       "id": "testing"
     },
@@ -660,7 +589,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 4,
       "norm_label": "cloud computing",
       "id": "cloud_computing"
     },
@@ -673,7 +602,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 4,
       "norm_label": "api design",
       "id": "api_design"
     },
@@ -686,7 +615,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 7,
       "norm_label": "llms",
       "id": "llms"
     },
@@ -699,7 +628,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 28,
+      "community": 49,
       "norm_label": "role-based roadmaps",
       "id": "role_based_category"
     },
@@ -711,9 +640,29 @@
       "source_url": null,
       "author": null,
       "contributor": null,
-      "community": 29,
+      "community": 50,
       "norm_label": "skill-based roadmaps",
       "id": "skill_based_category"
+    },
+    {
+      "label": "Invoke-CorrenthSemanticPush.ps1",
+      "file_type": "code",
+      "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tools_invoke_correnthsemanticpush",
+      "community": 11,
+      "norm_label": "invoke-correnthsemanticpush.ps1"
+    },
+    {
+      "label": "Invoke-GraphifyPython()",
+      "file_type": "code",
+      "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "tools_invoke_correnthsemanticpush_invoke_graphifypython",
+      "community": 11,
+      "norm_label": "invoke-graphifypython()"
     },
     {
       "label": "Graphify Skill Documentation",
@@ -727,6 +676,175 @@
       "id": "codex_skills_graphify_skill_md",
       "community": 5,
       "norm_label": "graphify skill documentation"
+    },
+    {
+      "label": "Graphify Add and Watch Reference",
+      "file_type": "document",
+      "source_file": ".codex/skills/graphify/references/add-watch.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "codex_skills_graphify_references_add_watch_md",
+      "community": 13,
+      "norm_label": "graphify add and watch reference"
+    },
+    {
+      "label": "Graphify Exports Reference",
+      "file_type": "document",
+      "source_file": ".codex/skills/graphify/references/exports.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "codex_skills_graphify_references_exports_md",
+      "community": 9,
+      "norm_label": "graphify exports reference"
+    },
+    {
+      "label": "Neo4j Graph Database",
+      "file_type": "concept",
+      "source_file": ".codex/skills/graphify/references/exports.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "neo4j",
+      "community": 9,
+      "norm_label": "neo4j graph database"
+    },
+    {
+      "label": "FalkorDB Graph Database",
+      "file_type": "concept",
+      "source_file": ".codex/skills/graphify/references/exports.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "falkordb",
+      "community": 9,
+      "norm_label": "falkordb graph database"
+    },
+    {
+      "label": "Model Context Protocol",
+      "file_type": "concept",
+      "source_file": ".codex/skills/graphify/references/exports.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "mcp",
+      "community": 9,
+      "norm_label": "model context protocol"
+    },
+    {
+      "label": "Claude Desktop",
+      "file_type": "concept",
+      "source_file": ".codex/skills/graphify/references/exports.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_desktop",
+      "community": 9,
+      "norm_label": "claude desktop"
+    },
+    {
+      "label": "Graphify Extraction Specification",
+      "file_type": "document",
+      "source_file": ".codex/skills/graphify/references/extraction-spec.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "codex_skills_graphify_references_extraction_spec_md",
+      "community": 14,
+      "norm_label": "graphify extraction specification"
+    },
+    {
+      "label": "Graphify GitHub Clone and Merge Reference",
+      "file_type": "document",
+      "source_file": ".codex/skills/graphify/references/github-and-merge.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "codex_skills_graphify_references_github_and_merge_md",
+      "community": 15,
+      "norm_label": "graphify github clone and merge reference"
+    },
+    {
+      "label": "Graphify Hooks Reference",
+      "file_type": "document",
+      "source_file": ".codex/skills/graphify/references/hooks.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "codex_skills_graphify_references_hooks_md",
+      "community": 16,
+      "norm_label": "graphify hooks reference"
+    },
+    {
+      "label": "Graphify Query Reference",
+      "file_type": "document",
+      "source_file": ".codex/skills/graphify/references/query.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "codex_skills_graphify_references_query_md",
+      "community": 17,
+      "norm_label": "graphify query reference"
+    },
+    {
+      "label": "Graphify Transcription Reference",
+      "file_type": "document",
+      "source_file": ".codex/skills/graphify/references/transcribe.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "codex_skills_graphify_references_transcribe_md",
+      "community": 10,
+      "norm_label": "graphify transcription reference"
+    },
+    {
+      "label": "Whisper Transcription",
+      "file_type": "concept",
+      "source_file": ".codex/skills/graphify/references/transcribe.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "whisper",
+      "community": 10,
+      "norm_label": "whisper transcription"
+    },
+    {
+      "label": "Graphify Update Reference",
+      "file_type": "document",
+      "source_file": ".codex/skills/graphify/references/update.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "codex_skills_graphify_references_update_md",
+      "community": 18,
+      "norm_label": "graphify update reference"
     },
     {
       "label": "Graphify Semantic Memory",
@@ -807,6 +925,19 @@
       "norm_label": "graphify stack recommendation"
     },
     {
+      "label": "Ghauss Prompt Engineer Workflow",
+      "file_type": "document",
+      "source_file": "Prompt Engineer.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "Prompt_Engineer",
+      "community": 12,
+      "norm_label": "ghauss prompt engineer workflow"
+    },
+    {
       "label": "Correnthgroup Docs Repository",
       "file_type": "concept",
       "source_file": "REPOSITORIES.md",
@@ -829,7 +960,7 @@
       "author": null,
       "contributor": null,
       "id": "studio_findfee",
-      "community": 30,
+      "community": 51,
       "norm_label": "studio findfee product"
     },
     {
@@ -1002,6 +1133,136 @@
       "norm_label": "graphify semantic memory policy"
     },
     {
+      "label": "AI and Data Scientist Roadmap",
+      "file_type": "document",
+      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_AI_DATA_SCIENTIST.md",
+      "source_location": null,
+      "source_url": "https://roadmap.sh/ai-data-scientist",
+      "captured_at": "2026-07-15",
+      "author": null,
+      "contributor": null,
+      "id": "roadmaps_reference_role_based_roadmaps_roadmap_ai_data_scientist_md",
+      "community": 31,
+      "norm_label": "ai and data scientist roadmap"
+    },
+    {
+      "label": "AI Engineer Roadmap",
+      "file_type": "document",
+      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_AI_ENGINEER.md",
+      "source_location": null,
+      "source_url": "https://roadmap.sh/ai-engineer",
+      "captured_at": "2026-07-15",
+      "author": null,
+      "contributor": null,
+      "id": "roadmaps_reference_role_based_roadmaps_roadmap_ai_engineer_md",
+      "community": 32,
+      "norm_label": "ai engineer roadmap"
+    },
+    {
+      "label": "Android Developer Roadmap",
+      "file_type": "document",
+      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_ANDROID.md",
+      "source_location": null,
+      "source_url": "https://roadmap.sh/android",
+      "captured_at": "2026-07-15",
+      "author": null,
+      "contributor": null,
+      "id": "roadmaps_reference_role_based_roadmaps_roadmap_android_md",
+      "community": 33,
+      "norm_label": "android developer roadmap"
+    },
+    {
+      "label": "Backend Developer Roadmap",
+      "file_type": "document",
+      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_BACKEND.md",
+      "source_location": null,
+      "source_url": "https://roadmap.sh/backend",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "roadmaps_reference_role_based_roadmaps_roadmap_backend_md",
+      "community": 34,
+      "norm_label": "backend developer roadmap"
+    },
+    {
+      "label": "BI Analyst Roadmap",
+      "file_type": "document",
+      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_BI_ANALYST.md",
+      "source_location": null,
+      "source_url": "https://roadmap.sh/bi-analyst",
+      "captured_at": "2026-07-15",
+      "author": null,
+      "contributor": null,
+      "id": "roadmaps_reference_role_based_roadmaps_roadmap_bi_analyst_md",
+      "community": 35,
+      "norm_label": "bi analyst roadmap"
+    },
+    {
+      "label": "Blockchain Developer Roadmap",
+      "file_type": "document",
+      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_BLOCKCHAIN.md",
+      "source_location": null,
+      "source_url": "https://roadmap.sh/blockchain",
+      "captured_at": "2026-07-15",
+      "author": null,
+      "contributor": null,
+      "id": "roadmaps_reference_role_based_roadmaps_roadmap_blockchain_md",
+      "community": 36,
+      "norm_label": "blockchain developer roadmap"
+    },
+    {
+      "label": "Cyber Security Expert Roadmap",
+      "file_type": "document",
+      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_CYBER_SECURITY.md",
+      "source_location": null,
+      "source_url": "https://roadmap.sh/cyber-security",
+      "captured_at": "2026-07-15",
+      "author": null,
+      "contributor": null,
+      "id": "roadmaps_reference_role_based_roadmaps_roadmap_cyber_security_md",
+      "community": 37,
+      "norm_label": "cyber security expert roadmap"
+    },
+    {
+      "label": "Data Analyst Roadmap",
+      "file_type": "document",
+      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_DATA_ANALYST.md",
+      "source_location": null,
+      "source_url": "https://roadmap.sh/data-analyst",
+      "captured_at": "2026-07-15",
+      "author": null,
+      "contributor": null,
+      "id": "roadmaps_reference_role_based_roadmaps_roadmap_data_analyst_md",
+      "community": 38,
+      "norm_label": "data analyst roadmap"
+    },
+    {
+      "label": "Data Engineer Roadmap",
+      "file_type": "document",
+      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_DATA_ENGINEER.md",
+      "source_location": null,
+      "source_url": "https://roadmap.sh/data-engineer",
+      "captured_at": "2026-07-15",
+      "author": null,
+      "contributor": null,
+      "id": "roadmaps_reference_role_based_roadmaps_roadmap_data_engineer_md",
+      "community": 39,
+      "norm_label": "data engineer roadmap"
+    },
+    {
+      "label": "UX Design Roadmap",
+      "file_type": "document",
+      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_DESIGN_UX.md",
+      "source_location": null,
+      "source_url": "https://roadmap.sh/ux-design",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "roadmaps_reference_role_based_roadmaps_roadmap_design_ux_md",
+      "community": 40,
+      "norm_label": "ux design roadmap"
+    },
+    {
       "label": "DevOps / SRE Roadmap",
       "file_type": "document",
       "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_DEVOPS.md",
@@ -1011,7 +1272,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_role_based_roadmaps_devops",
-      "community": 0,
+      "community": 4,
       "norm_label": "devops / sre roadmap"
     },
     {
@@ -1024,7 +1285,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_role_based_roadmaps_devrel",
-      "community": 0,
+      "community": 29,
       "norm_label": "developer relations roadmap"
     },
     {
@@ -1037,7 +1298,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_role_based_roadmaps_devsecops",
-      "community": 0,
+      "community": 4,
       "norm_label": "devsecops roadmap"
     },
     {
@@ -1050,7 +1311,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_role_based_roadmaps_engineering_manager",
-      "community": 0,
+      "community": 4,
       "norm_label": "engineering manager roadmap"
     },
     {
@@ -1063,7 +1324,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_role_based_roadmaps_forward_deployed_engineer",
-      "community": 0,
+      "community": 7,
       "norm_label": "forward deployed engineer roadmap"
     },
     {
@@ -1076,7 +1337,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_role_based_roadmaps_frontend",
-      "community": 0,
+      "community": 4,
       "norm_label": "frontend developer roadmap"
     },
     {
@@ -1089,7 +1350,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_role_based_roadmaps_full_stack",
-      "community": 0,
+      "community": 4,
       "norm_label": "full stack developer roadmap"
     },
     {
@@ -1102,7 +1363,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_role_based_roadmaps_game_developer",
-      "community": 0,
+      "community": 7,
       "norm_label": "game developer roadmap"
     },
     {
@@ -1115,7 +1376,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_role_based_roadmaps_ios",
-      "community": 0,
+      "community": 30,
       "norm_label": "ios developer roadmap"
     },
     {
@@ -1128,7 +1389,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_role_based_roadmaps_machine_learning",
-      "community": 0,
+      "community": 7,
       "norm_label": "machine learning roadmap"
     },
     {
@@ -1141,7 +1402,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_role_based_roadmaps_mlops",
-      "community": 0,
+      "community": 4,
       "norm_label": "mlops roadmap"
     },
     {
@@ -1154,7 +1415,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_role_based_roadmaps_network_engineer",
-      "community": 0,
+      "community": 4,
       "norm_label": "network engineer roadmap"
     },
     {
@@ -1167,7 +1428,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_role_based_roadmaps_postgresql_dba",
-      "community": 0,
+      "community": 4,
       "norm_label": "postgresql dba roadmap"
     },
     {
@@ -1180,7 +1441,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_role_based_roadmaps_product_manager",
-      "community": 0,
+      "community": 4,
       "norm_label": "product manager roadmap"
     },
     {
@@ -1193,7 +1454,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_role_based_roadmaps_qa",
-      "community": 0,
+      "community": 7,
       "norm_label": "qa engineer roadmap"
     },
     {
@@ -1206,7 +1467,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_role_based_roadmaps_server_side_game_developer",
-      "community": 0,
+      "community": 4,
       "norm_label": "server side game developer roadmap"
     },
     {
@@ -1219,7 +1480,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_role_based_roadmaps_software_architect",
-      "community": 0,
+      "community": 7,
       "norm_label": "software architect roadmap"
     },
     {
@@ -1232,7 +1493,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_role_based_roadmaps_technical_writer",
-      "community": 0,
+      "community": 41,
       "norm_label": "technical writer roadmap"
     },
     {
@@ -1245,7 +1506,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_ai_agents",
-      "community": 21,
+      "community": 42,
       "norm_label": "ai agents roadmap"
     },
     {
@@ -1258,7 +1519,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_ai_product_builder",
-      "community": 0,
+      "community": 7,
       "norm_label": "ai product builder roadmap"
     },
     {
@@ -1271,7 +1532,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_ai_red_teaming",
-      "community": 0,
+      "community": 4,
       "norm_label": "ai red teaming roadmap"
     },
     {
@@ -1284,7 +1545,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_angular",
-      "community": 0,
+      "community": 4,
       "norm_label": "angular developer roadmap"
     },
     {
@@ -1297,7 +1558,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_api_design",
-      "community": 0,
+      "community": 7,
       "norm_label": "api design roadmap"
     },
     {
@@ -1310,7 +1571,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_aspnet_core",
-      "community": 0,
+      "community": 4,
       "norm_label": "asp.net core developer roadmap"
     },
     {
@@ -1323,7 +1584,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_aws",
-      "community": 0,
+      "community": 4,
       "norm_label": "aws roadmap"
     },
     {
@@ -1336,7 +1597,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_c",
-      "community": 22,
+      "community": 43,
       "norm_label": "c language roadmap"
     },
     {
@@ -1349,7 +1610,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_claude_code",
-      "community": 23,
+      "community": 44,
       "norm_label": "claude code roadmap"
     },
     {
@@ -1362,7 +1623,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_cloudflare",
-      "community": 0,
+      "community": 4,
       "norm_label": "cloudflare roadmap"
     },
     {
@@ -1375,7 +1636,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_code_review",
-      "community": 24,
+      "community": 45,
       "norm_label": "code review pyramid roadmap"
     },
     {
@@ -1388,7 +1649,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_computer_science",
-      "community": 0,
+      "community": 4,
       "norm_label": "computer science roadmap"
     },
     {
@@ -1401,7 +1662,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_cpp",
-      "community": 25,
+      "community": 46,
       "norm_label": "c++ developer roadmap"
     },
     {
@@ -1414,7 +1675,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_css",
-      "community": 26,
+      "community": 47,
       "norm_label": "css roadmap"
     },
     {
@@ -1427,7 +1688,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_datastructures_and_algorithms",
-      "community": 27,
+      "community": 48,
       "norm_label": "data structures & algorithms roadmap"
     },
     {
@@ -1440,7 +1701,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_design_system",
-      "community": 0,
+      "community": 4,
       "norm_label": "design system roadmap"
     },
     {
@@ -1453,7 +1714,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_django",
-      "community": 0,
+      "community": 4,
       "norm_label": "django roadmap"
     },
     {
@@ -1466,7 +1727,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_docker",
-      "community": 1,
+      "community": 0,
       "norm_label": "docker roadmap"
     },
     {
@@ -1479,7 +1740,7 @@
       "author": "kamranahmedse",
       "contributor": null,
       "id": "developer_roadmap_github",
-      "community": 1,
+      "community": 0,
       "norm_label": "developer-roadmap repository"
     },
     {
@@ -1492,7 +1753,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_elasticsearch",
-      "community": 1,
+      "community": 0,
       "norm_label": "elasticsearch roadmap"
     },
     {
@@ -1505,7 +1766,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_flutter",
-      "community": 1,
+      "community": 0,
       "norm_label": "flutter developer roadmap"
     },
     {
@@ -1518,7 +1779,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_git_github",
-      "community": 1,
+      "community": 0,
       "norm_label": "git and github roadmap"
     },
     {
@@ -1531,7 +1792,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_golang",
-      "community": 1,
+      "community": 0,
       "norm_label": "go developer roadmap"
     },
     {
@@ -1544,7 +1805,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_graphql",
-      "community": 1,
+      "community": 0,
       "norm_label": "graphql roadmap"
     },
     {
@@ -1557,7 +1818,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_html",
-      "community": 1,
+      "community": 0,
       "norm_label": "html roadmap"
     },
     {
@@ -1570,7 +1831,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_java",
-      "community": 1,
+      "community": 0,
       "norm_label": "java developer roadmap"
     },
     {
@@ -1583,7 +1844,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_javascript",
-      "community": 1,
+      "community": 0,
       "norm_label": "javascript roadmap"
     },
     {
@@ -1596,7 +1857,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_kotlin",
-      "community": 1,
+      "community": 0,
       "norm_label": "kotlin roadmap"
     },
     {
@@ -1609,7 +1870,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_kubernetes",
-      "community": 1,
+      "community": 0,
       "norm_label": "kubernetes roadmap"
     },
     {
@@ -1622,7 +1883,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_laravel",
-      "community": 1,
+      "community": 0,
       "norm_label": "laravel roadmap"
     },
     {
@@ -1635,7 +1896,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_leetcode",
-      "community": 1,
+      "community": 0,
       "norm_label": "leetcode roadmap"
     },
     {
@@ -1648,7 +1909,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_linux",
-      "community": 1,
+      "community": 0,
       "norm_label": "linux roadmap"
     },
     {
@@ -1661,7 +1922,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_mongodb",
-      "community": 1,
+      "community": 0,
       "norm_label": "mongodb roadmap"
     },
     {
@@ -1674,7 +1935,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_nextjs",
-      "community": 1,
+      "community": 0,
       "norm_label": "next.js roadmap"
     },
     {
@@ -1687,7 +1948,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_nodejs",
-      "community": 1,
+      "community": 0,
       "norm_label": "node.js developer roadmap"
     },
     {
@@ -1700,7 +1961,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_openclaw",
-      "community": 1,
+      "community": 0,
       "norm_label": "openclaw roadmap"
     },
     {
@@ -1713,7 +1974,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_php",
-      "community": 1,
+      "community": 0,
       "norm_label": "php roadmap"
     },
     {
@@ -1726,7 +1987,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_prompt_engineering",
-      "community": 1,
+      "community": 0,
       "norm_label": "prompt engineering roadmap"
     },
     {
@@ -1739,7 +2000,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_python",
-      "community": 1,
+      "community": 0,
       "norm_label": "python developer roadmap"
     },
     {
@@ -1752,7 +2013,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_python_data_analysis",
-      "community": 1,
+      "community": 0,
       "norm_label": "python data analysis roadmap"
     },
     {
@@ -1765,7 +2026,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_react",
-      "community": 1,
+      "community": 0,
       "norm_label": "react developer roadmap"
     },
     {
@@ -1778,7 +2039,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_react_native",
-      "community": 1,
+      "community": 0,
       "norm_label": "react native developer roadmap"
     },
     {
@@ -1791,7 +2052,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_redis",
-      "community": 1,
+      "community": 0,
       "norm_label": "redis roadmap"
     },
     {
@@ -1804,7 +2065,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_ruby",
-      "community": 1,
+      "community": 0,
       "norm_label": "ruby roadmap"
     },
     {
@@ -1817,7 +2078,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_ruby_on_rails",
-      "community": 1,
+      "community": 0,
       "norm_label": "ruby on rails roadmap"
     },
     {
@@ -1830,7 +2091,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_rust",
-      "community": 1,
+      "community": 0,
       "norm_label": "rust developer roadmap"
     },
     {
@@ -1843,7 +2104,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_scala",
-      "community": 1,
+      "community": 0,
       "norm_label": "scala roadmap"
     },
     {
@@ -1856,7 +2117,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_shell_bash",
-      "community": 1,
+      "community": 0,
       "norm_label": "shell bash roadmap"
     },
     {
@@ -1869,7 +2130,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_software_design_architecture",
-      "community": 1,
+      "community": 0,
       "norm_label": "software design and architecture roadmap"
     },
     {
@@ -1882,7 +2143,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_spring_boot",
-      "community": 1,
+      "community": 0,
       "norm_label": "spring boot developer roadmap"
     },
     {
@@ -1895,7 +2156,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_sql",
-      "community": 1,
+      "community": 0,
       "norm_label": "sql roadmap"
     },
     {
@@ -1908,7 +2169,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_swift_ui",
-      "community": 1,
+      "community": 0,
       "norm_label": "swift ui roadmap"
     },
     {
@@ -1921,7 +2182,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_system_design",
-      "community": 1,
+      "community": 0,
       "norm_label": "system design roadmap"
     },
     {
@@ -1934,7 +2195,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_terraform",
-      "community": 1,
+      "community": 0,
       "norm_label": "terraform roadmap"
     },
     {
@@ -2233,7 +2494,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vibe_coding",
-      "community": 2,
+      "community": 1,
       "norm_label": "vibe coding roadmap"
     },
     {
@@ -2246,7 +2507,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_ai_git_github_cli",
-      "community": 2,
+      "community": 1,
       "norm_label": "ask ai to handle git and github cli tasks"
     },
     {
@@ -2259,7 +2520,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_modular_code",
-      "community": 2,
+      "community": 1,
       "norm_label": "ask ai to keep code modular"
     },
     {
@@ -2272,7 +2533,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_subagents",
-      "community": 2,
+      "community": 1,
       "norm_label": "use subagents"
     },
     {
@@ -2285,7 +2546,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_ai_write_tests",
-      "community": 2,
+      "community": 1,
       "norm_label": "ask ai to write tests"
     },
     {
@@ -2298,7 +2559,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_one_task",
-      "community": 2,
+      "community": 1,
       "norm_label": "ask for one task at a time"
     },
     {
@@ -2311,7 +2572,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_ai_tell_not_do",
-      "community": 2,
+      "community": 1,
       "norm_label": "tell ai what not to do"
     },
     {
@@ -2324,7 +2585,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_specificity",
-      "community": 2,
+      "community": 1,
       "norm_label": "be specific about what you want"
     },
     {
@@ -2337,7 +2598,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_chatgpt",
-      "community": 2,
+      "community": 1,
       "norm_label": "chatgpt"
     },
     {
@@ -2350,7 +2611,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_claude_code",
-      "community": 2,
+      "community": 1,
       "norm_label": "claude code"
     },
     {
@@ -2363,7 +2624,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_tdd",
-      "community": 2,
+      "community": 1,
       "norm_label": "test-driven development (tdd)"
     },
     {
@@ -2376,7 +2637,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_context",
-      "community": 2,
+      "community": 1,
       "norm_label": "context"
     },
     {
@@ -2389,7 +2650,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_copilot",
-      "community": 2,
+      "community": 1,
       "norm_label": "github copilot"
     },
     {
@@ -2402,7 +2663,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_cursor",
-      "community": 2,
+      "community": 1,
       "norm_label": "cursor"
     },
     {
@@ -2415,7 +2676,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_debugging",
-      "community": 2,
+      "community": 1,
       "norm_label": "debugging"
     },
     {
@@ -2428,7 +2689,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_security_audit",
-      "community": 2,
+      "community": 1,
       "norm_label": "security audit with ai"
     },
     {
@@ -2441,7 +2702,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_ai_think",
-      "community": 2,
+      "community": 1,
       "norm_label": "ask ai to think or brainstorm"
     },
     {
@@ -2454,7 +2715,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_clean_sessions",
-      "community": 2,
+      "community": 1,
       "norm_label": "clean and start new sessions"
     },
     {
@@ -2467,7 +2728,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_gemini",
-      "community": 2,
+      "community": 1,
       "norm_label": "gemini"
     },
     {
@@ -2480,7 +2741,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_mockups",
-      "community": 2,
+      "community": 1,
       "norm_label": "give ai mockups and reference files"
     },
     {
@@ -2493,7 +2754,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_stop_after_3",
-      "community": 2,
+      "community": 1,
       "norm_label": "if ai fails after 3 prompts, stop"
     },
     {
@@ -2506,7 +2767,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_possible_causes",
-      "community": 2,
+      "community": 1,
       "norm_label": "ask ai to create list of possible causes"
     },
     {
@@ -2519,7 +2780,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_document_preferences",
-      "community": 2,
+      "community": 1,
       "norm_label": "document coding preferences for ai"
     },
     {
@@ -2532,7 +2793,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_git_revert",
-      "community": 2,
+      "community": 1,
       "norm_label": "revert with git"
     },
     {
@@ -2545,7 +2806,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_illustrate_examples",
-      "community": 2,
+      "community": 1,
       "norm_label": "illustrate ai with examples"
     },
     {
@@ -2558,7 +2819,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_sdd",
-      "community": 2,
+      "community": 1,
       "norm_label": "spec-driven development (sdd)"
     },
     {
@@ -2571,7 +2832,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_mcp",
-      "community": 2,
+      "community": 1,
       "norm_label": "install and ask ai to use mcp"
     },
     {
@@ -2584,7 +2845,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_long_context",
-      "community": 2,
+      "community": 1,
       "norm_label": "leverage long context windows"
     },
     {
@@ -2597,7 +2858,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_lovable",
-      "community": 2,
+      "community": 1,
       "norm_label": "lovable"
     },
     {
@@ -2610,7 +2871,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_version_control",
-      "community": 2,
+      "community": 1,
       "norm_label": "master version control"
     },
     {
@@ -2623,7 +2884,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vibe_env_variables",
-      "community": 2,
+      "community": 1,
       "norm_label": "always use env variables"
     },
     {
@@ -2636,7 +2897,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vue",
-      "community": 4,
+      "community": 3,
       "norm_label": "vue developer roadmap"
     },
     {
@@ -2649,7 +2910,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vue_app_configurations",
-      "community": 4,
+      "community": 3,
       "norm_label": "app configurations"
     },
     {
@@ -2662,7 +2923,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vue_components",
-      "community": 4,
+      "community": 3,
       "norm_label": "components"
     },
     {
@@ -2675,7 +2936,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vue_templates",
-      "community": 4,
+      "community": 3,
       "norm_label": "templates"
     },
     {
@@ -2688,7 +2949,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vue_api_styles",
-      "community": 4,
+      "community": 3,
       "norm_label": "api styles"
     },
     {
@@ -2701,7 +2962,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vue_directives",
-      "community": 4,
+      "community": 3,
       "norm_label": "directives"
     },
     {
@@ -2714,7 +2975,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vue_lifecycle_hooks",
-      "community": 4,
+      "community": 3,
       "norm_label": "lifecycle hooks"
     },
     {
@@ -2727,7 +2988,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vue_interpolation",
-      "community": 4,
+      "community": 3,
       "norm_label": "interpolation"
     },
     {
@@ -2740,7 +3001,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vue_forms_handling",
-      "community": 4,
+      "community": 3,
       "norm_label": "forms handling"
     },
     {
@@ -2753,7 +3014,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vue_conditionals",
-      "community": 4,
+      "community": 3,
       "norm_label": "conditionals"
     },
     {
@@ -2766,7 +3027,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vue_computed_properties",
-      "community": 4,
+      "community": 3,
       "norm_label": "computed properties"
     },
     {
@@ -2779,7 +3040,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vue_event_handling",
-      "community": 4,
+      "community": 3,
       "norm_label": "event handling"
     },
     {
@@ -2792,7 +3053,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vue_iterative",
-      "community": 4,
+      "community": 3,
       "norm_label": "iterative"
     },
     {
@@ -2805,7 +3066,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vue_event_binding",
-      "community": 4,
+      "community": 3,
       "norm_label": "event binding"
     },
     {
@@ -2818,7 +3079,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vue_animations",
-      "community": 4,
+      "community": 3,
       "norm_label": "animations"
     },
     {
@@ -2831,7 +3092,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vue_ssg",
-      "community": 4,
+      "community": 3,
       "norm_label": "ssg (static site generation)"
     },
     {
@@ -2844,7 +3105,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vue_routing",
-      "community": 4,
+      "community": 3,
       "norm_label": "routing"
     },
     {
@@ -2857,7 +3118,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vue_ssr",
-      "community": 4,
+      "community": 3,
       "norm_label": "ssr (server-side rendering)"
     },
     {
@@ -2870,7 +3131,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vue_testing",
-      "community": 4,
+      "community": 3,
       "norm_label": "testing"
     },
     {
@@ -2883,7 +3144,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vue_styling",
-      "community": 4,
+      "community": 3,
       "norm_label": "styling"
     },
     {
@@ -2896,7 +3157,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vue_state_management",
-      "community": 4,
+      "community": 3,
       "norm_label": "state management"
     },
     {
@@ -2909,7 +3170,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vue_api_calls",
-      "community": 4,
+      "community": 3,
       "norm_label": "api calls"
     },
     {
@@ -2922,7 +3183,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vue_mobile_apps",
-      "community": 4,
+      "community": 3,
       "norm_label": "mobile apps"
     },
     {
@@ -2935,7 +3196,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vue_graphql",
-      "community": 4,
+      "community": 3,
       "norm_label": "graphql"
     },
     {
@@ -2948,7 +3209,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vue_http",
-      "community": 4,
+      "community": 3,
       "norm_label": "http"
     },
     {
@@ -2961,7 +3222,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_vuejs_docs",
-      "community": 4,
+      "community": 3,
       "norm_label": "vue.js official documentation"
     },
     {
@@ -2974,7 +3235,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_axios_docs",
-      "community": 4,
+      "community": 3,
       "norm_label": "axios documentation"
     },
     {
@@ -2987,7 +3248,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_apollo_docs",
-      "community": 4,
+      "community": 3,
       "norm_label": "apollo graphql documentation"
     },
     {
@@ -3000,7 +3261,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmap_developer_roadmap_repo",
-      "community": 4,
+      "community": 3,
       "norm_label": "developer roadmap repository"
     },
     {
@@ -3013,7 +3274,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress",
-      "community": 3,
+      "community": 2,
       "norm_label": "wordpress developer roadmap"
     },
     {
@@ -3026,7 +3287,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_accessibility",
-      "community": 3,
+      "community": 2,
       "norm_label": "accessibility"
     },
     {
@@ -3039,7 +3300,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_advanced_custom_fields",
-      "community": 3,
+      "community": 2,
       "norm_label": "advanced custom fields (acf)"
     },
     {
@@ -3052,7 +3313,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_actions",
-      "community": 3,
+      "community": 2,
       "norm_label": "actions"
     },
     {
@@ -3065,7 +3326,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_activity_logging",
-      "community": 3,
+      "community": 2,
       "norm_label": "activity logging"
     },
     {
@@ -3078,7 +3339,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_admin_menu",
-      "community": 3,
+      "community": 2,
       "norm_label": "admin menu"
     },
     {
@@ -3091,7 +3352,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_advanced_php",
-      "community": 3,
+      "community": 2,
       "norm_label": "advanced php & architecture"
     },
     {
@@ -3104,7 +3365,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_ajax",
-      "community": 3,
+      "community": 2,
       "norm_label": "ajax in wordpress"
     },
     {
@@ -3117,7 +3378,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_assets_optimization",
-      "community": 3,
+      "community": 2,
       "norm_label": "assets optimization"
     },
     {
@@ -3130,7 +3391,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_automated_deployments",
-      "community": 3,
+      "community": 2,
       "norm_label": "automated deployments"
     },
     {
@@ -3143,7 +3404,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_backend_fundamentals",
-      "community": 3,
+      "community": 2,
       "norm_label": "backend fundamentals"
     },
     {
@@ -3156,7 +3417,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_backups_recovery",
-      "community": 3,
+      "community": 2,
       "norm_label": "wordpress backups & recovery"
     },
     {
@@ -3169,7 +3430,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_seo",
-      "community": 3,
+      "community": 2,
       "norm_label": "basics of seo"
     },
     {
@@ -3182,7 +3443,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_bedrock",
-      "community": 3,
+      "community": 2,
       "norm_label": "bedrock"
     },
     {
@@ -3195,7 +3456,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_block_themes",
-      "community": 3,
+      "community": 2,
       "norm_label": "block themes"
     },
     {
@@ -3208,7 +3469,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_block_editor",
-      "community": 3,
+      "community": 2,
       "norm_label": "block editor"
     },
     {
@@ -3221,7 +3482,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_block_patterns",
-      "community": 3,
+      "community": 2,
       "norm_label": "block patterns"
     },
     {
@@ -3234,7 +3495,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_caching",
-      "community": 3,
+      "community": 2,
       "norm_label": "caching"
     },
     {
@@ -3247,7 +3508,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_cdn_integration",
-      "community": 3,
+      "community": 2,
       "norm_label": "cdn integration"
     },
     {
@@ -3260,7 +3521,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_child_themes",
-      "community": 3,
+      "community": 2,
       "norm_label": "child themes"
     },
     {
@@ -3273,7 +3534,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_classic_themes",
-      "community": 3,
+      "community": 2,
       "norm_label": "classic themes"
     },
     {
@@ -3286,7 +3547,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_classic_editor",
-      "community": 3,
+      "community": 2,
       "norm_label": "classic editor"
     },
     {
@@ -3299,7 +3560,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_classic_vs_block_themes",
-      "community": 3,
+      "community": 2,
       "norm_label": "classic vs. block themes"
     },
     {
@@ -3312,7 +3573,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_coding_standards",
-      "community": 3,
+      "community": 2,
       "norm_label": "wordpress coding standards"
     },
     {
@@ -3325,7 +3586,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_composer",
-      "community": 3,
+      "community": 2,
       "norm_label": "composer"
     },
     {
@@ -3338,7 +3599,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_composer_autoloading",
-      "community": 3,
+      "community": 2,
       "norm_label": "composer & autoloading"
     },
     {
@@ -3351,7 +3612,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_contributing",
-      "community": 3,
+      "community": 2,
       "norm_label": "contributing to wordpress"
     },
     {
@@ -3364,7 +3625,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_core_web_vitals",
-      "community": 3,
+      "community": 2,
       "norm_label": "core web vitals"
     },
     {
@@ -3377,7 +3638,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_cron_jobs",
-      "community": 3,
+      "community": 2,
       "norm_label": "cron jobs"
     },
     {
@@ -3390,7 +3651,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_css",
-      "community": 3,
+      "community": 2,
       "norm_label": "css"
     },
     {
@@ -3405,331 +3666,6 @@
       "id": "roadmaps_reference_outros_shadcn_guide_md",
       "community": 5,
       "norm_label": "shadcn/ui complete guide"
-    },
-    {
-      "label": "Ghauss Prompt Engineer Workflow",
-      "file_type": "document",
-      "source_file": "Prompt Engineer.txt",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "Prompt_Engineer",
-      "community": 10,
-      "norm_label": "ghauss prompt engineer workflow"
-    },
-    {
-      "label": "Graphify Add and Watch Reference",
-      "file_type": "document",
-      "source_file": ".codex/skills/graphify/references/add-watch.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "codex_skills_graphify_references_add_watch_md",
-      "community": 7,
-      "norm_label": "graphify add and watch reference"
-    },
-    {
-      "label": "Graphify Exports Reference",
-      "file_type": "document",
-      "source_file": ".codex/skills/graphify/references/exports.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "codex_skills_graphify_references_exports_md",
-      "community": 7,
-      "norm_label": "graphify exports reference"
-    },
-    {
-      "label": "Graphify Extraction Specification",
-      "file_type": "document",
-      "source_file": ".codex/skills/graphify/references/extraction-spec.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "codex_skills_graphify_references_extraction_spec_md",
-      "community": 7,
-      "norm_label": "graphify extraction specification"
-    },
-    {
-      "label": "Graphify GitHub Clone and Merge Reference",
-      "file_type": "document",
-      "source_file": ".codex/skills/graphify/references/github-and-merge.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "codex_skills_graphify_references_github_and_merge_md",
-      "community": 7,
-      "norm_label": "graphify github clone and merge reference"
-    },
-    {
-      "label": "Graphify Hooks Reference",
-      "file_type": "document",
-      "source_file": ".codex/skills/graphify/references/hooks.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "codex_skills_graphify_references_hooks_md",
-      "community": 7,
-      "norm_label": "graphify hooks reference"
-    },
-    {
-      "label": "Graphify Query Reference",
-      "file_type": "document",
-      "source_file": ".codex/skills/graphify/references/query.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "codex_skills_graphify_references_query_md",
-      "community": 7,
-      "norm_label": "graphify query reference"
-    },
-    {
-      "label": "Graphify Transcription Reference",
-      "file_type": "document",
-      "source_file": ".codex/skills/graphify/references/transcribe.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "codex_skills_graphify_references_transcribe_md",
-      "community": 7,
-      "norm_label": "graphify transcription reference"
-    },
-    {
-      "label": "Graphify Update Reference",
-      "file_type": "document",
-      "source_file": ".codex/skills/graphify/references/update.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "codex_skills_graphify_references_update_md",
-      "community": 7,
-      "norm_label": "graphify update reference"
-    },
-    {
-      "label": "AI and Data Scientist Roadmap",
-      "file_type": "document",
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_AI_DATA_SCIENTIST.md",
-      "source_location": null,
-      "source_url": "https://roadmap.sh/ai-data-scientist",
-      "captured_at": "2026-07-15",
-      "author": null,
-      "contributor": null,
-      "id": "roadmaps_reference_role_based_roadmaps_roadmap_ai_data_scientist_md",
-      "community": 0,
-      "norm_label": "ai and data scientist roadmap"
-    },
-    {
-      "label": "AI Engineer Roadmap",
-      "file_type": "document",
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_AI_ENGINEER.md",
-      "source_location": null,
-      "source_url": "https://roadmap.sh/ai-engineer",
-      "captured_at": "2026-07-15",
-      "author": null,
-      "contributor": null,
-      "id": "roadmaps_reference_role_based_roadmaps_roadmap_ai_engineer_md",
-      "community": 0,
-      "norm_label": "ai engineer roadmap"
-    },
-    {
-      "label": "Android Developer Roadmap",
-      "file_type": "document",
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_ANDROID.md",
-      "source_location": null,
-      "source_url": "https://roadmap.sh/android",
-      "captured_at": "2026-07-15",
-      "author": null,
-      "contributor": null,
-      "id": "roadmaps_reference_role_based_roadmaps_roadmap_android_md",
-      "community": 0,
-      "norm_label": "android developer roadmap"
-    },
-    {
-      "label": "Backend Developer Roadmap",
-      "file_type": "document",
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_BACKEND.md",
-      "source_location": null,
-      "source_url": "https://roadmap.sh/backend",
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "roadmaps_reference_role_based_roadmaps_roadmap_backend_md",
-      "community": 0,
-      "norm_label": "backend developer roadmap"
-    },
-    {
-      "label": "BI Analyst Roadmap",
-      "file_type": "document",
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_BI_ANALYST.md",
-      "source_location": null,
-      "source_url": "https://roadmap.sh/bi-analyst",
-      "captured_at": "2026-07-15",
-      "author": null,
-      "contributor": null,
-      "id": "roadmaps_reference_role_based_roadmaps_roadmap_bi_analyst_md",
-      "community": 0,
-      "norm_label": "bi analyst roadmap"
-    },
-    {
-      "label": "Blockchain Developer Roadmap",
-      "file_type": "document",
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_BLOCKCHAIN.md",
-      "source_location": null,
-      "source_url": "https://roadmap.sh/blockchain",
-      "captured_at": "2026-07-15",
-      "author": null,
-      "contributor": null,
-      "id": "roadmaps_reference_role_based_roadmaps_roadmap_blockchain_md",
-      "community": 0,
-      "norm_label": "blockchain developer roadmap"
-    },
-    {
-      "label": "Cyber Security Expert Roadmap",
-      "file_type": "document",
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_CYBER_SECURITY.md",
-      "source_location": null,
-      "source_url": "https://roadmap.sh/cyber-security",
-      "captured_at": "2026-07-15",
-      "author": null,
-      "contributor": null,
-      "id": "roadmaps_reference_role_based_roadmaps_roadmap_cyber_security_md",
-      "community": 0,
-      "norm_label": "cyber security expert roadmap"
-    },
-    {
-      "label": "Data Analyst Roadmap",
-      "file_type": "document",
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_DATA_ANALYST.md",
-      "source_location": null,
-      "source_url": "https://roadmap.sh/data-analyst",
-      "captured_at": "2026-07-15",
-      "author": null,
-      "contributor": null,
-      "id": "roadmaps_reference_role_based_roadmaps_roadmap_data_analyst_md",
-      "community": 0,
-      "norm_label": "data analyst roadmap"
-    },
-    {
-      "label": "Data Engineer Roadmap",
-      "file_type": "document",
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_DATA_ENGINEER.md",
-      "source_location": null,
-      "source_url": "https://roadmap.sh/data-engineer",
-      "captured_at": "2026-07-15",
-      "author": null,
-      "contributor": null,
-      "id": "roadmaps_reference_role_based_roadmaps_roadmap_data_engineer_md",
-      "community": 0,
-      "norm_label": "data engineer roadmap"
-    },
-    {
-      "label": "UX Design Roadmap",
-      "file_type": "document",
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_DESIGN_UX.md",
-      "source_location": null,
-      "source_url": "https://roadmap.sh/ux-design",
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "roadmaps_reference_role_based_roadmaps_roadmap_design_ux_md",
-      "community": 0,
-      "norm_label": "ux design roadmap"
-    },
-    {
-      "label": "Graphify Tool",
-      "file_type": "concept",
-      "source_file": ".codex/skills/graphify/references",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "graphify_tool",
-      "community": 7,
-      "norm_label": "graphify tool"
-    },
-    {
-      "label": "Whisper Transcription",
-      "file_type": "concept",
-      "source_file": ".codex/skills/graphify/references/transcribe.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "whisper",
-      "community": 7,
-      "norm_label": "whisper transcription"
-    },
-    {
-      "label": "Neo4j Graph Database",
-      "file_type": "concept",
-      "source_file": ".codex/skills/graphify/references/exports.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "neo4j",
-      "community": 7,
-      "norm_label": "neo4j graph database"
-    },
-    {
-      "label": "FalkorDB Graph Database",
-      "file_type": "concept",
-      "source_file": ".codex/skills/graphify/references/exports.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "falkordb",
-      "community": 7,
-      "norm_label": "falkordb graph database"
-    },
-    {
-      "label": "Model Context Protocol",
-      "file_type": "concept",
-      "source_file": ".codex/skills/graphify/references/exports.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "mcp",
-      "community": 7,
-      "norm_label": "model context protocol"
-    },
-    {
-      "label": "Claude Desktop",
-      "file_type": "concept",
-      "source_file": ".codex/skills/graphify/references/exports.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "claude_desktop",
-      "community": 7,
-      "norm_label": "claude desktop"
     }
   ],
   "links": [
@@ -3822,317 +3758,6 @@
       "confidence_score": 1.0,
       "source": "roadmaps_reference_tools_enrich_roadmapreferences_get_roadmaptopics",
       "target": "roadmaps_reference_tools_enrich_roadmapreferences_add_uniqueitem"
-    },
-    {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_DEVOPS.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_devops",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_DEVREL.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_devrel",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_DEVSECOPS.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_devsecops",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_ENGINEERING_MANAGER.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_engineering_manager",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_FORWARD_DEPLOYED_ENGINEER.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_forward_deployed_engineer",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_FRONTEND.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_frontend",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_FULL_STACK.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_full_stack",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_GAME_DEVELOPER.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_game_developer",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_IOS.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_ios",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_MACHINE_LEARNING.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_machine_learning",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_MLOPS.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_mlops",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_NETWORK_ENGINEER.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_network_engineer",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_POSTGRESQL_DBA.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_postgresql_dba",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_PRODUCT_MANAGER.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_product_manager",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_QA.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_qa",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_AI_DATA_SCIENTIST.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_roadmap_ai_data_scientist_md",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_AI_ENGINEER.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_roadmap_ai_engineer_md",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_ANDROID.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_roadmap_android_md",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_BACKEND.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_roadmap_backend_md",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_BI_ANALYST.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_roadmap_bi_analyst_md",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_BLOCKCHAIN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_roadmap_blockchain_md",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_CYBER_SECURITY.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_roadmap_cyber_security_md",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_DATA_ANALYST.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_roadmap_data_analyst_md",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_DATA_ENGINEER.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_roadmap_data_engineer_md",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_DESIGN_UX.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_roadmap_design_ux_md",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_SERVER_SIDE_GAME_DEVELOPER.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_server_side_game_developer",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_SOFTWARE_ARCHITECT.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_software_architect",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "cites",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_TECHNICAL_WRITER.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_technical_writer",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Skill-based Roadmaps/ROADMAP_TYPESCRIPT.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Skill-based Roadmaps/ROADMAP_VIBE_CODING.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_skill_based_roadmaps_roadmap_vibe_coding",
-      "target": "roadmap_sh"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
-      "source_location": "L11",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "tools_invoke_correnthsemanticpush",
-      "target": "tools_invoke_correnthsemanticpush_invoke_graphifypython"
     },
     {
       "relation": "cites",
@@ -4685,6 +4310,17 @@
       "target": "llms"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_invoke_correnthsemanticpush",
+      "target": "tools_invoke_correnthsemanticpush_invoke_graphifypython",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -4693,6 +4329,56 @@
       "weight": 1.0,
       "source": "graphify",
       "target": "codex_skills_graphify_skill_md"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".codex/skills/graphify/references/exports.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "codex_skills_graphify_references_exports_md",
+      "target": "claude_desktop"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".codex/skills/graphify/references/exports.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "codex_skills_graphify_references_exports_md",
+      "target": "falkordb"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".codex/skills/graphify/references/exports.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "codex_skills_graphify_references_exports_md",
+      "target": "mcp"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".codex/skills/graphify/references/exports.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "codex_skills_graphify_references_exports_md",
+      "target": "neo4j"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".codex/skills/graphify/references/transcribe.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "codex_skills_graphify_references_transcribe_md",
+      "target": "whisper"
     },
     {
       "relation": "references",
@@ -5373,106 +5059,6 @@
       "weight": 1.0,
       "source": "developer_roadmap_github",
       "target": "roadmaps_reference_skill_based_roadmaps_roadmap_terraform"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_AI_DATA_SCIENTIST.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_roadmap_ai_data_scientist_md",
-      "target": "developer_roadmap_github"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_AI_ENGINEER.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_roadmap_ai_engineer_md",
-      "target": "developer_roadmap_github"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_ANDROID.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_roadmap_android_md",
-      "target": "developer_roadmap_github"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_BACKEND.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_roadmap_backend_md",
-      "target": "developer_roadmap_github"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_BI_ANALYST.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_roadmap_bi_analyst_md",
-      "target": "developer_roadmap_github"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_BLOCKCHAIN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_roadmap_blockchain_md",
-      "target": "developer_roadmap_github"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_CYBER_SECURITY.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_roadmap_cyber_security_md",
-      "target": "developer_roadmap_github"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_DATA_ANALYST.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_roadmap_data_analyst_md",
-      "target": "developer_roadmap_github"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_DATA_ENGINEER.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_roadmap_data_engineer_md",
-      "target": "developer_roadmap_github"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_DESIGN_UX.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "roadmaps_reference_role_based_roadmaps_roadmap_design_ux_md",
-      "target": "developer_roadmap_github"
     },
     {
       "relation": "references",
@@ -7133,139 +6719,23 @@
       "weight": 1.0,
       "source": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_composer",
       "target": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress_composer_autoloading"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".codex/skills/graphify/references/add-watch.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "codex_skills_graphify_references_add_watch_md",
-      "target": "graphify_tool"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".codex/skills/graphify/references/exports.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "codex_skills_graphify_references_exports_md",
-      "target": "claude_desktop"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".codex/skills/graphify/references/exports.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "codex_skills_graphify_references_exports_md",
-      "target": "falkordb"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".codex/skills/graphify/references/exports.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "codex_skills_graphify_references_exports_md",
-      "target": "graphify_tool"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".codex/skills/graphify/references/exports.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "codex_skills_graphify_references_exports_md",
-      "target": "mcp"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".codex/skills/graphify/references/exports.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "codex_skills_graphify_references_exports_md",
-      "target": "neo4j"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".codex/skills/graphify/references/extraction-spec.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "codex_skills_graphify_references_extraction_spec_md",
-      "target": "graphify_tool"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".codex/skills/graphify/references/github-and-merge.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "codex_skills_graphify_references_github_and_merge_md",
-      "target": "graphify_tool"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".codex/skills/graphify/references/hooks.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "codex_skills_graphify_references_hooks_md",
-      "target": "graphify_tool"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".codex/skills/graphify/references/query.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "codex_skills_graphify_references_query_md",
-      "target": "graphify_tool"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".codex/skills/graphify/references/transcribe.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "codex_skills_graphify_references_transcribe_md",
-      "target": "graphify_tool"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".codex/skills/graphify/references/transcribe.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "codex_skills_graphify_references_transcribe_md",
-      "target": "whisper"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".codex/skills/graphify/references/update.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "codex_skills_graphify_references_update_md",
-      "target": "graphify_tool"
     }
   ],
   "hyperedges": [
+    {
+      "id": "graphify_export_targets",
+      "label": "Graphify Export Targets",
+      "nodes": [
+        "neo4j",
+        "falkordb",
+        "mcp",
+        "claude_desktop"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".codex/skills/graphify/references/exports.md"
+    },
     {
       "id": "correnth_operational_core",
       "label": "Correnth Operational Core",
@@ -7492,58 +6962,6 @@
       "source_file": "roadmaps_reference/Skill-based Roadmaps/ROADMAP_WORDPRESS.md"
     },
     {
-      "id": "graphify_reference_documentation",
-      "label": "Graphify Reference Documentation Suite",
-      "nodes": [
-        "codex_skills_graphify_references_add_watch_md",
-        "codex_skills_graphify_references_exports_md",
-        "codex_skills_graphify_references_extraction_spec_md",
-        "codex_skills_graphify_references_github_and_merge_md",
-        "codex_skills_graphify_references_hooks_md",
-        "codex_skills_graphify_references_query_md",
-        "codex_skills_graphify_references_transcribe_md",
-        "codex_skills_graphify_references_update_md"
-      ],
-      "relation": "implement",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".codex/skills/graphify/references"
-    },
-    {
-      "id": "roadmap_role_based_collection",
-      "label": "Roadmap.sh Role-Based Roadmaps Collection",
-      "nodes": [
-        "roadmaps_reference_role_based_roadmaps_roadmap_ai_data_scientist_md",
-        "roadmaps_reference_role_based_roadmaps_roadmap_ai_engineer_md",
-        "roadmaps_reference_role_based_roadmaps_roadmap_android_md",
-        "roadmaps_reference_role_based_roadmaps_roadmap_backend_md",
-        "roadmaps_reference_role_based_roadmaps_roadmap_bi_analyst_md",
-        "roadmaps_reference_role_based_roadmaps_roadmap_blockchain_md",
-        "roadmaps_reference_role_based_roadmaps_roadmap_cyber_security_md",
-        "roadmaps_reference_role_based_roadmaps_roadmap_data_analyst_md",
-        "roadmaps_reference_role_based_roadmaps_roadmap_data_engineer_md",
-        "roadmaps_reference_role_based_roadmaps_roadmap_design_ux_md"
-      ],
-      "relation": "participate_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "roadmaps_reference/Role-based Roadmaps"
-    },
-    {
-      "id": "graphify_export_targets",
-      "label": "Graphify Export Targets",
-      "nodes": [
-        "neo4j",
-        "falkordb",
-        "mcp",
-        "claude_desktop"
-      ],
-      "relation": "participate_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".codex/skills/graphify/references/exports.md"
-    },
-    {
       "id": "testing_across_roadmaps",
       "label": "Testing Concepts Across Roadmaps",
       "nodes": [
@@ -7558,5 +6976,5 @@
       "source_file": null
     }
   ],
-  "built_at_commit": "09525bbd551065f16a971c5ef62d1c7dd217ef74"
+  "built_at_commit": "531493f84ea993b9072d24d5db248363999541d7"
 }
