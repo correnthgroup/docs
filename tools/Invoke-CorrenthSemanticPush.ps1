@@ -173,6 +173,17 @@ try {
   $runDirectory = Join-Path $resolvedRoot (".graphify-quarantine\\extract-" + [Guid]::NewGuid().ToString("N"))
   $stagingOutput = Join-Path $runDirectory "graphify-out"
   New-Item -ItemType Directory -Path $runDirectory | Out-Null
+  # Keep the extraction transaction isolated, but reuse an ignored local cache
+  # from the latest completed quarantine run. Graphify validates cache keys
+  # against source content; changed files are still dispatched to MiniMax.
+  $previousCache = Get-ChildItem -LiteralPath (Join-Path $resolvedRoot ".graphify-quarantine") -Directory -ErrorAction SilentlyContinue |
+    Where-Object { $_.FullName -ne $runDirectory -and (Test-Path -LiteralPath (Join-Path $_.FullName "graphify-out\\cache") -PathType Container) } |
+    Sort-Object LastWriteTime -Descending |
+    Select-Object -First 1
+  if ($null -ne $previousCache) {
+    New-Item -ItemType Directory -Path $stagingOutput | Out-Null
+    Copy-Item -LiteralPath (Join-Path $previousCache.FullName "graphify-out\\cache") -Destination (Join-Path $stagingOutput "cache") -Recurse
+  }
   $previousBaseUrl, $previousApiKey = $env:OPENAI_BASE_URL, $env:OPENAI_API_KEY
   try {
     $env:OPENAI_BASE_URL = "https://api.minimax.io/v1"
