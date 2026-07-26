@@ -12,7 +12,7 @@ O antigo alias `graphiy-out` foi aposentado porque o junction podia ser seguido 
 2. Se não existir ou estiver desatualizado, gere novamente em modo AST-only a partir de `D:\00_docs`: `graphify update . --force`. Não execute Graphify a partir de `D:\` inteiro.
 3. Consulte o grafo com uma pergunta específica, por exemplo: `graphify query "quais documentos definem a stack Correnth?" --graph graphify-out\graph.json`.
 4. Use a resposta do grafo para localizar os arquivos-fonte; leia os trechos necessários antes de concluir ou alterar algo.
-5. Após criar, mover ou alterar documentos relevantes, atualize o grafo local AST-only quando viável e registre limitações. Semantic extraction está desabilitada por padrão e deve ser desconsiderada se não houver ADR local explícito reabilitando-a.
+5. Após criar, mover ou alterar documentos relevantes, atualize o grafo local AST-only quando viável e registre limitações. Semantic extraction e semantic edges antigos estão desabilitados e não têm autoridade.
 
 ### Gate de integridade
 
@@ -22,15 +22,15 @@ O antigo alias `graphiy-out` foi aposentado porque o junction podia ser seguido 
 
 O grafo é um índice de descoberta, não a fonte de verdade. A fonte de verdade continua sendo os arquivos originais em `D:\00_docs`.
 
-> A extração semântica/LLM está desativada por padrão em projetos Correnth. Qualquer reativação exige ADR ou instrução local explícita; sem isso, usar AST-only e desconsiderar semantic edges antigos.
+> A extração semântica/LLM está desativada em projetos Correnth. Use exclusivamente AST-only e desconsidere semantic edges antigos.
 
 ## Política Graphify por projeto em `D:\`
 
 Cada projeto Correnth tem seu próprio Graphify e seu próprio `AGENTS.md`. O agente deve consultar o `AGENTS.md` mais próximo para descobrir o root, a saída canônica e o comando permitido.
 
 - Graphify nunca deve ser executado a partir de `D:\` inteiro.
-- Semantic extraction é opt-in por projeto; se não houver política local ativa, usar AST-only.
-- `D:\Invoke-CorrenthGraphify.ps1` só deve ser usado por projetos que optaram explicitamente por semântica/LLM.
+- Use exclusivamente AST-only em cada projeto.
+- `D:\Invoke-CorrenthGraphify.ps1` não deve ser usado enquanto esta política estiver vigente.
 - Nunca registrar, imprimir, versionar ou copiar chaves para `AGENTS.md`, Markdown, scripts, `.env`, logs ou argumentos visíveis.
 
 ## Saídas do Graphify
@@ -60,4 +60,4 @@ Rules:
 - Dirty graphify-out/ files are expected after hooks or incremental updates; dirty graph files are not a reason to skip graphify. Only skip graphify if the task is about stale or incorrect graph output, or the user explicitly says not to use it.
 - If graphify-out/wiki/index.md exists, use it for broad navigation instead of raw source browsing.
 - Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
-- After modifying relevant files, run the local project Graphify command in AST-only mode unless this project's `AGENTS.md` explicitly opts into semantic extraction.
+- After modifying relevant files, run the local project Graphify command in AST-only mode.

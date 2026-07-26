@@ -1,23 +1,28 @@
 # CML Consumer Quickstart
 
+## Ordem de consulta
+
+1. MCP Gateway global da CML.
+2. SDK oficial para integração ou diagnóstico.
+3. CLI de diagnóstico.
+4. Documentos canônicos locais como fallback explicitamente declarado.
+
 ## Requisitos
 
 - CML API v1 operacional.
 - Consumer autorizado com capability `context.read`.
-- `CML_API_BASE_URL` apontando para a API da CML.
-- `CML_CONSUMER_ACCESS_TOKEN` em variável de ambiente server-side.
+- Configuração e token `context.read` disponíveis no Cofre Pessoal desbloqueado para sessões locais.
 - SDK oficial `@correnth/context-memory/sdk` v1.x instalado no consumidor.
 
 Nunca use o Supabase da CML diretamente, nunca use service role e nunca registre o token.
 
-## Configuração
+## Configuração local
 
 ```text
-CML_API_BASE_URL=https://<cml-api-host>
-CML_CONSUMER_ACCESS_TOKEN=<secret-for-the-authorized-consumer>
+C:\Users\raulv\OneDrive\Cofre Pessoal\Correnth\CML\consumer.json
 ```
 
-O host e o token reais devem vir do provisionamento seguro do ambiente. Este arquivo não contém credenciais.
+O provider MCP lê o arquivo em cada requisição. O host e o token reais nunca são copiados para `.env`, configuração Codex, logs ou argumentos.
 
 ## Verificação
 

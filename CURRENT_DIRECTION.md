@@ -1,16 +1,18 @@
 # Correnth Current Direction
 
 - Status: Vigente
-- Data de revisão: 2026-07-21
+- Data de revisão: 2026-07-24
 - Fonte: decisões canônicas em `decisions/` e PRDs em `platforms/`
 
 ## Direção operacional
 
 - O Grupo Correnth opera produtos e negócios com fronteiras próprias e contratos explícitos.
 - Paperclip coordena agentes e Work Orders; não substitui a autoridade dos produtos nem da CML.
-- Gauss é a identidade vigente do negócio de desenvolvimento de software; sua organização e política de idioma pt-BR estão em `decisions/GAUSS_AGENT_ORGANIZATION_AND_LANGUAGE_v1.md`.
-- A CML é a plataforma compartilhada de contexto. Consumidores usam somente API, SDK ou MCP versionados.
-- RedRise segue a milestone de adaptadores duráveis do Workstation definida em `D:\01_studio\redrise v2\docs\external\correnth-prds\06_PRD_024_DURABLE_WORKSTATION_ADAPTERS_v1.md`.
+- RedRise é o produto B2B agentic SaaS vigente e sua Company interna substitui a Gauss, conforme `decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md`.
+- O único runtime implantável está em `D:\01_studio\redrise-platform`; o pacote operacional interno está em `D:\02_labs\redrise`.
+- A CML é a plataforma compartilhada de contexto em `D:\01_studio\context-memory`. Sessões locais usam MCP por padrão e SDK/CLI como diagnóstico.
+- Os repositórios RedRise e RedRise v2 em `archived` são apenas doadores históricos e não têm autoridade operacional.
+- Graphify opera por projeto em modo AST-only; extração semântica não está autorizada.
 - Mudanças destrutivas, credenciais, segurança, produção e publicação exigem HITL conforme a política aplicável.
 
 ## Autoridade

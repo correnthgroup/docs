@@ -28,8 +28,9 @@ Uma camada inferior não pode alterar silenciosamente uma decisão de camada sup
 |---|---|
 | `correnthgroup/docs` | Estratégia, PRDs e direção operacional transversal |
 | `correnthgroup/studio_context-memory` | Schema, contracts, runtime, migrations, testes e runbooks da CML |
-| `correnthgroup/redrise-v2` | Arquitetura e comportamento próprios do RedRise v2 |
-| `D:\02_labs\gauss` | Pacote e runtime de execução dos agentes Gauss autorizado por contratos CML |
+| `correnthgroup/redrise-platform` | Arquitetura, runtime, migrations e comportamento do produto RedRise |
+| `correnthgroup/labs_redrise` | Pacote operacional dos agentes internos RedRise autorizado por contratos CML |
+| `correnthgroup/redrise` e `correnthgroup/redrise-v2` | Histórico e doadores arquivados, sem autoridade operacional |
 
 ## Política contra duplicação
 

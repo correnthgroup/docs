@@ -27,7 +27,7 @@ O gate RedRise que bloqueava a conclusao foi resolvido pela migration `202607090
 ## Riscos residuais
 
 - O `supabase db lint --linked` encontrou uma falha transitoria de conexao do CLI; migrations, readiness e operacoes autenticadas remotas passaram depois. Nao indica falha de schema.
-- A remocao fisica da implementacao legada no worktree sujo `D:\01_studio\redrise v2` foi evitada para nao destruir alteracoes do usuario. O inventario a declara nao canonica e nenhum consumer depende dela.
+- A implementação substituída do produto permanece arquivada como doadora não canônica; nenhum consumer ativo depende dela.
 - O console administrativo deve manter governança Git própria quando seu repositório oficial for definido. A integração e os gates de runtime estão validados.
 
 ## Rollback
