@@ -1,7 +1,18 @@
 {
   "communities": {
     "0": [
+      "developer_roadmap_github",
       "developer_roadmap_repository",
+      "roadmaps_reference_role_based_roadmaps_roadmap_android",
+      "roadmaps_reference_role_based_roadmaps_roadmap_bi_analyst",
+      "roadmaps_reference_role_based_roadmaps_roadmap_blockchain",
+      "roadmaps_reference_role_based_roadmaps_roadmap_cyber_security",
+      "roadmaps_reference_role_based_roadmaps_roadmap_data_analyst",
+      "roadmaps_reference_role_based_roadmaps_roadmap_data_engineer",
+      "roadmaps_reference_role_based_roadmaps_roadmap_forward_deployed_engineer",
+      "roadmaps_reference_role_based_roadmaps_roadmap_game_developer",
+      "roadmaps_reference_role_based_roadmaps_roadmap_ios",
+      "roadmaps_reference_skill_based_roadmaps_roadmap_aspnet_core",
       "roadmaps_reference_skill_based_roadmaps_roadmap_php",
       "roadmaps_reference_skill_based_roadmaps_roadmap_prompt_engineering",
       "roadmaps_reference_skill_based_roadmaps_roadmap_python",
@@ -31,6 +42,7 @@
       "topic_microservices",
       "topic_numpy",
       "topic_oop",
+      "topic_rest",
       "topic_rest_api",
       "topic_security",
       "topic_spring_data",
@@ -39,9 +51,11 @@
     ],
     "1": [
       "concept_api_design",
+      "concept_ci_cd",
       "concept_clean_architecture",
       "concept_domain_driven_design",
       "concept_dora_metrics",
+      "concept_git",
       "concept_infrastructure_as_code",
       "concept_kubernetes",
       "concept_llm",
@@ -65,8 +79,6 @@
       "topic_observability"
     ],
     "2": [
-      "concept_ci_cd",
-      "concept_git",
       "concept_playwright",
       "concept_react",
       "concept_tailwind",
@@ -92,28 +104,75 @@
       "zod"
     ],
     "3": [
-      "decisions_correnth_ui_and_tech_stack_standard_v1_md",
-      "eslint",
-      "git_version_control",
-      "github_actions",
-      "lucide_react",
-      "openrouter",
-      "opentelemetry",
-      "organization_id",
-      "playwright",
-      "postgresql",
-      "python_uv",
-      "recharts",
-      "rls",
-      "roadmaps_reference_role_based_roadmaps_roadmap_backend",
-      "roadmaps_reference_skill_based_roadmaps_roadmap_git_github",
-      "stripe",
-      "supabase",
-      "typescript",
-      "vitest",
-      "xyflow_react"
+      "commitperclip_pem_key",
+      "correnth_ecosystem_v1_md",
+      "correnth_group",
+      "correnthgroup_docs",
+      "correnthgroup_redrise_operation",
+      "correnthgroup_redrise_platform",
+      "d_00_docs",
+      "gauss",
+      "gauss_agent_organization_v1_md",
+      "hitl",
+      "paperclip",
+      "pr_batch_1",
+      "pr_batch_2",
+      "pr_batch_3",
+      "pr_batch_4",
+      "redrise",
+      "redrise_canonical_product_v1_md",
+      "redrise_operation",
+      "redrise_platform",
+      "redrise_pr_rollout_audit",
+      "repositories_md",
+      "staging_environment"
     ],
     "4": [
+      "agencies_md",
+      "code_integrity",
+      "github_mcp",
+      "graphify_build_merge",
+      "graphify_cli",
+      "graphify_clone",
+      "graphify_cluster_only",
+      "graphify_codex_skill",
+      "graphify_detect_incremental",
+      "graphify_export",
+      "graphify_extract",
+      "graphify_github_merge_reference",
+      "graphify_mcp_server",
+      "graphify_merge_graphs",
+      "graphify_out_graph_json",
+      "graphify_query",
+      "graphify_update",
+      "graphify_update_reference",
+      "invoke_correnthsemanticpush",
+      "minimax",
+      "platforms_graphify_semantic_memory_md"
+    ],
+    "5": [
+      "roadmaps_reference_role_based_roadmaps_roadmap_machine_learning",
+      "roadmaps_reference_role_based_roadmaps_roadmap_mlops",
+      "roadmaps_reference_role_based_roadmaps_roadmap_postgresql_dba",
+      "src_kamranahmedse_developer_roadmap",
+      "topic_airflow",
+      "topic_ci_cd",
+      "topic_clustering",
+      "topic_connection_pooling",
+      "topic_containerization",
+      "topic_data_engineering",
+      "topic_data_pipelines",
+      "topic_deep_learning",
+      "topic_docker",
+      "topic_experiment_tracking",
+      "topic_model_evaluation",
+      "topic_preprocessing_techniques",
+      "topic_reinforcement_learning",
+      "topic_replication",
+      "topic_supervised_learning",
+      "topic_version_control"
+    ],
+    "6": [
       "roadmaps_reference_skill_based_roadmaps_ROADMAP_TYPESCRIPT",
       "roadmaps_reference_skill_based_roadmaps_ROADMAP_VIBE_CODING",
       "roadmaps_reference_skill_based_roadmaps_ROADMAP_VUE",
@@ -135,69 +194,84 @@
       "roadmaps_reference_skill_based_roadmaps_wordpress_php",
       "roadmaps_reference_skill_based_roadmaps_wordpress_themes"
     ],
-    "5": [
-      "agencies_md",
-      "code_integrity",
-      "d_00_docs",
-      "github_mcp",
-      "graphify_cli",
-      "graphify_cluster_only",
-      "graphify_codex_skill",
-      "graphify_export",
-      "graphify_mcp_server",
-      "graphify_out_graph_json",
-      "graphify_query",
-      "graphify_update",
-      "invoke_correnthsemanticpush",
-      "minimax",
-      "platforms_graphify_semantic_memory_md"
-    ],
-    "6": [
-      "correnth_ecosystem_v1_md",
-      "correnth_group",
-      "correnthgroup_docs",
-      "correnthgroup_redrise_operation",
-      "correnthgroup_redrise_platform",
-      "gauss",
-      "gauss_agent_organization_v1_md",
-      "hitl",
-      "paperclip",
-      "redrise",
-      "redrise_canonical_product_v1_md",
-      "redrise_operation",
-      "redrise_platform",
-      "repositories_md"
-    ],
     "7": [
-      "css_styling",
-      "html_semantic",
-      "javascript_async",
-      "nextjs_app_router",
-      "nextjs_server_side_rendering",
-      "roadmaps_reference_skill_based_roadmaps_roadmap_html",
-      "roadmaps_reference_skill_based_roadmaps_roadmap_javascript",
-      "roadmaps_reference_skill_based_roadmaps_roadmap_nextjs"
+      "decisions_correnth_ui_and_tech_stack_standard_v1_md",
+      "eslint",
+      "github_actions",
+      "lucide_react",
+      "openrouter",
+      "opentelemetry",
+      "organization_id",
+      "playwright",
+      "postgresql",
+      "python_uv",
+      "recharts",
+      "rls",
+      "roadmaps_reference_role_based_roadmaps_roadmap_backend",
+      "roadmaps_reference_skill_based_roadmaps_roadmap_git_github",
+      "stripe",
+      "supabase",
+      "typescript",
+      "vitest",
+      "xyflow_react"
     ],
     "8": [
-      "github_kamranahmedse_developer_roadmap",
-      "golang_concurrency",
-      "java_oop",
-      "kotlin_coroutines",
-      "roadmaps_reference_skill_based_roadmaps_roadmap_golang",
-      "roadmaps_reference_skill_based_roadmaps_roadmap_java",
-      "roadmaps_reference_skill_based_roadmaps_roadmap_kotlin",
-      "spring_boot"
+      "graphify_add_watch_reference",
+      "graphify_explain_cli",
+      "graphify_ingest",
+      "graphify_path_cli",
+      "graphify_query_cli",
+      "graphify_query_reference",
+      "graphify_reflect",
+      "graphify_save_result",
+      "graphify_transcribe",
+      "graphify_transcribe_reference",
+      "graphify_watch",
+      "whisper_transcription"
     ],
     "9": [
-      "docker_containers",
-      "kubernetes_pods",
-      "kubernetes_services",
-      "linux_networking",
-      "linux_process_management",
-      "roadmaps_reference_skill_based_roadmaps_roadmap_kubernetes",
-      "roadmaps_reference_skill_based_roadmaps_roadmap_linux"
+      "roadmaps_reference_skill_based_roadmaps_roadmap_angular",
+      "roadmaps_reference_skill_based_roadmaps_roadmap_css",
+      "topic_box_model",
+      "topic_components",
+      "topic_css_variables",
+      "topic_flexbox",
+      "topic_http_client",
+      "topic_routing",
+      "topic_signals",
+      "topic_ssr"
     ],
     "10": [
+      "roadmaps_reference_skill_based_roadmaps_roadmap_computer_science",
+      "roadmaps_reference_skill_based_roadmaps_roadmap_datastructures_and_algorithms",
+      "topic_algorithms",
+      "topic_data_structures",
+      "topic_graph_data_structures",
+      "topic_networking",
+      "topic_sorting_algorithms",
+      "topic_system_design",
+      "topic_tree_data_structures"
+    ],
+    "11": [
+      "roadmaps_reference_role_based_roadmaps_roadmap_server_side_game_developer",
+      "topic_actor_model",
+      "topic_message_queues",
+      "topic_multithreading",
+      "topic_rpc_rest",
+      "topic_socket_programming",
+      "topic_tcp",
+      "topic_udp"
+    ],
+    "12": [
+      "roadmaps_reference_skill_based_roadmaps_roadmap_c",
+      "roadmaps_reference_skill_based_roadmaps_roadmap_cpp",
+      "topic_build_systems",
+      "topic_memory_management",
+      "topic_pointers",
+      "topic_stl",
+      "topic_templates"
+    ],
+    "13": [
       "roadmaps_reference_tools_enrich_roadmapreferences",
       "roadmaps_reference_tools_enrich_roadmapreferences_add_uniqueitem",
       "roadmaps_reference_tools_enrich_roadmapreferences_convertto_plaintext",
@@ -206,15 +280,7 @@
       "roadmaps_reference_tools_enrich_roadmapreferences_get_roadmaptopics",
       "roadmaps_reference_tools_enrich_roadmapreferences_get_topicfocus"
     ],
-    "11": [
-      "cgroups",
-      "container_security",
-      "docker_compose",
-      "docker_images",
-      "dockerfile",
-      "roadmaps_reference_skill_based_roadmaps_roadmap_docker"
-    ],
-    "12": [
+    "14": [
       "tools_invoke_correnthsemanticpush",
       "tools_invoke_correnthsemanticpush_get_artifacthash",
       "tools_invoke_correnthsemanticpush_get_graphsnapshot",
@@ -222,106 +288,164 @@
       "tools_invoke_correnthsemanticpush_test_canonicalartifacts",
       "tools_invoke_correnthsemanticpush_write_provenance"
     ],
-    "13": [
-      "dsa_arrays",
-      "dsa_dynamic_programming",
-      "dsa_graphs",
-      "roadmaps_reference_skill_based_roadmaps_roadmap_leetcode"
-    ],
-    "14": [
-      "ai_agents",
-      "openclaw_channels",
-      "roadmaps_reference_skill_based_roadmaps_roadmap_openclaw"
-    ],
     "15": [
-      "dart_programming",
-      "flutter_widgets",
-      "roadmaps_reference_skill_based_roadmaps_roadmap_flutter"
+      "roadmaps_reference_skill_based_roadmaps_roadmap_ai_red_teaming",
+      "topic_defense_strategies",
+      "topic_infrastructure_security",
+      "topic_model_vulnerabilities",
+      "topic_prompt_hacking"
     ],
     "16": [
-      "elasticsearch_aggregation",
-      "elasticsearch_cluster",
-      "roadmaps_reference_skill_based_roadmaps_roadmap_elasticsearch"
+      "roadmaps_reference_skill_based_roadmaps_roadmap_cloudflare",
+      "topic_ai_gateway",
+      "topic_durable_objects",
+      "topic_workers_ai",
+      "topic_workers_kv"
     ],
     "17": [
-      "graphql_mutations",
-      "graphql_schema",
-      "roadmaps_reference_skill_based_roadmaps_roadmap_graphql"
+      "roadmaps_reference_skill_based_roadmaps_roadmap_django",
+      "topic_authentication",
+      "topic_class_based_views",
+      "topic_django_orm",
+      "topic_django_rest_framework"
     ],
     "18": [
-      "laravel_blade",
-      "laravel_eloquent",
-      "roadmaps_reference_skill_based_roadmaps_roadmap_laravel"
+      "ghauss_company",
+      "paperclip_tool",
+      "prompt_engineer_intake",
+      "work_order_concept"
     ],
     "19": [
-      "mongodb_aggregation",
-      "mongodb_indexing",
-      "roadmaps_reference_skill_based_roadmaps_roadmap_mongodb"
+      "roadmaps_reference_role_based_roadmaps_roadmap_network_engineer",
+      "topic_bgp",
+      "topic_cloud_computing",
+      "topic_vpn"
     ],
     "20": [
-      "nodejs_async",
-      "nodejs_streams",
-      "roadmaps_reference_skill_based_roadmaps_roadmap_nodejs"
+      "graphify_claude_cli",
+      "graphify_hook_cli",
+      "graphify_hooks_reference"
     ],
     "21": [
-      "concept_aws"
+      "roadmaps_reference_role_based_roadmaps_roadmap_technical_writer",
+      "topic_api_reference",
+      "topic_developer_docs"
     ],
     "22": [
-      "correnthgroup_studio_findfee"
+      "roadmaps_reference_skill_based_roadmaps_roadmap_claude_code",
+      "topic_agents",
+      "topic_mcp"
     ],
     "23": [
-      "current_direction_md"
+      "roadmaps_reference_skill_based_roadmaps_roadmap_html",
+      "roadmaps_reference_skill_based_roadmaps_roadmap_javascript",
+      "roadmaps_reference_skill_based_roadmaps_roadmap_nextjs"
     ],
     "24": [
-      "roadmaps_reference_role_based_roadmaps_roadmap_ai_data_scientist"
+      "roadmaps_reference_skill_based_roadmaps_roadmap_java",
+      "roadmaps_reference_skill_based_roadmaps_roadmap_kotlin"
     ],
     "25": [
-      "roadmaps_reference_role_based_roadmaps_roadmap_ai_engineer"
+      "concept_aws"
     ],
     "26": [
-      "roadmaps_reference_skill_based_roadmaps_decision_pending"
+      "correnthgroup_studio_findfee"
     ],
     "27": [
-      "roadmaps_reference_skill_based_roadmaps_evidence_patterns"
+      "current_direction_md"
     ],
     "28": [
-      "roadmaps_reference_skill_based_roadmaps_progresson_model"
+      "graphify_extraction_spec"
     ],
     "29": [
-      "roadmapsh_frontend_architecture"
+      "roadmaps_reference_role_based_roadmaps_roadmap_ai_data_scientist"
     ],
     "30": [
-      "tools_install_correnthsemanticpushguard"
+      "roadmaps_reference_role_based_roadmaps_roadmap_ai_engineer"
     ],
     "31": [
+      "roadmaps_reference_skill_based_roadmaps_decision_pending"
+    ],
+    "32": [
+      "roadmaps_reference_skill_based_roadmaps_evidence_patterns"
+    ],
+    "33": [
+      "roadmaps_reference_skill_based_roadmaps_progresson_model"
+    ],
+    "34": [
+      "roadmaps_reference_skill_based_roadmaps_roadmap_ai_product_builder"
+    ],
+    "35": [
+      "roadmaps_reference_skill_based_roadmaps_roadmap_code_review"
+    ],
+    "36": [
+      "roadmaps_reference_skill_based_roadmaps_roadmap_docker"
+    ],
+    "37": [
+      "roadmaps_reference_skill_based_roadmaps_roadmap_elasticsearch"
+    ],
+    "38": [
+      "roadmaps_reference_skill_based_roadmaps_roadmap_flutter"
+    ],
+    "39": [
+      "roadmaps_reference_skill_based_roadmaps_roadmap_golang"
+    ],
+    "40": [
+      "roadmaps_reference_skill_based_roadmaps_roadmap_graphql"
+    ],
+    "41": [
+      "roadmaps_reference_skill_based_roadmaps_roadmap_kubernetes"
+    ],
+    "42": [
+      "roadmaps_reference_skill_based_roadmaps_roadmap_laravel"
+    ],
+    "43": [
+      "roadmaps_reference_skill_based_roadmaps_roadmap_leetcode"
+    ],
+    "44": [
+      "roadmaps_reference_skill_based_roadmaps_roadmap_linux"
+    ],
+    "45": [
+      "roadmaps_reference_skill_based_roadmaps_roadmap_mongodb"
+    ],
+    "46": [
+      "roadmaps_reference_skill_based_roadmaps_roadmap_nodejs"
+    ],
+    "47": [
+      "roadmaps_reference_skill_based_roadmaps_roadmap_openclaw"
+    ],
+    "48": [
+      "tools_install_correnthsemanticpushguard"
+    ],
+    "49": [
       "uv_tool"
     ]
   },
   "cohesion": {
-    "0": 0.11260504201680673,
-    "1": 0.12333333333333334,
-    "2": 0.12666666666666668,
-    "3": 0.11578947368421053,
-    "4": 0.14736842105263157,
-    "5": 0.14285714285714285,
-    "6": 0.23076923076923078,
-    "7": 0.25,
-    "8": 0.2857142857142857,
-    "9": 0.2857142857142857,
-    "10": 0.42857142857142855,
-    "11": 0.3333333333333333,
-    "12": 0.5333333333333333,
-    "13": 0.5,
-    "14": 0.6666666666666666,
-    "15": 0.6666666666666666,
-    "16": 0.6666666666666666,
-    "17": 0.6666666666666666,
-    "18": 0.6666666666666666,
-    "19": 0.6666666666666666,
+    "0": 0.0786308973172988,
+    "1": 0.11396011396011396,
+    "2": 0.1383399209486166,
+    "3": 0.13852813852813853,
+    "4": 0.09523809523809523,
+    "5": 0.1,
+    "6": 0.14736842105263157,
+    "7": 0.12280701754385964,
+    "8": 0.16666666666666666,
+    "9": 0.2,
+    "10": 0.2222222222222222,
+    "11": 0.25,
+    "12": 0.2857142857142857,
+    "13": 0.42857142857142855,
+    "14": 0.5333333333333333,
+    "15": 0.4,
+    "16": 0.4,
+    "17": 0.4,
+    "18": 0.5,
+    "19": 0.5,
     "20": 0.6666666666666666,
-    "21": 1.0,
-    "22": 1.0,
-    "23": 1.0,
+    "21": 0.6666666666666666,
+    "22": 0.6666666666666666,
+    "23": 0.6666666666666666,
     "24": 1.0,
     "25": 1.0,
     "26": 1.0,
@@ -329,18 +453,36 @@
     "28": 1.0,
     "29": 1.0,
     "30": 1.0,
-    "31": 1.0
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 1.0,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0,
+    "45": 1.0,
+    "46": 1.0,
+    "47": 1.0,
+    "48": 1.0,
+    "49": 1.0
   },
   "gods": [
+    {
+      "id": "roadmapsh",
+      "label": "roadmap.sh",
+      "degree": 28
+    },
     {
       "id": "decisions_correnth_ui_and_tech_stack_standard_v1_md",
       "label": "Correnth UI and Tech Stack Standard v1",
       "degree": 22
-    },
-    {
-      "id": "roadmapsh",
-      "label": "roadmap.sh",
-      "degree": 18
     },
     {
       "id": "developer_roadmap_repository",
@@ -353,8 +495,18 @@
       "degree": 12
     },
     {
+      "id": "roadmaps_reference_role_based_roadmaps_roadmap_mlops",
+      "label": "MLOps Roadmap",
+      "degree": 11
+    },
+    {
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_devops",
       "label": "DevOps/SRE Roadmap",
+      "degree": 10
+    },
+    {
+      "id": "redrise_pr_rollout_audit",
+      "label": "RedRise PR Rollout and Audit",
       "degree": 10
     },
     {
@@ -363,27 +515,28 @@
       "degree": 9
     },
     {
-      "id": "correnth_ui",
-      "label": "@correnth/ui Shared UI Package",
-      "degree": 7
+      "id": "topic_testing",
+      "label": "Testing",
+      "degree": 8
     },
     {
       "id": "graphify_codex_skill",
       "label": "Graphify Codex Skill",
       "degree": 7
-    },
-    {
-      "id": "roadmaps_reference_outros_shadcn_guide",
-      "label": "shadcn/ui Complete Guide",
-      "degree": 7
-    },
-    {
-      "id": "roadmaps_reference_role_based_roadmaps_roadmap_software_architect",
-      "label": "Software Architect Roadmap",
-      "degree": 7
     }
   ],
   "surprises": [
+    {
+      "source": "Graphify Codex Skill",
+      "target": "GitHub MCP",
+      "source_files": [
+        ".codex/skills/graphify/SKILL.md",
+        "AGENTS.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "requires",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `GitHub MCP` unexpectedly reaches hub `Graphify Codex Skill`"
+    },
     {
       "source": "Frontend Developer Roadmap",
       "target": "Docker Containerization",
@@ -397,14 +550,25 @@
     },
     {
       "source": "Graphify Codex Skill",
-      "target": "GitHub MCP",
+      "target": "Graphify CLI (graphifyy)",
       "source_files": [
         ".codex/skills/graphify/SKILL.md",
-        "AGENTS.md"
+        "GRAPHIFY_STACK_RECOMMENDATION.md"
       ],
-      "confidence": "INFERRED",
-      "relation": "requires",
-      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `GitHub MCP` unexpectedly reaches hub `Graphify Codex Skill`"
+      "confidence": "EXTRACTED",
+      "relation": "implements",
+      "why": "connects across different repos/directories; peripheral node `Graphify CLI (graphifyy)` unexpectedly reaches hub `Graphify Codex Skill`"
+    },
+    {
+      "source": "AGENTS.md — Canonical Documentation",
+      "target": "Correnth Canonical Docs Directory",
+      "source_files": [
+        "AGENTS.md",
+        "CURRENT_DIRECTION.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "defines",
+      "why": "connects across different repos/directories; bridges separate communities"
     },
     {
       "source": "AGENTS.md — Canonical Documentation",
@@ -416,65 +580,43 @@
       "confidence": "EXTRACTED",
       "relation": "uses",
       "why": "connects across different repos/directories; peripheral node `MiniMax AI Backend` unexpectedly reaches hub `AGENTS.md — Canonical Documentation`"
-    },
-    {
-      "source": "correnthgroup/docs Repository",
-      "target": "Correnth Canonical Docs Directory",
-      "source_files": [
-        "REPOSITORIES.md",
-        "CURRENT_DIRECTION.md"
-      ],
-      "confidence": "EXTRACTED",
-      "relation": "is",
-      "why": "connects across different repos/directories; bridges separate communities"
-    },
-    {
-      "source": "Backend Developer Roadmap",
-      "target": "TypeScript Strict Mode",
-      "source_files": [
-        "roadmaps_reference/Role-based Roadmaps/ROADMAP_BACKEND.md",
-        "decisions/CORRENTH_UI_AND_TECH_STACK_STANDARD_v1.md"
-      ],
-      "confidence": "EXTRACTED",
-      "relation": "recommends",
-      "why": "connects across different repos/directories; peripheral node `TypeScript Strict Mode` unexpectedly reaches hub `Backend Developer Roadmap`"
     }
   ],
   "questions": [
     {
       "type": "bridge_node",
-      "question": "Why does `Correnth UI and Tech Stack Standard v1` connect `Correnth UI and Tech Stack Standard v1` to `DevOps/SRE Roadmap`, `Frontend Developer Roadmap`?",
-      "why": "High betweenness centrality (0.222) - this node is a cross-community bridge."
+      "question": "Why does `System Design Roadmap` connect `Developer Roadmaps` to `DevOps & Architecture`, `Correnth Tech Stack Standards`?",
+      "why": "High betweenness centrality (0.104) - this node is a cross-community bridge."
     },
     {
       "type": "bridge_node",
-      "question": "Why does `Git and GitHub Roadmap` connect `Correnth UI and Tech Stack Standard v1` to `developer-roadmap Repository`?",
-      "why": "High betweenness centrality (0.215) - this node is a cross-community bridge."
+      "question": "Why does `Correnth UI and Tech Stack Standard v1` connect `Correnth Tech Stack Standards` to `DevOps & Architecture`, `Frontend Development Stack`?",
+      "why": "High betweenness centrality (0.073) - this node is a cross-community bridge."
     },
     {
       "type": "bridge_node",
-      "question": "Why does `System Design Roadmap` connect `developer-roadmap Repository` to `DevOps/SRE Roadmap`, `Correnth UI and Tech Stack Standard v1`?",
-      "why": "High betweenness centrality (0.151) - this node is a cross-community bridge."
+      "question": "Why does `PostgreSQL` connect `Correnth Tech Stack Standards` to `Developer Roadmaps`?",
+      "why": "High betweenness centrality (0.060) - this node is a cross-community bridge."
     },
     {
       "type": "isolated_nodes",
-      "question": "What connects `Correnth Current Direction`, `Human in the Loop`, `Graphify Semantic Memory Policy` to the rest of the system?",
-      "why": "61 weakly-connected nodes found - possible documentation gaps or missing edges."
+      "question": "What connects `Graphify Query Command`, `Graphify Update Command`, `Graphify Export Commands` to the rest of the system?",
+      "why": "168 weakly-connected nodes found - possible documentation gaps or missing edges."
     },
     {
       "type": "low_cohesion",
-      "question": "Should `developer-roadmap Repository` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.11260504201680673 - nodes in this community are weakly interconnected."
+      "question": "Should `Developer Roadmaps` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.0786308973172988 - nodes in this community are weakly interconnected."
     },
     {
       "type": "low_cohesion",
-      "question": "Should `DevOps/SRE Roadmap` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.12333333333333334 - nodes in this community are weakly interconnected."
+      "question": "Should `DevOps & Architecture` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.11396011396011396 - nodes in this community are weakly interconnected."
     },
     {
       "type": "low_cohesion",
-      "question": "Should `Frontend Developer Roadmap` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.12666666666666668 - nodes in this community are weakly interconnected."
+      "question": "Should `Frontend Development Stack` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.1383399209486166 - nodes in this community are weakly interconnected."
     }
   ]
 }
