@@ -1,10 +1,10 @@
 ﻿{
-    "sourceRevision":  "b36df23afbf94c712f8fc588d9a0d7e863672bda",
+    "sourceRevision":  "09525bbd551065f16a971c5ef62d1c7dd217ef74",
     "extractor":  "graphify extract",
     "backend":  "openai-compatible",
     "provider":  "MiniMax",
     "model":  "MiniMax-M2.7-highspeed",
     "mode":  "deep",
     "semanticEdgeCount":  38,
-    "generatedAt":  "2026-07-26T15:00:07.7594670Z"
+    "generatedAt":  "2026-07-26T15:02:20.9033106Z"
 }

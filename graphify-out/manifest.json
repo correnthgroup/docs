@@ -17,42 +17,42 @@
   ".codex/skills/graphify/references/add-watch.md": {
     "mtime": 1784008967.1605406,
     "ast_hash": "d59d027fe449f06aa03905a01184e779",
-    "semantic_hash": ""
+    "semantic_hash": "d59d027fe449f06aa03905a01184e779"
   },
   ".codex/skills/graphify/references/exports.md": {
     "mtime": 1784008967.1635966,
     "ast_hash": "9da2a2152e60a22f07f05fed5158f287",
-    "semantic_hash": ""
+    "semantic_hash": "9da2a2152e60a22f07f05fed5158f287"
   },
   ".codex/skills/graphify/references/extraction-spec.md": {
     "mtime": 1784008967.1727822,
     "ast_hash": "bf895ec4d4e40f5f66f7d31c2a9bd4a7",
-    "semantic_hash": ""
+    "semantic_hash": "bf895ec4d4e40f5f66f7d31c2a9bd4a7"
   },
   ".codex/skills/graphify/references/github-and-merge.md": {
     "mtime": 1784008967.179916,
     "ast_hash": "cde13df085e4c492aeb7ba298a996d0d",
-    "semantic_hash": ""
+    "semantic_hash": "cde13df085e4c492aeb7ba298a996d0d"
   },
   ".codex/skills/graphify/references/hooks.md": {
     "mtime": 1784008967.1839938,
     "ast_hash": "3f545db6ce646650bb9de588f5512a27",
-    "semantic_hash": ""
+    "semantic_hash": "3f545db6ce646650bb9de588f5512a27"
   },
   ".codex/skills/graphify/references/query.md": {
     "mtime": 1784008967.194708,
     "ast_hash": "3c46f8ad006874260614ed8657d02307",
-    "semantic_hash": ""
+    "semantic_hash": "3c46f8ad006874260614ed8657d02307"
   },
   ".codex/skills/graphify/references/transcribe.md": {
     "mtime": 1784008967.194708,
     "ast_hash": "67b6a5fa6c0974e18f60db9f8932fbd8",
-    "semantic_hash": ""
+    "semantic_hash": "67b6a5fa6c0974e18f60db9f8932fbd8"
   },
   ".codex/skills/graphify/references/update.md": {
     "mtime": 1784008967.2008226,
     "ast_hash": "c698309979460d0f02ba616417844399",
-    "semantic_hash": ""
+    "semantic_hash": "c698309979460d0f02ba616417844399"
   },
   "AGENTS.md": {
     "mtime": 1785077544.5048332,
@@ -72,7 +72,7 @@
   "Prompt Engineer.txt": {
     "mtime": 1784668411.4235158,
     "ast_hash": "6157d1aac1f88f2684e5814893935864",
-    "semantic_hash": ""
+    "semantic_hash": "6157d1aac1f88f2684e5814893935864"
   },
   "decisions/CORRENTH_ECOSYSTEM_PORTFOLIO_AND_OPERATING_MODEL_v1.md": {
     "mtime": 1785034589.2051935,
@@ -97,52 +97,52 @@
   "roadmaps_reference/Role-based Roadmaps/ROADMAP_AI_DATA_SCIENTIST.md": {
     "mtime": 1784730853.753497,
     "ast_hash": "6837aa4a3fec4c0564f821ea66a86f84",
-    "semantic_hash": ""
+    "semantic_hash": "6837aa4a3fec4c0564f821ea66a86f84"
   },
   "roadmaps_reference/Role-based Roadmaps/ROADMAP_AI_ENGINEER.md": {
     "mtime": 1784730853.754483,
     "ast_hash": "4f28939d4e52db8ada3969785f4ce2fc",
-    "semantic_hash": ""
+    "semantic_hash": "4f28939d4e52db8ada3969785f4ce2fc"
   },
   "roadmaps_reference/Role-based Roadmaps/ROADMAP_ANDROID.md": {
     "mtime": 1784730853.7555206,
     "ast_hash": "1d815e6bdc4e74173b5a9f757783be6c",
-    "semantic_hash": ""
+    "semantic_hash": "1d815e6bdc4e74173b5a9f757783be6c"
   },
   "roadmaps_reference/Role-based Roadmaps/ROADMAP_BACKEND.md": {
     "mtime": 1784086072.001531,
     "ast_hash": "b455fcb3d795d9837721d116d5e24862",
-    "semantic_hash": ""
+    "semantic_hash": "b455fcb3d795d9837721d116d5e24862"
   },
   "roadmaps_reference/Role-based Roadmaps/ROADMAP_BI_ANALYST.md": {
     "mtime": 1784730853.7566023,
     "ast_hash": "1ad8a39373cbaaf3bb828143b801c1b3",
-    "semantic_hash": ""
+    "semantic_hash": "1ad8a39373cbaaf3bb828143b801c1b3"
   },
   "roadmaps_reference/Role-based Roadmaps/ROADMAP_BLOCKCHAIN.md": {
     "mtime": 1784730853.7566023,
     "ast_hash": "8267ba2f481f73803fea61afc48a3d25",
-    "semantic_hash": ""
+    "semantic_hash": "8267ba2f481f73803fea61afc48a3d25"
   },
   "roadmaps_reference/Role-based Roadmaps/ROADMAP_CYBER_SECURITY.md": {
     "mtime": 1784730853.758128,
     "ast_hash": "ce5800c8720d55b22541f9acf7c0623e",
-    "semantic_hash": ""
+    "semantic_hash": "ce5800c8720d55b22541f9acf7c0623e"
   },
   "roadmaps_reference/Role-based Roadmaps/ROADMAP_DATA_ANALYST.md": {
     "mtime": 1784730853.7596567,
     "ast_hash": "431e96714d4a019ade3012e6d85b67be",
-    "semantic_hash": ""
+    "semantic_hash": "431e96714d4a019ade3012e6d85b67be"
   },
   "roadmaps_reference/Role-based Roadmaps/ROADMAP_DATA_ENGINEER.md": {
     "mtime": 1784730853.7596567,
     "ast_hash": "df5ec43d8459903bc0be83b36ad1f024",
-    "semantic_hash": ""
+    "semantic_hash": "df5ec43d8459903bc0be83b36ad1f024"
   },
   "roadmaps_reference/Role-based Roadmaps/ROADMAP_DESIGN_UX.md": {
     "mtime": 1784086072.001531,
     "ast_hash": "c96f82ca5cd3092d9bc1a11f72f14f8b",
-    "semantic_hash": ""
+    "semantic_hash": "c96f82ca5cd3092d9bc1a11f72f14f8b"
   },
   "roadmaps_reference/Role-based Roadmaps/ROADMAP_DEVOPS.md": {
     "mtime": 1784085318.8776119,
