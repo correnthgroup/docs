@@ -100,7 +100,8 @@ try {
     # A self-loop has no traversal value and violates graph integrity. Preserve
     # the count in provenance, but publish only the valid canonical graph.
     $graph.links = @($links | Where-Object { $_.source -ne $_.target })
-    $graph | ConvertTo-Json -Depth 100 | Set-Content -LiteralPath $graphPath -Encoding utf8
+    $sanitizedJson = $graph | ConvertTo-Json -Depth 100
+    [System.IO.File]::WriteAllText($graphPath, $sanitizedJson, [System.Text.UTF8Encoding]::new($false))
     $links = @($graph.links)
   }
   $nodeIds = @{}
