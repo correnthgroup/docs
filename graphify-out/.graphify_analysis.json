@@ -55,7 +55,6 @@
       "concept_clean_architecture",
       "concept_domain_driven_design",
       "concept_dora_metrics",
-      "concept_git",
       "concept_infrastructure_as_code",
       "concept_kubernetes",
       "concept_llm",
@@ -79,6 +78,7 @@
       "topic_observability"
     ],
     "2": [
+      "concept_git",
       "concept_playwright",
       "concept_react",
       "concept_tailwind",
@@ -104,32 +104,36 @@
       "zod"
     ],
     "3": [
-      "commitperclip_pem_key",
       "correnth_ecosystem_v1_md",
       "correnth_group",
-      "correnthgroup_docs",
       "correnthgroup_redrise_operation",
       "correnthgroup_redrise_platform",
-      "d_00_docs",
       "gauss",
       "gauss_agent_organization_v1_md",
       "hitl",
       "paperclip",
-      "pr_batch_1",
-      "pr_batch_2",
-      "pr_batch_3",
-      "pr_batch_4",
+      "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT",
+      "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT_batch_1",
+      "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT_batch_2",
+      "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT_batch_3",
+      "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT_batch_4",
+      "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT_decisions",
+      "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT_gate_zero_1",
+      "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT_github_app_commitperclip",
+      "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT_implementado_criteria",
+      "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT_pr_10",
+      "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT_staging",
       "redrise",
       "redrise_canonical_product_v1_md",
       "redrise_operation",
       "redrise_platform",
-      "redrise_pr_rollout_audit",
-      "repositories_md",
-      "staging_environment"
+      "repositories_md"
     ],
     "4": [
       "agencies_md",
       "code_integrity",
+      "correnthgroup_docs",
+      "d_00_docs",
       "github_mcp",
       "graphify_build_merge",
       "graphify_cli",
@@ -289,144 +293,151 @@
       "tools_invoke_correnthsemanticpush_write_provenance"
     ],
     "15": [
+      "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT_Invoke_CorrenthSemanticPush",
+      "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT_gate_zero_4",
+      "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT_graph_json",
+      "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT_graphify",
+      "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT_pr_5"
+    ],
+    "16": [
       "roadmaps_reference_skill_based_roadmaps_roadmap_ai_red_teaming",
       "topic_defense_strategies",
       "topic_infrastructure_security",
       "topic_model_vulnerabilities",
       "topic_prompt_hacking"
     ],
-    "16": [
+    "17": [
       "roadmaps_reference_skill_based_roadmaps_roadmap_cloudflare",
       "topic_ai_gateway",
       "topic_durable_objects",
       "topic_workers_ai",
       "topic_workers_kv"
     ],
-    "17": [
+    "18": [
       "roadmaps_reference_skill_based_roadmaps_roadmap_django",
       "topic_authentication",
       "topic_class_based_views",
       "topic_django_orm",
       "topic_django_rest_framework"
     ],
-    "18": [
+    "19": [
       "ghauss_company",
       "paperclip_tool",
       "prompt_engineer_intake",
       "work_order_concept"
     ],
-    "19": [
+    "20": [
       "roadmaps_reference_role_based_roadmaps_roadmap_network_engineer",
       "topic_bgp",
       "topic_cloud_computing",
       "topic_vpn"
     ],
-    "20": [
+    "21": [
       "graphify_claude_cli",
       "graphify_hook_cli",
       "graphify_hooks_reference"
     ],
-    "21": [
+    "22": [
       "roadmaps_reference_role_based_roadmaps_roadmap_technical_writer",
       "topic_api_reference",
       "topic_developer_docs"
     ],
-    "22": [
+    "23": [
       "roadmaps_reference_skill_based_roadmaps_roadmap_claude_code",
       "topic_agents",
       "topic_mcp"
     ],
-    "23": [
+    "24": [
       "roadmaps_reference_skill_based_roadmaps_roadmap_html",
       "roadmaps_reference_skill_based_roadmaps_roadmap_javascript",
       "roadmaps_reference_skill_based_roadmaps_roadmap_nextjs"
     ],
-    "24": [
+    "25": [
       "roadmaps_reference_skill_based_roadmaps_roadmap_java",
       "roadmaps_reference_skill_based_roadmaps_roadmap_kotlin"
     ],
-    "25": [
+    "26": [
       "concept_aws"
     ],
-    "26": [
+    "27": [
       "correnthgroup_studio_findfee"
     ],
-    "27": [
+    "28": [
       "current_direction_md"
     ],
-    "28": [
+    "29": [
       "graphify_extraction_spec"
     ],
-    "29": [
+    "30": [
       "roadmaps_reference_role_based_roadmaps_roadmap_ai_data_scientist"
     ],
-    "30": [
+    "31": [
       "roadmaps_reference_role_based_roadmaps_roadmap_ai_engineer"
     ],
-    "31": [
+    "32": [
       "roadmaps_reference_skill_based_roadmaps_decision_pending"
     ],
-    "32": [
+    "33": [
       "roadmaps_reference_skill_based_roadmaps_evidence_patterns"
     ],
-    "33": [
+    "34": [
       "roadmaps_reference_skill_based_roadmaps_progresson_model"
     ],
-    "34": [
+    "35": [
       "roadmaps_reference_skill_based_roadmaps_roadmap_ai_product_builder"
     ],
-    "35": [
+    "36": [
       "roadmaps_reference_skill_based_roadmaps_roadmap_code_review"
     ],
-    "36": [
+    "37": [
       "roadmaps_reference_skill_based_roadmaps_roadmap_docker"
     ],
-    "37": [
+    "38": [
       "roadmaps_reference_skill_based_roadmaps_roadmap_elasticsearch"
     ],
-    "38": [
+    "39": [
       "roadmaps_reference_skill_based_roadmaps_roadmap_flutter"
     ],
-    "39": [
+    "40": [
       "roadmaps_reference_skill_based_roadmaps_roadmap_golang"
     ],
-    "40": [
+    "41": [
       "roadmaps_reference_skill_based_roadmaps_roadmap_graphql"
     ],
-    "41": [
+    "42": [
       "roadmaps_reference_skill_based_roadmaps_roadmap_kubernetes"
     ],
-    "42": [
+    "43": [
       "roadmaps_reference_skill_based_roadmaps_roadmap_laravel"
     ],
-    "43": [
+    "44": [
       "roadmaps_reference_skill_based_roadmaps_roadmap_leetcode"
     ],
-    "44": [
+    "45": [
       "roadmaps_reference_skill_based_roadmaps_roadmap_linux"
     ],
-    "45": [
+    "46": [
       "roadmaps_reference_skill_based_roadmaps_roadmap_mongodb"
     ],
-    "46": [
+    "47": [
       "roadmaps_reference_skill_based_roadmaps_roadmap_nodejs"
     ],
-    "47": [
+    "48": [
       "roadmaps_reference_skill_based_roadmaps_roadmap_openclaw"
     ],
-    "48": [
+    "49": [
       "tools_install_correnthsemanticpushguard"
     ],
-    "49": [
+    "50": [
       "uv_tool"
     ]
   },
   "cohesion": {
     "0": 0.0786308973172988,
-    "1": 0.11396011396011396,
-    "2": 0.1383399209486166,
-    "3": 0.13852813852813853,
-    "4": 0.09523809523809523,
+    "1": 0.12,
+    "2": 0.13043478260869565,
+    "3": 0.14130434782608695,
+    "4": 0.09090909090909091,
     "5": 0.1,
     "6": 0.14736842105263157,
     "7": 0.12280701754385964,
@@ -440,13 +451,13 @@
     "15": 0.4,
     "16": 0.4,
     "17": 0.4,
-    "18": 0.5,
+    "18": 0.4,
     "19": 0.5,
-    "20": 0.6666666666666666,
+    "20": 0.5,
     "21": 0.6666666666666666,
     "22": 0.6666666666666666,
     "23": 0.6666666666666666,
-    "24": 1.0,
+    "24": 0.6666666666666666,
     "25": 1.0,
     "26": 1.0,
     "27": 1.0,
@@ -471,7 +482,8 @@
     "46": 1.0,
     "47": 1.0,
     "48": 1.0,
-    "49": 1.0
+    "49": 1.0,
+    "50": 1.0
   },
   "gods": [
     {
@@ -505,11 +517,6 @@
       "degree": 10
     },
     {
-      "id": "redrise_pr_rollout_audit",
-      "label": "RedRise PR Rollout and Audit",
-      "degree": 10
-    },
-    {
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_system_design",
       "label": "System Design Roadmap",
       "degree": 9
@@ -517,6 +524,11 @@
     {
       "id": "topic_testing",
       "label": "Testing",
+      "degree": 8
+    },
+    {
+      "id": "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT",
+      "label": "RedRise PR Rollout e Auditoria",
       "degree": 8
     },
     {
@@ -561,17 +573,6 @@
     },
     {
       "source": "AGENTS.md — Canonical Documentation",
-      "target": "Correnth Canonical Docs Directory",
-      "source_files": [
-        "AGENTS.md",
-        "CURRENT_DIRECTION.md"
-      ],
-      "confidence": "EXTRACTED",
-      "relation": "defines",
-      "why": "connects across different repos/directories; bridges separate communities"
-    },
-    {
-      "source": "AGENTS.md — Canonical Documentation",
       "target": "MiniMax AI Backend",
       "source_files": [
         "AGENTS.md",
@@ -580,43 +581,54 @@
       "confidence": "EXTRACTED",
       "relation": "uses",
       "why": "connects across different repos/directories; peripheral node `MiniMax AI Backend` unexpectedly reaches hub `AGENTS.md — Canonical Documentation`"
+    },
+    {
+      "source": "RedRise PR Rollout e Auditoria",
+      "target": "correnthgroup/docs Repository",
+      "source_files": [
+        "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+        "REPOSITORIES.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
     }
   ],
   "questions": [
     {
       "type": "bridge_node",
-      "question": "Why does `System Design Roadmap` connect `Developer Roadmaps` to `DevOps & Architecture`, `Correnth Tech Stack Standards`?",
-      "why": "High betweenness centrality (0.104) - this node is a cross-community bridge."
+      "question": "Why does `System Design Roadmap` connect `...` to `...`, `Correnth UI and Tech Stack Standard v1`?",
+      "why": "High betweenness centrality (0.098) - this node is a cross-community bridge."
     },
     {
       "type": "bridge_node",
-      "question": "Why does `Correnth UI and Tech Stack Standard v1` connect `Correnth Tech Stack Standards` to `DevOps & Architecture`, `Frontend Development Stack`?",
-      "why": "High betweenness centrality (0.073) - this node is a cross-community bridge."
+      "question": "Why does `Correnth UI and Tech Stack Standard v1` connect `Correnth UI and Tech Stack Standard v1` to `...`, `Frontend Developer Roadmap`?",
+      "why": "High betweenness centrality (0.069) - this node is a cross-community bridge."
     },
     {
       "type": "bridge_node",
-      "question": "Why does `PostgreSQL` connect `Correnth Tech Stack Standards` to `Developer Roadmaps`?",
-      "why": "High betweenness centrality (0.060) - this node is a cross-community bridge."
+      "question": "Why does `PostgreSQL` connect `Correnth UI and Tech Stack Standard v1` to `...`?",
+      "why": "High betweenness centrality (0.057) - this node is a cross-community bridge."
     },
     {
       "type": "isolated_nodes",
-      "question": "What connects `Graphify Query Command`, `Graphify Update Command`, `Graphify Export Commands` to the rest of the system?",
+      "question": "What connects `Graphify Query Command`, `Graphify Update Command`, `Graphify Ingest Function` to the rest of the system?",
       "why": "168 weakly-connected nodes found - possible documentation gaps or missing edges."
     },
     {
       "type": "low_cohesion",
-      "question": "Should `Developer Roadmaps` be split into smaller, more focused modules?",
+      "question": "Should `...` be split into smaller, more focused modules?",
       "why": "Cohesion score 0.0786308973172988 - nodes in this community are weakly interconnected."
     },
     {
       "type": "low_cohesion",
-      "question": "Should `DevOps & Architecture` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.11396011396011396 - nodes in this community are weakly interconnected."
+      "question": "Should `...` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.12 - nodes in this community are weakly interconnected."
     },
     {
       "type": "low_cohesion",
-      "question": "Should `Frontend Development Stack` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.1383399209486166 - nodes in this community are weakly interconnected."
+      "question": "Should `Frontend Developer Roadmap` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.13043478260869565 - nodes in this community are weakly interconnected."
     }
   ]
 }
