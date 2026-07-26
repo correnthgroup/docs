@@ -189,7 +189,10 @@ try {
     $env:OPENAI_BASE_URL = "https://api.minimax.io/v1"
     $env:OPENAI_API_KEY = $miniMaxKey
     Invoke-GraphifyPython extract $resolvedRoot --backend=openai --model=MiniMax-M2.7-highspeed --mode=deep --out $runDirectory --max-concurrency=2 --api-timeout=120
-    Invoke-GraphifyPython cluster-only $runDirectory --graph (Join-Path $stagingOutput "graph.json") --no-viz --backend=openai --model=MiniMax-M2.7-highspeed --max-concurrency=2
+    # Community labels are presentation metadata, not semantic evidence.
+    # MiniMax may emit non-JSON reasoning during labeling and cluster-only has
+    # no request-timeout option, so keep deterministic placeholders here.
+    Invoke-GraphifyPython cluster-only $runDirectory --graph (Join-Path $stagingOutput "graph.json") --no-viz --no-label
   } finally {
     if ($null -eq $previousBaseUrl) { Remove-Item Env:OPENAI_BASE_URL -ErrorAction SilentlyContinue } else { $env:OPENAI_BASE_URL = $previousBaseUrl }
     if ($null -eq $previousApiKey) { Remove-Item Env:OPENAI_API_KEY -ErrorAction SilentlyContinue } else { $env:OPENAI_API_KEY = $previousApiKey }

@@ -24,6 +24,11 @@ The local `pre-push` guard rejects a direct push. When the canonical
 and its object cannot diverge. GitHub MCP can coordinate GitHub operations only
 after the local wrapper has completed.
 
+Semantic extraction continues to use MiniMax in `deep` mode. Community naming
+uses deterministic `Community N` placeholders (`cluster-only --no-label`):
+labels are presentation metadata, and this avoids an unbounded labeling request
+when an OpenAI-compatible backend emits reasoning outside the expected JSON.
+
 ## Corpus and history
 
 Generated output, caches, `node_modules`, `_legacy`, `archived` and quarantine directories are excluded from extraction. Historical retired-platform material is retained under `archived/` for provenance and is not part of active retrieval.
