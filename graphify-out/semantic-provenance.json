@@ -1,11 +1,20 @@
 ﻿{
-    "sourceRevision":  "e7fd7e901b07c57dbb8c6eac4d4bd908ef386304",
+    "sourceRevision":  "309ace1ec956e51a3f2964d8130261bd3e901955",
     "extractor":  "graphify extract",
     "backend":  "openai-compatible",
     "provider":  "MiniMax",
     "model":  "MiniMax-M2.7-highspeed",
     "mode":  "deep",
-    "semanticEdgeCount":  38,
+    "nodeCount":  329,
+    "edgeCount":  399,
+    "semanticEdgeCount":  34,
     "removedSelfLoopCount":  0,
-    "generatedAt":  "2026-07-26T15:27:57.6844237Z"
+    "artifactSha256":  {
+                           "graph.json":  "0ef5298bb27cfadcc98c587a76664d3a693d56847d4937e0c599c2733545659f",
+                           "GRAPH_REPORT.md":  "432809951b2c35d909bc537ac2ed77e337444132c54a229b3ee5b4c46275241a",
+                           "manifest.json":  "e827191f2d68b8928423e61c1ef71d608728c9208c5c8eeb51f6227ecae7ce3e",
+                           ".graphify_analysis.json":  "43ec2fa28b30be22e7927ca5af4400abc5992ca3d64b2c45c205bac9685b39b3",
+                           ".graphify_labels.json":  "67610ff78f25fe7c569600181f96a236e160e42219c7202778bc89a2084d90d2"
+                       },
+    "generatedAt":  "2026-07-26T17:49:59.7413382Z"
 }
