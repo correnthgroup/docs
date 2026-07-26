@@ -18,7 +18,11 @@ Use `query`, `path`, `explain` or `affected` against the project graph before an
 
 Only `D:\00_docs\tools\Invoke-CorrenthSemanticPush.ps1` may refresh semantic graphs for active Correnth roots. It reads the MiniMax key from the Personal Vault in-process, invokes Graphify with the OpenAI-compatible MiniMax backend, validates graph integrity and pushes the generated commit. No key is stored in source control, logs, command arguments or GitHub Secrets.
 
-The local `pre-push` guard rejects a direct push. GitHub MCP can coordinate GitHub operations only after the local wrapper has completed.
+The local `pre-push` guard rejects a direct push. When the canonical
+`graphify-out/graph.json` is tracked by Git LFS, the same hook invokes
+`git lfs pre-push` only after the semantic wrapper gate passes, so the pointer
+and its object cannot diverge. GitHub MCP can coordinate GitHub operations only
+after the local wrapper has completed.
 
 ## Corpus and history
 
