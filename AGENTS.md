@@ -12,9 +12,10 @@ PRDs vigentes prevalecem sobre `CURRENT_DIRECTION.md`; contratos públicos, migr
 - O corpus exclui `graphify-out`, `.graphify-quarantine`, `node_modules`, caches, `_legacy` e `archived`.
 - Use `query`, `path`, `explain` e `affected` para descoberta; preserve a referência ao arquivo e seção de origem ao responder.
 - Para descoberta entre projetos, obtenha o caminho com `graphify global path` e informe-o com `--graph`; o resultado continua sendo somente um índice.
+- Use `GRAPH_REPORT.md` para orientação ampla; para uma questão concreta, prefira `query`, `path`, `explain` ou `affected` e confirme a conclusão na fonte citada.
 - Atualize o índice somente antes de push com `D:\00_docs\tools\Invoke-CorrenthSemanticPush.ps1 -ProjectRoot <raiz>`.
-- O wrapper usa MiniMax via compatibilidade OpenAI, lê a chave exclusivamente do Cofre Pessoal e registra proveniência de revisão, modelo e extrator nos artefatos gerados.
-- O GitHub MCP não substitui o wrapper local: ele só pode seguir com operações remotas após a atualização semântica validada.
+- O wrapper usa `uv run … python -m graphify` com o pacote oficial `graphifyy[openai]`, em vez do shim `graphify.exe` bloqueado por Code Integrity. Ele usa MiniMax via compatibilidade OpenAI, lê a chave exclusivamente do Cofre Pessoal e registra proveniência de revisão, modelo e extrator nos artefatos gerados.
+- O GitHub MCP não substitui o wrapper local: ele só pode seguir com operações remotas após a atualização semântica validada. Para pesquisa e triagem, comece em modo somente leitura e com o menor conjunto de ferramentas; habilite escrita somente com aprovação explícita.
 
 ## Integridade
 

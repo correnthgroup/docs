@@ -8,6 +8,21 @@ param(
 
 $ErrorActionPreference = "Stop"
 
+function Invoke-GraphifyPython {
+  param(
+    [Parameter(ValueFromRemainingArguments = $true)]
+    [string[]]$GraphifyArguments
+  )
+
+  # Do not invoke the user-level graphify.exe shim: Windows Code Integrity may
+  # reject unsigned native shims. uv runs the official graphifyy Python module
+  # in an isolated environment instead.
+  & uv run --with 'graphifyy[openai]' python -m graphify @GraphifyArguments
+  if ($LASTEXITCODE -ne 0) {
+    throw "Graphify Python module failed."
+  }
+}
+
 $allowedRoots = @(
   "D:\00_docs",
   "D:\01_studio\redrise-platform",
@@ -56,10 +71,7 @@ try {
   try {
     $env:OPENAI_BASE_URL = "https://api.minimax.io/v1"
     $env:OPENAI_API_KEY = $miniMaxKey
-    & graphify extract $resolvedRoot --backend=openai --model=MiniMax-M2.7-highspeed --mode=deep --out $resolvedRoot --max-concurrency=2
-    if ($LASTEXITCODE -ne 0) {
-      throw "Graphify semantic extraction failed."
-    }
+    Invoke-GraphifyPython extract $resolvedRoot --backend=openai --model=MiniMax-M2.7-highspeed --mode=deep --out $resolvedRoot --max-concurrency=2
   } finally {
     if ($null -eq $previousBaseUrl) {
       Remove-Item Env:OPENAI_BASE_URL -ErrorAction SilentlyContinue
@@ -116,10 +128,7 @@ try {
     generatedAt = [DateTime]::UtcNow.ToString("o")
   } | ConvertTo-Json | Set-Content -LiteralPath $provenancePath -Encoding utf8
 
-  & graphify global add $graphPath --as $projectTags[$resolvedRoot]
-  if ($LASTEXITCODE -ne 0) {
-    throw "Unable to update the local Graphify global index."
-  }
+  Invoke-GraphifyPython global add $graphPath --as $projectTags[$resolvedRoot]
 
   $changedGraphFiles = @(git status --porcelain -- graphify-out)
   if ($changedGraphFiles.Count -eq 0) {
