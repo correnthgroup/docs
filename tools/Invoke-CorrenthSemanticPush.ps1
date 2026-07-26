@@ -103,6 +103,20 @@ function Write-Provenance {
   } | ConvertTo-Json -Depth 10 | Set-Content -LiteralPath $provenancePath -Encoding utf8
 }
 
+function Write-DeterministicCommunityLabels {
+  param([Parameter(Mandatory = $true)][string]$OutputDirectory)
+
+  $graph = Get-Content -Raw -LiteralPath (Join-Path $OutputDirectory "graph.json") | ConvertFrom-Json
+  $labels = [ordered]@{}
+  @($graph.nodes | ForEach-Object { [int]$_.community } | Sort-Object -Unique) |
+    ForEach-Object { $labels[[string]$_] = "Community $_" }
+  [System.IO.File]::WriteAllText(
+    (Join-Path $OutputDirectory ".graphify_labels.json"),
+    ($labels | ConvertTo-Json -Compress),
+    [System.Text.UTF8Encoding]::new($false)
+  )
+}
+
 function Test-CanonicalArtifacts {
   param(
     [Parameter(Mandatory = $true)][string]$OutputDirectory,
@@ -193,6 +207,7 @@ try {
     # MiniMax may emit non-JSON reasoning during labeling and cluster-only has
     # no request-timeout option, so keep deterministic placeholders here.
     Invoke-GraphifyPython cluster-only $runDirectory --graph (Join-Path $stagingOutput "graph.json") --no-viz --no-label
+    Write-DeterministicCommunityLabels $stagingOutput
   } finally {
     if ($null -eq $previousBaseUrl) { Remove-Item Env:OPENAI_BASE_URL -ErrorAction SilentlyContinue } else { $env:OPENAI_BASE_URL = $previousBaseUrl }
     if ($null -eq $previousApiKey) { Remove-Item Env:OPENAI_API_KEY -ErrorAction SilentlyContinue } else { $env:OPENAI_API_KEY = $previousApiKey }

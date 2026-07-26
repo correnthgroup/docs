@@ -28,6 +28,8 @@ Semantic extraction continues to use MiniMax in `deep` mode. Community naming
 uses deterministic `Community N` placeholders (`cluster-only --no-label`):
 labels are presentation metadata, and this avoids an unbounded labeling request
 when an OpenAI-compatible backend emits reasoning outside the expected JSON.
+The wrapper writes `.graphify_labels.json` from the final community IDs before
+hashing and promoting the canonical artifact set.
 
 ## Corpus and history
 
