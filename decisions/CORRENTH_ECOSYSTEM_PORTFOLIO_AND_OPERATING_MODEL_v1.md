@@ -93,9 +93,9 @@ Os slugs técnicos permanecem no pacote `correnthgroup/labs_gauss`; os nomes e t
 
 ## 6. Contexto e memória compartilhados
 
-A Shared Context Memory Platform (CML) é uma fundação transversal do grupo. Produtos, negócios e agentes autorizados a consomem por API, SDK ou MCP versionados, com isolamento por organização, produto, ambiente, visibilidade e capability.
+Documentação e código versionados de cada unidade são a memória canônica do grupo. Graphify fornece a descoberta semântica local por projeto, sempre com referência verificável à fonte.
 
-Context Packs podem incluir documentos, decisões, contratos, código, resultados de execução e artefatos semânticos gerados pelo Graphify — por exemplo, `graph.json`, `GRAPH_REPORT.md` ou subgrafos consultados — desde que origem, versão, autorização e citações estejam registrados.
+Grafos, relatórios e subgrafos são derivados de recuperação; devem registrar origem e revisão, mas não criam autoridade nem transportam segredos.
 
 A ordem normativa para conflitos é:
 

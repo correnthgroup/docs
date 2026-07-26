@@ -1,0 +1,11 @@
+﻿{
+    "sourceRevision":  "e7fd7e901b07c57dbb8c6eac4d4bd908ef386304",
+    "extractor":  "graphify extract",
+    "backend":  "openai-compatible",
+    "provider":  "MiniMax",
+    "model":  "MiniMax-M2.7-highspeed",
+    "mode":  "deep",
+    "semanticEdgeCount":  38,
+    "removedSelfLoopCount":  0,
+    "generatedAt":  "2026-07-26T15:27:57.6844237Z"
+}

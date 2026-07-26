@@ -166,7 +166,7 @@ Estes complementos preservam a stack principal e devem ser adotados quando seu c
 | Jobs longos | Interface de fila/job agnóstica; Postgres/outbox como baseline | Edge Functions recebem/validam eventos; execução longa deve ser durável e observável. |
 | Cache e rate limit | Redis, somente após necessidade medida | Bom ecossistema e diagnóstico; PostgreSQL continua fonte de verdade. |
 | Arquivos | Supabase Storage com interface de storage agnóstica | Começar integrado; permitir migração futura para S3 compatível. |
-| Busca semântica | pgvector no PostgreSQL | Compatível com Context Memory Layer; migrar para Qdrant/Weaviate somente com necessidade comprovada. |
+| Busca semântica | Graphify semântico local | Indexar fontes versionadas por projeto; avaliar armazenamento vetorial somente diante de necessidade comprovada. |
 | Serviços Python | Python 3.12 + uv + FastAPI, apenas para workloads que justifiquem Python | Bom para IA, ingestão, ciência de dados ou workers; não duplicar backend web sem razão. |
 | IA | Interface de provider/model agnóstica | Permitir OpenRouter, OpenAI, Anthropic, modelos locais ou futuros provedores sem vazar SDK específico pelo domínio. |
 | Feature flags | Abstração própria pequena ou serviço compatível | Lançamentos graduais, kill switch e experimentos sem bifurcar código. |

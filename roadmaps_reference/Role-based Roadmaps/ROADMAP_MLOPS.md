@@ -33,7 +33,7 @@ Este documento torna os principais tópicos consultáveis localmente. A fonte in
 - **Bash:** Compreender Bash e demonstrar seu uso em um exercício ou entrega verificável.
 - **CI/CD:** Automatizar entrega e operação com configuração reproduzível, telemetria e recuperação segura.
 - **Cloud-Native ML Services:** Automatizar entrega e operação com configuração reproduzível, telemetria e recuperação segura.
-- **Continuous Machine Learning (CML):** Construir e avaliar comportamento de IA com contexto, ferramentas, métricas e limites explícitos.
+- **Continuous Machine Learning:** Construir e avaliar comportamento de IA com contexto, ferramentas, métricas e limites explícitos.
 - **Data Ingestion Architectures:** Modelar, consultar e operar dados com integridade, desempenho e governança.
 - **Data Lakes & Warehouses:** Modelar, consultar e operar dados com integridade, desempenho e governança.
 - **Data Lineage and Feature Stores:** Modelar, consultar e operar dados com integridade, desempenho e governança.

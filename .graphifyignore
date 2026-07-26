@@ -5,3 +5,11 @@ graphiy-out
 graphiy-out/**
 .graphify-quarantine
 .graphify-quarantine/**
+archived
+archived/**
+_legacy
+_legacy/**
+node_modules
+node_modules/**
+cache
+cache/**

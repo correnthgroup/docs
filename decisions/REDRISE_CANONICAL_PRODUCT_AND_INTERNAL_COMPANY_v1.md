@@ -15,8 +15,8 @@ O runtime do produto é um fork mantido do Paperclip. A operação interna e o c
 | Autoridade | Local |
 |---|---|
 | Aplicação, API, migrations, UI, adapters e deploy | `D:\01_studio\redrise-platform` |
-| Agentes, skills e governança da companhia interna | `D:\02_labs\redrise` |
-| Contexto compartilhado canônico | `D:\01_studio\context-memory` |
+| Agentes, skills e governança da companhia interna | `D:\02_labs\redrise-operation` |
+| Descoberta de contexto compartilhado | Graphify semântico por projeto, com fontes versionadas em seus repositórios |
 | Estratégia, PRDs e decisões | `D:\00_docs` |
 
 Os repositórios históricos `archived\redrise` e `archived\redrise v2` são doadores somente leitura. Eles não podem voltar a ser runtime, fonte de migrations ou autoridade operacional.
@@ -33,15 +33,15 @@ Agentes internos RedRise nunca acessam Companies de clientes. Não existe impers
 
 Administração de instância limita-se a lifecycle e metadados de control plane. Conteúdo de cliente continua protegido por sessão, membership, role, entitlement e `company_id`.
 
-## CML e Graphify
+## Memória e Graphify
 
-Sessões locais consultam a CML preferencialmente pelo provider MCP global, com credencial `context.read` lida diretamente do Cofre Pessoal desbloqueado. SDK e CLI são fallbacks de diagnóstico. O runtime RedRise no Render não recebe credencial CML.
+Sessões locais consultam Graphify semântico no projeto relevante e leem as fontes citadas antes de decidir. O runtime RedRise no Render não recebe credenciais de memória compartilhada.
 
-Graphify é sempre local por projeto e AST-only. Extração semântica depende de nova decisão explícita; edges semânticos antigos não têm autoridade.
+Graphify é sempre local por projeto. A atualização semântica ocorre somente pelo wrapper de push, usando a chave MiniMax no Cofre Pessoal; fontes versionadas continuam a autoridade.
 
 ## Consequências
 
-- O antigo remoto do pacote operacional passa a `correnthgroup/labs_redrise`.
+- O remoto canônico do pacote operacional é `correnthgroup/redrise-operation`.
 - `correnthgroup/redrise-platform` é o único repositório implantável.
 - Documentos ativos devem apontar para os novos paths.
 - Histórico Git e evidência Gauss não são reescritos.
