@@ -165,30 +165,7 @@
       "testing"
     ],
     "5": [
-      "adr_correnth_ecosystem",
-      "adr_correnth_ui_tech_stack",
-      "adr_gauss_agent_organization",
-      "adr_redrise_canonical",
-      "agents_md",
-      "codex_skills_graphify_skill_md",
-      "correnth_docs",
-      "correnth_group",
-      "correnth_ui",
-      "current_direction_md",
-      "gauss_company",
-      "graphify",
-      "graphify_stack_recommendation_md",
-      "hitl_policy",
-      "minimax_api",
-      "paperclip",
-      "platforms_graphify_semantic_memory_md",
-      "redrise",
-      "redrise_operation",
-      "redrise_platform",
-      "repositories_md",
-      "roadmaps_reference_outros_shadcn_guide_md"
-    ],
-    "6": [
+      "external_roadmap_sh",
       "external_typescriptlang",
       "roadmaps_reference_skill_based_roadmaps_roadmap_typescript",
       "roadmaps_reference_skill_based_roadmaps_roadmap_typescript_advanced_types",
@@ -211,6 +188,30 @@
       "roadmaps_reference_skill_based_roadmaps_roadmap_typescript_type_inference",
       "roadmaps_reference_skill_based_roadmaps_roadmap_typescript_types",
       "roadmaps_reference_skill_based_roadmaps_roadmap_typescript_utility_types"
+    ],
+    "6": [
+      "adr_correnth_ecosystem",
+      "adr_correnth_ui_tech_stack",
+      "adr_gauss_agent_organization",
+      "adr_redrise_canonical",
+      "agents_md",
+      "codex_skills_graphify_skill_md",
+      "correnth_docs",
+      "correnth_group",
+      "correnth_ui",
+      "current_direction_md",
+      "gauss_company",
+      "graphify",
+      "graphify_stack_recommendation_md",
+      "hitl_policy",
+      "minimax_api",
+      "paperclip",
+      "platforms_graphify_semantic_memory_md",
+      "redrise",
+      "redrise_operation",
+      "redrise_platform",
+      "repositories_md",
+      "roadmaps_reference_outros_shadcn_guide_md"
     ],
     "7": [
       "llms",
@@ -378,8 +379,8 @@
     "2": 0.08045977011494253,
     "3": 0.08866995073891626,
     "4": 0.11965811965811966,
-    "5": 0.12121212121212122,
-    "6": 0.1038961038961039,
+    "5": 0.09881422924901186,
+    "6": 0.12121212121212122,
     "7": 0.2222222222222222,
     "8": 0.42857142857142855,
     "9": 0.4,
@@ -436,7 +437,7 @@
     {
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vibe_coding",
       "label": "Vibe Coding Roadmap",
-      "degree": 31
+      "degree": 32
     },
     {
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress",
@@ -451,7 +452,7 @@
     {
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript",
       "label": "TypeScript Roadmap",
-      "degree": 22
+      "degree": 23
     },
     {
       "id": "roadmaps_reference_role_based_roadmaps_devops",

@@ -674,7 +674,7 @@
       "author": null,
       "contributor": null,
       "id": "codex_skills_graphify_skill_md",
-      "community": 5,
+      "community": 6,
       "norm_label": "graphify skill documentation"
     },
     {
@@ -856,7 +856,7 @@
       "author": null,
       "contributor": null,
       "id": "graphify",
-      "community": 5,
+      "community": 6,
       "norm_label": "graphify semantic memory"
     },
     {
@@ -869,7 +869,7 @@
       "author": null,
       "contributor": null,
       "id": "agents_md",
-      "community": 5,
+      "community": 6,
       "norm_label": "agents.md canonical documentation"
     },
     {
@@ -882,7 +882,7 @@
       "author": null,
       "contributor": null,
       "id": "minimax_api",
-      "community": 5,
+      "community": 6,
       "norm_label": "minimax api (graphify backend)"
     },
     {
@@ -895,7 +895,7 @@
       "author": null,
       "contributor": null,
       "id": "correnth_group",
-      "community": 5,
+      "community": 6,
       "norm_label": "correnth group"
     },
     {
@@ -908,7 +908,7 @@
       "author": null,
       "contributor": null,
       "id": "current_direction_md",
-      "community": 5,
+      "community": 6,
       "norm_label": "current direction document"
     },
     {
@@ -921,7 +921,7 @@
       "author": null,
       "contributor": null,
       "id": "graphify_stack_recommendation_md",
-      "community": 5,
+      "community": 6,
       "norm_label": "graphify stack recommendation"
     },
     {
@@ -947,7 +947,7 @@
       "author": null,
       "contributor": null,
       "id": "correnth_docs",
-      "community": 5,
+      "community": 6,
       "norm_label": "correnthgroup docs repository"
     },
     {
@@ -973,7 +973,7 @@
       "author": null,
       "contributor": null,
       "id": "repositories_md",
-      "community": 5,
+      "community": 6,
       "norm_label": "correnth repository map"
     },
     {
@@ -986,7 +986,7 @@
       "author": null,
       "contributor": null,
       "id": "paperclip",
-      "community": 5,
+      "community": 6,
       "norm_label": "paperclip agent orchestrator"
     },
     {
@@ -999,7 +999,7 @@
       "author": null,
       "contributor": null,
       "id": "adr_correnth_ecosystem",
-      "community": 5,
+      "community": 6,
       "norm_label": "correnth ecosystem portfolio and operating model"
     },
     {
@@ -1012,7 +1012,7 @@
       "author": null,
       "contributor": null,
       "id": "correnth_ui",
-      "community": 5,
+      "community": 6,
       "norm_label": "@correnth/ui shared ui package"
     },
     {
@@ -1025,7 +1025,7 @@
       "author": null,
       "contributor": null,
       "id": "adr_correnth_ui_tech_stack",
-      "community": 5,
+      "community": 6,
       "norm_label": "correnth ui and tech stack standard"
     },
     {
@@ -1038,7 +1038,7 @@
       "author": null,
       "contributor": null,
       "id": "hitl_policy",
-      "community": 5,
+      "community": 6,
       "norm_label": "human-in-the-loop policy"
     },
     {
@@ -1051,7 +1051,7 @@
       "author": null,
       "contributor": null,
       "id": "gauss_company",
-      "community": 5,
+      "community": 6,
       "norm_label": "gauss internal company (historical)"
     },
     {
@@ -1064,7 +1064,7 @@
       "author": null,
       "contributor": null,
       "id": "adr_gauss_agent_organization",
-      "community": 5,
+      "community": 6,
       "norm_label": "gauss agent organization and language"
     },
     {
@@ -1077,7 +1077,7 @@
       "author": null,
       "contributor": null,
       "id": "redrise",
-      "community": 5,
+      "community": 6,
       "norm_label": "redrise b2b agentic saas"
     },
     {
@@ -1090,7 +1090,7 @@
       "author": null,
       "contributor": null,
       "id": "redrise_platform",
-      "community": 5,
+      "community": 6,
       "norm_label": "redrise platform repository"
     },
     {
@@ -1103,7 +1103,7 @@
       "author": null,
       "contributor": null,
       "id": "redrise_operation",
-      "community": 5,
+      "community": 6,
       "norm_label": "redrise operation package"
     },
     {
@@ -1116,7 +1116,7 @@
       "author": null,
       "contributor": null,
       "id": "adr_redrise_canonical",
-      "community": 5,
+      "community": 6,
       "norm_label": "redrise canonical product and internal company"
     },
     {
@@ -1129,7 +1129,7 @@
       "author": null,
       "contributor": null,
       "id": "platforms_graphify_semantic_memory_md",
-      "community": 5,
+      "community": 6,
       "norm_label": "graphify semantic memory policy"
     },
     {
@@ -2208,7 +2208,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript",
-      "community": 6,
+      "community": 5,
       "norm_label": "typescript roadmap"
     },
     {
@@ -2221,7 +2221,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript_introduction",
-      "community": 6,
+      "community": 5,
       "norm_label": "introduction to typescript"
     },
     {
@@ -2234,7 +2234,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript_object_types",
-      "community": 6,
+      "community": 5,
       "norm_label": "object types"
     },
     {
@@ -2247,7 +2247,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript_primitive_types",
-      "community": 6,
+      "community": 5,
       "norm_label": "primitive types"
     },
     {
@@ -2260,7 +2260,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript_type_inference",
-      "community": 6,
+      "community": 5,
       "norm_label": "type inference"
     },
     {
@@ -2273,7 +2273,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript_types",
-      "community": 6,
+      "community": 5,
       "norm_label": "typescript types"
     },
     {
@@ -2286,7 +2286,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript_type_compatibility",
-      "community": 6,
+      "community": 5,
       "norm_label": "type compatibility"
     },
     {
@@ -2299,7 +2299,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript_assertions",
-      "community": 6,
+      "community": 5,
       "norm_label": "assertions"
     },
     {
@@ -2312,7 +2312,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript_bottom_types",
-      "community": 6,
+      "community": 5,
       "norm_label": "bottom types"
     },
     {
@@ -2325,7 +2325,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript_top_types",
-      "community": 6,
+      "community": 5,
       "norm_label": "top types"
     },
     {
@@ -2338,7 +2338,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript_combining_types",
-      "community": 6,
+      "community": 5,
       "norm_label": "combining types"
     },
     {
@@ -2351,7 +2351,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript_interfaces",
-      "community": 6,
+      "community": 5,
       "norm_label": "typescript interfaces"
     },
     {
@@ -2364,7 +2364,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript_type_guards_narrowing",
-      "community": 6,
+      "community": 5,
       "norm_label": "type guards / narrowing"
     },
     {
@@ -2377,7 +2377,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript_functions",
-      "community": 6,
+      "community": 5,
       "norm_label": "typescript functions"
     },
     {
@@ -2390,7 +2390,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript_classes",
-      "community": 6,
+      "community": 5,
       "norm_label": "classes"
     },
     {
@@ -2403,7 +2403,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript_generics",
-      "community": 6,
+      "community": 5,
       "norm_label": "generics"
     },
     {
@@ -2416,7 +2416,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript_decorators",
-      "community": 6,
+      "community": 5,
       "norm_label": "decorators"
     },
     {
@@ -2429,7 +2429,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript_utility_types",
-      "community": 6,
+      "community": 5,
       "norm_label": "utility types"
     },
     {
@@ -2442,7 +2442,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript_advanced_types",
-      "community": 6,
+      "community": 5,
       "norm_label": "advanced types"
     },
     {
@@ -2455,7 +2455,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript_modules",
-      "community": 6,
+      "community": 5,
       "norm_label": "typescript modules"
     },
     {
@@ -2468,8 +2468,21 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript_ecosystem",
-      "community": 6,
+      "community": 5,
       "norm_label": "ecosystem"
+    },
+    {
+      "label": "roadmap.sh",
+      "file_type": "concept",
+      "source_file": "roadmaps_reference/Skill-based Roadmaps/ROADMAP_TYPESCRIPT.md",
+      "source_location": null,
+      "source_url": "https://roadmap.sh",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "external_roadmap_sh",
+      "community": 5,
+      "norm_label": "roadmap.sh"
     },
     {
       "label": "TypeScript Documentation",
@@ -2481,7 +2494,7 @@
       "author": null,
       "contributor": null,
       "id": "external_typescriptlang",
-      "community": 6,
+      "community": 5,
       "norm_label": "typescript documentation"
     },
     {
@@ -3664,7 +3677,7 @@
       "author": null,
       "contributor": null,
       "id": "roadmaps_reference_outros_shadcn_guide_md",
-      "community": 5,
+      "community": 6,
       "norm_label": "shadcn/ui complete guide"
     }
   ],
@@ -5418,6 +5431,16 @@
       "source_location": null,
       "weight": 1.0,
       "source": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript",
+      "target": "external_roadmap_sh"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "roadmaps_reference/Skill-based Roadmaps/ROADMAP_TYPESCRIPT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript",
       "target": "external_typescriptlang"
     },
     {
@@ -5649,6 +5672,16 @@
       "weight": 0.7,
       "source": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript_interfaces",
       "target": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript_classes"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "roadmaps_reference/Skill-based Roadmaps/ROADMAP_VIBE_CODING.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "roadmaps_reference_skill_based_roadmaps_roadmap_vibe_coding",
+      "target": "external_roadmap_sh"
     },
     {
       "relation": "conceptually_related_to",
@@ -6976,5 +7009,5 @@
       "source_file": null
     }
   ],
-  "built_at_commit": "531493f84ea993b9072d24d5db248363999541d7"
+  "built_at_commit": "96b1e1749f5be0bd4157e95c69d55f4df51cdd0e"
 }
