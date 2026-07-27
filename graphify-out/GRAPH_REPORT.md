@@ -1,15 +1,15 @@
-# Graph Report - D:\00_docs\.graphify-quarantine\extract-b716ee54d8154862854fa5b58956062b  (2026-07-26)
+# Graph Report - D:\00_docs\.graphify-quarantine\extract-cbbb095247f04b279f69e520f1483f9e  (2026-07-27)
 
 ## Corpus Check
 - cluster-only mode — file stats not available
 
 ## Summary
-- 229 nodes · 295 edges · 24 communities (14 shown, 10 thin omitted)
+- 241 nodes · 306 edges · 24 communities (13 shown, 11 thin omitted)
 - Extraction: 84% EXTRACTED · 16% INFERRED · 0% AMBIGUOUS · INFERRED: 48 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `ea254b51`
+- Built from commit: `d7a86f0a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -42,11 +42,11 @@
 1. `roadmap.sh Platform` - 25 edges
 2. `developer-roadmap GitHub Repository` - 25 edges
 3. `Developer Roadmap Repository` - 24 edges
-4. `Graphify` - 17 edges
-5. `Correnth Group` - 13 edges
-6. `correnthgroup/redrise-platform Repository` - 13 edges
-7. `System Design Roadmap` - 11 edges
-8. `Batch 3: PRs #16-#18 - Bridge, Adapters & Stripe` - 11 edges
+4. `Graphify Semantic Index` - 15 edges
+5. `correnthgroup/redrise-platform Repository` - 13 edges
+6. `Correnth Group` - 12 edges
+7. `Batch 3: PRs #16-#18 - Bridge, Adapters & Stripe` - 11 edges
+8. `System Design Roadmap` - 11 edges
 9. `Terraform Roadmap` - 8 edges
 10. `RedRise` - 7 edges
 
@@ -73,6 +73,9 @@
 - **Correnth Gauss Operational Framework** — gauss_organization, correnth_group, paperclip, prompt_engineer [EXTRACTED 1.00]
 - **Semantic Refresh Pipeline** — invoke_correnth_semantic_push_ps1, minimax, graphify, graphify_out_graph_json [EXTRACTED 0.90]
 - **Git Push Guardian Chain** — pre_push_hook, invoke_correnth_semantic_push_ps1, git_lfs, github_mcp [INFERRED 0.80]
+- **RedRise PR Rollout Phases 1-4** — platforms_batch_1, platforms_batch_2, platforms_batch_3, platforms_batch_4 [EXTRACTED 1.00]
+- **CorrenthGroup Repositories** — platforms_correnthgroup_docs, platforms_correnthgroup_redrise_operation, platforms_correnthgroup_redrise_platform [EXTRACTED 1.00]
+- **Batch 3 Required Billing Interfaces** — platforms_api_billing_stripe_webhook, platforms_api_companies_billing, platforms_api_companies_billing_checkout, platforms_api_companies_billing_portal, platforms_prepare_issue_workspace_inputs, platforms_publish_workspace_outputs [EXTRACTED 1.00]
 - **Role-Based Career Roadmaps** — roadmaps_reference_role_based_roadmaps_roadmap_android, roadmaps_reference_role_based_roadmaps_roadmap_bi_analyst, roadmaps_reference_role_based_roadmaps_roadmap_blockchain, roadmaps_reference_role_based_roadmaps_roadmap_cyber_security, roadmaps_reference_role_based_roadmaps_roadmap_data_analyst, roadmaps_reference_role_based_roadmaps_roadmap_data_engineer, roadmaps_reference_role_based_roadmaps_roadmap_design_ux, roadmaps_reference_role_based_roadmaps_roadmap_devops, roadmaps_reference_role_based_roadmaps_roadmap_devrel, roadmaps_reference_role_based_roadmaps_roadmap_devsecops, roadmaps_reference_role_based_roadmaps_roadmap_engineering_manager, roadmaps_reference_role_based_roadmaps_roadmap_forward_deployed_engineer, roadmaps_reference_role_based_roadmaps_roadmap_frontend, roadmaps_reference_role_based_roadmaps_roadmap_full_stack, roadmaps_reference_role_based_roadmaps_roadmap_game_developer, roadmaps_reference_role_based_roadmaps_roadmap_ios, roadmaps_reference_role_based_roadmaps_roadmap_machine_learning, roadmaps_reference_role_based_roadmaps_roadmap_mlops, roadmaps_reference_role_based_roadmaps_roadmap_network_engineer, roadmaps_reference_role_based_roadmaps_roadmap_postgresql_dba, roadmaps_reference_role_based_roadmaps_roadmap_product_manager, roadmaps_reference_role_based_roadmaps_roadmap_qa, roadmaps_reference_role_based_roadmaps_roadmap_server_side_game_developer, roadmaps_reference_role_based_roadmaps_roadmap_software_architect, roadmaps_reference_role_based_roadmaps_roadmap_technical_writer [EXTRACTED 1.00]
 - **All Skill-based Roadmaps share common sources** — roadmaps_reference_skill_based_roadmaps_roadmap_api_design, roadmaps_reference_skill_based_roadmaps_roadmap_aspnet_core, roadmaps_reference_skill_based_roadmaps_roadmap_aws, roadmaps_reference_skill_based_roadmaps_roadmap_c, roadmaps_reference_skill_based_roadmaps_roadmap_claude_code, roadmaps_reference_skill_based_roadmaps_roadmap_cloudflare, roadmaps_reference_skill_based_roadmaps_roadmap_code_review, roadmaps_reference_skill_based_roadmaps_roadmap_computer_science, roadmaps_reference_skill_based_roadmaps_roadmap_cpp, roadmaps_reference_skill_based_roadmaps_roadmap_css, roadmaps_reference_skill_based_roadmaps_roadmap_datastructures_and_algorithms, roadmaps_reference_skill_based_roadmaps_roadmap_kotlin, roadmaps_reference_skill_based_roadmaps_roadmap_leetcode, roadmaps_reference_skill_based_roadmaps_roadmap_linux, roadmaps_reference_skill_based_roadmaps_roadmap_openclaw, roadmaps_reference_skill_based_roadmaps_roadmap_php, roadmaps_reference_skill_based_roadmaps_roadmap_prompt_engineering, roadmaps_reference_skill_based_roadmaps_roadmap_python_data_analysis, roadmaps_reference_skill_based_roadmaps_roadmap_react_native, roadmaps_reference_skill_based_roadmaps_roadmap_ruby, roadmaps_reference_skill_based_roadmaps_roadmap_ruby_on_rails, roadmaps_reference_skill_based_roadmaps_roadmap_scala, roadmaps_reference_skill_based_roadmaps_roadmap_shell_bash, roadmaps_reference_skill_based_roadmaps_roadmap_swift_ui [EXTRACTED 1.00]
 - **Programming Language Roadmaps** — roadmaps_reference_skill_based_roadmaps_roadmap_c, roadmaps_reference_skill_based_roadmaps_roadmap_cpp, roadmaps_reference_skill_based_roadmaps_roadmap_kotlin, roadmaps_reference_skill_based_roadmaps_roadmap_php, roadmaps_reference_skill_based_roadmaps_roadmap_ruby, roadmaps_reference_skill_based_roadmaps_roadmap_scala, roadmaps_reference_skill_based_roadmaps_roadmap_swift_ui [EXTRACTED 1.00]
@@ -83,11 +86,11 @@
 - **Full-Stack Infrastructure Technology Stack** — roadmaps_reference_skill_based_roadmaps_roadmap_system_design, roadmaps_reference_skill_based_roadmaps_roadmap_terraform, roadmaps_reference_skill_based_roadmaps_roadmap_typescript, roadmaps_reference_skill_based_roadmaps_roadmap_vue [EXTRACTED 0.90]
 - **System Design Patterns for Reliability** — system_design_reliability, system_design_patterns, system_design_observability [INFERRED 0.80]
 - **AI-Powered Coding Ecosystem** — vibe_coding_ai_tools, vibe_coding_practices, vibe_coding_workflow [EXTRACTED 0.90]
-- **RedRise PR Rollout Phases 1-4** — platforms_batch_1, platforms_batch_2, platforms_batch_3, platforms_batch_4 [EXTRACTED 1.00]
-- **CorrenthGroup Repositories** — platforms_correnthgroup_docs, platforms_correnthgroup_redrise_operation, platforms_correnthgroup_redrise_platform [EXTRACTED 1.00]
-- **Batch 3 Required Billing Interfaces** — platforms_api_billing_stripe_webhook, platforms_api_companies_billing, platforms_api_companies_billing_checkout, platforms_api_companies_billing_portal, platforms_prepare_issue_workspace_inputs, platforms_publish_workspace_outputs [EXTRACTED 1.00]
+- **Comandos de Descoberta Graphify** — graphify_query_command, graphify_path_command, graphify_explain_command, graphify_affected_command [EXTRACTED 1.00]
+- **Hierarquia de Autoridade Correnth** — d_00_docs, graphify_out_graph_json, current_direction_md, archived, legacy [EXTRACTED 0.90]
+- **Infraestrutura Semântica Correnth** — invoke_correnth_semantic_push_ps1, graphifyy_package, minimax_model, graphify_out_graph_json [EXTRACTED 0.85]
 
-## Communities (24 total, 10 thin omitted)
+## Communities (24 total, 11 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.11
@@ -99,23 +102,23 @@ Nodes (31): RedRise PR Rollout and Audit Document, POST /api/billing/stripe/webh
 
 ### Community 2 - "Community 2"
 Cohesion: 0.08
-Nodes (25): Developer Roadmap Repository, Terraform Roadmap, Vibe Coding Roadmap, Vue Developer Roadmap, WordPress Roadmap, Terraform CI/CD Integration, Terraform Fundamentals, Terraform Modules (+17 more)
+Nodes (27): Canonical Memory, Code Integrity Bloqueio, Graphify Skill for Codex, Community N Naming Convention, Git LFS, GitHub MCP, GRAPH_REPORT.md, Graphify Semantic Index (+19 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.10
 Nodes (25): Developer Roadmap Repository, Android Developer Roadmap, iOS Developer Roadmap, Django Roadmap, Docker Roadmap, Elasticsearch Roadmap, Flutter Developer Roadmap, Git and GitHub Roadmap (+17 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.11
-Nodes (20): AGENTS.md Documentation, Canonical Memory, Graphify Skill for Codex, Community N Naming Convention, Git LFS, GitHub MCP, Graphify, Graphify Add Watch Reference (+12 more)
+Cohesion: 0.08
+Nodes (24): Developer Roadmap Repository, TypeScript Roadmap, Vibe Coding Roadmap, Vue Developer Roadmap, WordPress Roadmap, TypeScript Classes, TypeScript Functions, TypeScript Generics (+16 more)
 
 ### Community 5 - "Community 5"
-Cohesion: 0.17
-Nodes (16): ADGency, Correnth Group, Correnth Current Direction, Correnth Ecosystem Portfolio and Operating Model, RedRise Canonical Product Decision, Findfee, Gauss, Gauss Organization (+8 more)
+Cohesion: 0.11
+Nodes (21): Google SRE Book, OpenTelemetry Documentation, System Design Roadmap, Terraform Roadmap, Architecture Patterns, Caching, Service Communication, Data Modeling and Databases (+13 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.21
-Nodes (13): Google SRE Book, OpenTelemetry Documentation, System Design Roadmap, Architecture Patterns, Caching, Service Communication, Data Modeling and Databases, System Design Fundamentals (+5 more)
+Cohesion: 0.13
+Nodes (20): ADGency, Diretório Archived, Correnth Group, Correnth Current Direction, D:\00_docs Diretório Fonte de Verdade, Correnth Ecosystem Portfolio and Operating Model, RedRise Canonical Product Decision, Findfee (+12 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.17
@@ -126,40 +129,36 @@ Cohesion: 0.22
 Nodes (9): COcorrenth/ui, Correnth UI and Tech Stack Standard, Next.js, PostgreSQL, shadcn/ui Complete Guide, Design System Roadmap, shadcn/ui, Supabase (+1 more)
 
 ### Community 9 - "Community 9"
-Cohesion: 0.29
-Nodes (7): TypeScript Roadmap, TypeScript Classes, TypeScript Functions, TypeScript Generics, TypeScript Interfaces, TypeScript Modules, TypeScript Types
-
-### Community 10 - "Community 10"
 Cohesion: 0.43
 Nodes (4): Add-UniqueItem(), ConvertTo-PlainText(), Get-OfficialResources(), Get-RoadmapTopics()
 
-### Community 11 - "Community 11"
+### Community 10 - "Community 10"
 Cohesion: 0.43
 Nodes (4): Get-ArtifactHash(), Get-GraphSnapshot(), Test-CanonicalArtifacts(), Write-Provenance()
 
-### Community 12 - "Community 12"
+### Community 11 - "Community 11"
 Cohesion: 0.60
 Nodes (5): BI Analyst Roadmap, Data Analyst Roadmap, Data Engineer Roadmap, Machine Learning Roadmap, MLOps Roadmap
 
 ## Knowledge Gaps
-- **108 isolated node(s):** `Graphify Skill for Codex`, `Graphify Add Watch Reference`, `Graphify Exports Reference`, `Graphify Extraction Spec Reference`, `Graphify GitHub Clone and Merge Reference` (+103 more)
+- **115 isolated node(s):** `Graphify Skill for Codex`, `Graphify Add Watch Reference`, `Graphify Exports Reference`, `Graphify Extraction Spec Reference`, `Graphify GitHub Clone and Merge Reference` (+110 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **10 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `correnthgroup/redrise-platform Repository` connect `Community 1` to `Community 8`, `Community 5`?**
-  _High betweenness centrality (0.152) - this node is a cross-community bridge._
+- **Why does `correnthgroup/redrise-platform Repository` connect `Community 1` to `Community 8`, `Community 6`?**
+  _High betweenness centrality (0.170) - this node is a cross-community bridge._
+- **Why does `RedRise` connect `Community 6` to `Community 1`?**
+  _High betweenness centrality (0.137) - this node is a cross-community bridge._
 - **Why does `Developer Roadmap Repository` connect `Community 3` to `Community 8`?**
-  _High betweenness centrality (0.130) - this node is a cross-community bridge._
-- **Are the 3 inferred relationships involving `Correnth Group` (e.g. with `AI and Data Scientist Roadmap` and `AI Engineer Roadmap`) actually correct?**
-  _`Correnth Group` has 3 INFERRED edges - model-reasoned connections that need verification._
+  _High betweenness centrality (0.132) - this node is a cross-community bridge._
 - **What connects `Graphify Skill for Codex`, `Graphify Add Watch Reference`, `Graphify Exports Reference` to the rest of the system?**
-  _108 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _115 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.10510510510510511 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.1053763440860215 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.08 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07692307692307693 - nodes in this community are weakly interconnected._
