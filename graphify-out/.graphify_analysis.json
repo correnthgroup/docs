@@ -40,6 +40,39 @@
       "roadmaps_reference_skill_based_roadmaps_roadmap_swift_ui"
     ],
     "1": [
+      "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT",
+      "platforms_api_billing_stripe_webhook",
+      "platforms_api_companies_billing",
+      "platforms_api_companies_billing_checkout",
+      "platforms_api_companies_billing_portal",
+      "platforms_audit_procedures",
+      "platforms_batch_1",
+      "platforms_batch_2",
+      "platforms_batch_3",
+      "platforms_batch_4",
+      "platforms_correnthgroup_docs",
+      "platforms_correnthgroup_redrise_operation",
+      "platforms_correnthgroup_redrise_platform",
+      "platforms_gate_zero",
+      "platforms_legacy_containment",
+      "platforms_legal_content_blockers",
+      "platforms_pr_12",
+      "platforms_pr_13",
+      "platforms_pr_14",
+      "platforms_pr_15",
+      "platforms_pr_16",
+      "platforms_pr_17",
+      "platforms_pr_18",
+      "platforms_pr_19",
+      "platforms_pr_20",
+      "platforms_prepare_issue_workspace_inputs",
+      "platforms_publish_workspace_outputs",
+      "platforms_redrise_platform_staging",
+      "platforms_redrise_platform_staging_render",
+      "platforms_render_legacy_static",
+      "platforms_supabase_legacy"
+    ],
+    "2": [
       "developer_roadmap_repo",
       "roadmaps_reference_skill_based_roadmaps_roadmap_terraform",
       "roadmaps_reference_skill_based_roadmaps_roadmap_vibe_coding",
@@ -66,7 +99,7 @@
       "wordpress_security",
       "wordpress_theme"
     ],
-    "2": [
+    "3": [
       "developer_roadmap_repository",
       "roadmaps_reference_role_based_roadmaps_roadmap_android",
       "roadmaps_reference_role_based_roadmaps_roadmap_ios",
@@ -93,7 +126,7 @@
       "roadmaps_reference_skill_based_roadmaps_roadmap_spring_boot",
       "roadmaps_reference_skill_based_roadmaps_roadmap_sql"
     ],
-    "3": [
+    "4": [
       "agents_md",
       "canonical_memory",
       "codex_skills_graphify_skill",
@@ -112,11 +145,10 @@
       "invoke_correnth_semantic_push_ps1",
       "minimax",
       "pre_push_hook",
-      "redrise_pr_rollout_audit",
       "skill_reference_extraction_spec",
       "skill_reference_query"
     ],
-    "4": [
+    "5": [
       "adgency",
       "correnth_group",
       "current_direction_md",
@@ -129,14 +161,12 @@
       "prompt_engineer",
       "redrise",
       "redrose",
-      "repositories_correnthgroup_docs",
-      "repositories_correnthgroup_redrise_operation",
       "repositories_correnthgroup_studio_findfee",
       "roadmaps_reference_role_based_roadmaps_roadmap_ai_data_scientist",
       "roadmaps_reference_role_based_roadmaps_roadmap_ai_engineer",
       "roadmaps_reference_role_based_roadmaps_roadmap_backend"
     ],
-    "5": [
+    "6": [
       "google_sre_book",
       "opentelemetry_docs",
       "roadmaps_reference_skill_based_roadmaps_roadmap_system_design",
@@ -151,7 +181,7 @@
       "system_design_reliability",
       "system_design_security"
     ],
-    "6": [
+    "7": [
       "roadmaps_reference_role_based_roadmaps_roadmap_devops",
       "roadmaps_reference_role_based_roadmaps_roadmap_devsecops",
       "roadmaps_reference_role_based_roadmaps_roadmap_engineering_manager",
@@ -166,19 +196,18 @@
       "roadmaps_reference_skill_based_roadmaps_roadmap_ai_red_teaming",
       "roadmaps_reference_skill_based_roadmaps_roadmap_angular"
     ],
-    "7": [
+    "8": [
       "correnth_ui",
       "decision_correnth_ui_tech_stack",
       "nextjs",
       "postgresql",
-      "repositories_correnthgroup_redrise_platform",
       "roadmaps_reference_outros_shadcn_guide",
       "roadmaps_reference_skill_based_roadmaps_roadmap_design_system",
       "shadcn_ui",
       "supabase",
       "tailwind_css"
     ],
-    "8": [
+    "9": [
       "roadmaps_reference_skill_based_roadmaps_roadmap_typescript",
       "typescript_classes",
       "typescript_functions",
@@ -187,7 +216,7 @@
       "typescript_modules",
       "typescript_types"
     ],
-    "9": [
+    "10": [
       "roadmaps_reference_tools_enrich_roadmapreferences",
       "roadmaps_reference_tools_enrich_roadmapreferences_add_uniqueitem",
       "roadmaps_reference_tools_enrich_roadmapreferences_convertto_plaintext",
@@ -196,7 +225,7 @@
       "roadmaps_reference_tools_enrich_roadmapreferences_get_roadmaptopics",
       "roadmaps_reference_tools_enrich_roadmapreferences_get_topicfocus"
     ],
-    "10": [
+    "11": [
       "tools_invoke_correnthsemanticpush",
       "tools_invoke_correnthsemanticpush_get_artifacthash",
       "tools_invoke_correnthsemanticpush_get_graphsnapshot",
@@ -205,64 +234,64 @@
       "tools_invoke_correnthsemanticpush_write_deterministiccommunitylabels",
       "tools_invoke_correnthsemanticpush_write_provenance"
     ],
-    "11": [
+    "12": [
       "roadmaps_reference_role_based_roadmaps_roadmap_bi_analyst",
       "roadmaps_reference_role_based_roadmaps_roadmap_data_analyst",
       "roadmaps_reference_role_based_roadmaps_roadmap_data_engineer",
       "roadmaps_reference_role_based_roadmaps_roadmap_machine_learning",
       "roadmaps_reference_role_based_roadmaps_roadmap_mlops"
     ],
-    "12": [
+    "13": [
       "correnth",
       "platforms_graphify_semantic_memory"
     ],
-    "13": [
+    "14": [
       "roadmaps_reference_role_based_roadmaps_roadmap_blockchain",
       "roadmaps_reference_role_based_roadmaps_roadmap_cyber_security"
     ],
-    "14": [
+    "15": [
       "roadmaps_reference_role_based_roadmaps_roadmap_game_developer",
       "roadmaps_reference_role_based_roadmaps_roadmap_server_side_game_developer"
     ],
-    "15": [
+    "16": [
       "dotnet_platform"
     ],
-    "16": [
+    "17": [
       "repositories_md"
     ],
-    "17": [
+    "18": [
       "roadmaps_reference_role_based_roadmaps_roadmap_design_ux"
     ],
-    "18": [
+    "19": [
       "roadmaps_reference_role_based_roadmaps_roadmap_devrel"
     ],
-    "19": [
+    "20": [
       "roadmaps_reference_role_based_roadmaps_roadmap_network_engineer"
     ],
-    "20": [
+    "21": [
       "roadmaps_reference_role_based_roadmaps_roadmap_postgresql_dba"
     ],
-    "21": [
+    "22": [
       "roadmaps_reference_role_based_roadmaps_roadmap_technical_writer"
     ],
-    "22": [
+    "23": [
       "tools_install_correnthsemanticpushguard"
     ]
   },
   "cohesion": {
     "0": 0.10510510510510511,
-    "1": 0.08,
-    "2": 0.10333333333333333,
-    "3": 0.1,
-    "4": 0.1437908496732026,
-    "5": 0.20512820512820512,
-    "6": 0.16666666666666666,
-    "7": 0.2222222222222222,
-    "8": 0.2857142857142857,
-    "9": 0.42857142857142855,
+    "1": 0.1053763440860215,
+    "2": 0.08,
+    "3": 0.10333333333333333,
+    "4": 0.10526315789473684,
+    "5": 0.16666666666666666,
+    "6": 0.20512820512820512,
+    "7": 0.16666666666666666,
+    "8": 0.2222222222222222,
+    "9": 0.2857142857142857,
     "10": 0.42857142857142855,
-    "11": 0.6,
-    "12": 1.0,
+    "11": 0.42857142857142855,
+    "12": 0.6,
     "13": 1.0,
     "14": 1.0,
     "15": 1.0,
@@ -272,7 +301,8 @@
     "19": 1.0,
     "20": 1.0,
     "21": 1.0,
-    "22": 1.0
+    "22": 1.0,
+    "23": 1.0
   },
   "gods": [
     {
@@ -293,7 +323,7 @@
     {
       "id": "graphify",
       "label": "Graphify",
-      "degree": 18
+      "degree": 17
     },
     {
       "id": "correnth_group",
@@ -301,8 +331,18 @@
       "degree": 13
     },
     {
+      "id": "platforms_correnthgroup_redrise_platform",
+      "label": "correnthgroup/redrise-platform Repository",
+      "degree": 13
+    },
+    {
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_system_design",
       "label": "System Design Roadmap",
+      "degree": 11
+    },
+    {
+      "id": "platforms_batch_3",
+      "label": "Batch 3: PRs #16-#18 - Bridge, Adapters & Stripe",
       "degree": 11
     },
     {
@@ -314,30 +354,9 @@
       "id": "redrise",
       "label": "RedRise",
       "degree": 7
-    },
-    {
-      "id": "roadmaps_reference_skill_based_roadmaps_roadmap_api_design",
-      "label": "API Design Roadmap",
-      "degree": 7
-    },
-    {
-      "id": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript",
-      "label": "TypeScript Roadmap",
-      "degree": 7
     }
   ],
   "surprises": [
-    {
-      "source": "RedRise PR Rollout and Audit",
-      "target": "Graphify",
-      "source_files": [
-        "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
-        "AGENTS.md"
-      ],
-      "confidence": "INFERRED",
-      "relation": "references",
-      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `RedRise PR Rollout and Audit` unexpectedly reaches hub `Graphify`"
-    },
     {
       "source": "AI and Data Scientist Roadmap",
       "target": "Correnth Group",
@@ -372,27 +391,38 @@
       "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `Backend Developer Roadmap` unexpectedly reaches hub `Correnth Group`"
     },
     {
-      "source": "Graphify Skill for Codex",
-      "target": "Graphify",
+      "source": "correnthgroup/redrise-platform Repository",
+      "target": "Supabase",
       "source_files": [
-        ".codex/skills/graphify/SKILL.md",
-        "AGENTS.md"
+        "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+        "decisions/CORRENTH_UI_AND_TECH_STACK_STANDARD_v1.md"
       ],
       "confidence": "EXTRACTED",
       "relation": "conceptually_related_to",
-      "why": "connects across different repos/directories; peripheral node `Graphify Skill for Codex` unexpectedly reaches hub `Graphify`"
+      "why": "connects across different repos/directories; bridges separate communities; peripheral node `Supabase` unexpectedly reaches hub `correnthgroup/redrise-platform Repository`"
+    },
+    {
+      "source": "correnthgroup/redrise-platform Repository",
+      "target": "Next.js",
+      "source_files": [
+        "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+        "decisions/CORRENTH_UI_AND_TECH_STACK_STANDARD_v1.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "conceptually_related_to",
+      "why": "connects across different repos/directories; bridges separate communities; peripheral node `Next.js` unexpectedly reaches hub `correnthgroup/redrise-platform Repository`"
     }
   ],
   "questions": [
     {
       "type": "bridge_node",
-      "question": "Why does `Developer Roadmap Repository` connect `Community 2` to `Community 7`?",
-      "why": "High betweenness centrality (0.118) - this node is a cross-community bridge."
+      "question": "Why does `correnthgroup/redrise-platform Repository` connect `Community 1` to `Community 8`, `Community 5`?",
+      "why": "High betweenness centrality (0.152) - this node is a cross-community bridge."
     },
     {
       "type": "bridge_node",
-      "question": "Why does `Correnth Group` connect `Community 4` to `Community 3`?",
-      "why": "High betweenness centrality (0.096) - this node is a cross-community bridge."
+      "question": "Why does `Developer Roadmap Repository` connect `Community 3` to `Community 8`?",
+      "why": "High betweenness centrality (0.130) - this node is a cross-community bridge."
     },
     {
       "type": "verify_inferred",
@@ -402,7 +432,7 @@
     {
       "type": "isolated_nodes",
       "question": "What connects `Graphify Skill for Codex`, `Graphify Add Watch Reference`, `Graphify Exports Reference` to the rest of the system?",
-      "why": "99 weakly-connected nodes found - possible documentation gaps or missing edges."
+      "why": "108 weakly-connected nodes found - possible documentation gaps or missing edges."
     },
     {
       "type": "low_cohesion",
@@ -412,12 +442,12 @@
     {
       "type": "low_cohesion",
       "question": "Should `Community 1` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.08 - nodes in this community are weakly interconnected."
+      "why": "Cohesion score 0.1053763440860215 - nodes in this community are weakly interconnected."
     },
     {
       "type": "low_cohesion",
       "question": "Should `Community 2` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.10333333333333333 - nodes in this community are weakly interconnected."
+      "why": "Cohesion score 0.08 - nodes in this community are weakly interconnected."
     }
   ]
 }

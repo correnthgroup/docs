@@ -1,183 +1,122 @@
-# Rollout e auditoria das PRs RedRise
+# Conclusão das PRs RedRise e reconstrução limpa do staging
 
-- Status: execução em andamento; integração da plataforma e staging pendentes
+- Status: execução em andamento
 - Revisão: 2026-07-26
-- Autoridade: decisões em `decisions/`, código, migrations, testes, CI e evidências versionadas
+- Autoridade: decisões, código, migrations, testes, CI e evidências versionadas
+- Registro operacional local: `D:\02_labs\PRs\redrise-mvp`
 
-## Fonte e escopo
+## Autoridade e registro
 
-O pacote `D:\02_labs\PRs\redrise-mvp` é evidência local histórica. Ele não é fonte
-canônica de requisitos, estado de merge ou implementação. A matriz canônica é
-formada pelas PRs reais, commits, testes, CI, deploy de staging e este documento.
+Documentação e código versionados permanecem autoridade. Graphify é o índice
+semântico + AST de descoberta e deve levar à fonte versionada citada.
 
-Documentação e código versionados são a autoridade; Graphify é somente índice de
-descoberta. Antes de editar ou integrar, consultar o grafo local da raiz
-aplicável, navegar as relações semânticas e AST e ler as fontes citadas.
+`D:\02_labs\PRs\redrise-mvp` é a fonte canônica local para operar e auditar as
+16 entregas lógicas. O diretório não possui Git, não entra no Graphify e é
+protegido por `MANIFEST.sha256` e snapshots datados. Seu `PR_REGISTRY.md`
+registra todas as PRs reais dos três repositórios, inclusive corretivas e
+manutenção fora do rollout. A numeração nativa do GitHub não cria entregas
+lógicas 17–20.
 
-## Estado remoto confirmado
+## Estado confirmado
 
-| Repositório | Estado em 2026-07-26 |
+| Repositório | Estado |
 |---|---|
-| `correnthgroup/docs` | PRs #2–#5 mescladas em `main` |
-| `correnthgroup/redrise-operation` | PRs #1–#12 mescladas em `main` |
-| `correnthgroup/redrise-platform` | PRs #10–#20 abertas; #10 pronta, #11–#20 drafts; nenhuma mesclada em `master` |
+| `correnthgroup/docs` | PRs #2–#6 mescladas; #1 fechada |
+| `correnthgroup/redrise-operation` | PRs #1–#13 mescladas |
+| `correnthgroup/redrise-platform` | #10–#11 mescladas; #12–#20 abertas/empilhadas; #1–#9 manutenção Dependabot |
 
-As PRs da plataforma continuam empilhadas. A existência da branch ou de uma PR
-não prova que a entrega está funcional. O status **concluído** só pode ser usado
-depois de código, migrations aplicáveis, testes, CI, staging, rollback e
-evidência passarem.
+O Render atual é um Static Site legado e continua servindo os domínios
+`redrise.app` e `www.redrise.app`. O Supabase atual contém o backend legado e
+não pode ser limpo enquanto esse site estiver ativo. Staging será reconstruído
+em recursos novos e dedicados.
 
-## Decisão sobre Commitperclip
+## Gate zero
 
-O GitHub App Commitperclip, App ID `3718661`, pertence ao upstream
-`paperclipai`. Uma conta administradora da Correnth pode instalar o App, mas não
-pode gerar ou revogar suas chaves privadas. A documentação de JWT do GitHub
-pressupõe uma chave PEM já emitida pelo proprietário do App; ela não oferece um
-meio de criar a chave de um App de terceiros.
+1. Remover a entrada `C:\Program Files\Correnth\CML MCP` do PATH de máquina.
+2. Confirmar comando, diretório, Cofre e Paths CML ausentes.
+3. Corrigir instruções ativas para Graphify semântico → AST → fonte.
+4. Não criar PEM, JWT ou `COMMITPERCLIP_KEY`: o workflow usa `github.token`.
+5. Na PR #12, substituir mutação direta de `process.env` no teste de migration
+   URL por `vi.stubEnv`/`vi.unstubAllEnvs`.
+6. Exigir `review` e `security-review` em `success`, além de dependency review,
+   quality, build, testes e e2e verdes.
 
-O fork não dependerá de uma credencial privada do upstream. A branch da PR #10
-contém uma correção para usar o `github.token` efêmero do próprio workflow e
-criar o check de segurança com permissões mínimas. Depois que essa correção
-estiver em `master`, remover o secret inválido `COMMITPERCLIP_KEY` em:
+## Contenção do legado
 
-1. GitHub → `correnthgroup/redrise-platform`.
-2. **Settings** → **Secrets and variables** → **Actions**.
-3. **Repository secrets** → `COMMITPERCLIP_KEY`.
-4. **Remove secret** e confirmar.
+### Render
 
-Nenhuma PEM, JWT ou segredo novo é necessário para esse workflow. Caso a
-Correnth crie futuramente um App próprio, a chave privada será gerada apenas na
-página desse App, guardada no Cofre e nunca copiada para Git, logs ou Graphify.
+- Desligar Auto-Deploy do Static Site.
+- Regenerar o deploy hook potencialmente exposto durante a auditoria.
+- Renomear o serviço para `redrise-legacy-static`.
+- Manter os domínios até cutover de produção separado.
 
-## Matriz das 16 entregas lógicas
+### Supabase
 
-Legenda: **OK** = evidência obrigatória concluída; **local** = implementação
-commitada somente na branch local, ainda sem CI remoto/staging; **N/A** = não se
-aplica; **pendente** = gate obrigatório ainda não executado; **bloqueado** =
-depende de configuração, conteúdo ou aprovação externa.
+- Renomear o projeto atual para `redrise-legacy`.
+- Desconectar a integração GitHub incorreta.
+- Preservar tabelas, usuários, chaves e dados até o cutover.
+- Registrar os 55 objetos públicos, três usuários Auth e o alerta da view
+  `v_documents_pending`.
+- Criar backup lógico verificado antes de alterações futuras.
 
-| Lógica | PR real | Contrato | Código | Migration | Testes locais | CI | Staging | Rollback/evidência | Status |
-|---:|---|---|---|---|---|---|---|---|---|
-| 01 | docs #3 | OK | N/A | N/A | N/A | OK | N/A | PR/merge | concluído |
-| 02 | operation #11 | OK | OK | N/A | OK | OK | N/A | PR/merge | concluído |
-| 03 | docs #4–#5 | OK | OK | N/A | Graphify validado | OK | N/A | PR/merge | concluído |
-| 04 | platform #10 | OK | local `022cab8c2` | N/A | focalizados | pendente | pendente | PR + plano | parcial |
-| 05 | platform #11 | OK | local `9a799168b` | N/A | matriz donor | pendente | depende de #12 | PR + matriz | parcial |
-| 06 | platform #12 | OK | local `439890041` | local | focalizados | pendente | bloqueado por infraestrutura | plano de pre-deploy | parcial |
-| 07 | platform #13 | OK | local `e7453c422` | N/A | focalizados | pendente | pendente | testes de ciclo | parcial |
-| 08 | platform #14 | OK | local `c12ae7b37` | quando aplicável | 82/82 focalizados | pendente | duas empresas pendente | matriz de autorização | parcial |
-| 09 | platform #15 | OK | local `ef3d6cfcd` | local | vazio/upgrade/repetição | pendente | backup/HITL pendente | plano de reversão | parcial |
-| 10 | platform #16 | OK | local `3d78b00f9` | quando aplicável | 10 focalizados | pendente | S3/restart pendente | cleanup/idempotência | parcial |
-| 11 | platform #17 | OK | local `d125d3736` | N/A | 22 focalizados | pendente | Docker/Render pendente | pins/readiness | parcial |
-| 12 | platform #18 | OK | local `7657a6262` | local `0195` | billing focalizados | pendente | Stripe test pendente | idempotência/ordenação | parcial |
-| 13 | platform #19 | OK | local `c6a55cffb` | N/A | 4 focalizados | pendente | bloqueado por conteúdo legal | documento de handoff | bloqueado |
-| 14 | operation #12 | OK | OK | N/A | OK | OK | reconciliação aplicada requer HITL | PR/merge + backup exigido | parcial operacional |
-| 15 | docs #4–#5 | OK | retirada ativa OK | N/A | scans locais | OK | N/A | histórico preservado | concluído |
-| 16 | platform #20 + docs #4–#5 | OK | branch remota inconsistente | N/A | integridade local falha | pendente | pendente | bundle antes da reescrita | bloqueado |
+## Staging limpo
 
-Os hashes acima registram o estado local auditado. Eles ainda não são evidência
-remota enquanto não forem publicados pelo wrapper Graphify e aprovados no CI.
+Criar `redrise-platform-staging` na organização Correnth, região Ohio, sem
+restore, importação ou integração GitHub.
 
-## Gate zero restante
+- Desabilitar Data API.
+- Revogar privilégios padrão de `anon` e `authenticated` em novos objetos de
+  `public`.
+- Criar somente o bucket privado `redrise-staging`.
+- Usar credenciais S3 server-side e endpoint direto do projeto.
+- Usar Session pooler IPv4, porta 5432, para `DATABASE_URL` e
+  `DATABASE_MIGRATION_URL`.
+- Não usar conexão direta IPv6 nem transaction pooler 6543.
+- Aplicar as 190 migrations do zero e confirmar 158 tabelas públicas atuais,
+  sem objetos RedRise legados.
+- Manter schemas gerenciados Supabase; instalar somente `pg_trgm` e
+  `fuzzystrmatch` se exigidos pelas migrations.
 
-1. Publicar a CI nativa do fork na PR #10 e verificar que `review`, quality,
-   security, build e testes executam sem Commitperclip.
-2. Remover do PATH de máquina o resíduo do provider legado de memória em
-   sessão Windows elevada, reiniciar Codex e terminais e executar as três
-   validações do runbook histórico
-   [`archived/MEMORY_PROVIDER_REMOVAL.md`](../archived/MEMORY_PROVIDER_REMOVAL.md).
-   Os três resultados esperados são `True`.
-3. Antes de qualquer push, inclusive GitHub MCP/CLI, executar:
+O Cofre guarda URLs, senhas, S3 e IDs de serviço. Nenhum valor entra em Git,
+Graphify, Actions ou logs.
 
-   ```powershell
-   D:\00_docs\tools\Invoke-CorrenthSemanticPush.ps1 -ProjectRoot <raiz permitida>
-   ```
-
-4. Confirmar quota Git LFS sem compra em GitHub → avatar → **Settings** →
-   **Billing and licensing** → **Metered usage** → filtro **Git LFS**. Se o
-   primeiro push exigir compra ou ampliar custo, interromper e obter HITL.
+Criar pelo Blueprint da PR #12 um Render Web Service Docker Starter
+`redrise-platform-staging`, região Ohio, Auto Sync/Auto Deploy desligado,
+pre-deploy de migrations e health check em `/api/readiness`. As URLs de Better
+Auth e pública devem usar exatamente a URL HTTPS `onrender.com` do serviço.
 
 ## Integração por lotes
 
-| Lote | PRs | Critério de avanço |
+Para cada PR: sincronizar com a predecessora mesclada, implementar/testar,
+executar o wrapper Graphify com worktree limpo, publicar pelo guard, retargetar
+para `master`, executar CI completo, anexar evidência/rollback e mesclar com
+merge commit.
+
+| Lote | PRs | Gate |
 |---|---:|---|
-| 1 | #10–#12 | CI nativa verde; matriz donor completa; readiness, pre-deploy e Blueprint validados em staging. |
-| 2 | #13–#15 | Signup sem sessão automática; sessão/CSRF; negação cross-tenant; UUID/aliases repetíveis. |
-| 3 | #16–#18 | Bridge segura; adapters nativos/BYOK em Linux; Stripe com corpo bruto, assinatura e eventos completos. |
-| 4 | #19–#20 | Conteúdo legal aprovado; superfícies públicas testadas; grafo reconstruído e coerente via LFS. |
+| 1 | #12 | Supabase/Render novos; migrations, readiness, S3, restart e persistência; CI integral verde |
+| 2 | #13–#15 | Better Auth sem login automático; duas empresas; negação cross-tenant; UUIDs/aliases repetíveis |
+| 3 | #16–#18 | bridge segura; adapters/BYOK Linux; Stripe Test mode, assinatura raw e eventos completos |
+| 4 | #19–#20 | conteúdo legal aprovado; superfícies públicas; reconstrução Graphify/LFS e auditoria final |
 
-Para cada PR:
+Interfaces obrigatórias do lote 3:
 
-1. Sincronizar a branch com a predecessora já mesclada.
-2. Implementar e testar na branch existente.
-3. Executar o wrapper Graphify com worktree limpo.
-4. Publicar pela via protegida.
-5. Retargetar para `master`, marcar como pronta e executar todo o CI.
-6. Anexar comandos, resultados, staging, rollback e limitações.
-7. Mesclar por merge commit.
-8. Retargetar a seguinte e só então excluir a branch predecessora.
+- `prepareIssueWorkspaceInputs(...)`
+- `publishWorkspaceOutputs(...)`
+- `POST /api/billing/stripe/webhook`
+- `GET /api/companies/:companyId/billing`
+- `POST /api/companies/:companyId/billing/checkout`
+- `POST /api/companies/:companyId/billing/portal`
 
-Rebase e `--force-with-lease` ficam restritos à reconstrução controlada da PR
-#20. Imediatamente antes dela, criar um bundle recuperável da branch original.
+PR #19 permanece bloqueada até Privacy Policy, Terms, AUP, Subprocessors,
+Security/Support e Data Deletion aprovados, versionados e datados. PR #20 será
+reconstruída sobre `master` após #19, com bundle recuperável e
+`--force-with-lease`; apenas o grafo canônico via Git LFS e relatórios coerentes
+serão preservados.
 
-## Configuração obrigatória de staging
+## Auditoria
 
-Staging exige aprovação de custo antes da criação. Render, Supabase, S3 e Stripe
-ficam no Cofre; nenhum valor é copiado para Git, Graphify ou documentação.
-
-### Supabase e Render
-
-1. Criar um projeto Supabase dedicado de staging na região mais próxima do
-   Render aprovado.
-2. Em **Connect**, guardar no Cofre a URL do **Session pooler**, porta `5432`,
-   como `DATABASE_URL`.
-3. Guardar como `DATABASE_MIGRATION_URL` a conexão direta quando compatível ou
-   o Session pooler; não usar o Transaction pooler `6543` para migrations.
-4. Em **Storage**, criar somente o bucket privado `redrise-staging`.
-5. Em **Storage** → **S3**, gerar endpoint, região, access ID e secret e guardar
-   todos no Cofre.
-6. No Render, criar Blueprint da branch da PR #12 com serviço
-   `redrise-platform-staging`, plano Starter e auto-deploy desligado.
-7. Preencher os campos `sync:false`: `DATABASE_URL`,
-   `DATABASE_MIGRATION_URL`, `BETTER_AUTH_URL`,
-   `BETTER_AUTH_TRUSTED_ORIGINS`, `PAPERCLIP_PUBLIC_URL`,
-   `PAPERCLIP_STORAGE_S3_BUCKET`, `PAPERCLIP_STORAGE_S3_REGION`,
-   `PAPERCLIP_STORAGE_S3_ENDPOINT`, `AWS_ACCESS_KEY_ID` e
-   `AWS_SECRET_ACCESS_KEY`.
-8. Usar exatamente a URL HTTPS do serviço nas três URLs públicas/de auth.
-9. Validar pre-deploy, liveness, readiness, banco vazio, upgrade, restart e
-   persistência antes do merge da PR #12.
-
-### Stripe de staging
-
-1. Ativar **Test mode**.
-2. Criar o produto Pro e um preço recorrente aprovado pelo responsável
-   comercial; guardar `price_...` no Cofre.
-3. Criar restricted key somente com customers, checkout, subscriptions e
-   billing portal necessários ao runtime.
-4. Criar endpoint
-   `https://<staging>/api/billing/stripe/webhook` somente com os eventos
-   implementados e guardar o signing secret no Cofre.
-5. Configurar no Render `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET` e
-   `STRIPE_PRO_PRICE_ID`.
-6. Redeployar e validar duplicidade, atraso, expiração, upgrade, suspensão,
-   cancelamento e reativação. Nenhuma chave live será usada.
-
-### Conteúdo legal
-
-A PR #19 não será mesclada com placeholders. O proprietário deve aprovar Privacy
-Policy, Terms, AUP, Subprocessors, Security/Support e Data Deletion. Cada arquivo
-precisa de título, versão, data efetiva, contato e aprovador. O handoff detalhado
-está em `redrise-platform/doc/product/PUBLIC_LEGAL_PILOT.md`. Os documentos
-aprovados devem ser colocados no Cofre em `RedRise\Legal Approved` e o agente
-deve ser avisado apenas de que estão prontos, sem colar seu conteúdo sensível no
-chat.
-
-## Conferência integral
-
-### Código e CI
-
-Executar com a versão fixada pelo Corepack:
+Executar:
 
 ```powershell
 corepack pnpm -r typecheck
@@ -185,47 +124,31 @@ corepack pnpm test:run
 corepack pnpm build
 ```
 
-Também executar suites focalizadas, migrations, Docker build/smoke e e2e
-autenticado. Após cada retarget, dependency review, quality, security, build e
-testes precisam passar novamente. Os cinco casos Windows inicialmente
-identificados nos adapters foram corrigidos, mas a suite integral do pacote
-ainda expõe casos POSIX incompatíveis no host Windows; a decisão final depende
-do CI/container Linux, não de esconder essas falhas.
+Também exigir Docker build/smoke, e2e autenticado, banco vazio e restart, Better
+Auth, duas empresas, fluxo XLSX, adapters no container, Stripe Test mode,
+backup/restore, scan de segredos e integridade Graphify nas três raízes.
 
-### Staging funcional
+## Arquivos antigos
 
-Registrar evidência reproduzível de liveness/readiness, banco vazio/upgrade,
-signup sem login automático, sessão, duas empresas, XLSX de ponta a ponta,
-Codex/Claude/Gemini no container, Stripe test mode, restart e backup/restore.
+Depois do aceite de staging:
 
-### Segurança, Cofre e retirada do provider legado
+1. criar bundles finais de `archived\redrise` e `archived\redrise v2`;
+2. capturar patches e arquivos não rastreados, excluindo `.env.local`;
+3. mover credenciais necessárias ao Cofre e registrar somente hashes;
+4. clonar cada bundle em diretório temporário e verificar o HEAD;
+5. confirmar zero referência runtime aos diretórios;
+6. mover os diretórios para a Lixeira do Windows.
 
-- Escanear arquivos rastreados e histórico Git por segredos.
-- Confirmar que conteúdo do Cofre não aparece em Git, Graphify, logs ou Actions.
-- Permitir somente referências documentais ao caminho do Cofre.
-- Exigir zero referências ativas ao provider legado fora de `archived` e
-  `_legacy`.
-- Confirmar ausência de provider, comando, diretório, arquivo no Cofre e PATH.
-- Validar Stripe sobre corpo bruto e autorização por empresa.
-
-### Graphify e fechamento Git
-
-Em cada raiz, `graph.json`, manifesto, relatório, labels, análise e proveniência
-devem corresponder ao mesmo HEAD, revisão e contagens. Exigir relações AST e
-semânticas, zero links órfãos/self-loops e zero fontes em `graphify-out`, caches,
-dependências, `archived` ou `_legacy`. O grafo global agrega apenas grafos locais
-aprovados e consultas precisam retornar fontes versionadas verificáveis.
-
-A PR #20 atual não passa: ela contém commits e blobs duplicados de Graphify, e
-relatório/proveniência divergem do grafo. Depois da PR #19, reconstruir #20 sobre
-`master`, preservar a branch antiga em bundle local, versionar somente o
-conjunto canônico via LFS e publicar com `--force-with-lease`.
+O Supabase e Render legados não serão resetados/excluídos nessa etapa. Domínios,
+chaves legadas e desligamento definitivo pertencem a um cutover de produção com
+HITL separado.
 
 ## Critério de encerramento
 
-- `master` da plataforma e `main` dos outros repositórios contêm os commits
-  aprovados.
-- Worktrees estão limpos e sincronizados com os branches padrão.
-- Não restam PRs draft/abertas do rollout nem branches empilhadas obsoletas.
-- O status canônico registra limitações e evidências reais.
-- Staging passa; produção não é declarada concluída nem alterada sem HITL.
+- PRs #12–#20 mescladas em ordem e nenhum draft do rollout restante.
+- Registro local completo e manifesto/snapshots atualizados.
+- Web Service e Supabase novos funcionais e sem dados/tabelas legados.
+- Cofre ausente de Git, Graphify, Actions e logs.
+- CML ausente de configuração, comando, diretório e Paths.
+- Arquivos antigos removidos somente após restauração verificada dos bundles.
+- Produção não declarada concluída antes do cutover autorizado.

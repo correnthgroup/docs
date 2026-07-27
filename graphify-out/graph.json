@@ -79,6 +79,34 @@
         "source_file": "decisions/GAUSS_AGENT_ORGANIZATION_AND_LANGUAGE_v1.md"
       },
       {
+        "id": "semantic_refresh_flow",
+        "label": "Semantic Refresh Pipeline",
+        "nodes": [
+          "invoke_correnth_semantic_push_ps1",
+          "minimax",
+          "graphify",
+          "graphify_out_graph_json"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.9,
+        "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md"
+      },
+      {
+        "id": "git_push_guardian",
+        "label": "Git Push Guardian Chain",
+        "nodes": [
+          "pre_push_hook",
+          "invoke_correnth_semantic_push_ps1",
+          "git_lfs",
+          "github_mcp"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.8,
+        "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md"
+      },
+      {
         "id": "role_based_roadmaps",
         "label": "Role-Based Career Roadmaps",
         "nodes": [
@@ -267,32 +295,47 @@
         "source_file": "roadmaps_reference/Skill-based Roadmaps/ROADMAP_VIBE_CODING.md"
       },
       {
-        "id": "semantic_refresh_flow",
-        "label": "Semantic Refresh Pipeline",
+        "id": "platforms_redrise_pr_rollout_phases",
+        "label": "RedRise PR Rollout Phases 1-4",
         "nodes": [
-          "invoke_correnth_semantic_push_ps1",
-          "minimax",
-          "graphify",
-          "graphify_out_graph_json"
+          "platforms_batch_1",
+          "platforms_batch_2",
+          "platforms_batch_3",
+          "platforms_batch_4"
         ],
-        "relation": "participate_in",
+        "relation": "form",
         "confidence": "EXTRACTED",
-        "confidence_score": 0.9,
-        "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md"
+        "confidence_score": 1.0,
+        "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md"
       },
       {
-        "id": "git_push_guardian",
-        "label": "Git Push Guardian Chain",
+        "id": "platforms_correnthgroup_repositories",
+        "label": "CorrenthGroup Repositories",
         "nodes": [
-          "pre_push_hook",
-          "invoke_correnth_semantic_push_ps1",
-          "git_lfs",
-          "github_mcp"
+          "platforms_correnthgroup_docs",
+          "platforms_correnthgroup_redrise_operation",
+          "platforms_correnthgroup_redrise_platform"
         ],
-        "relation": "participate_in",
-        "confidence": "INFERRED",
-        "confidence_score": 0.8,
-        "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md"
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md"
+      },
+      {
+        "id": "platforms_batch_3_stripe_billing_interfaces",
+        "label": "Batch 3 Required Billing Interfaces",
+        "nodes": [
+          "platforms_api_billing_stripe_webhook",
+          "platforms_api_companies_billing",
+          "platforms_api_companies_billing_checkout",
+          "platforms_api_companies_billing_portal",
+          "platforms_prepare_issue_workspace_inputs",
+          "platforms_publish_workspace_outputs"
+        ],
+        "relation": "implement",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md"
       }
     ]
   },
@@ -303,10 +346,10 @@
       "source_file": "roadmaps_reference/tools/Enrich-RoadmapReferences.ps1",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 9,
+      "community": 10,
       "norm_label": "enrich-roadmapreferences.ps1",
       "id": "roadmaps_reference_tools_enrich_roadmapreferences",
-      "community_name": "Community 9"
+      "community_name": "Community 10"
     },
     {
       "label": "Get-FrontMatterValue()",
@@ -314,10 +357,10 @@
       "source_file": "roadmaps_reference/tools/Enrich-RoadmapReferences.ps1",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 9,
+      "community": 10,
       "norm_label": "get-frontmattervalue()",
       "id": "roadmaps_reference_tools_enrich_roadmapreferences_get_frontmattervalue",
-      "community_name": "Community 9"
+      "community_name": "Community 10"
     },
     {
       "label": "ConvertTo-PlainText()",
@@ -325,10 +368,10 @@
       "source_file": "roadmaps_reference/tools/Enrich-RoadmapReferences.ps1",
       "source_location": "L20",
       "_origin": "ast",
-      "community": 9,
+      "community": 10,
       "norm_label": "convertto-plaintext()",
       "id": "roadmaps_reference_tools_enrich_roadmapreferences_convertto_plaintext",
-      "community_name": "Community 9"
+      "community_name": "Community 10"
     },
     {
       "label": "Add-UniqueItem()",
@@ -336,10 +379,10 @@
       "source_file": "roadmaps_reference/tools/Enrich-RoadmapReferences.ps1",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 9,
+      "community": 10,
       "norm_label": "add-uniqueitem()",
       "id": "roadmaps_reference_tools_enrich_roadmapreferences_add_uniqueitem",
-      "community_name": "Community 9"
+      "community_name": "Community 10"
     },
     {
       "label": "Get-TopicFocus()",
@@ -347,10 +390,10 @@
       "source_file": "roadmaps_reference/tools/Enrich-RoadmapReferences.ps1",
       "source_location": "L45",
       "_origin": "ast",
-      "community": 9,
+      "community": 10,
       "norm_label": "get-topicfocus()",
       "id": "roadmaps_reference_tools_enrich_roadmapreferences_get_topicfocus",
-      "community_name": "Community 9"
+      "community_name": "Community 10"
     },
     {
       "label": "Get-OfficialResources()",
@@ -358,10 +401,10 @@
       "source_file": "roadmaps_reference/tools/Enrich-RoadmapReferences.ps1",
       "source_location": "L88",
       "_origin": "ast",
-      "community": 9,
+      "community": 10,
       "norm_label": "get-officialresources()",
       "id": "roadmaps_reference_tools_enrich_roadmapreferences_get_officialresources",
-      "community_name": "Community 9"
+      "community_name": "Community 10"
     },
     {
       "label": "Get-RoadmapTopics()",
@@ -369,10 +412,10 @@
       "source_file": "roadmaps_reference/tools/Enrich-RoadmapReferences.ps1",
       "source_location": "L111",
       "_origin": "ast",
-      "community": 9,
+      "community": 10,
       "norm_label": "get-roadmaptopics()",
       "id": "roadmaps_reference_tools_enrich_roadmapreferences_get_roadmaptopics",
-      "community_name": "Community 9"
+      "community_name": "Community 10"
     },
     {
       "label": "Install-CorrenthSemanticPushGuard.ps1",
@@ -380,10 +423,10 @@
       "source_file": "tools/Install-CorrenthSemanticPushGuard.ps1",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 22,
+      "community": 23,
       "norm_label": "install-correnthsemanticpushguard.ps1",
       "id": "tools_install_correnthsemanticpushguard",
-      "community_name": "Community 22"
+      "community_name": "Community 23"
     },
     {
       "label": "Invoke-CorrenthSemanticPush.ps1",
@@ -391,10 +434,10 @@
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 10,
+      "community": 11,
       "norm_label": "invoke-correnthsemanticpush.ps1",
       "id": "tools_invoke_correnthsemanticpush",
-      "community_name": "Community 10"
+      "community_name": "Community 11"
     },
     {
       "label": "Invoke-GraphifyPython()",
@@ -402,10 +445,10 @@
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 10,
+      "community": 11,
       "norm_label": "invoke-graphifypython()",
       "id": "tools_invoke_correnthsemanticpush_invoke_graphifypython",
-      "community_name": "Community 10"
+      "community_name": "Community 11"
     },
     {
       "label": "Get-ArtifactHash()",
@@ -413,10 +456,10 @@
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
       "source_location": "L31",
       "_origin": "ast",
-      "community": 10,
+      "community": 11,
       "norm_label": "get-artifacthash()",
       "id": "tools_invoke_correnthsemanticpush_get_artifacthash",
-      "community_name": "Community 10"
+      "community_name": "Community 11"
     },
     {
       "label": "Get-GraphSnapshot()",
@@ -424,10 +467,10 @@
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
       "source_location": "L37",
       "_origin": "ast",
-      "community": 10,
+      "community": 11,
       "norm_label": "get-graphsnapshot()",
       "id": "tools_invoke_correnthsemanticpush_get_graphsnapshot",
-      "community_name": "Community 10"
+      "community_name": "Community 11"
     },
     {
       "label": "Write-Provenance()",
@@ -435,10 +478,10 @@
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
       "source_location": "L78",
       "_origin": "ast",
-      "community": 10,
+      "community": 11,
       "norm_label": "write-provenance()",
       "id": "tools_invoke_correnthsemanticpush_write_provenance",
-      "community_name": "Community 10"
+      "community_name": "Community 11"
     },
     {
       "label": "Write-DeterministicCommunityLabels()",
@@ -446,10 +489,10 @@
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
       "source_location": "L106",
       "_origin": "ast",
-      "community": 10,
+      "community": 11,
       "norm_label": "write-deterministiccommunitylabels()",
       "id": "tools_invoke_correnthsemanticpush_write_deterministiccommunitylabels",
-      "community_name": "Community 10"
+      "community_name": "Community 11"
     },
     {
       "label": "Test-CanonicalArtifacts()",
@@ -457,10 +500,10 @@
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
       "source_location": "L120",
       "_origin": "ast",
-      "community": 10,
+      "community": 11,
       "norm_label": "test-canonicalartifacts()",
       "id": "tools_invoke_correnthsemanticpush_test_canonicalartifacts",
-      "community_name": "Community 10"
+      "community_name": "Community 11"
     },
     {
       "label": "Graphify Skill for Codex",
@@ -471,10 +514,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "graphify skill for codex",
       "id": "codex_skills_graphify_skill",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "Graphify Add Watch Reference",
@@ -485,10 +528,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "graphify add watch reference",
       "id": "graphify_add_watch",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "Graphify Exports Reference",
@@ -499,10 +542,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "graphify exports reference",
       "id": "graphify_exports",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "Graphify Extraction Spec Reference",
@@ -513,10 +556,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "graphify extraction spec reference",
       "id": "skill_reference_extraction_spec",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "Graphify GitHub Clone and Merge Reference",
@@ -527,10 +570,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "graphify github clone and merge reference",
       "id": "graphify_github_merge",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "Graphify Hooks Reference",
@@ -541,10 +584,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "graphify hooks reference",
       "id": "graphify_hooks",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "Graphify Query Reference",
@@ -555,10 +598,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "graphify query reference",
       "id": "skill_reference_query",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "Graphify Transcribe Reference",
@@ -569,10 +612,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "graphify transcribe reference",
       "id": "graphify_transcribe",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "Graphify Update Reference",
@@ -583,10 +626,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "graphify update reference",
       "id": "graphify_update",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "AGENTS.md Documentation",
@@ -597,10 +640,10 @@
       "captured_at": null,
       "author": "Grupo Correnth",
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "agents.md documentation",
       "id": "agents_md",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "Graphify",
@@ -611,10 +654,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "graphify",
       "id": "graphify",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "Correnth Current Direction",
@@ -625,10 +668,10 @@
       "captured_at": "2026-07-24",
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "correnth current direction",
       "id": "current_direction_md",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "Graphify Stack Recommendation",
@@ -639,10 +682,10 @@
       "captured_at": "2026-07-14",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "graphify stack recommendation",
       "id": "graphify_stack_recommendation_md",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "Prompt Engineer Template",
@@ -653,10 +696,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "prompt engineer template",
       "id": "prompt_engineer",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "Correnth Repository Map",
@@ -667,52 +710,10 @@
       "captured_at": "2026-07-25",
       "author": "Grupo Correnth",
       "contributor": null,
-      "community": 16,
+      "community": 17,
       "norm_label": "correnth repository map",
       "id": "repositories_md",
-      "community_name": "Community 16"
-    },
-    {
-      "label": "correnthgroup/docs Repository",
-      "file_type": "concept",
-      "source_file": "REPOSITORIES.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 4,
-      "norm_label": "correnthgroup/docs repository",
-      "id": "repositories_correnthgroup_docs",
-      "community_name": "Community 4"
-    },
-    {
-      "label": "correnthgroup/redrise-platform Repository",
-      "file_type": "concept",
-      "source_file": "REPOSITORIES.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 7,
-      "norm_label": "correnthgroup/redrise-platform repository",
-      "id": "repositories_correnthgroup_redrise_platform",
-      "community_name": "Community 7"
-    },
-    {
-      "label": "correnthgroup/redrise-operation Repository",
-      "file_type": "concept",
-      "source_file": "REPOSITORIES.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 4,
-      "norm_label": "correnthgroup/redrise-operation repository",
-      "id": "repositories_correnthgroup_redrise_operation",
-      "community_name": "Community 4"
+      "community_name": "Community 17"
     },
     {
       "label": "correnthgroup/studio_findfee Repository",
@@ -723,10 +724,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "correnthgroup/studio_findfee repository",
       "id": "repositories_correnthgroup_studio_findfee",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "Correnth Group",
@@ -737,10 +738,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "correnth group",
       "id": "correnth_group",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "RedRose",
@@ -751,10 +752,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "redrose",
       "id": "redrose",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "Findfee",
@@ -765,10 +766,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "findfee",
       "id": "findfee",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "ADGency",
@@ -779,10 +780,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "adgency",
       "id": "adgency",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "Correnth Ecosystem Portfolio and Operating Model",
@@ -793,10 +794,10 @@
       "captured_at": "2026-07-14",
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "correnth ecosystem portfolio and operating model",
       "id": "decision_correnth_ecosystem_portfolio",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "Paperclip",
@@ -807,10 +808,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "paperclip",
       "id": "paperclip",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "COcorrenth/ui",
@@ -821,10 +822,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "cocorrenth/ui",
       "id": "correnth_ui",
-      "community_name": "Community 7"
+      "community_name": "Community 8"
     },
     {
       "label": "Supabase",
@@ -835,10 +836,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "supabase",
       "id": "supabase",
-      "community_name": "Community 7"
+      "community_name": "Community 8"
     },
     {
       "label": "PostgreSQL",
@@ -849,10 +850,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "postgresql",
       "id": "postgresql",
-      "community_name": "Community 7"
+      "community_name": "Community 8"
     },
     {
       "label": "Next.js",
@@ -863,10 +864,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "next.js",
       "id": "nextjs",
-      "community_name": "Community 7"
+      "community_name": "Community 8"
     },
     {
       "label": "shadcn/ui",
@@ -877,10 +878,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "shadcn/ui",
       "id": "shadcn_ui",
-      "community_name": "Community 7"
+      "community_name": "Community 8"
     },
     {
       "label": "Tailwind CSS",
@@ -891,10 +892,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "tailwind css",
       "id": "tailwind_css",
-      "community_name": "Community 7"
+      "community_name": "Community 8"
     },
     {
       "label": "Correnth UI and Tech Stack Standard",
@@ -905,10 +906,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "correnth ui and tech stack standard",
       "id": "decision_correnth_ui_tech_stack",
-      "community_name": "Community 7"
+      "community_name": "Community 8"
     },
     {
       "label": "Gauss Organization",
@@ -919,10 +920,10 @@
       "captured_at": "2026-07-22",
       "author": "Grupo Correnth / Board humano",
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "gauss organization",
       "id": "gauss_organization",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "RedRise",
@@ -933,10 +934,10 @@
       "captured_at": "2026-07-24",
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "redrise",
       "id": "redrise",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "Gauss",
@@ -947,10 +948,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "gauss",
       "id": "gauss",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "RedRise Canonical Product Decision",
@@ -961,24 +962,110 @@
       "captured_at": "2026-07-24",
       "author": "Grupo Correnth",
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "redrise canonical product decision",
       "id": "decision_redrise_canonical_product",
+      "community_name": "Community 5"
+    },
+    {
+      "label": "Graphify Semantic Memory Policy",
+      "file_type": "document",
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "community": 13,
+      "norm_label": "graphify semantic memory policy",
+      "id": "platforms_graphify_semantic_memory",
+      "community_name": "Community 13"
+    },
+    {
+      "label": "Grupo Correnth",
+      "file_type": "concept",
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "community": 13,
+      "norm_label": "grupo correnth",
+      "id": "correnth",
+      "community_name": "Community 13"
+    },
+    {
+      "label": "Project Graph Output",
+      "file_type": "concept",
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "community": 4,
+      "norm_label": "project graph output",
+      "id": "graphify_out_graph_json",
       "community_name": "Community 4"
     },
     {
-      "label": "RedRise PR Rollout and Audit",
-      "file_type": "document",
-      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "label": "Canonical Memory",
+      "file_type": "concept",
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
       "source_location": null,
-      "source_url": null,
-      "captured_at": "2026-07-26",
-      "author": null,
-      "contributor": null,
-      "community": 3,
-      "norm_label": "redrise pr rollout and audit",
-      "id": "redrise_pr_rollout_audit",
-      "community_name": "Community 3"
+      "community": 4,
+      "norm_label": "canonical memory",
+      "id": "canonical_memory",
+      "community_name": "Community 4"
+    },
+    {
+      "label": "Invoke-CorrenthSemanticPush Script",
+      "file_type": "code",
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": "D:/00_docs/tools/Invoke-CorrenthSemanticPush.ps1",
+      "community": 4,
+      "norm_label": "invoke-correnthsemanticpush script",
+      "id": "invoke_correnth_semantic_push_ps1",
+      "community_name": "Community 4"
+    },
+    {
+      "label": "Pre-push Guard Hook",
+      "file_type": "code",
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "community": 4,
+      "norm_label": "pre-push guard hook",
+      "id": "pre_push_hook",
+      "community_name": "Community 4"
+    },
+    {
+      "label": "Git LFS",
+      "file_type": "concept",
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "community": 4,
+      "norm_label": "git lfs",
+      "id": "git_lfs",
+      "community_name": "Community 4"
+    },
+    {
+      "label": "GitHub MCP",
+      "file_type": "concept",
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "community": 4,
+      "norm_label": "github mcp",
+      "id": "github_mcp",
+      "community_name": "Community 4"
+    },
+    {
+      "label": "MiniMax Backend",
+      "file_type": "concept",
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "community": 4,
+      "norm_label": "minimax backend",
+      "id": "minimax",
+      "community_name": "Community 4"
+    },
+    {
+      "label": "Community N Naming Convention",
+      "file_type": "concept",
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "community": 4,
+      "norm_label": "community n naming convention",
+      "id": "community_n",
+      "community_name": "Community 4"
     },
     {
       "label": "AI and Data Scientist Roadmap",
@@ -989,10 +1076,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "ai and data scientist roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_ai_data_scientist",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "AI Engineer Roadmap",
@@ -1003,10 +1090,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "ai engineer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_ai_engineer",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "Android Developer Roadmap",
@@ -1017,10 +1104,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "android developer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_android",
-      "community_name": "Community 2"
+      "community_name": "Community 3"
     },
     {
       "label": "Developer Roadmap Repository",
@@ -1031,10 +1118,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "developer roadmap repository",
       "id": "developer_roadmap_repository",
-      "community_name": "Community 2"
+      "community_name": "Community 3"
     },
     {
       "label": "Backend Developer Roadmap",
@@ -1045,10 +1132,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "backend developer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_backend",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "BI Analyst Roadmap",
@@ -1059,10 +1146,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 12,
       "norm_label": "bi analyst roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_bi_analyst",
-      "community_name": "Community 11"
+      "community_name": "Community 12"
     },
     {
       "label": "Blockchain Developer Roadmap",
@@ -1073,10 +1160,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 14,
       "norm_label": "blockchain developer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_blockchain",
-      "community_name": "Community 13"
+      "community_name": "Community 14"
     },
     {
       "label": "Cyber Security Expert Roadmap",
@@ -1087,10 +1174,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 14,
       "norm_label": "cyber security expert roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_cyber_security",
-      "community_name": "Community 13"
+      "community_name": "Community 14"
     },
     {
       "label": "Data Analyst Roadmap",
@@ -1101,10 +1188,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 12,
       "norm_label": "data analyst roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_data_analyst",
-      "community_name": "Community 11"
+      "community_name": "Community 12"
     },
     {
       "label": "Data Engineer Roadmap",
@@ -1115,10 +1202,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 12,
       "norm_label": "data engineer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_data_engineer",
-      "community_name": "Community 11"
+      "community_name": "Community 12"
     },
     {
       "label": "UX Design Roadmap",
@@ -1129,10 +1216,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 18,
       "norm_label": "ux design roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_design_ux",
-      "community_name": "Community 17"
+      "community_name": "Community 18"
     },
     {
       "label": "DevOps SRE Roadmap",
@@ -1143,10 +1230,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "devops sre roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_devops",
-      "community_name": "Community 6"
+      "community_name": "Community 7"
     },
     {
       "label": "Developer Relations Roadmap",
@@ -1157,10 +1244,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "developer relations roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_devrel",
-      "community_name": "Community 18"
+      "community_name": "Community 19"
     },
     {
       "label": "DevSecOps Roadmap",
@@ -1171,10 +1258,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "devsecops roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_devsecops",
-      "community_name": "Community 6"
+      "community_name": "Community 7"
     },
     {
       "label": "Engineering Manager Roadmap",
@@ -1185,10 +1272,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "engineering manager roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_engineering_manager",
-      "community_name": "Community 6"
+      "community_name": "Community 7"
     },
     {
       "label": "Forward Deployed Engineer Roadmap",
@@ -1199,10 +1286,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "forward deployed engineer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_forward_deployed_engineer",
-      "community_name": "Community 6"
+      "community_name": "Community 7"
     },
     {
       "label": "Frontend Developer Roadmap",
@@ -1213,10 +1300,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "frontend developer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_frontend",
-      "community_name": "Community 6"
+      "community_name": "Community 7"
     },
     {
       "label": "Full Stack Developer Roadmap",
@@ -1227,10 +1314,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "full stack developer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_full_stack",
-      "community_name": "Community 6"
+      "community_name": "Community 7"
     },
     {
       "label": "Game Developer Roadmap",
@@ -1241,10 +1328,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 15,
       "norm_label": "game developer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_game_developer",
-      "community_name": "Community 14"
+      "community_name": "Community 15"
     },
     {
       "label": "iOS Developer Roadmap",
@@ -1255,10 +1342,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "ios developer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_ios",
-      "community_name": "Community 2"
+      "community_name": "Community 3"
     },
     {
       "label": "Machine Learning Roadmap",
@@ -1269,10 +1356,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 12,
       "norm_label": "machine learning roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_machine_learning",
-      "community_name": "Community 11"
+      "community_name": "Community 12"
     },
     {
       "label": "MLOps Roadmap",
@@ -1283,10 +1370,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 11,
+      "community": 12,
       "norm_label": "mlops roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_mlops",
-      "community_name": "Community 11"
+      "community_name": "Community 12"
     },
     {
       "label": "Network Engineer Roadmap",
@@ -1297,10 +1384,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 20,
       "norm_label": "network engineer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_network_engineer",
-      "community_name": "Community 19"
+      "community_name": "Community 20"
     },
     {
       "label": "PostgreSQL DBA Roadmap",
@@ -1311,10 +1398,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 21,
       "norm_label": "postgresql dba roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_postgresql_dba",
-      "community_name": "Community 20"
+      "community_name": "Community 21"
     },
     {
       "label": "Product Manager Roadmap",
@@ -1325,10 +1412,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "product manager roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_product_manager",
-      "community_name": "Community 6"
+      "community_name": "Community 7"
     },
     {
       "label": "QA Engineer Roadmap",
@@ -1339,10 +1426,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "qa engineer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_qa",
-      "community_name": "Community 6"
+      "community_name": "Community 7"
     },
     {
       "label": "Server Side Game Developer Roadmap",
@@ -1353,10 +1440,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 15,
       "norm_label": "server side game developer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_server_side_game_developer",
-      "community_name": "Community 14"
+      "community_name": "Community 15"
     },
     {
       "label": "Software Architect Roadmap",
@@ -1367,10 +1454,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "software architect roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_software_architect",
-      "community_name": "Community 6"
+      "community_name": "Community 7"
     },
     {
       "label": "Technical Writer Roadmap",
@@ -1381,10 +1468,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 22,
       "norm_label": "technical writer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_technical_writer",
-      "community_name": "Community 21"
+      "community_name": "Community 22"
     },
     {
       "label": "AI Agents Roadmap",
@@ -1395,10 +1482,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "ai agents roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_ai_agents",
-      "community_name": "Community 6"
+      "community_name": "Community 7"
     },
     {
       "label": "AI Product Builder Roadmap",
@@ -1409,10 +1496,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "ai product builder roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_ai_product_builder",
-      "community_name": "Community 6"
+      "community_name": "Community 7"
     },
     {
       "label": "AI Red Teaming Roadmap",
@@ -1423,10 +1510,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "ai red teaming roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_ai_red_teaming",
-      "community_name": "Community 6"
+      "community_name": "Community 7"
     },
     {
       "label": "Angular Developer Roadmap",
@@ -1437,10 +1524,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "angular developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_angular",
-      "community_name": "Community 6"
+      "community_name": "Community 7"
     },
     {
       "label": "API Design Roadmap",
@@ -1577,10 +1664,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 16,
       "norm_label": ".net platform",
       "id": "dotnet_platform",
-      "community_name": "Community 15"
+      "community_name": "Community 16"
     },
     {
       "label": "AWS Roadmap",
@@ -1745,10 +1832,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "design system roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_design_system",
-      "community_name": "Community 7"
+      "community_name": "Community 8"
     },
     {
       "label": "Django Roadmap",
@@ -1759,10 +1846,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "django roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_django",
-      "community_name": "Community 2"
+      "community_name": "Community 3"
     },
     {
       "label": "Docker Roadmap",
@@ -1773,10 +1860,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "docker roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_docker",
-      "community_name": "Community 2"
+      "community_name": "Community 3"
     },
     {
       "label": "Elasticsearch Roadmap",
@@ -1787,10 +1874,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "elasticsearch roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_elasticsearch",
-      "community_name": "Community 2"
+      "community_name": "Community 3"
     },
     {
       "label": "Flutter Developer Roadmap",
@@ -1801,10 +1888,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "flutter developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_flutter",
-      "community_name": "Community 2"
+      "community_name": "Community 3"
     },
     {
       "label": "Git and GitHub Roadmap",
@@ -1815,10 +1902,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "git and github roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_git_github",
-      "community_name": "Community 2"
+      "community_name": "Community 3"
     },
     {
       "label": "Go Developer Roadmap",
@@ -1829,10 +1916,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "go developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_golang",
-      "community_name": "Community 2"
+      "community_name": "Community 3"
     },
     {
       "label": "GraphQL Roadmap",
@@ -1843,10 +1930,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "graphql roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_graphql",
-      "community_name": "Community 2"
+      "community_name": "Community 3"
     },
     {
       "label": "HTML Roadmap",
@@ -1857,10 +1944,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "html roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_html",
-      "community_name": "Community 2"
+      "community_name": "Community 3"
     },
     {
       "label": "Java Developer Roadmap",
@@ -1871,10 +1958,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "java developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_java",
-      "community_name": "Community 2"
+      "community_name": "Community 3"
     },
     {
       "label": "JavaScript Roadmap",
@@ -1885,10 +1972,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "javascript roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_javascript",
-      "community_name": "Community 2"
+      "community_name": "Community 3"
     },
     {
       "label": "Kotlin Roadmap",
@@ -1927,10 +2014,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "kubernetes roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_kubernetes",
-      "community_name": "Community 2"
+      "community_name": "Community 3"
     },
     {
       "label": "Laravel Roadmap",
@@ -1941,10 +2028,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "laravel roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_laravel",
-      "community_name": "Community 2"
+      "community_name": "Community 3"
     },
     {
       "label": "LeetCode Roadmap",
@@ -2011,10 +2098,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "mongodb roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_mongodb",
-      "community_name": "Community 2"
+      "community_name": "Community 3"
     },
     {
       "label": "Next.js Roadmap",
@@ -2025,10 +2112,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "next.js roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_nextjs",
-      "community_name": "Community 2"
+      "community_name": "Community 3"
     },
     {
       "label": "Node.js Developer Roadmap",
@@ -2039,10 +2126,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "node.js developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_nodejs",
-      "community_name": "Community 2"
+      "community_name": "Community 3"
     },
     {
       "label": "OpenClaw Roadmap",
@@ -2095,10 +2182,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "python developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_python",
-      "community_name": "Community 2"
+      "community_name": "Community 3"
     },
     {
       "label": "Python Data Analysis Roadmap",
@@ -2123,10 +2210,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "react developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_react",
-      "community_name": "Community 2"
+      "community_name": "Community 3"
     },
     {
       "label": "React Native Developer Roadmap",
@@ -2151,10 +2238,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "redis roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_redis",
-      "community_name": "Community 2"
+      "community_name": "Community 3"
     },
     {
       "label": "Ruby Roadmap",
@@ -2193,10 +2280,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "rust developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_rust",
-      "community_name": "Community 2"
+      "community_name": "Community 3"
     },
     {
       "label": "Scala Roadmap",
@@ -2235,10 +2322,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "software design and architecture roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_software_design_architecture",
-      "community_name": "Community 2"
+      "community_name": "Community 3"
     },
     {
       "label": "Spring Boot Developer Roadmap",
@@ -2249,10 +2336,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "spring boot developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_spring_boot",
-      "community_name": "Community 2"
+      "community_name": "Community 3"
     },
     {
       "label": "SQL Roadmap",
@@ -2263,10 +2350,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "norm_label": "sql roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_sql",
-      "community_name": "Community 2"
+      "community_name": "Community 3"
     },
     {
       "label": "Swift UI Roadmap",
@@ -2305,10 +2392,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "system design roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_system_design",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "System Design Fundamentals",
@@ -2319,10 +2406,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "system design fundamentals",
       "id": "system_design_fundamentals",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "Networking and Web",
@@ -2333,10 +2420,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "networking and web",
       "id": "system_design_networking",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "Data Modeling and Databases",
@@ -2347,10 +2434,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "data modeling and databases",
       "id": "system_design_data",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "Caching",
@@ -2361,10 +2448,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "caching",
       "id": "system_design_cache",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "Service Communication",
@@ -2375,10 +2462,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "service communication",
       "id": "system_design_communication",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "Architecture Patterns",
@@ -2389,10 +2476,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "architecture patterns",
       "id": "system_design_architectures",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "Reliability",
@@ -2403,10 +2490,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "reliability",
       "id": "system_design_reliability",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "Security",
@@ -2417,10 +2504,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "security",
       "id": "system_design_security",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "Observability",
@@ -2431,10 +2518,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "observability",
       "id": "system_design_observability",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "System Design Patterns",
@@ -2445,10 +2532,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "system design patterns",
       "id": "system_design_patterns",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "Developer Roadmap Repository",
@@ -2459,10 +2546,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "developer roadmap repository",
       "id": "developer_roadmap_repo",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "Google SRE Book",
@@ -2473,10 +2560,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "google sre book",
       "id": "google_sre_book",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "OpenTelemetry Documentation",
@@ -2487,10 +2574,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "opentelemetry documentation",
       "id": "opentelemetry_docs",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "Terraform Roadmap",
@@ -2501,10 +2588,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "terraform roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_terraform",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "Terraform Fundamentals",
@@ -2515,10 +2602,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "terraform fundamentals",
       "id": "terraform_fundamentals",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "Terraform State Management",
@@ -2529,10 +2616,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "terraform state management",
       "id": "terraform_state",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "Terraform Modules",
@@ -2543,10 +2630,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "terraform modules",
       "id": "terraform_modules",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "Terraform Provisioners",
@@ -2557,10 +2644,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "terraform provisioners",
       "id": "terraform_provisioners",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "Terraform Testing",
@@ -2571,10 +2658,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "terraform testing",
       "id": "terraform_testing",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "Terraform Security",
@@ -2585,10 +2672,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "terraform security",
       "id": "terraform_security",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "Terraform CI/CD Integration",
@@ -2599,10 +2686,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "terraform ci/cd integration",
       "id": "terraform_cicd",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "TypeScript Roadmap",
@@ -2613,10 +2700,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 9,
       "norm_label": "typescript roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript",
-      "community_name": "Community 8"
+      "community_name": "Community 9"
     },
     {
       "label": "TypeScript Types",
@@ -2627,10 +2714,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 9,
       "norm_label": "typescript types",
       "id": "typescript_types",
-      "community_name": "Community 8"
+      "community_name": "Community 9"
     },
     {
       "label": "TypeScript Interfaces",
@@ -2641,10 +2728,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 9,
       "norm_label": "typescript interfaces",
       "id": "typescript_interfaces",
-      "community_name": "Community 8"
+      "community_name": "Community 9"
     },
     {
       "label": "TypeScript Functions",
@@ -2655,10 +2742,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 9,
       "norm_label": "typescript functions",
       "id": "typescript_functions",
-      "community_name": "Community 8"
+      "community_name": "Community 9"
     },
     {
       "label": "TypeScript Classes",
@@ -2669,10 +2756,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 9,
       "norm_label": "typescript classes",
       "id": "typescript_classes",
-      "community_name": "Community 8"
+      "community_name": "Community 9"
     },
     {
       "label": "TypeScript Generics",
@@ -2683,10 +2770,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 9,
       "norm_label": "typescript generics",
       "id": "typescript_generics",
-      "community_name": "Community 8"
+      "community_name": "Community 9"
     },
     {
       "label": "TypeScript Modules",
@@ -2697,10 +2784,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 9,
       "norm_label": "typescript modules",
       "id": "typescript_modules",
-      "community_name": "Community 8"
+      "community_name": "Community 9"
     },
     {
       "label": "Vibe Coding Roadmap",
@@ -2711,10 +2798,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "vibe coding roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vibe_coding",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "AI Coding Tools",
@@ -2725,10 +2812,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "ai coding tools",
       "id": "vibe_coding_ai_tools",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "Vibe Coding Practices",
@@ -2739,10 +2826,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "vibe coding practices",
       "id": "vibe_coding_practices",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "AI-Assisted Workflow",
@@ -2753,10 +2840,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "ai-assisted workflow",
       "id": "vibe_coding_workflow",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "Vue Developer Roadmap",
@@ -2767,10 +2854,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "vue developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vue",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "Vue Components",
@@ -2781,10 +2868,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "vue components",
       "id": "vue_components",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "Vue API Styles",
@@ -2795,10 +2882,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "vue api styles",
       "id": "vue_api",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "Vue Routing",
@@ -2809,10 +2896,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "vue routing",
       "id": "vue_routing",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "Vue State Management",
@@ -2823,10 +2910,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "vue state management",
       "id": "vue_state",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "Vue Testing",
@@ -2837,10 +2924,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "vue testing",
       "id": "vue_testing",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "WordPress Roadmap",
@@ -2851,10 +2938,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "wordpress roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "WordPress Themes",
@@ -2865,10 +2952,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "wordpress themes",
       "id": "wordpress_theme",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "WordPress Plugins",
@@ -2879,10 +2966,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "wordpress plugins",
       "id": "wordpress_plugins",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "WordPress Hooks",
@@ -2893,10 +2980,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "wordpress hooks",
       "id": "wordpress_hooks",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "WordPress Security",
@@ -2907,10 +2994,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "wordpress security",
       "id": "wordpress_security",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "WordPress Performance",
@@ -2921,10 +3008,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "wordpress performance",
       "id": "wordpress_performance",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "shadcn/ui Complete Guide",
@@ -2935,110 +3022,444 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "shadcn/ui complete guide",
       "id": "roadmaps_reference_outros_shadcn_guide",
-      "community_name": "Community 7"
+      "community_name": "Community 8"
     },
     {
-      "label": "Graphify Semantic Memory Policy",
+      "label": "RedRise PR Rollout and Audit Document",
       "file_type": "document",
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
       "source_location": null,
-      "community": 12,
-      "norm_label": "graphify semantic memory policy",
-      "id": "platforms_graphify_semantic_memory",
-      "community_name": "Community 12"
+      "source_url": null,
+      "captured_at": "2026-07-26",
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "redrise pr rollout and audit document",
+      "id": "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT",
+      "community_name": "Community 1"
     },
     {
-      "label": "Grupo Correnth",
+      "label": "correnthgroup/docs Repository",
       "file_type": "concept",
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
       "source_location": null,
-      "community": 12,
-      "norm_label": "grupo correnth",
-      "id": "correnth",
-      "community_name": "Community 12"
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "correnthgroup/docs repository",
+      "id": "platforms_correnthgroup_docs",
+      "community_name": "Community 1"
     },
     {
-      "label": "Project Graph Output",
+      "label": "correnthgroup/redrise-operation Repository",
       "file_type": "concept",
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
       "source_location": null,
-      "community": 3,
-      "norm_label": "project graph output",
-      "id": "graphify_out_graph_json",
-      "community_name": "Community 3"
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "correnthgroup/redrise-operation repository",
+      "id": "platforms_correnthgroup_redrise_operation",
+      "community_name": "Community 1"
     },
     {
-      "label": "Canonical Memory",
+      "label": "correnthgroup/redrise-platform Repository",
       "file_type": "concept",
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
       "source_location": null,
-      "community": 3,
-      "norm_label": "canonical memory",
-      "id": "canonical_memory",
-      "community_name": "Community 3"
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "correnthgroup/redrise-platform repository",
+      "id": "platforms_correnthgroup_redrise_platform",
+      "community_name": "Community 1"
     },
     {
-      "label": "Invoke-CorrenthSemanticPush Script",
-      "file_type": "code",
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
-      "source_location": "D:/00_docs/tools/Invoke-CorrenthSemanticPush.ps1",
-      "community": 3,
-      "norm_label": "invoke-correnthsemanticpush script",
-      "id": "invoke_correnth_semantic_push_ps1",
-      "community_name": "Community 3"
-    },
-    {
-      "label": "Pre-push Guard Hook",
-      "file_type": "code",
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
-      "source_location": null,
-      "community": 3,
-      "norm_label": "pre-push guard hook",
-      "id": "pre_push_hook",
-      "community_name": "Community 3"
-    },
-    {
-      "label": "Git LFS",
+      "label": "Gate Zero Procedures",
       "file_type": "concept",
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
       "source_location": null,
-      "community": 3,
-      "norm_label": "git lfs",
-      "id": "git_lfs",
-      "community_name": "Community 3"
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "gate zero procedures",
+      "id": "platforms_gate_zero",
+      "community_name": "Community 1"
     },
     {
-      "label": "GitHub MCP",
+      "label": "Legacy Containment Strategy",
       "file_type": "concept",
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
       "source_location": null,
-      "community": 3,
-      "norm_label": "github mcp",
-      "id": "github_mcp",
-      "community_name": "Community 3"
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "legacy containment strategy",
+      "id": "platforms_legacy_containment",
+      "community_name": "Community 1"
     },
     {
-      "label": "MiniMax Backend",
+      "label": "RedRise Legacy Static Site (Render)",
       "file_type": "concept",
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
       "source_location": null,
-      "community": 3,
-      "norm_label": "minimax backend",
-      "id": "minimax",
-      "community_name": "Community 3"
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "redrise legacy static site (render)",
+      "id": "platforms_render_legacy_static",
+      "community_name": "Community 1"
     },
     {
-      "label": "Community N Naming Convention",
+      "label": "RedRise Legacy Supabase Backend",
       "file_type": "concept",
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
       "source_location": null,
-      "community": 3,
-      "norm_label": "community n naming convention",
-      "id": "community_n",
-      "community_name": "Community 3"
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "redrise legacy supabase backend",
+      "id": "platforms_supabase_legacy",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "RedRise Platform Staging (New)",
+      "file_type": "concept",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "redrise platform staging (new)",
+      "id": "platforms_redrise_platform_staging",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "RedRise Platform Staging Web Service (Render)",
+      "file_type": "concept",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "redrise platform staging web service (render)",
+      "id": "platforms_redrise_platform_staging_render",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "Batch 1: PR #12 - Foundation",
+      "file_type": "concept",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "batch 1: pr #12 - foundation",
+      "id": "platforms_batch_1",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "Batch 2: PRs #13-#15 - Auth & Multi-tenancy",
+      "file_type": "concept",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "batch 2: prs #13-#15 - auth & multi-tenancy",
+      "id": "platforms_batch_2",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "Batch 3: PRs #16-#18 - Bridge, Adapters & Stripe",
+      "file_type": "concept",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "batch 3: prs #16-#18 - bridge, adapters & stripe",
+      "id": "platforms_batch_3",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "Batch 4: PRs #19-#20 - Legal Content & Final Audit",
+      "file_type": "concept",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "batch 4: prs #19-#20 - legal content & final audit",
+      "id": "platforms_batch_4",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "PR #12: Foundation (Supabase/Render, Migrations, Readiness)",
+      "file_type": "concept",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "pr #12: foundation (supabase/render, migrations, readiness)",
+      "id": "platforms_pr_12",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "PR #13: Better Auth",
+      "file_type": "concept",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "pr #13: better auth",
+      "id": "platforms_pr_13",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "PR #14: Two Companies",
+      "file_type": "concept",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "pr #14: two companies",
+      "id": "platforms_pr_14",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "PR #15: Cross-tenant Negation & UUIDs",
+      "file_type": "concept",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "pr #15: cross-tenant negation & uuids",
+      "id": "platforms_pr_15",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "PR #16: Secure Bridge",
+      "file_type": "concept",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "pr #16: secure bridge",
+      "id": "platforms_pr_16",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "PR #17: Adapters & BYOK Linux",
+      "file_type": "concept",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "pr #17: adapters & byok linux",
+      "id": "platforms_pr_17",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "PR #18: Stripe Test Mode",
+      "file_type": "concept",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "pr #18: stripe test mode",
+      "id": "platforms_pr_18",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "PR #19: Legal Content & Privacy",
+      "file_type": "concept",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "pr #19: legal content & privacy",
+      "id": "platforms_pr_19",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "PR #20: Final Audit & Graphify Reconstruction",
+      "file_type": "concept",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "pr #20: final audit & graphify reconstruction",
+      "id": "platforms_pr_20",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "prepareIssueWorkspaceInputs Interface",
+      "file_type": "concept",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "prepareissueworkspaceinputs interface",
+      "id": "platforms_prepare_issue_workspace_inputs",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "publishWorkspaceOutputs Interface",
+      "file_type": "concept",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "publishworkspaceoutputs interface",
+      "id": "platforms_publish_workspace_outputs",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "POST /api/billing/stripe/webhook",
+      "file_type": "concept",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "post /api/billing/stripe/webhook",
+      "id": "platforms_api_billing_stripe_webhook",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "GET /api/companies/:companyId/billing",
+      "file_type": "concept",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "get /api/companies/:companyid/billing",
+      "id": "platforms_api_companies_billing",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "POST /api/companies/:companyId/billing/checkout",
+      "file_type": "concept",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "post /api/companies/:companyid/billing/checkout",
+      "id": "platforms_api_companies_billing_checkout",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "POST /api/companies/:companyId/billing/portal",
+      "file_type": "concept",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "post /api/companies/:companyid/billing/portal",
+      "id": "platforms_api_companies_billing_portal",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "Audit Procedures",
+      "file_type": "concept",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "audit procedures",
+      "id": "platforms_audit_procedures",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "Legal Content Requirements (Privacy Policy, Terms, AUP, Subprocessors)",
+      "file_type": "concept",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "legal content requirements (privacy policy, terms, aup, subprocessors)",
+      "id": "platforms_legal_content_blockers",
+      "community_name": "Community 1"
     }
   ],
   "links": [
@@ -3411,16 +3832,6 @@
       "target": "graphify"
     },
     {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "redrise_pr_rollout_audit",
-      "target": "graphify"
-    },
-    {
       "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -3449,56 +3860,6 @@
       "weight": 1.0,
       "source": "prompt_engineer",
       "target": "paperclip"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "REPOSITORIES.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "repositories_correnthgroup_docs",
-      "target": "correnth_group"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "REPOSITORIES.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "repositories_correnthgroup_redrise_platform",
-      "target": "nextjs"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "REPOSITORIES.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "repositories_correnthgroup_redrise_platform",
-      "target": "redrise"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "REPOSITORIES.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "repositories_correnthgroup_redrise_platform",
-      "target": "supabase"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "REPOSITORIES.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "repositories_correnthgroup_redrise_operation",
-      "target": "redrise"
     },
     {
       "relation": "conceptually_related_to",
@@ -3592,6 +3953,16 @@
     },
     {
       "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "REPOSITORIES.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_correnthgroup_docs",
+      "target": "correnth_group"
+    },
+    {
+      "relation": "conceptually_related_to",
       "confidence": "INFERRED",
       "confidence_score": 0.75,
       "source_file": "roadmaps_reference/Role-based Roadmaps/ROADMAP_AI_DATA_SCIENTIST.md",
@@ -3664,6 +4035,16 @@
       "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "REPOSITORIES.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_correnthgroup_redrise_platform",
+      "target": "supabase"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "decisions/CORRENTH_UI_AND_TECH_STACK_STANDARD_v1.md",
       "source_location": null,
       "weight": 1.0,
@@ -3678,6 +4059,16 @@
       "source_location": null,
       "weight": 1.0,
       "source": "decision_correnth_ui_tech_stack",
+      "target": "nextjs"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "REPOSITORIES.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_correnthgroup_redrise_platform",
       "target": "nextjs"
     },
     {
@@ -3734,6 +4125,26 @@
       "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "REPOSITORIES.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_correnthgroup_redrise_operation",
+      "target": "redrise"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "REPOSITORIES.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_correnthgroup_redrise_platform",
+      "target": "redrise"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
       "source_location": null,
       "weight": 1.0,
@@ -3749,6 +4160,56 @@
       "weight": 1.0,
       "source": "decision_redrise_canonical_product",
       "target": "gauss"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "correnth",
+      "target": "platforms_graphify_semantic_memory"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "weight": 0.6,
+      "source": "github_mcp",
+      "target": "invoke_correnth_semantic_push_ps1"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "invoke_correnth_semantic_push_ps1",
+      "target": "minimax"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "weight": 0.8,
+      "source": "pre_push_hook",
+      "target": "invoke_correnth_semantic_push_ps1"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "pre_push_hook",
+      "target": "git_lfs"
     },
     {
       "relation": "references",
@@ -5481,54 +5942,494 @@
       "target": "wordpress_theme"
     },
     {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT",
+      "target": "platforms_audit_procedures"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT",
+      "target": "platforms_correnthgroup_docs"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT",
+      "target": "platforms_correnthgroup_redrise_operation"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT",
+      "target": "platforms_correnthgroup_redrise_platform"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT",
+      "target": "platforms_gate_zero"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT",
+      "target": "platforms_legacy_containment"
+    },
+    {
       "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "correnth",
-      "target": "platforms_graphify_semantic_memory"
+      "source": "platforms_correnthgroup_docs",
+      "target": "platforms_pr_12"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_correnthgroup_redrise_operation",
+      "target": "platforms_pr_13"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_correnthgroup_redrise_platform",
+      "target": "platforms_pr_12"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_correnthgroup_redrise_platform",
+      "target": "platforms_pr_13"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_correnthgroup_redrise_platform",
+      "target": "platforms_pr_14"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_correnthgroup_redrise_platform",
+      "target": "platforms_pr_15"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_correnthgroup_redrise_platform",
+      "target": "platforms_pr_16"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_correnthgroup_redrise_platform",
+      "target": "platforms_pr_17"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_correnthgroup_redrise_platform",
+      "target": "platforms_pr_18"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_correnthgroup_redrise_platform",
+      "target": "platforms_pr_19"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_correnthgroup_redrise_platform",
+      "target": "platforms_pr_20"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_legacy_containment",
+      "target": "platforms_render_legacy_static"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_legacy_containment",
+      "target": "platforms_supabase_legacy"
+    },
+    {
+      "relation": "creates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_pr_12",
+      "target": "platforms_redrise_platform_staging"
+    },
+    {
+      "relation": "creates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_pr_12",
+      "target": "platforms_redrise_platform_staging_render"
+    },
+    {
+      "relation": "precedes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_batch_1",
+      "target": "platforms_batch_2"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_batch_1",
+      "target": "platforms_pr_12"
+    },
+    {
+      "relation": "precedes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_batch_2",
+      "target": "platforms_batch_3"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_batch_2",
+      "target": "platforms_pr_13"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_batch_2",
+      "target": "platforms_pr_14"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_batch_2",
+      "target": "platforms_pr_15"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_batch_3",
+      "target": "platforms_api_billing_stripe_webhook"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_batch_3",
+      "target": "platforms_api_companies_billing"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_batch_3",
+      "target": "platforms_api_companies_billing_checkout"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_batch_3",
+      "target": "platforms_api_companies_billing_portal"
+    },
+    {
+      "relation": "precedes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_batch_3",
+      "target": "platforms_batch_4"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_batch_3",
+      "target": "platforms_pr_16"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_batch_3",
+      "target": "platforms_pr_17"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_batch_3",
+      "target": "platforms_pr_18"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_batch_3",
+      "target": "platforms_prepare_issue_workspace_inputs"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_batch_3",
+      "target": "platforms_publish_workspace_outputs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_batch_4",
+      "target": "platforms_pr_19"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_batch_4",
+      "target": "platforms_pr_20"
     },
     {
       "relation": "conceptually_related_to",
       "confidence": "INFERRED",
-      "confidence_score": 0.75,
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
-      "source_location": null,
-      "weight": 0.6,
-      "source": "github_mcp",
-      "target": "invoke_correnth_semantic_push_ps1"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "invoke_correnth_semantic_push_ps1",
-      "target": "minimax"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "confidence_score": 0.8,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
       "source_location": null,
       "weight": 0.8,
-      "source": "pre_push_hook",
-      "target": "invoke_correnth_semantic_push_ps1"
+      "source": "platforms_pr_12",
+      "target": "platforms_pr_13"
     },
     {
-      "relation": "calls",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 0.8,
+      "source": "platforms_pr_13",
+      "target": "platforms_pr_14"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 0.8,
+      "source": "platforms_pr_14",
+      "target": "platforms_pr_15"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 0.8,
+      "source": "platforms_pr_15",
+      "target": "platforms_pr_16"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 0.8,
+      "source": "platforms_pr_16",
+      "target": "platforms_pr_17"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 0.8,
+      "source": "platforms_pr_17",
+      "target": "platforms_pr_18"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 0.8,
+      "source": "platforms_pr_18",
+      "target": "platforms_pr_19"
+    },
+    {
+      "relation": "blocked_by",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "pre_push_hook",
-      "target": "git_lfs"
+      "source": "platforms_pr_19",
+      "target": "platforms_legal_content_blockers"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_pr_20",
+      "target": "platforms_pr_19"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_audit_procedures",
+      "target": "platforms_pr_20"
     }
   ],
   "hyperedges": [
@@ -5606,6 +6507,34 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "decisions/GAUSS_AGENT_ORGANIZATION_AND_LANGUAGE_v1.md"
+    },
+    {
+      "id": "semantic_refresh_flow",
+      "label": "Semantic Refresh Pipeline",
+      "nodes": [
+        "invoke_correnth_semantic_push_ps1",
+        "minimax",
+        "graphify",
+        "graphify_out_graph_json"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md"
+    },
+    {
+      "id": "git_push_guardian",
+      "label": "Git Push Guardian Chain",
+      "nodes": [
+        "pre_push_hook",
+        "invoke_correnth_semantic_push_ps1",
+        "git_lfs",
+        "github_mcp"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md"
     },
     {
       "id": "role_based_roadmaps",
@@ -5796,33 +6725,48 @@
       "source_file": "roadmaps_reference/Skill-based Roadmaps/ROADMAP_VIBE_CODING.md"
     },
     {
-      "id": "semantic_refresh_flow",
-      "label": "Semantic Refresh Pipeline",
+      "id": "platforms_redrise_pr_rollout_phases",
+      "label": "RedRise PR Rollout Phases 1-4",
       "nodes": [
-        "invoke_correnth_semantic_push_ps1",
-        "minimax",
-        "graphify",
-        "graphify_out_graph_json"
+        "platforms_batch_1",
+        "platforms_batch_2",
+        "platforms_batch_3",
+        "platforms_batch_4"
       ],
-      "relation": "participate_in",
+      "relation": "form",
       "confidence": "EXTRACTED",
-      "confidence_score": 0.9,
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md"
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md"
     },
     {
-      "id": "git_push_guardian",
-      "label": "Git Push Guardian Chain",
+      "id": "platforms_correnthgroup_repositories",
+      "label": "CorrenthGroup Repositories",
       "nodes": [
-        "pre_push_hook",
-        "invoke_correnth_semantic_push_ps1",
-        "git_lfs",
-        "github_mcp"
+        "platforms_correnthgroup_docs",
+        "platforms_correnthgroup_redrise_operation",
+        "platforms_correnthgroup_redrise_platform"
       ],
-      "relation": "participate_in",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md"
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md"
+    },
+    {
+      "id": "platforms_batch_3_stripe_billing_interfaces",
+      "label": "Batch 3 Required Billing Interfaces",
+      "nodes": [
+        "platforms_api_billing_stripe_webhook",
+        "platforms_api_companies_billing",
+        "platforms_api_companies_billing_checkout",
+        "platforms_api_companies_billing_portal",
+        "platforms_prepare_issue_workspace_inputs",
+        "platforms_publish_workspace_outputs"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md"
     }
   ],
-  "built_at_commit": "d10adb0d9a0f02160b68ca16b7093acb243b57db"
+  "built_at_commit": "ea254b519c691895927ffe44ee7b288a5fc79514"
 }
