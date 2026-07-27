@@ -24,7 +24,10 @@ function Invoke-GraphifyPython {
 
   # The user-level graphify.exe shim is blocked by Windows Code Integrity.
   # uv executes the official Python module in an isolated environment instead.
-  & uv run --with 'graphifyy[openai]' python -m graphify @GraphifyArguments
+  # The platform corpus includes SQL migrations and Render HCL. Keep the
+  # optional parsers in the isolated uv environment so AST coverage does not
+  # silently omit either language.
+  & uv run --with 'graphifyy[openai,sql,terraform]' python -m graphify @GraphifyArguments
   if ($LASTEXITCODE -ne 0) { throw "Graphify Python module failed." }
 }
 
