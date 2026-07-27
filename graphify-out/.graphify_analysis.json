@@ -73,31 +73,33 @@
       "platforms_supabase_legacy"
     ],
     "2": [
-      "developer_roadmap_repo",
-      "roadmaps_reference_skill_based_roadmaps_roadmap_terraform",
-      "roadmaps_reference_skill_based_roadmaps_roadmap_vibe_coding",
-      "roadmaps_reference_skill_based_roadmaps_roadmap_vue",
-      "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress",
-      "terraform_cicd",
-      "terraform_fundamentals",
-      "terraform_modules",
-      "terraform_provisioners",
-      "terraform_security",
-      "terraform_state",
-      "terraform_testing",
-      "vibe_coding_ai_tools",
-      "vibe_coding_practices",
-      "vibe_coding_workflow",
-      "vue_api",
-      "vue_components",
-      "vue_routing",
-      "vue_state",
-      "vue_testing",
-      "wordpress_hooks",
-      "wordpress_performance",
-      "wordpress_plugins",
-      "wordpress_security",
-      "wordpress_theme"
+      "canonical_memory",
+      "code_integrity",
+      "codex_skills_graphify_skill",
+      "community_n",
+      "git_lfs",
+      "github_mcp",
+      "graph_report_md",
+      "graphify",
+      "graphify_add_watch",
+      "graphify_affected_command",
+      "graphify_explain_command",
+      "graphify_exports",
+      "graphify_github_merge",
+      "graphify_hooks",
+      "graphify_path_command",
+      "graphify_query_command",
+      "graphify_stack_recommendation_md",
+      "graphify_tool",
+      "graphify_transcribe",
+      "graphify_update",
+      "graphifyy_package",
+      "invoke_correnth_semantic_push_ps1",
+      "minimax",
+      "minimax_model",
+      "pre_push_hook",
+      "skill_reference_extraction_spec",
+      "skill_reference_query"
     ],
     "3": [
       "developer_roadmap_repository",
@@ -127,49 +129,36 @@
       "roadmaps_reference_skill_based_roadmaps_roadmap_sql"
     ],
     "4": [
-      "agents_md",
-      "canonical_memory",
-      "codex_skills_graphify_skill",
-      "community_n",
-      "git_lfs",
-      "github_mcp",
-      "graphify",
-      "graphify_add_watch",
-      "graphify_exports",
-      "graphify_github_merge",
-      "graphify_hooks",
-      "graphify_out_graph_json",
-      "graphify_stack_recommendation_md",
-      "graphify_transcribe",
-      "graphify_update",
-      "invoke_correnth_semantic_push_ps1",
-      "minimax",
-      "pre_push_hook",
-      "skill_reference_extraction_spec",
-      "skill_reference_query"
+      "developer_roadmap_repo",
+      "roadmaps_reference_skill_based_roadmaps_roadmap_typescript",
+      "roadmaps_reference_skill_based_roadmaps_roadmap_vibe_coding",
+      "roadmaps_reference_skill_based_roadmaps_roadmap_vue",
+      "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress",
+      "typescript_classes",
+      "typescript_functions",
+      "typescript_generics",
+      "typescript_interfaces",
+      "typescript_modules",
+      "typescript_types",
+      "vibe_coding_ai_tools",
+      "vibe_coding_practices",
+      "vibe_coding_workflow",
+      "vue_api",
+      "vue_components",
+      "vue_routing",
+      "vue_state",
+      "vue_testing",
+      "wordpress_hooks",
+      "wordpress_performance",
+      "wordpress_plugins",
+      "wordpress_security",
+      "wordpress_theme"
     ],
     "5": [
-      "adgency",
-      "correnth_group",
-      "current_direction_md",
-      "decision_correnth_ecosystem_portfolio",
-      "decision_redrise_canonical_product",
-      "findfee",
-      "gauss",
-      "gauss_organization",
-      "paperclip",
-      "prompt_engineer",
-      "redrise",
-      "redrose",
-      "repositories_correnthgroup_studio_findfee",
-      "roadmaps_reference_role_based_roadmaps_roadmap_ai_data_scientist",
-      "roadmaps_reference_role_based_roadmaps_roadmap_ai_engineer",
-      "roadmaps_reference_role_based_roadmaps_roadmap_backend"
-    ],
-    "6": [
       "google_sre_book",
       "opentelemetry_docs",
       "roadmaps_reference_skill_based_roadmaps_roadmap_system_design",
+      "roadmaps_reference_skill_based_roadmaps_roadmap_terraform",
       "system_design_architectures",
       "system_design_cache",
       "system_design_communication",
@@ -179,7 +168,36 @@
       "system_design_observability",
       "system_design_patterns",
       "system_design_reliability",
-      "system_design_security"
+      "system_design_security",
+      "terraform_cicd",
+      "terraform_fundamentals",
+      "terraform_modules",
+      "terraform_provisioners",
+      "terraform_security",
+      "terraform_state",
+      "terraform_testing"
+    ],
+    "6": [
+      "adgency",
+      "archived",
+      "correnth_group",
+      "current_direction_md",
+      "d_00_docs",
+      "decision_correnth_ecosystem_portfolio",
+      "decision_redrise_canonical_product",
+      "findfee",
+      "gauss",
+      "gauss_organization",
+      "graphify_out_graph_json",
+      "legacy",
+      "paperclip",
+      "prompt_engineer",
+      "redrise",
+      "redrose",
+      "repositories_correnthgroup_studio_findfee",
+      "roadmaps_reference_role_based_roadmaps_roadmap_ai_data_scientist",
+      "roadmaps_reference_role_based_roadmaps_roadmap_ai_engineer",
+      "roadmaps_reference_role_based_roadmaps_roadmap_backend"
     ],
     "7": [
       "roadmaps_reference_role_based_roadmaps_roadmap_devops",
@@ -208,15 +226,6 @@
       "tailwind_css"
     ],
     "9": [
-      "roadmaps_reference_skill_based_roadmaps_roadmap_typescript",
-      "typescript_classes",
-      "typescript_functions",
-      "typescript_generics",
-      "typescript_interfaces",
-      "typescript_modules",
-      "typescript_types"
-    ],
-    "10": [
       "roadmaps_reference_tools_enrich_roadmapreferences",
       "roadmaps_reference_tools_enrich_roadmapreferences_add_uniqueitem",
       "roadmaps_reference_tools_enrich_roadmapreferences_convertto_plaintext",
@@ -225,7 +234,7 @@
       "roadmaps_reference_tools_enrich_roadmapreferences_get_roadmaptopics",
       "roadmaps_reference_tools_enrich_roadmapreferences_get_topicfocus"
     ],
-    "11": [
+    "10": [
       "tools_invoke_correnthsemanticpush",
       "tools_invoke_correnthsemanticpush_get_artifacthash",
       "tools_invoke_correnthsemanticpush_get_graphsnapshot",
@@ -234,24 +243,27 @@
       "tools_invoke_correnthsemanticpush_write_deterministiccommunitylabels",
       "tools_invoke_correnthsemanticpush_write_provenance"
     ],
-    "12": [
+    "11": [
       "roadmaps_reference_role_based_roadmaps_roadmap_bi_analyst",
       "roadmaps_reference_role_based_roadmaps_roadmap_data_analyst",
       "roadmaps_reference_role_based_roadmaps_roadmap_data_engineer",
       "roadmaps_reference_role_based_roadmaps_roadmap_machine_learning",
       "roadmaps_reference_role_based_roadmaps_roadmap_mlops"
     ],
-    "13": [
+    "12": [
       "correnth",
       "platforms_graphify_semantic_memory"
     ],
-    "14": [
+    "13": [
       "roadmaps_reference_role_based_roadmaps_roadmap_blockchain",
       "roadmaps_reference_role_based_roadmaps_roadmap_cyber_security"
     ],
-    "15": [
+    "14": [
       "roadmaps_reference_role_based_roadmaps_roadmap_game_developer",
       "roadmaps_reference_role_based_roadmaps_roadmap_server_side_game_developer"
+    ],
+    "15": [
+      "agents_md"
     ],
     "16": [
       "dotnet_platform"
@@ -281,17 +293,17 @@
   "cohesion": {
     "0": 0.10510510510510511,
     "1": 0.1053763440860215,
-    "2": 0.08,
+    "2": 0.07692307692307693,
     "3": 0.10333333333333333,
-    "4": 0.10526315789473684,
-    "5": 0.16666666666666666,
-    "6": 0.20512820512820512,
+    "4": 0.08333333333333333,
+    "5": 0.11428571428571428,
+    "6": 0.12631578947368421,
     "7": 0.16666666666666666,
     "8": 0.2222222222222222,
-    "9": 0.2857142857142857,
+    "9": 0.42857142857142855,
     "10": 0.42857142857142855,
-    "11": 0.42857142857142855,
-    "12": 0.6,
+    "11": 0.6,
+    "12": 1.0,
     "13": 1.0,
     "14": 1.0,
     "15": 1.0,
@@ -322,13 +334,8 @@
     },
     {
       "id": "graphify",
-      "label": "Graphify",
-      "degree": 17
-    },
-    {
-      "id": "correnth_group",
-      "label": "Correnth Group",
-      "degree": 13
+      "label": "Graphify Semantic Index",
+      "degree": 15
     },
     {
       "id": "platforms_correnthgroup_redrise_platform",
@@ -336,13 +343,18 @@
       "degree": 13
     },
     {
-      "id": "roadmaps_reference_skill_based_roadmaps_roadmap_system_design",
-      "label": "System Design Roadmap",
-      "degree": 11
+      "id": "correnth_group",
+      "label": "Correnth Group",
+      "degree": 12
     },
     {
       "id": "platforms_batch_3",
       "label": "Batch 3: PRs #16-#18 - Bridge, Adapters & Stripe",
+      "degree": 11
+    },
+    {
+      "id": "roadmaps_reference_skill_based_roadmaps_roadmap_system_design",
+      "label": "System Design Roadmap",
       "degree": 11
     },
     {
@@ -416,23 +428,23 @@
   "questions": [
     {
       "type": "bridge_node",
-      "question": "Why does `correnthgroup/redrise-platform Repository` connect `Community 1` to `Community 8`, `Community 5`?",
-      "why": "High betweenness centrality (0.152) - this node is a cross-community bridge."
+      "question": "Why does `correnthgroup/redrise-platform Repository` connect `Community 1` to `Community 8`, `Community 6`?",
+      "why": "High betweenness centrality (0.170) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `RedRise` connect `Community 6` to `Community 1`?",
+      "why": "High betweenness centrality (0.137) - this node is a cross-community bridge."
     },
     {
       "type": "bridge_node",
       "question": "Why does `Developer Roadmap Repository` connect `Community 3` to `Community 8`?",
-      "why": "High betweenness centrality (0.130) - this node is a cross-community bridge."
-    },
-    {
-      "type": "verify_inferred",
-      "question": "Are the 3 inferred relationships involving `Correnth Group` (e.g. with `AI and Data Scientist Roadmap` and `AI Engineer Roadmap`) actually correct?",
-      "why": "`Correnth Group` has 3 INFERRED edges - model-reasoned connections that need verification."
+      "why": "High betweenness centrality (0.132) - this node is a cross-community bridge."
     },
     {
       "type": "isolated_nodes",
       "question": "What connects `Graphify Skill for Codex`, `Graphify Add Watch Reference`, `Graphify Exports Reference` to the rest of the system?",
-      "why": "108 weakly-connected nodes found - possible documentation gaps or missing edges."
+      "why": "115 weakly-connected nodes found - possible documentation gaps or missing edges."
     },
     {
       "type": "low_cohesion",
@@ -447,7 +459,7 @@
     {
       "type": "low_cohesion",
       "question": "Should `Community 2` be split into smaller, more focused modules?",
-      "why": "Cohesion score 0.08 - nodes in this community are weakly interconnected."
+      "why": "Cohesion score 0.07692307692307693 - nodes in this community are weakly interconnected."
     }
   ]
 }
