@@ -20,6 +20,49 @@
         "source_file": ".codex/skills/graphify/references/add-watch.md"
       },
       {
+        "id": "graphify_discovery_commands",
+        "label": "Comandos de Descoberta Graphify",
+        "nodes": [
+          "graphify_query_command",
+          "graphify_path_command",
+          "graphify_explain_command",
+          "graphify_affected_command"
+        ],
+        "relation": "implement",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "AGENTS.md"
+      },
+      {
+        "id": "correnth_authority_hierarchy",
+        "label": "Hierarquia de Autoridade Correnth",
+        "nodes": [
+          "d_00_docs",
+          "graphify_out_graph_json",
+          "current_direction_md",
+          "archived",
+          "legacy"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.9,
+        "source_file": "AGENTS.md"
+      },
+      {
+        "id": "correnth_semantic_infrastructure",
+        "label": "Infraestrutura Sem\u00e2ntica Correnth",
+        "nodes": [
+          "invoke_correnth_semantic_push_ps1",
+          "graphifyy_package",
+          "minimax_model",
+          "graphify_out_graph_json"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.85,
+        "source_file": "AGENTS.md"
+      },
+      {
         "id": "correnth_product_portfolio",
         "label": "Correnth Product Portfolio",
         "nodes": [
@@ -124,9 +167,7 @@
         "id": "platforms_correnthgroup_repositories",
         "label": "CorrenthGroup Repositories",
         "nodes": [
-          "platforms_correnthgroup_docs",
-          "platforms_correnthgroup_redrise_operation",
-          "platforms_correnthgroup_redrise_platform"
+          "platforms_correnthgroup_docs"
         ],
         "relation": "form",
         "confidence": "EXTRACTED",
@@ -338,47 +379,46 @@
         "source_file": "roadmaps_reference/Skill-based Roadmaps/ROADMAP_VIBE_CODING.md"
       },
       {
-        "id": "graphify_discovery_commands",
-        "label": "Comandos de Descoberta Graphify",
+        "id": "correnth_operational_architecture",
+        "label": "Correnth Operational Architecture",
         "nodes": [
-          "graphify_query_command",
-          "graphify_path_command",
-          "graphify_explain_command",
-          "graphify_affected_command"
-        ],
-        "relation": "implement",
-        "confidence": "EXTRACTED",
-        "confidence_score": 1.0,
-        "source_file": "AGENTS.md"
-      },
-      {
-        "id": "correnth_authority_hierarchy",
-        "label": "Hierarquia de Autoridade Correnth",
-        "nodes": [
-          "d_00_docs",
-          "graphify_out_graph_json",
-          "current_direction_md",
-          "archived",
-          "legacy"
+          "redrise",
+          "redrise_platform",
+          "redrise_operation",
+          "graphify",
+          "minimax_key"
         ],
         "relation": "form",
         "confidence": "EXTRACTED",
-        "confidence_score": 0.9,
-        "source_file": "AGENTS.md"
+        "confidence_score": 0.95,
+        "source_file": "CURRENT_DIRECTION.md"
       },
       {
-        "id": "correnth_semantic_infrastructure",
-        "label": "Infraestrutura Sem\u00e2ntica Correnth",
+        "id": "redrise_product_and_company",
+        "label": "RedRise Product and Internal Company",
         "nodes": [
-          "invoke_correnth_semantic_push_ps1",
-          "graphifyy_package",
-          "minimax_model",
-          "graphify_out_graph_json"
+          "redrise",
+          "redrise_canonical_product",
+          "redrise_platform_operation"
         ],
-        "relation": "participate_in",
+        "relation": "form",
         "confidence": "EXTRACTED",
-        "confidence_score": 0.85,
-        "source_file": "AGENTS.md"
+        "confidence_score": 0.95,
+        "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md"
+      },
+      {
+        "id": "redrise_capability_families",
+        "label": "RedRise Capability Families",
+        "nodes": [
+          "redrise_automate",
+          "redrise_build",
+          "redrise_operate",
+          "redrise_assurance"
+        ],
+        "relation": "implement",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.95,
+        "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md"
       }
     ]
   },
@@ -466,10 +506,10 @@
       "source_file": "tools/Install-CorrenthSemanticPushGuard.ps1",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 23,
+      "community": 22,
       "norm_label": "install-correnthsemanticpushguard.ps1",
       "id": "tools_install_correnthsemanticpushguard",
-      "community_name": "Community 23"
+      "community_name": "Community 22"
     },
     {
       "label": "Invoke-CorrenthSemanticPush.ps1",
@@ -557,10 +597,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "norm_label": "graphify skill for codex",
       "id": "codex_skills_graphify_skill",
-      "community_name": "Community 2"
+      "community_name": "Community 1"
     },
     {
       "label": "Graphify Add Watch Reference",
@@ -571,10 +611,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "norm_label": "graphify add watch reference",
       "id": "graphify_add_watch",
-      "community_name": "Community 2"
+      "community_name": "Community 1"
     },
     {
       "label": "Graphify Exports Reference",
@@ -585,10 +625,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "norm_label": "graphify exports reference",
       "id": "graphify_exports",
-      "community_name": "Community 2"
+      "community_name": "Community 1"
     },
     {
       "label": "Graphify Extraction Spec Reference",
@@ -599,10 +639,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "norm_label": "graphify extraction spec reference",
       "id": "skill_reference_extraction_spec",
-      "community_name": "Community 2"
+      "community_name": "Community 1"
     },
     {
       "label": "Graphify GitHub Clone and Merge Reference",
@@ -613,10 +653,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "norm_label": "graphify github clone and merge reference",
       "id": "graphify_github_merge",
-      "community_name": "Community 2"
+      "community_name": "Community 1"
     },
     {
       "label": "Graphify Hooks Reference",
@@ -627,10 +667,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "norm_label": "graphify hooks reference",
       "id": "graphify_hooks",
-      "community_name": "Community 2"
+      "community_name": "Community 1"
     },
     {
       "label": "Graphify Query Reference",
@@ -641,10 +681,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "norm_label": "graphify query reference",
       "id": "skill_reference_query",
-      "community_name": "Community 2"
+      "community_name": "Community 1"
     },
     {
       "label": "Graphify Transcribe Reference",
@@ -655,10 +695,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "norm_label": "graphify transcribe reference",
       "id": "graphify_transcribe",
-      "community_name": "Community 2"
+      "community_name": "Community 1"
     },
     {
       "label": "Graphify Update Reference",
@@ -669,24 +709,236 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "norm_label": "graphify update reference",
       "id": "graphify_update",
-      "community_name": "Community 2"
+      "community_name": "Community 1"
     },
     {
-      "label": "Correnth Current Direction",
+      "label": "AGENTS.md Documenta\u00e7\u00e3o Correnth",
       "file_type": "document",
-      "source_file": "CURRENT_DIRECTION.md",
+      "source_file": "AGENTS.md",
       "source_location": null,
       "source_url": null,
-      "captured_at": "2026-07-24",
+      "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
-      "norm_label": "correnth current direction",
+      "community": 14,
+      "norm_label": "agents.md documentacao correnth",
+      "id": "agents_md",
+      "community_name": "Community 14"
+    },
+    {
+      "label": "D:\\00_docs Diret\u00f3rio Fonte de Verdade",
+      "file_type": "concept",
+      "source_file": "AGENTS.md",
+      "source_location": "Autoridade e descoberta",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "d:\\00_docs diretorio fonte de verdade",
+      "id": "d_00_docs",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "Project Graph Output",
+      "file_type": "concept",
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "community": 1,
+      "norm_label": "project graph output",
+      "id": "graphify_out_graph_json",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "CURRENT_DIRECTION.md",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "Autoridade e descoberta",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "current_direction.md",
       "id": "current_direction_md",
-      "community_name": "Community 6"
+      "community_name": "Community 1"
+    },
+    {
+      "label": "Diret\u00f3rio Archived",
+      "file_type": "concept",
+      "source_file": "AGENTS.md",
+      "source_location": "Autoridade e descoberta",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "diretorio archived",
+      "id": "archived",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "Diret\u00f3rio _legacy",
+      "file_type": "concept",
+      "source_file": "AGENTS.md",
+      "source_location": "Autoridade e descoberta",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "diretorio _legacy",
+      "id": "legacy",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "Graphify Ferramenta Sem\u00e2ntica",
+      "file_type": "concept",
+      "source_file": "AGENTS.md",
+      "source_location": "Graphify sem\u00e2ntico",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "graphify ferramenta semantica",
+      "id": "graphify_tool",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "Invoke-CorrenthSemanticPush Script",
+      "file_type": "code",
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": "D:/00_docs/tools/Invoke-CorrenthSemanticPush.ps1",
+      "community": 1,
+      "norm_label": "invoke-correnthsemanticpush script",
+      "id": "invoke_correnth_semantic_push_ps1",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "graphifyy[openai,sql,terraform] Pacote",
+      "file_type": "concept",
+      "source_file": "AGENTS.md",
+      "source_location": "Graphify sem\u00e2ntico",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "graphifyy[openai,sql,terraform] pacote",
+      "id": "graphifyy_package",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "MiniMax Modelo AI",
+      "file_type": "concept",
+      "source_file": "AGENTS.md",
+      "source_location": "Graphify sem\u00e2ntico",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "minimax modelo ai",
+      "id": "minimax_model",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "GitHub MCP",
+      "file_type": "concept",
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "community": 1,
+      "norm_label": "github mcp",
+      "id": "github_mcp",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "Code Integrity Bloqueio",
+      "file_type": "concept",
+      "source_file": "AGENTS.md",
+      "source_location": "Graphify sem\u00e2ntico",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "code integrity bloqueio",
+      "id": "code_integrity",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "GRAPH_REPORT.md",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "Graphify sem\u00e2ntico",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "graph_report.md",
+      "id": "graph_report_md",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "query Comando Graphify",
+      "file_type": "concept",
+      "source_file": "AGENTS.md",
+      "source_location": "Graphify sem\u00e2ntico",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "query comando graphify",
+      "id": "graphify_query_command",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "path Comando Graphify",
+      "file_type": "concept",
+      "source_file": "AGENTS.md",
+      "source_location": "Graphify sem\u00e2ntico",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "path comando graphify",
+      "id": "graphify_path_command",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "explain Comando Graphify",
+      "file_type": "concept",
+      "source_file": "AGENTS.md",
+      "source_location": "Graphify sem\u00e2ntico",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "explain comando graphify",
+      "id": "graphify_explain_command",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "affected Comando Graphify",
+      "file_type": "concept",
+      "source_file": "AGENTS.md",
+      "source_location": "Graphify sem\u00e2ntico",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "affected comando graphify",
+      "id": "graphify_affected_command",
+      "community_name": "Community 1"
     },
     {
       "label": "Graphify Stack Recommendation",
@@ -697,10 +949,10 @@
       "captured_at": "2026-07-14",
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "norm_label": "graphify stack recommendation",
       "id": "graphify_stack_recommendation_md",
-      "community_name": "Community 2"
+      "community_name": "Community 1"
     },
     {
       "label": "Prompt Engineer Template",
@@ -711,10 +963,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 3,
       "norm_label": "prompt engineer template",
       "id": "prompt_engineer",
-      "community_name": "Community 6"
+      "community_name": "Community 3"
     },
     {
       "label": "Correnth Repository Map",
@@ -725,10 +977,10 @@
       "captured_at": "2026-07-25",
       "author": "Grupo Correnth",
       "contributor": null,
-      "community": 17,
+      "community": 16,
       "norm_label": "correnth repository map",
       "id": "repositories_md",
-      "community_name": "Community 17"
+      "community_name": "Community 16"
     },
     {
       "label": "correnthgroup/studio_findfee Repository",
@@ -739,10 +991,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 3,
       "norm_label": "correnthgroup/studio_findfee repository",
       "id": "repositories_correnthgroup_studio_findfee",
-      "community_name": "Community 6"
+      "community_name": "Community 3"
     },
     {
       "label": "Correnth Group",
@@ -753,10 +1005,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 3,
       "norm_label": "correnth group",
       "id": "correnth_group",
-      "community_name": "Community 6"
+      "community_name": "Community 3"
     },
     {
       "label": "RedRose",
@@ -767,10 +1019,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 3,
       "norm_label": "redrose",
       "id": "redrose",
-      "community_name": "Community 6"
+      "community_name": "Community 3"
     },
     {
       "label": "Findfee",
@@ -781,10 +1033,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 3,
       "norm_label": "findfee",
       "id": "findfee",
-      "community_name": "Community 6"
+      "community_name": "Community 3"
     },
     {
       "label": "ADGency",
@@ -795,10 +1047,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 3,
       "norm_label": "adgency",
       "id": "adgency",
-      "community_name": "Community 6"
+      "community_name": "Community 3"
     },
     {
       "label": "Correnth Ecosystem Portfolio and Operating Model",
@@ -809,10 +1061,10 @@
       "captured_at": "2026-07-14",
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 3,
       "norm_label": "correnth ecosystem portfolio and operating model",
       "id": "decision_correnth_ecosystem_portfolio",
-      "community_name": "Community 6"
+      "community_name": "Community 3"
     },
     {
       "label": "Paperclip",
@@ -823,10 +1075,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 3,
       "norm_label": "paperclip",
       "id": "paperclip",
-      "community_name": "Community 6"
+      "community_name": "Community 3"
     },
     {
       "label": "COcorrenth/ui",
@@ -935,162 +1187,90 @@
       "captured_at": "2026-07-22",
       "author": "Grupo Correnth / Board humano",
       "contributor": null,
-      "community": 6,
+      "community": 3,
       "norm_label": "gauss organization",
       "id": "gauss_organization",
-      "community_name": "Community 6"
-    },
-    {
-      "label": "RedRise",
-      "file_type": "concept",
-      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": "2026-07-24",
-      "author": null,
-      "contributor": null,
-      "community": 6,
-      "norm_label": "redrise",
-      "id": "redrise",
-      "community_name": "Community 6"
-    },
-    {
-      "label": "Gauss",
-      "file_type": "concept",
-      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 6,
-      "norm_label": "gauss",
-      "id": "gauss",
-      "community_name": "Community 6"
-    },
-    {
-      "label": "RedRise Canonical Product Decision",
-      "file_type": "document",
-      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": "2026-07-24",
-      "author": "Grupo Correnth",
-      "contributor": null,
-      "community": 6,
-      "norm_label": "redrise canonical product decision",
-      "id": "decision_redrise_canonical_product",
-      "community_name": "Community 6"
+      "community_name": "Community 3"
     },
     {
       "label": "Graphify Semantic Memory Policy",
       "file_type": "document",
       "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
       "source_location": null,
-      "community": 12,
+      "community": 3,
       "norm_label": "graphify semantic memory policy",
       "id": "platforms_graphify_semantic_memory",
-      "community_name": "Community 12"
+      "community_name": "Community 3"
     },
     {
       "label": "Graphify Semantic Index",
       "file_type": "concept",
       "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
       "source_location": null,
-      "community": 2,
+      "community": 1,
       "norm_label": "graphify semantic index",
       "id": "graphify",
-      "community_name": "Community 2"
+      "community_name": "Community 1"
     },
     {
       "label": "Grupo Correnth",
       "file_type": "concept",
       "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
       "source_location": null,
-      "community": 12,
+      "community": 3,
       "norm_label": "grupo correnth",
       "id": "correnth",
-      "community_name": "Community 12"
-    },
-    {
-      "label": "Project Graph Output",
-      "file_type": "concept",
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
-      "source_location": null,
-      "community": 6,
-      "norm_label": "project graph output",
-      "id": "graphify_out_graph_json",
-      "community_name": "Community 6"
+      "community_name": "Community 3"
     },
     {
       "label": "Canonical Memory",
       "file_type": "concept",
       "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
       "source_location": null,
-      "community": 2,
+      "community": 1,
       "norm_label": "canonical memory",
       "id": "canonical_memory",
-      "community_name": "Community 2"
-    },
-    {
-      "label": "Invoke-CorrenthSemanticPush Script",
-      "file_type": "code",
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
-      "source_location": "D:/00_docs/tools/Invoke-CorrenthSemanticPush.ps1",
-      "community": 2,
-      "norm_label": "invoke-correnthsemanticpush script",
-      "id": "invoke_correnth_semantic_push_ps1",
-      "community_name": "Community 2"
+      "community_name": "Community 1"
     },
     {
       "label": "Pre-push Guard Hook",
       "file_type": "code",
       "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
       "source_location": null,
-      "community": 2,
+      "community": 1,
       "norm_label": "pre-push guard hook",
       "id": "pre_push_hook",
-      "community_name": "Community 2"
+      "community_name": "Community 1"
     },
     {
       "label": "Git LFS",
       "file_type": "concept",
       "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
       "source_location": null,
-      "community": 2,
+      "community": 1,
       "norm_label": "git lfs",
       "id": "git_lfs",
-      "community_name": "Community 2"
-    },
-    {
-      "label": "GitHub MCP",
-      "file_type": "concept",
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
-      "source_location": null,
-      "community": 2,
-      "norm_label": "github mcp",
-      "id": "github_mcp",
-      "community_name": "Community 2"
+      "community_name": "Community 1"
     },
     {
       "label": "MiniMax Backend",
       "file_type": "concept",
       "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
       "source_location": null,
-      "community": 2,
+      "community": 1,
       "norm_label": "minimax backend",
       "id": "minimax",
-      "community_name": "Community 2"
+      "community_name": "Community 1"
     },
     {
       "label": "Community N Naming Convention",
       "file_type": "concept",
       "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
       "source_location": null,
-      "community": 2,
+      "community": 1,
       "norm_label": "community n naming convention",
       "id": "community_n",
-      "community_name": "Community 2"
+      "community_name": "Community 1"
     },
     {
       "label": "RedRise PR Rollout and Audit Document",
@@ -1101,10 +1281,10 @@
       "captured_at": "2026-07-26",
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "redrise pr rollout and audit document",
       "id": "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "correnthgroup/docs Repository",
@@ -1115,38 +1295,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "correnthgroup/docs repository",
       "id": "platforms_correnthgroup_docs",
-      "community_name": "Community 1"
-    },
-    {
-      "label": "correnthgroup/redrise-operation Repository",
-      "file_type": "concept",
-      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "correnthgroup/redrise-operation repository",
-      "id": "platforms_correnthgroup_redrise_operation",
-      "community_name": "Community 1"
-    },
-    {
-      "label": "correnthgroup/redrise-platform Repository",
-      "file_type": "concept",
-      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "correnthgroup/redrise-platform repository",
-      "id": "platforms_correnthgroup_redrise_platform",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "Gate Zero Procedures",
@@ -1157,10 +1309,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "gate zero procedures",
       "id": "platforms_gate_zero",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "Legacy Containment Strategy",
@@ -1171,10 +1323,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "legacy containment strategy",
       "id": "platforms_legacy_containment",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "RedRise Legacy Static Site (Render)",
@@ -1185,10 +1337,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "redrise legacy static site (render)",
       "id": "platforms_render_legacy_static",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "RedRise Legacy Supabase Backend",
@@ -1199,10 +1351,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "redrise legacy supabase backend",
       "id": "platforms_supabase_legacy",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "RedRise Platform Staging (New)",
@@ -1213,10 +1365,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "redrise platform staging (new)",
       "id": "platforms_redrise_platform_staging",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "RedRise Platform Staging Web Service (Render)",
@@ -1227,10 +1379,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "redrise platform staging web service (render)",
       "id": "platforms_redrise_platform_staging_render",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "Batch 1: PR #12 - Foundation",
@@ -1241,10 +1393,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "batch 1: pr #12 - foundation",
       "id": "platforms_batch_1",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "Batch 2: PRs #13-#15 - Auth & Multi-tenancy",
@@ -1255,10 +1407,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "batch 2: prs #13-#15 - auth & multi-tenancy",
       "id": "platforms_batch_2",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "Batch 3: PRs #16-#18 - Bridge, Adapters & Stripe",
@@ -1269,10 +1421,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "batch 3: prs #16-#18 - bridge, adapters & stripe",
       "id": "platforms_batch_3",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "Batch 4: PRs #19-#20 - Legal Content & Final Audit",
@@ -1283,10 +1435,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "batch 4: prs #19-#20 - legal content & final audit",
       "id": "platforms_batch_4",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "PR #12: Foundation (Supabase/Render, Migrations, Readiness)",
@@ -1297,10 +1449,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "pr #12: foundation (supabase/render, migrations, readiness)",
       "id": "platforms_pr_12",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "PR #13: Better Auth",
@@ -1311,10 +1463,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "pr #13: better auth",
       "id": "platforms_pr_13",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "PR #14: Two Companies",
@@ -1325,10 +1477,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "pr #14: two companies",
       "id": "platforms_pr_14",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "PR #15: Cross-tenant Negation & UUIDs",
@@ -1339,10 +1491,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "pr #15: cross-tenant negation & uuids",
       "id": "platforms_pr_15",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "PR #16: Secure Bridge",
@@ -1353,10 +1505,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "pr #16: secure bridge",
       "id": "platforms_pr_16",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "PR #17: Adapters & BYOK Linux",
@@ -1367,10 +1519,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "pr #17: adapters & byok linux",
       "id": "platforms_pr_17",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "PR #18: Stripe Test Mode",
@@ -1381,10 +1533,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "pr #18: stripe test mode",
       "id": "platforms_pr_18",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "PR #19: Legal Content & Privacy",
@@ -1395,10 +1547,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "pr #19: legal content & privacy",
       "id": "platforms_pr_19",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "PR #20: Final Audit & Graphify Reconstruction",
@@ -1409,10 +1561,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "pr #20: final audit & graphify reconstruction",
       "id": "platforms_pr_20",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "prepareIssueWorkspaceInputs Interface",
@@ -1423,10 +1575,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "prepareissueworkspaceinputs interface",
       "id": "platforms_prepare_issue_workspace_inputs",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "publishWorkspaceOutputs Interface",
@@ -1437,10 +1589,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "publishworkspaceoutputs interface",
       "id": "platforms_publish_workspace_outputs",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "POST /api/billing/stripe/webhook",
@@ -1451,10 +1603,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "post /api/billing/stripe/webhook",
       "id": "platforms_api_billing_stripe_webhook",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "GET /api/companies/:companyId/billing",
@@ -1465,10 +1617,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "get /api/companies/:companyid/billing",
       "id": "platforms_api_companies_billing",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "POST /api/companies/:companyId/billing/checkout",
@@ -1479,10 +1631,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "post /api/companies/:companyid/billing/checkout",
       "id": "platforms_api_companies_billing_checkout",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "POST /api/companies/:companyId/billing/portal",
@@ -1493,10 +1645,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "post /api/companies/:companyid/billing/portal",
       "id": "platforms_api_companies_billing_portal",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "Audit Procedures",
@@ -1507,10 +1659,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "audit procedures",
       "id": "platforms_audit_procedures",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "Legal Content Requirements (Privacy Policy, Terms, AUP, Subprocessors)",
@@ -1521,10 +1673,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "legal content requirements (privacy policy, terms, aup, subprocessors)",
       "id": "platforms_legal_content_blockers",
-      "community_name": "Community 1"
+      "community_name": "Community 2"
     },
     {
       "label": "AI and Data Scientist Roadmap",
@@ -1535,10 +1687,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 3,
       "norm_label": "ai and data scientist roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_ai_data_scientist",
-      "community_name": "Community 6"
+      "community_name": "Community 3"
     },
     {
       "label": "AI Engineer Roadmap",
@@ -1549,10 +1701,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 3,
       "norm_label": "ai engineer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_ai_engineer",
-      "community_name": "Community 6"
+      "community_name": "Community 3"
     },
     {
       "label": "Android Developer Roadmap",
@@ -1563,10 +1715,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "android developer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_android",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "Developer Roadmap Repository",
@@ -1577,10 +1729,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "developer roadmap repository",
       "id": "developer_roadmap_repository",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "Backend Developer Roadmap",
@@ -1591,10 +1743,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 3,
       "norm_label": "backend developer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_backend",
-      "community_name": "Community 6"
+      "community_name": "Community 3"
     },
     {
       "label": "BI Analyst Roadmap",
@@ -1619,10 +1771,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 12,
       "norm_label": "blockchain developer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_blockchain",
-      "community_name": "Community 13"
+      "community_name": "Community 12"
     },
     {
       "label": "Cyber Security Expert Roadmap",
@@ -1633,10 +1785,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 12,
       "norm_label": "cyber security expert roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_cyber_security",
-      "community_name": "Community 13"
+      "community_name": "Community 12"
     },
     {
       "label": "Data Analyst Roadmap",
@@ -1675,10 +1827,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 17,
       "norm_label": "ux design roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_design_ux",
-      "community_name": "Community 18"
+      "community_name": "Community 17"
     },
     {
       "label": "DevOps SRE Roadmap",
@@ -1703,10 +1855,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 18,
       "norm_label": "developer relations roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_devrel",
-      "community_name": "Community 19"
+      "community_name": "Community 18"
     },
     {
       "label": "DevSecOps Roadmap",
@@ -1787,10 +1939,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "game developer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_game_developer",
-      "community_name": "Community 14"
+      "community_name": "Community 13"
     },
     {
       "label": "iOS Developer Roadmap",
@@ -1801,10 +1953,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "ios developer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_ios",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "Machine Learning Roadmap",
@@ -1843,10 +1995,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 20,
+      "community": 19,
       "norm_label": "network engineer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_network_engineer",
-      "community_name": "Community 20"
+      "community_name": "Community 19"
     },
     {
       "label": "PostgreSQL DBA Roadmap",
@@ -1857,10 +2009,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 20,
       "norm_label": "postgresql dba roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_postgresql_dba",
-      "community_name": "Community 21"
+      "community_name": "Community 20"
     },
     {
       "label": "Product Manager Roadmap",
@@ -1899,10 +2051,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 13,
       "norm_label": "server side game developer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_server_side_game_developer",
-      "community_name": "Community 14"
+      "community_name": "Community 13"
     },
     {
       "label": "Software Architect Roadmap",
@@ -1927,10 +2079,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 22,
+      "community": 21,
       "norm_label": "technical writer roadmap",
       "id": "roadmaps_reference_role_based_roadmaps_roadmap_technical_writer",
-      "community_name": "Community 22"
+      "community_name": "Community 21"
     },
     {
       "label": "AI Agents Roadmap",
@@ -2123,10 +2275,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 15,
       "norm_label": ".net platform",
       "id": "dotnet_platform",
-      "community_name": "Community 16"
+      "community_name": "Community 15"
     },
     {
       "label": "AWS Roadmap",
@@ -2305,10 +2457,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "django roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_django",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "Docker Roadmap",
@@ -2319,10 +2471,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "docker roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_docker",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "Elasticsearch Roadmap",
@@ -2333,10 +2485,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "elasticsearch roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_elasticsearch",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "Flutter Developer Roadmap",
@@ -2347,10 +2499,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "flutter developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_flutter",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "Git and GitHub Roadmap",
@@ -2361,10 +2513,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "git and github roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_git_github",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "Go Developer Roadmap",
@@ -2375,10 +2527,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "go developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_golang",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "GraphQL Roadmap",
@@ -2389,10 +2541,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "graphql roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_graphql",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "HTML Roadmap",
@@ -2403,10 +2555,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "html roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_html",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "Java Developer Roadmap",
@@ -2417,10 +2569,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "java developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_java",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "JavaScript Roadmap",
@@ -2431,10 +2583,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "javascript roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_javascript",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "Kotlin Roadmap",
@@ -2473,10 +2625,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "kubernetes roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_kubernetes",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "Laravel Roadmap",
@@ -2487,10 +2639,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "laravel roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_laravel",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "LeetCode Roadmap",
@@ -2557,10 +2709,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "mongodb roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_mongodb",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "Next.js Roadmap",
@@ -2571,10 +2723,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "next.js roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_nextjs",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "Node.js Developer Roadmap",
@@ -2585,10 +2737,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "node.js developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_nodejs",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "OpenClaw Roadmap",
@@ -2641,10 +2793,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "python developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_python",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "Python Data Analysis Roadmap",
@@ -2669,10 +2821,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "react developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_react",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "React Native Developer Roadmap",
@@ -2697,10 +2849,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "redis roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_redis",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "Ruby Roadmap",
@@ -2739,10 +2891,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "rust developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_rust",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "Scala Roadmap",
@@ -2781,10 +2933,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "software design and architecture roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_software_design_architecture",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "Spring Boot Developer Roadmap",
@@ -2795,10 +2947,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "spring boot developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_spring_boot",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "SQL Roadmap",
@@ -2809,10 +2961,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "sql roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_sql",
-      "community_name": "Community 3"
+      "community_name": "Community 4"
     },
     {
       "label": "Swift UI Roadmap",
@@ -2851,10 +3003,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "system design roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_system_design",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "System Design Fundamentals",
@@ -2865,10 +3017,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "system design fundamentals",
       "id": "system_design_fundamentals",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "Networking and Web",
@@ -2879,10 +3031,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "networking and web",
       "id": "system_design_networking",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "Data Modeling and Databases",
@@ -2893,10 +3045,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "data modeling and databases",
       "id": "system_design_data",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "Caching",
@@ -2907,10 +3059,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "caching",
       "id": "system_design_cache",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "Service Communication",
@@ -2921,10 +3073,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "service communication",
       "id": "system_design_communication",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "Architecture Patterns",
@@ -2935,10 +3087,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "architecture patterns",
       "id": "system_design_architectures",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "Reliability",
@@ -2949,10 +3101,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "reliability",
       "id": "system_design_reliability",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "Security",
@@ -2963,10 +3115,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "security",
       "id": "system_design_security",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "Observability",
@@ -2977,10 +3129,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "observability",
       "id": "system_design_observability",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "System Design Patterns",
@@ -2991,10 +3143,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "system design patterns",
       "id": "system_design_patterns",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "Developer Roadmap Repository",
@@ -3005,10 +3157,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "developer roadmap repository",
       "id": "developer_roadmap_repo",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "Google SRE Book",
@@ -3019,10 +3171,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "google sre book",
       "id": "google_sre_book",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "OpenTelemetry Documentation",
@@ -3033,10 +3185,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "opentelemetry documentation",
       "id": "opentelemetry_docs",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "Terraform Roadmap",
@@ -3047,10 +3199,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "terraform roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_terraform",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "Terraform Fundamentals",
@@ -3061,10 +3213,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "terraform fundamentals",
       "id": "terraform_fundamentals",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "Terraform State Management",
@@ -3075,10 +3227,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "terraform state management",
       "id": "terraform_state",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "Terraform Modules",
@@ -3089,10 +3241,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "terraform modules",
       "id": "terraform_modules",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "Terraform Provisioners",
@@ -3103,10 +3255,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "terraform provisioners",
       "id": "terraform_provisioners",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "Terraform Testing",
@@ -3117,10 +3269,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "terraform testing",
       "id": "terraform_testing",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "Terraform Security",
@@ -3131,10 +3283,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "terraform security",
       "id": "terraform_security",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "Terraform CI/CD Integration",
@@ -3145,10 +3297,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "norm_label": "terraform ci/cd integration",
       "id": "terraform_cicd",
-      "community_name": "Community 5"
+      "community_name": "Community 6"
     },
     {
       "label": "TypeScript Roadmap",
@@ -3159,10 +3311,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "typescript roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_typescript",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "TypeScript Types",
@@ -3173,10 +3325,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "typescript types",
       "id": "typescript_types",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "TypeScript Interfaces",
@@ -3187,10 +3339,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "typescript interfaces",
       "id": "typescript_interfaces",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "TypeScript Functions",
@@ -3201,10 +3353,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "typescript functions",
       "id": "typescript_functions",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "TypeScript Classes",
@@ -3215,10 +3367,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "typescript classes",
       "id": "typescript_classes",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "TypeScript Generics",
@@ -3229,10 +3381,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "typescript generics",
       "id": "typescript_generics",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "TypeScript Modules",
@@ -3243,10 +3395,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "typescript modules",
       "id": "typescript_modules",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "Vibe Coding Roadmap",
@@ -3257,10 +3409,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "vibe coding roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vibe_coding",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "AI Coding Tools",
@@ -3271,10 +3423,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "ai coding tools",
       "id": "vibe_coding_ai_tools",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "Vibe Coding Practices",
@@ -3285,10 +3437,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "vibe coding practices",
       "id": "vibe_coding_practices",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "AI-Assisted Workflow",
@@ -3299,10 +3451,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "ai-assisted workflow",
       "id": "vibe_coding_workflow",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "Vue Developer Roadmap",
@@ -3313,10 +3465,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "vue developer roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_vue",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "Vue Components",
@@ -3327,10 +3479,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "vue components",
       "id": "vue_components",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "Vue API Styles",
@@ -3341,10 +3493,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "vue api styles",
       "id": "vue_api",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "Vue Routing",
@@ -3355,10 +3507,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "vue routing",
       "id": "vue_routing",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "Vue State Management",
@@ -3369,10 +3521,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "vue state management",
       "id": "vue_state",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "Vue Testing",
@@ -3383,10 +3535,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "vue testing",
       "id": "vue_testing",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "WordPress Roadmap",
@@ -3397,10 +3549,10 @@
       "captured_at": "2026-07-15",
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "wordpress roadmap",
       "id": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "WordPress Themes",
@@ -3411,10 +3563,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "wordpress themes",
       "id": "wordpress_theme",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "WordPress Plugins",
@@ -3425,10 +3577,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "wordpress plugins",
       "id": "wordpress_plugins",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "WordPress Hooks",
@@ -3439,10 +3591,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "wordpress hooks",
       "id": "wordpress_hooks",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "WordPress Security",
@@ -3453,10 +3605,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "wordpress security",
       "id": "wordpress_security",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "WordPress Performance",
@@ -3467,10 +3619,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 5,
       "norm_label": "wordpress performance",
       "id": "wordpress_performance",
-      "community_name": "Community 4"
+      "community_name": "Community 5"
     },
     {
       "label": "shadcn/ui Complete Guide",
@@ -3487,186 +3639,256 @@
       "community_name": "Community 8"
     },
     {
-      "label": "AGENTS.md Documenta\u00e7\u00e3o Correnth",
+      "label": "Correnth Current Direction",
       "file_type": "document",
-      "source_file": "AGENTS.md",
+      "source_file": "CURRENT_DIRECTION.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-07-24",
+      "author": "Grupo Correnth",
+      "contributor": null,
+      "community": 3,
+      "norm_label": "correnth current direction",
+      "id": "current_direction",
+      "community_name": "Community 3"
+    },
+    {
+      "label": "RedRise Canonical Product and Internal Company v1",
+      "file_type": "document",
+      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-07-24",
+      "author": "Grupo Correnth",
+      "contributor": null,
+      "community": 3,
+      "norm_label": "redrise canonical product and internal company v1",
+      "id": "redrise_canonical_product",
+      "community_name": "Community 3"
+    },
+    {
+      "label": "RedRise Platform Operation and Offer Architecture v1",
+      "file_type": "document",
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-07-28",
+      "author": "Grupo Correnth",
+      "contributor": null,
+      "community": 3,
+      "norm_label": "redrise platform operation and offer architecture v1",
+      "id": "redrise_platform_operation",
+      "community_name": "Community 3"
+    },
+    {
+      "label": "RedRise Platform and Internal Company",
+      "file_type": "concept",
+      "source_file": "CURRENT_DIRECTION.md",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
-      "norm_label": "agents.md documentacao correnth",
-      "id": "agents_md",
-      "community_name": "Community 15"
+      "community": 3,
+      "norm_label": "redrise platform and internal company",
+      "id": "redrise",
+      "community_name": "Community 3"
     },
     {
-      "label": "D:\\00_docs Diret\u00f3rio Fonte de Verdade",
+      "label": "RedRise Platform Repository",
       "file_type": "concept",
-      "source_file": "AGENTS.md",
-      "source_location": "Autoridade e descoberta",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 6,
-      "norm_label": "d:\\00_docs diretorio fonte de verdade",
-      "id": "d_00_docs",
-      "community_name": "Community 6"
-    },
-    {
-      "label": "Diret\u00f3rio Archived",
-      "file_type": "concept",
-      "source_file": "AGENTS.md",
-      "source_location": "Autoridade e descoberta",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 6,
-      "norm_label": "diretorio archived",
-      "id": "archived",
-      "community_name": "Community 6"
-    },
-    {
-      "label": "Diret\u00f3rio _legacy",
-      "file_type": "concept",
-      "source_file": "AGENTS.md",
-      "source_location": "Autoridade e descoberta",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 6,
-      "norm_label": "diretorio _legacy",
-      "id": "legacy",
-      "community_name": "Community 6"
-    },
-    {
-      "label": "Graphify Ferramenta Sem\u00e2ntica",
-      "file_type": "concept",
-      "source_file": "AGENTS.md",
-      "source_location": "Graphify sem\u00e2ntico",
+      "source_file": "CURRENT_DIRECTION.md",
+      "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
       "community": 2,
-      "norm_label": "graphify ferramenta semantica",
-      "id": "graphify_tool",
+      "norm_label": "redrise platform repository",
+      "id": "redrise_platform",
       "community_name": "Community 2"
     },
     {
-      "label": "graphifyy[openai,sql,terraform] Pacote",
+      "label": "RedRise Operation Package",
       "file_type": "concept",
-      "source_file": "AGENTS.md",
-      "source_location": "Graphify sem\u00e2ntico",
+      "source_file": "CURRENT_DIRECTION.md",
+      "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
-      "norm_label": "graphifyy[openai,sql,terraform] pacote",
-      "id": "graphifyy_package",
-      "community_name": "Community 2"
+      "community": 3,
+      "norm_label": "redrise operation package",
+      "id": "redrise_operation",
+      "community_name": "Community 3"
     },
     {
-      "label": "MiniMax Modelo AI",
+      "label": "MiniMax API Key in Personal Vault",
       "file_type": "concept",
-      "source_file": "AGENTS.md",
-      "source_location": "Graphify sem\u00e2ntico",
+      "source_file": "CURRENT_DIRECTION.md",
+      "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
-      "norm_label": "minimax modelo ai",
-      "id": "minimax_model",
-      "community_name": "Community 2"
+      "community": 1,
+      "norm_label": "minimax api key in personal vault",
+      "id": "minimax_key",
+      "community_name": "Community 1"
     },
     {
-      "label": "Code Integrity Bloqueio",
+      "label": "Gauss Unit (Historical)",
       "file_type": "concept",
-      "source_file": "AGENTS.md",
-      "source_location": "Graphify sem\u00e2ntico",
+      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
+      "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
-      "norm_label": "code integrity bloqueio",
-      "id": "code_integrity",
-      "community_name": "Community 2"
+      "community": 3,
+      "norm_label": "gauss unit (historical)",
+      "id": "gauss",
+      "community_name": "Community 3"
     },
     {
-      "label": "GRAPH_REPORT.md",
-      "file_type": "document",
-      "source_file": "AGENTS.md",
-      "source_location": "Graphify sem\u00e2ntico",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "graph_report.md",
-      "id": "graph_report_md",
-      "community_name": "Community 2"
-    },
-    {
-      "label": "query Comando Graphify",
+      "label": "Paperclip Company (Renamed)",
       "file_type": "concept",
-      "source_file": "AGENTS.md",
-      "source_location": "Graphify sem\u00e2ntico",
+      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "paperclip company (renamed)",
+      "id": "company_paperclip",
+      "community_name": "Community 3"
+    },
+    {
+      "label": "Archived RedRise Repository",
+      "file_type": "concept",
+      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "archived redrise repository",
+      "id": "archived_redrise",
+      "community_name": "Community 3"
+    },
+    {
+      "label": "Human-in-the-Loop Policy",
+      "file_type": "concept",
+      "source_file": "CURRENT_DIRECTION.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "human-in-the-loop policy",
+      "id": "hitl_policy",
+      "community_name": "Community 3"
+    },
+    {
+      "label": "RedRise Workflow Pilot",
+      "file_type": "concept",
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "redrise workflow pilot",
+      "id": "redrise_workflow_pilot",
+      "community_name": "Community 3"
+    },
+    {
+      "label": "RedRise Automate Capability Family",
+      "file_type": "concept",
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "redrise automate capability family",
+      "id": "redrise_automate",
+      "community_name": "Community 3"
+    },
+    {
+      "label": "RedRise Build Capability Family",
+      "file_type": "concept",
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "redrise build capability family",
+      "id": "redrise_build",
+      "community_name": "Community 3"
+    },
+    {
+      "label": "RedRise Operate Capability Family",
+      "file_type": "concept",
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "redrise operate capability family",
+      "id": "redrise_operate",
+      "community_name": "Community 3"
+    },
+    {
+      "label": "RedRise Assurance Capability Family",
+      "file_type": "concept",
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "redrise assurance capability family",
+      "id": "redrise_assurance",
+      "community_name": "Community 3"
+    },
+    {
+      "label": "correnthgroup/redrise-platform Repository",
+      "file_type": "concept",
+      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
+      "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
       "community": 2,
-      "norm_label": "query comando graphify",
-      "id": "graphify_query_command",
+      "norm_label": "correnthgroup/redrise-platform repository",
+      "id": "correnthgroup_redrise_platform_repo",
       "community_name": "Community 2"
     },
     {
-      "label": "path Comando Graphify",
+      "label": "correnthgroup/redrise-operation Repository",
       "file_type": "concept",
-      "source_file": "AGENTS.md",
-      "source_location": "Graphify sem\u00e2ntico",
+      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
+      "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
-      "norm_label": "path comando graphify",
-      "id": "graphify_path_command",
-      "community_name": "Community 2"
-    },
-    {
-      "label": "explain Comando Graphify",
-      "file_type": "concept",
-      "source_file": "AGENTS.md",
-      "source_location": "Graphify sem\u00e2ntico",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "explain comando graphify",
-      "id": "graphify_explain_command",
-      "community_name": "Community 2"
-    },
-    {
-      "label": "affected Comando Graphify",
-      "file_type": "concept",
-      "source_file": "AGENTS.md",
-      "source_location": "Graphify sem\u00e2ntico",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "affected comando graphify",
-      "id": "graphify_affected_command",
-      "community_name": "Community 2"
+      "community": 3,
+      "norm_label": "correnthgroup/redrise-operation repository",
+      "id": "correnthgroup_redrise_operation_repo",
+      "community_name": "Community 3"
     }
   ],
   "links": [
@@ -3961,6 +4183,36 @@
     {
       "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
+      "confidence_score": 0.7,
+      "source_file": "AGENTS.md",
+      "source_location": "Autoridade e descoberta",
+      "weight": 1.0,
+      "source": "d_00_docs",
+      "target": "archived"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "Autoridade e descoberta",
+      "weight": 1.0,
+      "source": "graphify_out_graph_json",
+      "target": "d_00_docs"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "Autoridade e descoberta",
+      "weight": 1.0,
+      "source": "legacy",
+      "target": "d_00_docs"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
       "confidence_score": 0.95,
       "source_file": "AGENTS.md",
       "source_location": "Autoridade e descoberta",
@@ -3969,14 +4221,144 @@
       "target": "graphify_out_graph_json"
     },
     {
+      "relation": "produces",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "graphify",
+      "target": "graphify_out_graph_json"
+    },
+    {
       "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "CURRENT_DIRECTION.md",
+      "source_file": "AGENTS.md",
+      "source_location": "Graphify sem\u00e2ntico",
+      "weight": 1.0,
+      "source": "code_integrity",
+      "target": "graphify_tool"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "AGENTS.md",
+      "source_location": "Graphify sem\u00e2ntico",
+      "weight": 1.0,
+      "source": "graph_report_md",
+      "target": "graphify_tool"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "Graphify sem\u00e2ntico",
+      "weight": 1.0,
+      "source": "graphify_affected_command",
+      "target": "graphify_tool"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "Graphify sem\u00e2ntico",
+      "weight": 1.0,
+      "source": "graphify_explain_command",
+      "target": "graphify_tool"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "Graphify sem\u00e2ntico",
+      "weight": 1.0,
+      "source": "graphify_path_command",
+      "target": "graphify_tool"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "Graphify sem\u00e2ntico",
+      "weight": 1.0,
+      "source": "graphify_query_command",
+      "target": "graphify_tool"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "AGENTS.md",
+      "source_location": "Graphify sem\u00e2ntico",
+      "weight": 1.0,
+      "source": "graphify_tool",
+      "target": "graphifyy_package"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "weight": 0.6,
+      "source": "github_mcp",
+      "target": "invoke_correnth_semantic_push_ps1"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": "D:/00_docs/tools/Invoke-CorrenthSemanticPush.ps1",
+      "weight": 1.0,
+      "source": "invoke_correnth_semantic_push_ps1",
+      "target": "graphify"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "Graphify sem\u00e2ntico",
+      "weight": 1.0,
+      "source": "invoke_correnth_semantic_push_ps1",
+      "target": "graphifyy_package"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "current_direction_md",
-      "target": "redrise"
+      "source": "invoke_correnth_semantic_push_ps1",
+      "target": "minimax"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "Graphify sem\u00e2ntico",
+      "weight": 1.0,
+      "source": "invoke_correnth_semantic_push_ps1",
+      "target": "minimax_model"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "weight": 0.8,
+      "source": "pre_push_hook",
+      "target": "invoke_correnth_semantic_push_ps1"
     },
     {
       "relation": "conceptually_related_to",
@@ -4172,20 +4554,20 @@
       "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "decisions/CORRENTH_UI_AND_TECH_STACK_STANDARD_v1.md",
+      "source_file": "REPOSITORIES.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "decision_correnth_ui_tech_stack",
+      "source": "correnthgroup_redrise_platform_repo",
       "target": "supabase"
     },
     {
       "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "REPOSITORIES.md",
+      "source_file": "decisions/CORRENTH_UI_AND_TECH_STACK_STANDARD_v1.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "platforms_correnthgroup_redrise_platform",
+      "source": "decision_correnth_ui_tech_stack",
       "target": "supabase"
     },
     {
@@ -4202,20 +4584,20 @@
       "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "decisions/CORRENTH_UI_AND_TECH_STACK_STANDARD_v1.md",
+      "source_file": "REPOSITORIES.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "decision_correnth_ui_tech_stack",
+      "source": "correnthgroup_redrise_platform_repo",
       "target": "nextjs"
     },
     {
       "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "REPOSITORIES.md",
+      "source_file": "decisions/CORRENTH_UI_AND_TECH_STACK_STANDARD_v1.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "platforms_correnthgroup_redrise_platform",
+      "source": "decision_correnth_ui_tech_stack",
       "target": "nextjs"
     },
     {
@@ -4262,56 +4644,6 @@
       "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "decision_redrise_canonical_product",
-      "target": "redrise"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "REPOSITORIES.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_correnthgroup_redrise_operation",
-      "target": "redrise"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "REPOSITORIES.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_correnthgroup_redrise_platform",
-      "target": "redrise"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "redrise",
-      "target": "gauss"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "decision_redrise_canonical_product",
-      "target": "gauss"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
       "source_location": null,
       "weight": 1.0,
@@ -4339,16 +4671,6 @@
       "target": "community_n"
     },
     {
-      "relation": "produces",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "graphify",
-      "target": "graphify_out_graph_json"
-    },
-    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -4359,74 +4681,34 @@
       "target": "minimax"
     },
     {
-      "relation": "calls",
+      "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
-      "source_location": "D:/00_docs/tools/Invoke-CorrenthSemanticPush.ps1",
+      "source_file": "CURRENT_DIRECTION.md",
+      "source_location": null,
       "weight": 1.0,
-      "source": "invoke_correnth_semantic_push_ps1",
+      "source": "graphify",
+      "target": "minimax_key"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CURRENT_DIRECTION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise",
       "target": "graphify"
     },
     {
-      "relation": "references",
+      "relation": "owns",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "AGENTS.md",
-      "source_location": "Autoridade e descoberta",
-      "weight": 1.0,
-      "source": "graphify_out_graph_json",
-      "target": "d_00_docs"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 0.9,
-      "source_file": "AGENTS.md",
-      "source_location": "Graphify sem\u00e2ntico",
-      "weight": 1.0,
-      "source": "github_mcp",
-      "target": "invoke_correnth_semantic_push_ps1"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "AGENTS.md",
-      "source_location": "Graphify sem\u00e2ntico",
-      "weight": 1.0,
-      "source": "invoke_correnth_semantic_push_ps1",
-      "target": "graphifyy_package"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_file": "CURRENT_DIRECTION.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "invoke_correnth_semantic_push_ps1",
-      "target": "minimax"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "AGENTS.md",
-      "source_location": "Graphify sem\u00e2ntico",
-      "weight": 1.0,
-      "source": "invoke_correnth_semantic_push_ps1",
-      "target": "minimax_model"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
-      "source_location": null,
-      "weight": 0.8,
-      "source": "pre_push_hook",
-      "target": "invoke_correnth_semantic_push_ps1"
+      "source": "correnth",
+      "target": "redrise"
     },
     {
       "relation": "calls",
@@ -4437,6 +4719,26 @@
       "weight": 1.0,
       "source": "pre_push_hook",
       "target": "git_lfs"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT",
+      "target": "correnthgroup_redrise_operation_repo"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT",
+      "target": "correnthgroup_redrise_platform_repo"
     },
     {
       "relation": "references",
@@ -4457,26 +4759,6 @@
       "weight": 1.0,
       "source": "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT",
       "target": "platforms_correnthgroup_docs"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT",
-      "target": "platforms_correnthgroup_redrise_operation"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT",
-      "target": "platforms_correnthgroup_redrise_platform"
     },
     {
       "relation": "references",
@@ -4507,106 +4789,6 @@
       "weight": 1.0,
       "source": "platforms_correnthgroup_docs",
       "target": "platforms_pr_12"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_correnthgroup_redrise_operation",
-      "target": "platforms_pr_13"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_correnthgroup_redrise_platform",
-      "target": "platforms_pr_12"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_correnthgroup_redrise_platform",
-      "target": "platforms_pr_13"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_correnthgroup_redrise_platform",
-      "target": "platforms_pr_14"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_correnthgroup_redrise_platform",
-      "target": "platforms_pr_15"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_correnthgroup_redrise_platform",
-      "target": "platforms_pr_16"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_correnthgroup_redrise_platform",
-      "target": "platforms_pr_17"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_correnthgroup_redrise_platform",
-      "target": "platforms_pr_18"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_correnthgroup_redrise_platform",
-      "target": "platforms_pr_19"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "platforms_correnthgroup_redrise_platform",
-      "target": "platforms_pr_20"
     },
     {
       "relation": "references",
@@ -4830,12 +5012,42 @@
     },
     {
       "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "correnthgroup_redrise_platform_repo",
+      "target": "platforms_pr_12"
+    },
+    {
+      "relation": "conceptually_related_to",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
       "source_location": null,
       "weight": 0.8,
       "source": "platforms_pr_12",
+      "target": "platforms_pr_13"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "correnthgroup_redrise_operation_repo",
+      "target": "platforms_pr_13"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "correnthgroup_redrise_platform_repo",
       "target": "platforms_pr_13"
     },
     {
@@ -4850,12 +5062,32 @@
     },
     {
       "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "correnthgroup_redrise_platform_repo",
+      "target": "platforms_pr_14"
+    },
+    {
+      "relation": "conceptually_related_to",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
       "source_location": null,
       "weight": 0.8,
       "source": "platforms_pr_14",
+      "target": "platforms_pr_15"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "correnthgroup_redrise_platform_repo",
       "target": "platforms_pr_15"
     },
     {
@@ -4870,12 +5102,32 @@
     },
     {
       "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "correnthgroup_redrise_platform_repo",
+      "target": "platforms_pr_16"
+    },
+    {
+      "relation": "conceptually_related_to",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
       "source_location": null,
       "weight": 0.8,
       "source": "platforms_pr_16",
+      "target": "platforms_pr_17"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "correnthgroup_redrise_platform_repo",
       "target": "platforms_pr_17"
     },
     {
@@ -4890,12 +5142,32 @@
     },
     {
       "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "correnthgroup_redrise_platform_repo",
+      "target": "platforms_pr_18"
+    },
+    {
+      "relation": "conceptually_related_to",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
       "source_location": null,
       "weight": 0.8,
       "source": "platforms_pr_18",
+      "target": "platforms_pr_19"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "correnthgroup_redrise_platform_repo",
       "target": "platforms_pr_19"
     },
     {
@@ -4917,6 +5189,16 @@
       "weight": 1.0,
       "source": "platforms_pr_20",
       "target": "platforms_pr_19"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "correnthgroup_redrise_platform_repo",
+      "target": "platforms_pr_20"
     },
     {
       "relation": "references",
@@ -6659,94 +6941,274 @@
       "target": "wordpress_theme"
     },
     {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CURRENT_DIRECTION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "current_direction",
+      "target": "hitl_policy"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CURRENT_DIRECTION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "current_direction",
+      "target": "redrise"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CURRENT_DIRECTION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "current_direction",
+      "target": "redrise_canonical_product"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CURRENT_DIRECTION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "current_direction",
+      "target": "redrise_platform_operation"
+    },
+    {
       "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
-      "confidence_score": 0.7,
-      "source_file": "AGENTS.md",
-      "source_location": "Autoridade e descoberta",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
+      "source_location": null,
       "weight": 1.0,
-      "source": "d_00_docs",
-      "target": "archived"
+      "source": "redrise",
+      "target": "redrise_canonical_product"
+    },
+    {
+      "relation": "complements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise_canonical_product",
+      "target": "redrise_platform_operation"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise",
+      "target": "redrise_platform_operation"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise_platform_operation",
+      "target": "redrise_workflow_pilot"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "company_paperclip",
+      "target": "redrise"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "REPOSITORIES.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "correnthgroup_redrise_operation_repo",
+      "target": "redrise"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "REPOSITORIES.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "correnthgroup_redrise_platform_repo",
+      "target": "redrise"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "gauss",
+      "target": "redrise"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise",
+      "target": "archived_redrise"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise",
+      "target": "minimax_key"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise",
+      "target": "redrise_assurance"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise",
+      "target": "redrise_automate"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise",
+      "target": "redrise_build"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise",
+      "target": "redrise_operate"
     },
     {
       "relation": "shares_data_with",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "AGENTS.md",
-      "source_location": "Autoridade e descoberta",
+      "source_file": "CURRENT_DIRECTION.md",
+      "source_location": null,
       "weight": 1.0,
-      "source": "legacy",
-      "target": "d_00_docs"
+      "source": "redrise",
+      "target": "redrise_operation"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CURRENT_DIRECTION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise",
+      "target": "redrise_platform"
     },
     {
       "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "AGENTS.md",
-      "source_location": "Graphify sem\u00e2ntico",
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
       "weight": 1.0,
-      "source": "code_integrity",
-      "target": "graphify_tool"
+      "source": "redrise",
+      "target": "redrise_workflow_pilot"
     },
     {
       "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
-      "confidence_score": 0.9,
-      "source_file": "AGENTS.md",
-      "source_location": "Graphify sem\u00e2ntico",
-      "weight": 1.0,
-      "source": "graph_report_md",
-      "target": "graphify_tool"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "AGENTS.md",
-      "source_location": "Graphify sem\u00e2ntico",
+      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
+      "source_location": null,
       "weight": 1.0,
-      "source": "graphify_affected_command",
-      "target": "graphify_tool"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "AGENTS.md",
-      "source_location": "Graphify sem\u00e2ntico",
-      "weight": 1.0,
-      "source": "graphify_explain_command",
-      "target": "graphify_tool"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "AGENTS.md",
-      "source_location": "Graphify sem\u00e2ntico",
-      "weight": 1.0,
-      "source": "graphify_path_command",
-      "target": "graphify_tool"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "AGENTS.md",
-      "source_location": "Graphify sem\u00e2ntico",
-      "weight": 1.0,
-      "source": "graphify_query_command",
-      "target": "graphify_tool"
+      "source": "correnthgroup_redrise_platform_repo",
+      "target": "redrise_platform"
     },
     {
       "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "AGENTS.md",
-      "source_location": "Graphify sem\u00e2ntico",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
+      "source_location": null,
       "weight": 1.0,
-      "source": "graphify_tool",
-      "target": "graphifyy_package"
+      "source": "correnthgroup_redrise_operation_repo",
+      "target": "redrise_operation"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise_workflow_pilot",
+      "target": "redrise_assurance"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise_workflow_pilot",
+      "target": "redrise_automate"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise_workflow_pilot",
+      "target": "redrise_build"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise_workflow_pilot",
+      "target": "redrise_operate"
     }
   ],
   "hyperedges": [
@@ -6765,6 +7227,49 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".codex/skills/graphify/references/add-watch.md"
+    },
+    {
+      "id": "graphify_discovery_commands",
+      "label": "Comandos de Descoberta Graphify",
+      "nodes": [
+        "graphify_query_command",
+        "graphify_path_command",
+        "graphify_explain_command",
+        "graphify_affected_command"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md"
+    },
+    {
+      "id": "correnth_authority_hierarchy",
+      "label": "Hierarquia de Autoridade Correnth",
+      "nodes": [
+        "d_00_docs",
+        "graphify_out_graph_json",
+        "current_direction_md",
+        "archived",
+        "legacy"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "AGENTS.md"
+    },
+    {
+      "id": "correnth_semantic_infrastructure",
+      "label": "Infraestrutura Sem\u00e2ntica Correnth",
+      "nodes": [
+        "invoke_correnth_semantic_push_ps1",
+        "graphifyy_package",
+        "minimax_model",
+        "graphify_out_graph_json"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.85,
+      "source_file": "AGENTS.md"
     },
     {
       "id": "correnth_product_portfolio",
@@ -6871,9 +7376,7 @@
       "id": "platforms_correnthgroup_repositories",
       "label": "CorrenthGroup Repositories",
       "nodes": [
-        "platforms_correnthgroup_docs",
-        "platforms_correnthgroup_redrise_operation",
-        "platforms_correnthgroup_redrise_platform"
+        "platforms_correnthgroup_docs"
       ],
       "relation": "form",
       "confidence": "EXTRACTED",
@@ -7085,48 +7588,47 @@
       "source_file": "roadmaps_reference/Skill-based Roadmaps/ROADMAP_VIBE_CODING.md"
     },
     {
-      "id": "graphify_discovery_commands",
-      "label": "Comandos de Descoberta Graphify",
+      "id": "correnth_operational_architecture",
+      "label": "Correnth Operational Architecture",
       "nodes": [
-        "graphify_query_command",
-        "graphify_path_command",
-        "graphify_explain_command",
-        "graphify_affected_command"
-      ],
-      "relation": "implement",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "AGENTS.md"
-    },
-    {
-      "id": "correnth_authority_hierarchy",
-      "label": "Hierarquia de Autoridade Correnth",
-      "nodes": [
-        "d_00_docs",
-        "graphify_out_graph_json",
-        "current_direction_md",
-        "archived",
-        "legacy"
+        "redrise",
+        "redrise_platform",
+        "redrise_operation",
+        "graphify",
+        "minimax_key"
       ],
       "relation": "form",
       "confidence": "EXTRACTED",
-      "confidence_score": 0.9,
-      "source_file": "AGENTS.md"
+      "confidence_score": 0.95,
+      "source_file": "CURRENT_DIRECTION.md"
     },
     {
-      "id": "correnth_semantic_infrastructure",
-      "label": "Infraestrutura Sem\u00e2ntica Correnth",
+      "id": "redrise_product_and_company",
+      "label": "RedRise Product and Internal Company",
       "nodes": [
-        "invoke_correnth_semantic_push_ps1",
-        "graphifyy_package",
-        "minimax_model",
-        "graphify_out_graph_json"
+        "redrise",
+        "redrise_canonical_product",
+        "redrise_platform_operation"
       ],
-      "relation": "participate_in",
+      "relation": "form",
       "confidence": "EXTRACTED",
-      "confidence_score": 0.85,
-      "source_file": "AGENTS.md"
+      "confidence_score": 0.95,
+      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md"
+    },
+    {
+      "id": "redrise_capability_families",
+      "label": "RedRise Capability Families",
+      "nodes": [
+        "redrise_automate",
+        "redrise_build",
+        "redrise_operate",
+        "redrise_assurance"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md"
     }
   ],
-  "built_at_commit": "d7a86f0a912afff073619993459d2ca6bdd7437e"
+  "built_at_commit": "bb8538d94de793169be1dd645b57cb788bd902d9"
 }
