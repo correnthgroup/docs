@@ -37,6 +37,34 @@ function Get-ArtifactHash {
   return (Get-FileHash -Algorithm SHA256 -LiteralPath $Path).Hash.ToLowerInvariant()
 }
 
+function Get-GraphSourceRevision {
+  # Graphify writes the actual checked-out HEAD into GRAPH_REPORT.md. Use that
+  # same revision for normal commits and merge commits, including no-op merges.
+  # Only step back when HEAD is itself a generated Graphify-only commit; this
+  # prevents an unchanged source tree from producing another graph-only commit.
+  $headRevision = (git rev-parse HEAD).Trim()
+  if ($LASTEXITCODE -ne 0 -or [string]::IsNullOrWhiteSpace($headRevision)) {
+    throw "Unable to determine the current Git revision for Graphify."
+  }
+
+  $changedPaths = @(git diff-tree --no-commit-id --name-only -r $headRevision)
+  if ($LASTEXITCODE -ne 0) {
+    throw "Unable to inspect the current Git revision for Graphify."
+  }
+  $sourcePaths = @($changedPaths | Where-Object {
+    $_ -notmatch '^(graphify-out|\.graphify-quarantine)([\\/]|$)'
+  })
+  if ($changedPaths.Count -gt 0 -and $sourcePaths.Count -eq 0) {
+    $firstParent = (git rev-parse "$headRevision^1").Trim()
+    if ($LASTEXITCODE -ne 0 -or [string]::IsNullOrWhiteSpace($firstParent)) {
+      throw "Unable to resolve the source parent of a Graphify-only commit."
+    }
+    return $firstParent
+  }
+
+  return $headRevision
+}
+
 function Get-GraphSnapshot {
   param([Parameter(Mandatory = $true)][string]$OutputDirectory)
 
@@ -164,10 +192,9 @@ Push-Location $resolvedRoot
 try {
   if (@(git status --porcelain).Count -gt 0) { throw "Refusing to refresh the semantic graph in a dirty worktree. Commit or stash existing changes first." }
 
-  # A graph-only commit must never force another graph-only commit. The source
-  # revision therefore excludes all generated and quarantine paths.
-  $sourceRevision = (git log -1 --format=%H -- . ':(exclude)graphify-out/**' ':(exclude).graphify-quarantine/**').Trim()
-  if ([string]::IsNullOrWhiteSpace($sourceRevision)) { throw "Unable to determine the source revision for Graphify." }
+  # A graph-only commit must never force another graph-only commit, while merge
+  # commits must still match the HEAD that Graphify records in its report.
+  $sourceRevision = Get-GraphSourceRevision
   $canonicalOutput = Join-Path $resolvedRoot "graphify-out"
   $existingProvenance = Join-Path $canonicalOutput "semantic-provenance.json"
   if (Test-Path -LiteralPath $existingProvenance -PathType Leaf) {
