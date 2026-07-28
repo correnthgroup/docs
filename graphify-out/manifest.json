@@ -15,7 +15,7 @@
     "semantic_hash": "92a1a01405d4f1320957bd65ca5ad5b5"
   },
   "tools/Invoke-CorrenthSemanticPush.ps1": {
-    "mtime": 1785121012.506485,
+    "mtime": 1785122782.9118533,
     "ast_hash": "31bee61f332d2076d22f1c983545ca0f",
     "semantic_hash": "31bee61f332d2076d22f1c983545ca0f"
   },
@@ -65,14 +65,14 @@
     "semantic_hash": "c698309979460d0f02ba616417844399"
   },
   "AGENTS.md": {
-    "mtime": 1785121012.5085237,
+    "mtime": 1785122782.9036899,
     "ast_hash": "b55316749eddf264bccac068ed878adb",
     "semantic_hash": "b55316749eddf264bccac068ed878adb"
   },
   "CURRENT_DIRECTION.md": {
-    "mtime": 1785095902.4272935,
-    "ast_hash": "c9f8d5dab5583ed336a71ff95e0580e5",
-    "semantic_hash": "c9f8d5dab5583ed336a71ff95e0580e5"
+    "mtime": 1785240196.548867,
+    "ast_hash": "bf17a6af5e80c67ee54c85a21efd7379",
+    "semantic_hash": "bf17a6af5e80c67ee54c85a21efd7379"
   },
   "GRAPHIFY_STACK_RECOMMENDATION.md": {
     "mtime": 1784662209.7550335,
@@ -90,7 +90,7 @@
     "semantic_hash": "a5fbec39e98357b4a47dbc012cdf5fae"
   },
   "decisions/CORRENTH_ECOSYSTEM_PORTFOLIO_AND_OPERATING_MODEL_v1.md": {
-    "mtime": 1785095902.4558365,
+    "mtime": 1785205844.706366,
     "ast_hash": "f7c991cf29010553f8d93181c047ac76",
     "semantic_hash": "f7c991cf29010553f8d93181c047ac76"
   },
@@ -105,9 +105,14 @@
     "semantic_hash": "1a19d3af307ee191d171f2b46d1936fb"
   },
   "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md": {
-    "mtime": 1785095902.4818335,
-    "ast_hash": "4c7447efcfc567cbe9cf806d5f6834b2",
-    "semantic_hash": "4c7447efcfc567cbe9cf806d5f6834b2"
+    "mtime": 1785240196.558592,
+    "ast_hash": "948878a6561ccfbfd1d8e2f3f710d107",
+    "semantic_hash": "948878a6561ccfbfd1d8e2f3f710d107"
+  },
+  "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md": {
+    "mtime": 1785240196.558592,
+    "ast_hash": "173527c39a0759b53f15a397848c2777",
+    "semantic_hash": "173527c39a0759b53f15a397848c2777"
   },
   "platforms/GRAPHIFY_SEMANTIC_MEMORY.md": {
     "mtime": 1785104712.6420894,
