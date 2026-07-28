@@ -1,15 +1,15 @@
-# Graph Report - D:\00_docs\.graphify-quarantine\extract-a51b4174978e4f0b9cf37207f30273d0  (2026-07-28)
+# Graph Report - D:\00_docs\.graphify-quarantine\extract-d2f15799ca0c4340a470506986aa5b8c  (2026-07-28)
 
 ## Corpus Check
 - cluster-only mode — file stats not available
 
 ## Summary
-- 254 nodes · 330 edges · 23 communities (13 shown, 10 thin omitted)
+- 255 nodes · 331 edges · 23 communities (13 shown, 10 thin omitted)
 - Extraction: 85% EXTRACTED · 15% INFERRED · 0% AMBIGUOUS · INFERRED: 49 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `bb8538d9`
+- Built from commit: `3f7350f7`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -69,10 +69,13 @@
 - **Comandos de Descoberta Graphify** — graphify_query_command, graphify_path_command, graphify_explain_command, graphify_affected_command [EXTRACTED 1.00]
 - **Hierarquia de Autoridade Correnth** — d_00_docs, graphify_out_graph_json, current_direction_md, archived, legacy [EXTRACTED 0.90]
 - **Infraestrutura Semântica Correnth** — invoke_correnth_semantic_push_ps1, graphifyy_package, minimax_model, graphify_out_graph_json [EXTRACTED 0.85]
+- **Correnth Operational Architecture** — redrise, redrise_platform, redrise_operation, graphify, minimax_key [EXTRACTED 0.95]
 - **Correnth Product Portfolio** — correnth_group, redrise, redrose, findfee, adgency [EXTRACTED 1.00]
 - **Correnth Tech Stack Standards** — nextjs, supabase, postgresql, shadcn_ui, tailwind_css, correnth_ui [EXTRACTED 1.00]
 - **Correnth Operational Infrastructure** — correnth_group, paperclip, graphify, correnth_ui [EXTRACTED 1.00]
 - **Correnth Gauss Operational Framework** — gauss_organization, correnth_group, paperclip, prompt_engineer [EXTRACTED 1.00]
+- **RedRise Product and Internal Company** — redrise, redrise_canonical_product, redrise_platform_operation [EXTRACTED 0.95]
+- **RedRise Capability Families** — redrise_automate, redrise_build, redrise_operate, redrise_assurance [EXTRACTED 0.95]
 - **Semantic Refresh Pipeline** — invoke_correnth_semantic_push_ps1, minimax, graphify, graphify_out_graph_json [EXTRACTED 0.90]
 - **Git Push Guardian Chain** — pre_push_hook, invoke_correnth_semantic_push_ps1, git_lfs, github_mcp [INFERRED 0.80]
 - **RedRise PR Rollout Phases 1-4** — platforms_batch_1, platforms_batch_2, platforms_batch_3, platforms_batch_4 [EXTRACTED 1.00]
@@ -88,9 +91,6 @@
 - **Full-Stack Infrastructure Technology Stack** — roadmaps_reference_skill_based_roadmaps_roadmap_system_design, roadmaps_reference_skill_based_roadmaps_roadmap_terraform, roadmaps_reference_skill_based_roadmaps_roadmap_typescript, roadmaps_reference_skill_based_roadmaps_roadmap_vue [EXTRACTED 0.90]
 - **System Design Patterns for Reliability** — system_design_reliability, system_design_patterns, system_design_observability [INFERRED 0.80]
 - **AI-Powered Coding Ecosystem** — vibe_coding_ai_tools, vibe_coding_practices, vibe_coding_workflow [EXTRACTED 0.90]
-- **Correnth Operational Architecture** — redrise, redrise_platform, redrise_operation, graphify, minimax_key [EXTRACTED 0.95]
-- **RedRise Product and Internal Company** — redrise, redrise_canonical_product, redrise_platform_operation [EXTRACTED 0.95]
-- **RedRise Capability Families** — redrise_automate, redrise_build, redrise_operate, redrise_assurance [EXTRACTED 0.95]
 
 ## Communities (23 total, 10 thin omitted)
 
@@ -131,12 +131,12 @@ Cohesion: 0.22
 Nodes (9): COcorrenth/ui, Correnth UI and Tech Stack Standard, Next.js, PostgreSQL, shadcn/ui Complete Guide, Design System Roadmap, shadcn/ui, Supabase (+1 more)
 
 ### Community 9 - "Community 9"
-Cohesion: 0.43
-Nodes (4): Add-UniqueItem(), ConvertTo-PlainText(), Get-OfficialResources(), Get-RoadmapTopics()
+Cohesion: 0.36
+Nodes (4): Get-ArtifactHash(), Get-GraphSnapshot(), Test-CanonicalArtifacts(), Write-Provenance()
 
 ### Community 10 - "Community 10"
 Cohesion: 0.43
-Nodes (4): Get-ArtifactHash(), Get-GraphSnapshot(), Test-CanonicalArtifacts(), Write-Provenance()
+Nodes (4): Add-UniqueItem(), ConvertTo-PlainText(), Get-OfficialResources(), Get-RoadmapTopics()
 
 ### Community 11 - "Community 11"
 Cohesion: 0.60
@@ -151,11 +151,11 @@ Nodes (5): BI Analyst Roadmap, Data Analyst Roadmap, Data Engineer Roadmap, Mach
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `correnthgroup/redrise-platform Repository` connect `Community 2` to `Community 8`, `Community 3`?**
-  _High betweenness centrality (0.186) - this node is a cross-community bridge._
+  _High betweenness centrality (0.185) - this node is a cross-community bridge._
 - **Why does `RedRise Platform and Internal Company` connect `Community 3` to `Community 1`, `Community 2`?**
-  _High betweenness centrality (0.181) - this node is a cross-community bridge._
+  _High betweenness centrality (0.179) - this node is a cross-community bridge._
 - **Why does `Developer Roadmap Repository` connect `Community 4` to `Community 8`?**
-  _High betweenness centrality (0.136) - this node is a cross-community bridge._
+  _High betweenness centrality (0.135) - this node is a cross-community bridge._
 - **What connects `Graphify Skill for Codex`, `Graphify Add Watch Reference`, `Graphify Exports Reference` to the rest of the system?**
   _118 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**

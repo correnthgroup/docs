@@ -63,6 +63,21 @@
         "source_file": "AGENTS.md"
       },
       {
+        "id": "correnth_operational_architecture",
+        "label": "Correnth Operational Architecture",
+        "nodes": [
+          "redrise",
+          "redrise_platform",
+          "redrise_operation",
+          "graphify",
+          "minimax_key"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.95,
+        "source_file": "CURRENT_DIRECTION.md"
+      },
+      {
         "id": "correnth_product_portfolio",
         "label": "Correnth Product Portfolio",
         "nodes": [
@@ -120,6 +135,33 @@
         "confidence": "EXTRACTED",
         "confidence_score": 1.0,
         "source_file": "decisions/GAUSS_AGENT_ORGANIZATION_AND_LANGUAGE_v1.md"
+      },
+      {
+        "id": "redrise_product_and_company",
+        "label": "RedRise Product and Internal Company",
+        "nodes": [
+          "redrise",
+          "redrise_canonical_product",
+          "redrise_platform_operation"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.95,
+        "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md"
+      },
+      {
+        "id": "redrise_capability_families",
+        "label": "RedRise Capability Families",
+        "nodes": [
+          "redrise_automate",
+          "redrise_build",
+          "redrise_operate",
+          "redrise_assurance"
+        ],
+        "relation": "implement",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.95,
+        "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md"
       },
       {
         "id": "semantic_refresh_flow",
@@ -377,48 +419,6 @@
         "confidence": "EXTRACTED",
         "confidence_score": 0.9,
         "source_file": "roadmaps_reference/Skill-based Roadmaps/ROADMAP_VIBE_CODING.md"
-      },
-      {
-        "id": "correnth_operational_architecture",
-        "label": "Correnth Operational Architecture",
-        "nodes": [
-          "redrise",
-          "redrise_platform",
-          "redrise_operation",
-          "graphify",
-          "minimax_key"
-        ],
-        "relation": "form",
-        "confidence": "EXTRACTED",
-        "confidence_score": 0.95,
-        "source_file": "CURRENT_DIRECTION.md"
-      },
-      {
-        "id": "redrise_product_and_company",
-        "label": "RedRise Product and Internal Company",
-        "nodes": [
-          "redrise",
-          "redrise_canonical_product",
-          "redrise_platform_operation"
-        ],
-        "relation": "form",
-        "confidence": "EXTRACTED",
-        "confidence_score": 0.95,
-        "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md"
-      },
-      {
-        "id": "redrise_capability_families",
-        "label": "RedRise Capability Families",
-        "nodes": [
-          "redrise_automate",
-          "redrise_build",
-          "redrise_operate",
-          "redrise_assurance"
-        ],
-        "relation": "implement",
-        "confidence": "EXTRACTED",
-        "confidence_score": 0.95,
-        "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md"
       }
     ]
   },
@@ -429,10 +429,10 @@
       "source_file": "roadmaps_reference/tools/Enrich-RoadmapReferences.ps1",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 9,
+      "community": 10,
       "norm_label": "enrich-roadmapreferences.ps1",
       "id": "roadmaps_reference_tools_enrich_roadmapreferences",
-      "community_name": "Community 9"
+      "community_name": "Community 10"
     },
     {
       "label": "Get-FrontMatterValue()",
@@ -440,10 +440,10 @@
       "source_file": "roadmaps_reference/tools/Enrich-RoadmapReferences.ps1",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 9,
+      "community": 10,
       "norm_label": "get-frontmattervalue()",
       "id": "roadmaps_reference_tools_enrich_roadmapreferences_get_frontmattervalue",
-      "community_name": "Community 9"
+      "community_name": "Community 10"
     },
     {
       "label": "ConvertTo-PlainText()",
@@ -451,10 +451,10 @@
       "source_file": "roadmaps_reference/tools/Enrich-RoadmapReferences.ps1",
       "source_location": "L20",
       "_origin": "ast",
-      "community": 9,
+      "community": 10,
       "norm_label": "convertto-plaintext()",
       "id": "roadmaps_reference_tools_enrich_roadmapreferences_convertto_plaintext",
-      "community_name": "Community 9"
+      "community_name": "Community 10"
     },
     {
       "label": "Add-UniqueItem()",
@@ -462,10 +462,10 @@
       "source_file": "roadmaps_reference/tools/Enrich-RoadmapReferences.ps1",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 9,
+      "community": 10,
       "norm_label": "add-uniqueitem()",
       "id": "roadmaps_reference_tools_enrich_roadmapreferences_add_uniqueitem",
-      "community_name": "Community 9"
+      "community_name": "Community 10"
     },
     {
       "label": "Get-TopicFocus()",
@@ -473,10 +473,10 @@
       "source_file": "roadmaps_reference/tools/Enrich-RoadmapReferences.ps1",
       "source_location": "L45",
       "_origin": "ast",
-      "community": 9,
+      "community": 10,
       "norm_label": "get-topicfocus()",
       "id": "roadmaps_reference_tools_enrich_roadmapreferences_get_topicfocus",
-      "community_name": "Community 9"
+      "community_name": "Community 10"
     },
     {
       "label": "Get-OfficialResources()",
@@ -484,10 +484,10 @@
       "source_file": "roadmaps_reference/tools/Enrich-RoadmapReferences.ps1",
       "source_location": "L88",
       "_origin": "ast",
-      "community": 9,
+      "community": 10,
       "norm_label": "get-officialresources()",
       "id": "roadmaps_reference_tools_enrich_roadmapreferences_get_officialresources",
-      "community_name": "Community 9"
+      "community_name": "Community 10"
     },
     {
       "label": "Get-RoadmapTopics()",
@@ -495,10 +495,10 @@
       "source_file": "roadmaps_reference/tools/Enrich-RoadmapReferences.ps1",
       "source_location": "L111",
       "_origin": "ast",
-      "community": 9,
+      "community": 10,
       "norm_label": "get-roadmaptopics()",
       "id": "roadmaps_reference_tools_enrich_roadmapreferences_get_roadmaptopics",
-      "community_name": "Community 9"
+      "community_name": "Community 10"
     },
     {
       "label": "Install-CorrenthSemanticPushGuard.ps1",
@@ -517,10 +517,10 @@
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 10,
+      "community": 9,
       "norm_label": "invoke-correnthsemanticpush.ps1",
       "id": "tools_invoke_correnthsemanticpush",
-      "community_name": "Community 10"
+      "community_name": "Community 9"
     },
     {
       "label": "Invoke-GraphifyPython()",
@@ -528,10 +528,10 @@
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 10,
+      "community": 9,
       "norm_label": "invoke-graphifypython()",
       "id": "tools_invoke_correnthsemanticpush_invoke_graphifypython",
-      "community_name": "Community 10"
+      "community_name": "Community 9"
     },
     {
       "label": "Get-ArtifactHash()",
@@ -539,54 +539,65 @@
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
       "source_location": "L34",
       "_origin": "ast",
-      "community": 10,
+      "community": 9,
       "norm_label": "get-artifacthash()",
       "id": "tools_invoke_correnthsemanticpush_get_artifacthash",
-      "community_name": "Community 10"
+      "community_name": "Community 9"
+    },
+    {
+      "label": "Get-GraphSourceRevision()",
+      "file_type": "code",
+      "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
+      "source_location": "L40",
+      "_origin": "ast",
+      "community": 9,
+      "norm_label": "get-graphsourcerevision()",
+      "id": "tools_invoke_correnthsemanticpush_get_graphsourcerevision",
+      "community_name": "Community 9"
     },
     {
       "label": "Get-GraphSnapshot()",
       "file_type": "code",
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
-      "source_location": "L40",
+      "source_location": "L68",
       "_origin": "ast",
-      "community": 10,
+      "community": 9,
       "norm_label": "get-graphsnapshot()",
       "id": "tools_invoke_correnthsemanticpush_get_graphsnapshot",
-      "community_name": "Community 10"
+      "community_name": "Community 9"
     },
     {
       "label": "Write-Provenance()",
       "file_type": "code",
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
-      "source_location": "L81",
+      "source_location": "L109",
       "_origin": "ast",
-      "community": 10,
+      "community": 9,
       "norm_label": "write-provenance()",
       "id": "tools_invoke_correnthsemanticpush_write_provenance",
-      "community_name": "Community 10"
+      "community_name": "Community 9"
     },
     {
       "label": "Write-DeterministicCommunityLabels()",
       "file_type": "code",
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
-      "source_location": "L109",
+      "source_location": "L137",
       "_origin": "ast",
-      "community": 10,
+      "community": 9,
       "norm_label": "write-deterministiccommunitylabels()",
       "id": "tools_invoke_correnthsemanticpush_write_deterministiccommunitylabels",
-      "community_name": "Community 10"
+      "community_name": "Community 9"
     },
     {
       "label": "Test-CanonicalArtifacts()",
       "file_type": "code",
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
-      "source_location": "L123",
+      "source_location": "L151",
       "_origin": "ast",
-      "community": 10,
+      "community": 9,
       "norm_label": "test-canonicalartifacts()",
       "id": "tools_invoke_correnthsemanticpush_test_canonicalartifacts",
-      "community_name": "Community 10"
+      "community_name": "Community 9"
     },
     {
       "label": "Graphify Skill for Codex",
@@ -941,6 +952,114 @@
       "community_name": "Community 1"
     },
     {
+      "label": "Correnth Current Direction",
+      "file_type": "document",
+      "source_file": "CURRENT_DIRECTION.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-07-24",
+      "author": "Grupo Correnth",
+      "contributor": null,
+      "community": 3,
+      "norm_label": "correnth current direction",
+      "id": "current_direction",
+      "community_name": "Community 3"
+    },
+    {
+      "label": "RedRise Platform and Internal Company",
+      "file_type": "concept",
+      "source_file": "CURRENT_DIRECTION.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "redrise platform and internal company",
+      "id": "redrise",
+      "community_name": "Community 3"
+    },
+    {
+      "label": "RedRise Platform Repository",
+      "file_type": "concept",
+      "source_file": "CURRENT_DIRECTION.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 2,
+      "norm_label": "redrise platform repository",
+      "id": "redrise_platform",
+      "community_name": "Community 2"
+    },
+    {
+      "label": "RedRise Operation Package",
+      "file_type": "concept",
+      "source_file": "CURRENT_DIRECTION.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "redrise operation package",
+      "id": "redrise_operation",
+      "community_name": "Community 3"
+    },
+    {
+      "label": "Paperclip",
+      "file_type": "concept",
+      "source_file": "decisions/CORRENTH_UI_AND_TECH_STACK_STANDARD_v1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "paperclip",
+      "id": "paperclip",
+      "community_name": "Community 3"
+    },
+    {
+      "label": "Graphify Semantic Index",
+      "file_type": "concept",
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "community": 1,
+      "norm_label": "graphify semantic index",
+      "id": "graphify",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "MiniMax API Key in Personal Vault",
+      "file_type": "concept",
+      "source_file": "CURRENT_DIRECTION.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "minimax api key in personal vault",
+      "id": "minimax_key",
+      "community_name": "Community 1"
+    },
+    {
+      "label": "Human-in-the-Loop Policy",
+      "file_type": "concept",
+      "source_file": "CURRENT_DIRECTION.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "human-in-the-loop policy",
+      "id": "hitl_policy",
+      "community_name": "Community 3"
+    },
+    {
       "label": "Graphify Stack Recommendation",
       "file_type": "document",
       "source_file": "GRAPHIFY_STACK_RECOMMENDATION.md",
@@ -1067,20 +1186,6 @@
       "community_name": "Community 3"
     },
     {
-      "label": "Paperclip",
-      "file_type": "concept",
-      "source_file": "decisions/CORRENTH_UI_AND_TECH_STACK_STANDARD_v1.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 3,
-      "norm_label": "paperclip",
-      "id": "paperclip",
-      "community_name": "Community 3"
-    },
-    {
       "label": "COcorrenth/ui",
       "file_type": "concept",
       "source_file": "decisions/CORRENTH_UI_AND_TECH_STACK_STANDARD_v1.md",
@@ -1193,6 +1298,174 @@
       "community_name": "Community 3"
     },
     {
+      "label": "RedRise Canonical Product and Internal Company v1",
+      "file_type": "document",
+      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-07-24",
+      "author": "Grupo Correnth",
+      "contributor": null,
+      "community": 3,
+      "norm_label": "redrise canonical product and internal company v1",
+      "id": "redrise_canonical_product",
+      "community_name": "Community 3"
+    },
+    {
+      "label": "Gauss Unit (Historical)",
+      "file_type": "concept",
+      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "gauss unit (historical)",
+      "id": "gauss",
+      "community_name": "Community 3"
+    },
+    {
+      "label": "Paperclip Company (Renamed)",
+      "file_type": "concept",
+      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "paperclip company (renamed)",
+      "id": "company_paperclip",
+      "community_name": "Community 3"
+    },
+    {
+      "label": "Archived RedRise Repository",
+      "file_type": "concept",
+      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "archived redrise repository",
+      "id": "archived_redrise",
+      "community_name": "Community 3"
+    },
+    {
+      "label": "correnthgroup/redrise-platform Repository",
+      "file_type": "concept",
+      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 2,
+      "norm_label": "correnthgroup/redrise-platform repository",
+      "id": "correnthgroup_redrise_platform_repo",
+      "community_name": "Community 2"
+    },
+    {
+      "label": "correnthgroup/redrise-operation Repository",
+      "file_type": "concept",
+      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "correnthgroup/redrise-operation repository",
+      "id": "correnthgroup_redrise_operation_repo",
+      "community_name": "Community 3"
+    },
+    {
+      "label": "RedRise Platform Operation and Offer Architecture v1",
+      "file_type": "document",
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-07-28",
+      "author": "Grupo Correnth",
+      "contributor": null,
+      "community": 3,
+      "norm_label": "redrise platform operation and offer architecture v1",
+      "id": "redrise_platform_operation",
+      "community_name": "Community 3"
+    },
+    {
+      "label": "RedRise Workflow Pilot",
+      "file_type": "concept",
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "redrise workflow pilot",
+      "id": "redrise_workflow_pilot",
+      "community_name": "Community 3"
+    },
+    {
+      "label": "RedRise Automate Capability Family",
+      "file_type": "concept",
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "redrise automate capability family",
+      "id": "redrise_automate",
+      "community_name": "Community 3"
+    },
+    {
+      "label": "RedRise Build Capability Family",
+      "file_type": "concept",
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "redrise build capability family",
+      "id": "redrise_build",
+      "community_name": "Community 3"
+    },
+    {
+      "label": "RedRise Operate Capability Family",
+      "file_type": "concept",
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "redrise operate capability family",
+      "id": "redrise_operate",
+      "community_name": "Community 3"
+    },
+    {
+      "label": "RedRise Assurance Capability Family",
+      "file_type": "concept",
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "redrise assurance capability family",
+      "id": "redrise_assurance",
+      "community_name": "Community 3"
+    },
+    {
       "label": "Graphify Semantic Memory Policy",
       "file_type": "document",
       "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
@@ -1201,16 +1474,6 @@
       "norm_label": "graphify semantic memory policy",
       "id": "platforms_graphify_semantic_memory",
       "community_name": "Community 3"
-    },
-    {
-      "label": "Graphify Semantic Index",
-      "file_type": "concept",
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
-      "source_location": null,
-      "community": 1,
-      "norm_label": "graphify semantic index",
-      "id": "graphify",
-      "community_name": "Community 1"
     },
     {
       "label": "Grupo Correnth",
@@ -3637,258 +3900,6 @@
       "norm_label": "shadcn/ui complete guide",
       "id": "roadmaps_reference_outros_shadcn_guide",
       "community_name": "Community 8"
-    },
-    {
-      "label": "Correnth Current Direction",
-      "file_type": "document",
-      "source_file": "CURRENT_DIRECTION.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": "2026-07-24",
-      "author": "Grupo Correnth",
-      "contributor": null,
-      "community": 3,
-      "norm_label": "correnth current direction",
-      "id": "current_direction",
-      "community_name": "Community 3"
-    },
-    {
-      "label": "RedRise Canonical Product and Internal Company v1",
-      "file_type": "document",
-      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": "2026-07-24",
-      "author": "Grupo Correnth",
-      "contributor": null,
-      "community": 3,
-      "norm_label": "redrise canonical product and internal company v1",
-      "id": "redrise_canonical_product",
-      "community_name": "Community 3"
-    },
-    {
-      "label": "RedRise Platform Operation and Offer Architecture v1",
-      "file_type": "document",
-      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": "2026-07-28",
-      "author": "Grupo Correnth",
-      "contributor": null,
-      "community": 3,
-      "norm_label": "redrise platform operation and offer architecture v1",
-      "id": "redrise_platform_operation",
-      "community_name": "Community 3"
-    },
-    {
-      "label": "RedRise Platform and Internal Company",
-      "file_type": "concept",
-      "source_file": "CURRENT_DIRECTION.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 3,
-      "norm_label": "redrise platform and internal company",
-      "id": "redrise",
-      "community_name": "Community 3"
-    },
-    {
-      "label": "RedRise Platform Repository",
-      "file_type": "concept",
-      "source_file": "CURRENT_DIRECTION.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "redrise platform repository",
-      "id": "redrise_platform",
-      "community_name": "Community 2"
-    },
-    {
-      "label": "RedRise Operation Package",
-      "file_type": "concept",
-      "source_file": "CURRENT_DIRECTION.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 3,
-      "norm_label": "redrise operation package",
-      "id": "redrise_operation",
-      "community_name": "Community 3"
-    },
-    {
-      "label": "MiniMax API Key in Personal Vault",
-      "file_type": "concept",
-      "source_file": "CURRENT_DIRECTION.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "minimax api key in personal vault",
-      "id": "minimax_key",
-      "community_name": "Community 1"
-    },
-    {
-      "label": "Gauss Unit (Historical)",
-      "file_type": "concept",
-      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 3,
-      "norm_label": "gauss unit (historical)",
-      "id": "gauss",
-      "community_name": "Community 3"
-    },
-    {
-      "label": "Paperclip Company (Renamed)",
-      "file_type": "concept",
-      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 3,
-      "norm_label": "paperclip company (renamed)",
-      "id": "company_paperclip",
-      "community_name": "Community 3"
-    },
-    {
-      "label": "Archived RedRise Repository",
-      "file_type": "concept",
-      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 3,
-      "norm_label": "archived redrise repository",
-      "id": "archived_redrise",
-      "community_name": "Community 3"
-    },
-    {
-      "label": "Human-in-the-Loop Policy",
-      "file_type": "concept",
-      "source_file": "CURRENT_DIRECTION.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 3,
-      "norm_label": "human-in-the-loop policy",
-      "id": "hitl_policy",
-      "community_name": "Community 3"
-    },
-    {
-      "label": "RedRise Workflow Pilot",
-      "file_type": "concept",
-      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 3,
-      "norm_label": "redrise workflow pilot",
-      "id": "redrise_workflow_pilot",
-      "community_name": "Community 3"
-    },
-    {
-      "label": "RedRise Automate Capability Family",
-      "file_type": "concept",
-      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 3,
-      "norm_label": "redrise automate capability family",
-      "id": "redrise_automate",
-      "community_name": "Community 3"
-    },
-    {
-      "label": "RedRise Build Capability Family",
-      "file_type": "concept",
-      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 3,
-      "norm_label": "redrise build capability family",
-      "id": "redrise_build",
-      "community_name": "Community 3"
-    },
-    {
-      "label": "RedRise Operate Capability Family",
-      "file_type": "concept",
-      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 3,
-      "norm_label": "redrise operate capability family",
-      "id": "redrise_operate",
-      "community_name": "Community 3"
-    },
-    {
-      "label": "RedRise Assurance Capability Family",
-      "file_type": "concept",
-      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 3,
-      "norm_label": "redrise assurance capability family",
-      "id": "redrise_assurance",
-      "community_name": "Community 3"
-    },
-    {
-      "label": "correnthgroup/redrise-platform Repository",
-      "file_type": "concept",
-      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "correnthgroup/redrise-platform repository",
-      "id": "correnthgroup_redrise_platform_repo",
-      "community_name": "Community 2"
-    },
-    {
-      "label": "correnthgroup/redrise-operation Repository",
-      "file_type": "concept",
-      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 3,
-      "norm_label": "correnthgroup/redrise-operation repository",
-      "id": "correnthgroup_redrise_operation_repo",
-      "community_name": "Community 3"
     }
   ],
   "links": [
@@ -4006,12 +4017,23 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
-      "source_location": "L40",
+      "source_location": "L68",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
       "source": "tools_invoke_correnthsemanticpush",
       "target": "tools_invoke_correnthsemanticpush_get_graphsnapshot"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "tools_invoke_correnthsemanticpush",
+      "target": "tools_invoke_correnthsemanticpush_get_graphsourcerevision"
     },
     {
       "relation": "contains",
@@ -4028,7 +4050,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
-      "source_location": "L123",
+      "source_location": "L151",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
@@ -4039,7 +4061,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
-      "source_location": "L109",
+      "source_location": "L137",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
@@ -4050,7 +4072,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
-      "source_location": "L81",
+      "source_location": "L109",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
@@ -4061,7 +4083,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
-      "source_location": "L150",
+      "source_location": "L178",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
@@ -4072,7 +4094,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
-      "source_location": "L91",
+      "source_location": "L119",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
@@ -4083,7 +4105,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "tools/Invoke-CorrenthSemanticPush.ps1",
-      "source_location": "L134",
+      "source_location": "L162",
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
@@ -4361,6 +4383,326 @@
       "target": "invoke_correnth_semantic_push_ps1"
     },
     {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CURRENT_DIRECTION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "current_direction",
+      "target": "hitl_policy"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CURRENT_DIRECTION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "current_direction",
+      "target": "redrise"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CURRENT_DIRECTION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "current_direction",
+      "target": "redrise_canonical_product"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CURRENT_DIRECTION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "current_direction",
+      "target": "redrise_platform_operation"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "company_paperclip",
+      "target": "redrise"
+    },
+    {
+      "relation": "owns",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CURRENT_DIRECTION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "correnth",
+      "target": "redrise"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/CORRENTH_ECOSYSTEM_PORTFOLIO_AND_OPERATING_MODEL_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "correnth_group",
+      "target": "redrise"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "REPOSITORIES.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "correnthgroup_redrise_operation_repo",
+      "target": "redrise"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "REPOSITORIES.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "correnthgroup_redrise_platform_repo",
+      "target": "redrise"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "gauss",
+      "target": "redrise"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/CORRENTH_UI_AND_TECH_STACK_STANDARD_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "paperclip",
+      "target": "redrise"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise",
+      "target": "archived_redrise"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CURRENT_DIRECTION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise",
+      "target": "graphify"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise",
+      "target": "minimax_key"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise",
+      "target": "redrise_assurance"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise",
+      "target": "redrise_automate"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise",
+      "target": "redrise_build"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise",
+      "target": "redrise_canonical_product"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise",
+      "target": "redrise_operate"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CURRENT_DIRECTION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise",
+      "target": "redrise_operation"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CURRENT_DIRECTION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise",
+      "target": "redrise_platform"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise",
+      "target": "redrise_platform_operation"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise",
+      "target": "redrise_workflow_pilot"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "correnthgroup_redrise_platform_repo",
+      "target": "redrise_platform"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "correnthgroup_redrise_operation_repo",
+      "target": "redrise_operation"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/GAUSS_AGENT_ORGANIZATION_AND_LANGUAGE_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "gauss_organization",
+      "target": "paperclip"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/CORRENTH_UI_AND_TECH_STACK_STANDARD_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "paperclip",
+      "target": "correnth_group"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Prompt Engineer.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "prompt_engineer",
+      "target": "paperclip"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "graphify",
+      "target": "canonical_memory"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "graphify",
+      "target": "community_n"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "graphify",
+      "target": "minimax"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CURRENT_DIRECTION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "graphify",
+      "target": "minimax_key"
+    },
+    {
       "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -4379,16 +4721,6 @@
       "weight": 1.0,
       "source": "prompt_engineer",
       "target": "gauss_organization"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Prompt Engineer.txt",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "prompt_engineer",
-      "target": "paperclip"
     },
     {
       "relation": "conceptually_related_to",
@@ -4438,16 +4770,6 @@
       "source_location": null,
       "weight": 1.0,
       "source": "correnth_group",
-      "target": "redrise"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "decisions/CORRENTH_ECOSYSTEM_PORTFOLIO_AND_OPERATING_MODEL_v1.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "correnth_group",
       "target": "redrose"
     },
     {
@@ -4468,16 +4790,6 @@
       "source_location": null,
       "weight": 1.0,
       "source": "gauss_organization",
-      "target": "correnth_group"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "decisions/CORRENTH_UI_AND_TECH_STACK_STANDARD_v1.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "paperclip",
       "target": "correnth_group"
     },
     {
@@ -4519,26 +4831,6 @@
       "weight": 1.0,
       "source": "roadmaps_reference_role_based_roadmaps_roadmap_backend",
       "target": "correnth_group"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "decisions/GAUSS_AGENT_ORGANIZATION_AND_LANGUAGE_v1.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "gauss_organization",
-      "target": "paperclip"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "decisions/CORRENTH_UI_AND_TECH_STACK_STANDARD_v1.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "paperclip",
-      "target": "redrise"
     },
     {
       "relation": "conceptually_related_to",
@@ -4641,84 +4933,124 @@
       "target": "tailwind_css"
     },
     {
+      "relation": "complements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise_canonical_product",
+      "target": "redrise_platform_operation"
+    },
+    {
       "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "correnth",
-      "target": "platforms_graphify_semantic_memory"
+      "source": "correnthgroup_redrise_platform_repo",
+      "target": "platforms_pr_12"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "correnthgroup_redrise_platform_repo",
+      "target": "platforms_pr_13"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "correnthgroup_redrise_platform_repo",
+      "target": "platforms_pr_14"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "correnthgroup_redrise_platform_repo",
+      "target": "platforms_pr_15"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "correnthgroup_redrise_platform_repo",
+      "target": "platforms_pr_16"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "correnthgroup_redrise_platform_repo",
+      "target": "platforms_pr_17"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "correnthgroup_redrise_platform_repo",
+      "target": "platforms_pr_18"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "correnthgroup_redrise_platform_repo",
+      "target": "platforms_pr_19"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "correnthgroup_redrise_platform_repo",
+      "target": "platforms_pr_20"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "graphify",
-      "target": "canonical_memory"
+      "source": "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT",
+      "target": "correnthgroup_redrise_platform_repo"
     },
     {
-      "relation": "references",
+      "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "graphify",
-      "target": "community_n"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "graphify",
-      "target": "minimax"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CURRENT_DIRECTION.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "graphify",
-      "target": "minimax_key"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CURRENT_DIRECTION.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "redrise",
-      "target": "graphify"
-    },
-    {
-      "relation": "owns",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CURRENT_DIRECTION.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "correnth",
-      "target": "redrise"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "pre_push_hook",
-      "target": "git_lfs"
+      "source": "correnthgroup_redrise_operation_repo",
+      "target": "platforms_pr_13"
     },
     {
       "relation": "references",
@@ -4731,14 +5063,74 @@
       "target": "correnthgroup_redrise_operation_repo"
     },
     {
-      "relation": "references",
+      "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "platforms_REDRISE_PR_ROLLOUT_AND_AUDIT",
-      "target": "correnthgroup_redrise_platform_repo"
+      "source": "redrise_platform_operation",
+      "target": "redrise_workflow_pilot"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise_workflow_pilot",
+      "target": "redrise_assurance"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise_workflow_pilot",
+      "target": "redrise_automate"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise_workflow_pilot",
+      "target": "redrise_build"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "redrise_workflow_pilot",
+      "target": "redrise_operate"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "correnth",
+      "target": "platforms_graphify_semantic_memory"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "platforms/GRAPHIFY_SEMANTIC_MEMORY.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "pre_push_hook",
+      "target": "git_lfs"
     },
     {
       "relation": "references",
@@ -5012,42 +5404,12 @@
     },
     {
       "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "correnthgroup_redrise_platform_repo",
-      "target": "platforms_pr_12"
-    },
-    {
-      "relation": "conceptually_related_to",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
       "source_location": null,
       "weight": 0.8,
       "source": "platforms_pr_12",
-      "target": "platforms_pr_13"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "correnthgroup_redrise_operation_repo",
-      "target": "platforms_pr_13"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "correnthgroup_redrise_platform_repo",
       "target": "platforms_pr_13"
     },
     {
@@ -5062,32 +5424,12 @@
     },
     {
       "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "correnthgroup_redrise_platform_repo",
-      "target": "platforms_pr_14"
-    },
-    {
-      "relation": "conceptually_related_to",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
       "source_location": null,
       "weight": 0.8,
       "source": "platforms_pr_14",
-      "target": "platforms_pr_15"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "correnthgroup_redrise_platform_repo",
       "target": "platforms_pr_15"
     },
     {
@@ -5102,32 +5444,12 @@
     },
     {
       "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "correnthgroup_redrise_platform_repo",
-      "target": "platforms_pr_16"
-    },
-    {
-      "relation": "conceptually_related_to",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
       "source_location": null,
       "weight": 0.8,
       "source": "platforms_pr_16",
-      "target": "platforms_pr_17"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "correnthgroup_redrise_platform_repo",
       "target": "platforms_pr_17"
     },
     {
@@ -5142,32 +5464,12 @@
     },
     {
       "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "correnthgroup_redrise_platform_repo",
-      "target": "platforms_pr_18"
-    },
-    {
-      "relation": "conceptually_related_to",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
       "source_location": null,
       "weight": 0.8,
       "source": "platforms_pr_18",
-      "target": "platforms_pr_19"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "correnthgroup_redrise_platform_repo",
       "target": "platforms_pr_19"
     },
     {
@@ -5189,16 +5491,6 @@
       "weight": 1.0,
       "source": "platforms_pr_20",
       "target": "platforms_pr_19"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "platforms/REDRISE_PR_ROLLOUT_AND_AUDIT.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "correnthgroup_redrise_platform_repo",
-      "target": "platforms_pr_20"
     },
     {
       "relation": "references",
@@ -6939,276 +7231,6 @@
       "weight": 1.0,
       "source": "roadmaps_reference_skill_based_roadmaps_roadmap_wordpress",
       "target": "wordpress_theme"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CURRENT_DIRECTION.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "current_direction",
-      "target": "hitl_policy"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CURRENT_DIRECTION.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "current_direction",
-      "target": "redrise"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CURRENT_DIRECTION.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "current_direction",
-      "target": "redrise_canonical_product"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CURRENT_DIRECTION.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "current_direction",
-      "target": "redrise_platform_operation"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "redrise",
-      "target": "redrise_canonical_product"
-    },
-    {
-      "relation": "complements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "redrise_canonical_product",
-      "target": "redrise_platform_operation"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "redrise",
-      "target": "redrise_platform_operation"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "redrise_platform_operation",
-      "target": "redrise_workflow_pilot"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "company_paperclip",
-      "target": "redrise"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "REPOSITORIES.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "correnthgroup_redrise_operation_repo",
-      "target": "redrise"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "REPOSITORIES.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "correnthgroup_redrise_platform_repo",
-      "target": "redrise"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "gauss",
-      "target": "redrise"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "redrise",
-      "target": "archived_redrise"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "redrise",
-      "target": "minimax_key"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "redrise",
-      "target": "redrise_assurance"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "redrise",
-      "target": "redrise_automate"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "redrise",
-      "target": "redrise_build"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "redrise",
-      "target": "redrise_operate"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CURRENT_DIRECTION.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "redrise",
-      "target": "redrise_operation"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CURRENT_DIRECTION.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "redrise",
-      "target": "redrise_platform"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "redrise",
-      "target": "redrise_workflow_pilot"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "correnthgroup_redrise_platform_repo",
-      "target": "redrise_platform"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "correnthgroup_redrise_operation_repo",
-      "target": "redrise_operation"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "redrise_workflow_pilot",
-      "target": "redrise_assurance"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "redrise_workflow_pilot",
-      "target": "redrise_automate"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "redrise_workflow_pilot",
-      "target": "redrise_build"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "redrise_workflow_pilot",
-      "target": "redrise_operate"
     }
   ],
   "hyperedges": [
@@ -7272,6 +7294,21 @@
       "source_file": "AGENTS.md"
     },
     {
+      "id": "correnth_operational_architecture",
+      "label": "Correnth Operational Architecture",
+      "nodes": [
+        "redrise",
+        "redrise_platform",
+        "redrise_operation",
+        "graphify",
+        "minimax_key"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "CURRENT_DIRECTION.md"
+    },
+    {
       "id": "correnth_product_portfolio",
       "label": "Correnth Product Portfolio",
       "nodes": [
@@ -7329,6 +7366,33 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "decisions/GAUSS_AGENT_ORGANIZATION_AND_LANGUAGE_v1.md"
+    },
+    {
+      "id": "redrise_product_and_company",
+      "label": "RedRise Product and Internal Company",
+      "nodes": [
+        "redrise",
+        "redrise_canonical_product",
+        "redrise_platform_operation"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md"
+    },
+    {
+      "id": "redrise_capability_families",
+      "label": "RedRise Capability Families",
+      "nodes": [
+        "redrise_automate",
+        "redrise_build",
+        "redrise_operate",
+        "redrise_assurance"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md"
     },
     {
       "id": "semantic_refresh_flow",
@@ -7586,49 +7650,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 0.9,
       "source_file": "roadmaps_reference/Skill-based Roadmaps/ROADMAP_VIBE_CODING.md"
-    },
-    {
-      "id": "correnth_operational_architecture",
-      "label": "Correnth Operational Architecture",
-      "nodes": [
-        "redrise",
-        "redrise_platform",
-        "redrise_operation",
-        "graphify",
-        "minimax_key"
-      ],
-      "relation": "form",
-      "confidence": "EXTRACTED",
-      "confidence_score": 0.95,
-      "source_file": "CURRENT_DIRECTION.md"
-    },
-    {
-      "id": "redrise_product_and_company",
-      "label": "RedRise Product and Internal Company",
-      "nodes": [
-        "redrise",
-        "redrise_canonical_product",
-        "redrise_platform_operation"
-      ],
-      "relation": "form",
-      "confidence": "EXTRACTED",
-      "confidence_score": 0.95,
-      "source_file": "decisions/REDRISE_CANONICAL_PRODUCT_AND_INTERNAL_COMPANY_v1.md"
-    },
-    {
-      "id": "redrise_capability_families",
-      "label": "RedRise Capability Families",
-      "nodes": [
-        "redrise_automate",
-        "redrise_build",
-        "redrise_operate",
-        "redrise_assurance"
-      ],
-      "relation": "implement",
-      "confidence": "EXTRACTED",
-      "confidence_score": 0.95,
-      "source_file": "decisions/REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md"
     }
   ],
-  "built_at_commit": "bb8538d94de793169be1dd645b57cb788bd902d9"
+  "built_at_commit": "3f7350f7cc1e02c637c6e59448d147dce76affd0"
 }
