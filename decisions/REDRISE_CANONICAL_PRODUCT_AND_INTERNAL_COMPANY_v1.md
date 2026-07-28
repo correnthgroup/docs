@@ -8,7 +8,9 @@
 
 ## Decisão
 
-RedRise é o produto B2B agentic SaaS vigente da Correnth e também o nome da companhia operacional interna que o desenvolve e opera. Gauss deixa de ser uma unidade ativa; sua proposta de software house e venture studio permanece apenas como histórico.
+RedRise é a plataforma e operação agêntica B2B vigente da Correnth e também o nome da companhia operacional interna que a desenvolve e opera. Gauss deixa de ser uma unidade ativa; sua identidade de software house e venture studio permanece apenas como histórico, enquanto capacidades úteis de desenvolvimento, automação, QA e operação são absorvidas pela RedRise.
+
+A arquitetura de posicionamento e ofertas é detalhada por `REDRISE_PLATFORM_OPERATION_AND_OFFER_ARCHITECTURE_v1.md`.
 
 O runtime do produto é um fork mantido do Paperclip. A operação interna e o código implantável permanecem separados:
 
@@ -43,5 +45,6 @@ Graphify é sempre local por projeto. A atualização semântica ocorre somente 
 
 - O remoto canônico do pacote operacional é `correnthgroup/redrise-operation`.
 - `correnthgroup/redrise-platform` é o único repositório implantável.
+- As famílias de capacidade são `RedRise Automate`, `RedRise Build`, `RedRise Operate` e `RedRise Assurance`; elas não recriam Gauss como unidade ativa.
 - Documentos ativos devem apontar para os novos paths.
 - Histórico Git e evidência Gauss não são reescritos.
